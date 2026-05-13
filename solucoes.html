@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Soluções - J.R. Company</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&amp;family=Vazirmatn:wght@400;500;600;700;800;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+          darkMode: "class",
+          theme: {
+            extend: {
+              "colors": {
+                      "surface-container-high": "#e2e7ff",
+                      "secondary-fixed": "#dae2ff",
+                      "on-secondary": "#ffffff",
+                      "on-tertiary-container": "#bcc7ff",
+                      "on-secondary-container": "#232856",
+                      "on-background": "#1F1F21",
+                      "on-primary-fixed-variant": "#374BFF",
+                      "inverse-surface": "#1F1F21",
+                      "surface-container": "#F4F4F4",
+                      "surface-container-lowest": "#ffffff",
+                      "surface-dim": "#E0E0E0",
+                      "background": "#F4F4F4",
+                      "surface-tint": "#374BFF",
+                      "on-tertiary": "#ffffff",
+                      "surface-bright": "#F4F4F4",
+                      "on-error": "#ffffff",
+                      "inverse-on-surface": "#F4F4F4",
+                      "on-secondary-fixed": "#1F1F21",
+                      "error": "#ba1a1a",
+                      "primary-container": "#374BFF",
+                      "on-surface-variant": "#434654",
+                      "on-error-container": "#93000a",
+                      "tertiary-container": "#232856",
+                      "on-tertiary-fixed-variant": "#232856",
+                      "surface-container-highest": "#E0E0E0",
+                      "secondary": "#232856",
+                      "primary": "#374BFF",
+                      "tertiary-fixed-dim": "#b8c4ff",
+                      "on-primary-container": "#ffffff",
+                      "secondary-fixed-dim": "#b1c5ff",
+                      "outline-variant": "#c3c6d6",
+                      "surface-container-low": "#F4F4F4",
+                      "primary-fixed-dim": "#b4c5ff",
+                      "surface-variant": "#E0E0E0",
+                      "on-tertiary-fixed": "#1F1F21",
+                      "error-container": "#ffdad6",
+                      "on-secondary-fixed-variant": "#232856",
+                      "on-primary-fixed": "#1F1F21",
+                      "tertiary": "#232856",
+                      "surface": "#F4F4F4",
+                      "tertiary-fixed": "#dde1ff",
+                      "on-primary": "#ffffff",
+                      "secondary-container": "#232856",
+                      "inverse-primary": "#374BFF",
+                      "outline": "#737685",
+                      "on-surface": "#1F1F21",
+                      "primary-fixed": "#374BFF"
+              },
+              "borderRadius": {
+                      "DEFAULT": "0.25rem",
+                      "lg": "0.5rem",
+                      "xl": "0.75rem",
+                      "full": "9999px"
+              },
+              "spacing": {
+                      "lg": "24px",
+                      "xl": "48px",
+                      "sm": "8px",
+                      "unit": "4px",
+                      "xs": "4px",
+                      "gutter": "20px",
+                      "md": "16px",
+                      "margin": "40px"
+              },
+              "fontFamily": {
+                      "label-sm": [
+                              "Vazirmatn"
+                      ],
+                      "display": [
+                              "Vazirmatn"
+                      ],
+                      "headline-md": [
+                              "Vazirmatn"
+                      ],
+                      "headline-lg": [
+                              "Vazirmatn"
+                      ],
+                      "body-lg": [
+                              "Vazirmatn"
+                      ],
+                      "mono-data": [
+                              "Vazirmatn"
+                      ],
+                      "body-md": [
+                              "Vazirmatn"
+                      ]
+              },
+              "fontSize": {
+                      "label-sm": [
+                              "12px",
+                              {
+                                      "lineHeight": "1",
+                                      "letterSpacing": "0.05em",
+                                      "fontWeight": "700"
+                              }
+                      ],
+                      "display": [
+                              "64px",
+                              {
+                                      "lineHeight": "1.1",
+                                      "letterSpacing": "-0.02em",
+                                      "fontWeight": "400"
+                              }
+                      ],
+                      "headline-md": [
+                              "24px",
+                              {
+                                      "lineHeight": "1.3",
+                                      "fontWeight": "400"
+                              }
+                      ],
+                      "headline-lg": [
+                              "32px",
+                              {
+                                      "lineHeight": "1.2",
+                                      "fontWeight": "400"
+                              }
+                      ],
+                      "body-lg": [
+                              "18px",
+                              {
+                                      "lineHeight": "1.6",
+                                      "fontWeight": "400"
+                              }
+                      ],
+                      "mono-data": [
+                              "14px",
+                              {
+                                      "lineHeight": "1",
+                                      "letterSpacing": "0.01em",
+                                      "fontWeight": "500"
+                              }
+                      ],
+                      "body-md": [
+                              "16px",
+                              {
+                                      "lineHeight": "1.5",
+                                      "fontWeight": "400"
+                              }
+                      ]
+              }
+      },
+          },
+        }
+      </script>
+<style>
+        .font-vazirmatn { font-family: 'Vazirmatn', sans-serif; }
+        .blueprint-bg {
+            background-image: linear-gradient(rgba(0,0,0,0.03) 1px, transparent 1px),
+            linear-gradient(90deg, rgba(0,0,0,0.03) 1px, transparent 1px);
+            background-size: 20px 20px;
+        }
+        .blueprint-bg-dark {
+            background-image: linear-gradient(rgba(255,255,255,0.03) 1px, transparent 1px),
+            linear-gradient(90deg, rgba(255,255,255,0.03) 1px, transparent 1px);
+            background-size: 20px 20px;
+        }
+        /* Rounded images */
+        section img {
+            border-radius: 12px;
+        }
+        section div.overflow-hidden:not(.absolute) {
+            border-radius: 12px;
+        }
+        
+        /* Nova textura Chevron aplicada a todos os blocos de fundo globais */
+        body, section, main, footer, nav, header, .bg-white, .bg-slate-50, .bg-slate-100, .bg-surface, .bg-surface-container-lowest, .bg-surface-container-low {
+            background-image: 
+                url("data:image/svg+xml,%3Csvg width='1440' height='1000' viewBox='0 0 1440 1000' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' stroke='rgba(0,0,0,0.04)' stroke-width='1.5'%3E%3Cpath d='M400 -500 L1350 450 Q1400 500 1350 550 L400 1500'/%3E%3Cpath d='M200 -500 L1150 450 Q1200 500 1150 550 L200 1500'/%3E%3Cpath d='M0 -500 L950 450 Q1000 500 950 550 L0 1500'/%3E%3Cpath d='M-200 -500 L750 450 Q800 500 750 550 L-200 1500'/%3E%3Cpath d='M-400 -500 L550 450 Q600 500 550 550 L-400 1500'/%3E%3Ccircle cx='1400' cy='500' r='600' /%3E%3Ccircle cx='200' cy='800' r='400' /%3E%3Ccircle cx='800' cy='100' r='250' /%3E%3Ccircle cx='-100' cy='100' r='500' /%3E%3C/g%3E%3C/svg%3E"),
+                radial-gradient(circle 800px at 85% 15%, rgba(55, 75, 255, 0.05) 0%, rgba(55, 75, 255, 0) 100%),
+                radial-gradient(circle 600px at 15% 75%, rgba(55, 75, 255, 0.04) 0%, rgba(55, 75, 255, 0) 100%),
+                radial-gradient(circle 900px at 50% 100%, rgba(55, 75, 255, 0.03) 0%, rgba(55, 75, 255, 0) 100%);
+            background-attachment: fixed, fixed, fixed, fixed;
+            background-size: cover, 100vw 100vh, 100vw 100vh, 100vw 100vh;
+            background-position: right center, top left, top left, top left;
+            background-repeat: no-repeat, no-repeat, no-repeat, no-repeat;
+        }
+        
+        /* Override para fundos escuros, para a textura ficar branca */
+        .bg-slate-950, .bg-on-surface, footer {
+            background-image: 
+                url("data:image/svg+xml,%3Csvg width='1440' height='1000' viewBox='0 0 1440 1000' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' stroke='rgba(255,255,255,0.05)' stroke-width='1.5'%3E%3Cpath d='M400 -500 L1350 450 Q1400 500 1350 550 L400 1500'/%3E%3Cpath d='M200 -500 L1150 450 Q1200 500 1150 550 L200 1500'/%3E%3Cpath d='M0 -500 L950 450 Q1000 500 950 550 L0 1500'/%3E%3Cpath d='M-200 -500 L750 450 Q800 500 750 550 L-200 1500'/%3E%3Cpath d='M-400 -500 L550 450 Q600 500 550 550 L-400 1500'/%3E%3Ccircle cx='1400' cy='500' r='600' /%3E%3Ccircle cx='200' cy='800' r='400' /%3E%3Ccircle cx='800' cy='100' r='250' /%3E%3Ccircle cx='-100' cy='100' r='500' /%3E%3C/g%3E%3C/svg%3E"),
+                radial-gradient(circle 800px at 85% 15%, rgba(55, 75, 255, 0.15) 0%, rgba(55, 75, 255, 0) 100%),
+                radial-gradient(circle 600px at 15% 75%, rgba(55, 75, 255, 0.1) 0%, rgba(55, 75, 255, 0) 100%),
+                radial-gradient(circle 900px at 50% 100%, rgba(55, 75, 255, 0.08) 0%, rgba(55, 75, 255, 0) 100%) !important;
+            background-attachment: fixed, fixed, fixed, fixed !important;
+            background-size: cover, 100vw 100vh, 100vw 100vh, 100vw 100vh !important;
+            background-position: right center, top left, top left, top left !important;
+            background-repeat: no-repeat, no-repeat, no-repeat, no-repeat !important;
+        }
+        
+        /* Remover a textura blueprint antiga para evidenciar a nova */
+        .blueprint-bg, .blueprint-bg-dark {
+            background-image: none !important;
+        }
+
+        /* Pill/Chip Styles Inspired by Screenshot */
+        .pill-container {
+            display: inline-flex;
+            align-items: center;
+            gap: 12px;
+            border-radius: 9999px;
+            padding: 6px 16px;
+            font-family: 'Vazirmatn', sans-serif;
+            font-weight: 600;
+            font-size: 13px;
+            letter-spacing: 0.05em;
+            text-transform: uppercase;
+            transition: all 0.3s ease;
+        }
+
+        .pill-solid {
+            background: #374BFF;
+            color: white;
+            box-shadow: 0 4px 15px rgba(55, 75, 255, 0.25);
+        }
+
+        .pill-outline {
+            background: transparent;
+            border: 1.5px solid rgba(55, 75, 255, 0.15);
+            color: #1F1F21;
+            padding-left: 6px;
+        }
+
+        .pill-outline-dark {
+            border: 1.5px solid rgba(255, 255, 255, 0.15);
+            color: white;
+        }
+
+        .pill-icon-bubble {
+            width: 32px;
+            height: 32px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: #374BFF;
+            color: white;
+            flex-shrink: 0;
+        }
+
+        .pill-outline:hover {
+            border-color: #374BFF;
+            background: rgba(55, 75, 255, 0.05);
+        }
+
+        .btn-gradient {
+            background: linear-gradient(135deg, #232856 0%, #374BFF 100%) !important;
+            border: none !important;
+            box-shadow: 0 4px 15px rgba(55, 75, 255, 0.3);
+            transition: all 0.3s ease;
+        }
+
+        .btn-gradient:hover {
+            background: linear-gradient(135deg, #374BFF 0%, #232856 100%) !important;
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(55, 75, 255, 0.4);
+        }
+    </style>
+</head>
+<body class="bg-background text-on-background font-body-md text-body-md antialiased blueprint-bg">
+<!-- TopNavBar -->
+<!-- TopNavBar -->
+<nav class="bg-white dark:bg-slate-950 font-['Vazirmatn'] uppercase tracking-tighter text-sm font-semibold full-width top-0 sticky rounded-none border-b border-slate-200 dark:border-slate-800 z-50">
+<div class="flex justify-between items-center w-full px-8 py-4 max-w-[1440px] mx-auto">
+<a href="index.html" class="flex items-center"><img src="https://jrcompany.net.br/wp-content/uploads/2023/12/jcr-transportes-logo.png" alt="J.R. Company" class="h-10 w-auto"></a>
+<div class="hidden md:flex space-x-8 items-center">
+<a class="text-[#374BFF] border-b-2 border-[#374BFF] pb-1 hover:text-[#374BFF] transition-colors duration-200 opacity-80" href="#">Home</a>
+<a class="text-slate-900 dark:text-slate-300 hover:text-[#374BFF] transition-colors duration-200" href="#">A JR Company</a>
+<a class="text-slate-900 dark:text-slate-300 hover:text-[#374BFF] transition-colors duration-200" href="#">Soluções</a>
+<a class="text-slate-900 dark:text-slate-300 hover:text-[#374BFF] transition-colors duration-200" href="#">Operações</a>
+<a class="text-slate-900 dark:text-slate-300 hover:text-[#374BFF] transition-colors duration-200" href="#">Diferenciais</a>
+<a class="text-slate-900 dark:text-slate-300 hover:text-[#374BFF] transition-colors duration-200" href="#">Contato</a>
+</div>
+<div class="hidden md:flex items-center space-x-4">
+<button class="px-6 py-3 btn-gradient text-white rounded-full transition-colors uppercase tracking-widest text-xs font-bold" style="">Falar com especialista</button>
+</div>
+<button class="md:hidden text-slate-900 dark:text-white rounded-full" style="">
+<span class="material-symbols-outlined" style="">menu</span>
+</button>
+</div>
+</nav>
+<main>
+<!-- HERO -->
+<section class="relative w-full border-b border-outline-variant max-w-[1440px] mx-auto">
+<div class="grid grid-cols-1 lg:grid-cols-2 min-h-[600px]">
+<div class="p-8 lg:p-margin flex flex-col justify-center border-r border-outline-variant bg-surface-container-lowest relative z-10">
+<!-- Hero Pill Indicator -->
+<div class="pill-container pill-solid mb-8">
+    Inovação Operacional:
+</div>
+<div class="inline-block bg-surface-container border border-outline-variant px-4 py-2 mb-8 w-max">
+<span class="font-mono-data text-mono-data text-on-surface-variant tracking-widest uppercase">Módulo Operacional</span>
+</div>
+<h1 class="font-display text-display text-on-surface mb-6 leading-tight">Soluções Integradas <br/><span class="text-[#374BFF] font-bold">com controle e precisão.</span></h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant mb-10 max-w-xl border-l-2 border-primary-container pl-4 py-2">
+                        Infraestrutura técnica de alta performance desenvolvida para mitigar riscos e otimizar a execução em ambientes industriais complexos.
+                    </p>
+<div class="flex gap-4">
+<button class="btn-gradient text-on-primary px-8 py-4 font-label-sm text-label-sm rounded-full transition-colors flex items-center gap-2 uppercase tracking-widest">
+                            Solicitar análise técnica
+                            <span class="material-symbols-outlined">analytics</span>
+</button>
+</div>
+</div>
+<div class="relative h-full min-h-[400px] border-l border-outline-variant bg-surface-variant">
+<img alt="Industrial engineering structure with geometric metal beams and bright lighting" class="absolute inset-0 w-full h-full object-cover grayscale opacity-80 mix-blend-multiply" data-alt="close up of massive steel industrial structure with intersecting beams in bright stark lighting black and white technical aesthetic" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCLlWPyPRs-d1J54TcOhVyAT_0gTllYk_YGvhznzLeMtIEnI8v-JbQ1eox0lnZGY8NVSXRcJkLSDKP24KF8nPAz61p02h_kv2xY7wShfPFX0pwlQiwrRbmDizIK235LEsGNYl5Ud2tz4UVPvH6inN5tCtQqtM0cIwZe4rZKuvZ9P0vmvDT4In4By85xGA_fVnE83_juOEG9AKtqldYz1_dEsdAUMl6akuXdjWcgpIeS3F-RTJI6CqY3fhkujk_x6C7zK6X_i8155cTF"/>
+<div class="absolute inset-0 bg-gradient-to-t from-inverse-surface/80 to-transparent flex items-end p-8">
+<div class="bg-surface-container-lowest border border-outline-variant p-4">
+<div class="font-mono-data text-mono-data text-on-surface mb-1">SYS.STATUS: <span class="text-primary-container font-bold">ONLINE</span></div>
+<div class="font-mono-data text-mono-data text-on-surface-variant text-[10px]">DATA.FLOW: STABLE // LATENCY: 12ms</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- BLOCO 01 — O QUE É -->
+<section class="max-w-[1440px] mx-auto p-8 lg:p-margin border-b border-outline-variant bg-surface-container-lowest relative">
+<div class="absolute top-0 left-margin bottom-0 w-px bg-outline-variant -z-10"></div>
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-8 relative z-10 pl-8">
+<div class="lg:col-span-4">
+<h2 class="font-headline-md text-headline-md text-on-surface mb-4 tracking-tight">Arquitetura da <span class="text-[#374BFF] font-bold">Solução</span></h2>
+<div class="w-12 h-1 bg-primary-container mb-6"></div>
+<p class="font-body-md text-body-md text-on-surface-variant font-medium">Especificações técnicas e estruturais</p>
+</div>
+<div class="lg:col-span-8 grid grid-cols-1 md:grid-cols-2 gap-8">
+<div class="border border-outline-variant p-6 bg-surface">
+<div class="flex items-center gap-3 mb-4 border-b border-outline-variant pb-4">
+<span class="material-symbols-outlined text-primary-container text-[24px]">precision_manufacturing</span>
+<h3 class="font-label-sm text-label-sm uppercase text-on-surface tracking-wider">Núcleo Operacional</h3>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant mb-6">
+                            Sistema de gestão de ativos projetado para tolerância zero a falhas. Monitoramento contínuo em tempo real com redundância de dados em nível de hardware.
+                        </p>
+                        <!-- Chips for features -->
+                        <div class="flex flex-wrap gap-2">
+                            <div class="pill-container pill-outline text-[10px] py-1 px-3 gap-2">
+                                <div class="pill-icon-bubble w-5 h-5 text-[12px]"><span class="material-symbols-outlined text-sm">security</span></div>
+                                Risco Zero
+                            </div>
+                            <div class="pill-container pill-outline text-[10px] py-1 px-3 gap-2">
+                                <div class="pill-icon-bubble w-5 h-5 text-[12px]"><span class="material-symbols-outlined text-sm">history</span></div>
+                                Real-Time
+                            </div>
+                        </div>
+</div>
+<div class="border border-outline-variant p-6 bg-surface">
+<div class="flex items-center gap-3 mb-4 border-b border-outline-variant pb-4">
+<span class="material-symbols-outlined text-primary-container text-[24px]">architecture</span>
+<h3 class="font-label-sm text-label-sm uppercase text-on-surface tracking-wider">Escalabilidade</h3>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant">
+                            Módulos independentes que permitem expansão linear da capacidade produtiva sem interrupção do fluxo de trabalho principal.
+                        </p>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+        <!-- Footer -->
+        <footer class="bg-white border-t border-slate-200 w-full pt-20 pb-10 px-8 relative overflow-hidden">
+                <div class="max-w-[1440px] mx-auto relative z-10">
+                        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
+                                <!-- Coluna 1: Identidade e Redes -->
+                                <div class="flex flex-col gap-8">
+                                        <a href="index.html">
+                                                <img src="https://jrcompany.net.br/wp-content/uploads/2023/12/jcr-transportes-logo.png"
+                                                        alt="J.R. Company" class="h-12 w-auto">
+                                        </a>
+                                        <div class="flex gap-4">
+                                                <a href="#"
+                                                        class="w-10 h-10 rounded-full bg-slate-100 flex items-center justify-center text-slate-600 hover:bg-[#374BFF] hover:text-white transition-all duration-300 shadow-sm">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-5 h-5" aria-hidden="true"><path d="M13.5 21v-7.5h2.5l.4-3h-2.9V8.6c0-.86.24-1.45 1.48-1.45H16.5V4.5c-.27-.04-1.2-.12-2.28-.12-2.26 0-3.81 1.38-3.81 3.91V10.5H8v3h2.41V21h3.09Z"/></svg>
+                                                </a>
+                                                <a href="#"
+                                                        class="w-10 h-10 rounded-full bg-slate-100 flex items-center justify-center text-slate-600 hover:bg-[#374BFF] hover:text-white transition-all duration-300 shadow-sm">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-5 h-5" aria-hidden="true"><path d="M12 2.2c3.2 0 3.58.01 4.85.07 1.17.05 1.8.25 2.23.41.56.22.96.48 1.38.9.42.42.68.82.9 1.38.16.42.36 1.06.41 2.23.06 1.27.07 1.65.07 4.85s-.01 3.58-.07 4.85c-.05 1.17-.25 1.8-.41 2.23-.22.56-.48.96-.9 1.38-.42.42-.82.68-1.38.9-.42.16-1.06.36-2.23.41-1.27.06-1.65.07-4.85.07s-3.58-.01-4.85-.07c-1.17-.05-1.8-.25-2.23-.41a3.7 3.7 0 0 1-1.38-.9 3.7 3.7 0 0 1-.9-1.38c-.16-.42-.36-1.06-.41-2.23C2.21 15.58 2.2 15.2 2.2 12s.01-3.58.07-4.85c.05-1.17.25-1.8.41-2.23.22-.56.48-.96.9-1.38.42-.42.82-.68 1.38-.9.42-.16 1.06-.36 2.23-.41C8.42 2.21 8.8 2.2 12 2.2ZM12 0C8.74 0 8.33.01 7.05.07 5.78.13 4.9.33 4.14.63a5.92 5.92 0 0 0-2.13 1.39A5.92 5.92 0 0 0 .62 4.15c-.3.76-.5 1.64-.55 2.9C.01 8.33 0 8.74 0 12c0 3.26.01 3.67.07 4.95.06 1.27.26 2.14.55 2.9.32.84.74 1.55 1.4 2.21a5.92 5.92 0 0 0 2.12 1.4c.76.29 1.64.49 2.9.55C8.33 23.99 8.74 24 12 24s3.67-.01 4.95-.07c1.27-.06 2.14-.26 2.9-.55a6.16 6.16 0 0 0 3.52-3.52c.29-.76.49-1.64.55-2.9.06-1.28.07-1.69.07-4.95s-.01-3.67-.07-4.95c-.06-1.27-.26-2.14-.55-2.9a5.92 5.92 0 0 0-1.4-2.13A5.92 5.92 0 0 0 19.85.62c-.76-.3-1.64-.5-2.9-.55C15.67.01 15.26 0 12 0ZM12 5.84a6.16 6.16 0 1 0 0 12.32 6.16 6.16 0 0 0 0-12.32Zm0 10.16a4 4 0 1 1 0-8 4 4 0 0 1 0 8ZM19.85 5.59a1.44 1.44 0 1 1-2.88 0 1.44 1.44 0 0 1 2.88 0Z"/></svg>
+                                                </a>
+                                                <a href="#"
+                                                        class="w-10 h-10 rounded-full bg-slate-100 flex items-center justify-center text-slate-600 hover:bg-[#374BFF] hover:text-white transition-all duration-300 shadow-sm">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-5 h-5" aria-hidden="true"><path d="M20.45 20.45h-3.55v-5.57c0-1.33-.03-3.04-1.85-3.04-1.86 0-2.14 1.45-2.14 2.95v5.66H9.36V9h3.41v1.56h.05a3.74 3.74 0 0 1 3.36-1.85c3.6 0 4.27 2.37 4.27 5.45v6.29ZM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12ZM7.12 20.45H3.56V9h3.56v11.45ZM22.22 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.23.79 24 1.77 24h20.45C23.2 24 24 23.23 24 22.27V1.73C24 .77 23.2 0 22.22 0Z"/></svg>
+                                                </a>
+                                        </div>
+                                        <div class="text-slate-500 text-[11px] leading-relaxed uppercase tracking-wider">
+                                                <p class="font-bold text-slate-900 mb-1">J.R.C. Transportes de Cargas Ltda
+                                                </p>
+                                                <p>(J.R. Company - Operações Especiais)</p>
+                                                <p class="mt-2">CNPJ: 03.982.982/0003-14</p>
+                                        </div>
+                                </div>
+
+                                <!-- Coluna 2: Sobre -->
+                                <div>
+                                        <h4
+                                                class="font-display font-bold text-slate-900 uppercase tracking-widest text-xs mb-8 border-l-2 border-[#374BFF] pl-4">
+                                                SOBRE</h4>
+                                        <p class="text-slate-600 text-sm leading-relaxed normal-case tracking-normal">
+                                                A J.R. Company atua com excelência no mercado de logística, especializada no
+                                                transporte de cargas pesadas, excedentes e operações especiais. Com uma
+                                                equipe qualificada e uma robusta frota de bitrens e rodotrens, oferecemos
+                                                segurança e pontualidade na movimentação de máquinas e equipamentos para o
+                                                setor industrial.
+                                        </p>
+                                </div>
+
+                                <!-- Coluna 3: Acesso Rápido -->
+                                <div>
+                                        <h4
+                                                class="font-display font-bold text-slate-900 uppercase tracking-widest text-xs mb-8 border-l-2 border-[#374BFF] pl-4">
+                                                ACESSO RÁPIDO</h4>
+                                        <ul class="space-y-4 text-sm normal-case tracking-normal">
+                                                <li><a href="index.html"
+                                                                class="text-slate-600 hover:text-[#374BFF] transition-colors flex items-center gap-2 group"><span
+                                                                        class="w-1 h-1 bg-slate-300 group-hover:bg-[#374BFF] transition-colors"></span>Home</a>
+                                                </li>
+                                                <li><a href="sobre.html"
+                                                                class="text-slate-600 hover:text-[#374BFF] transition-colors flex items-center gap-2 group"><span
+                                                                        class="w-1 h-1 bg-slate-300 group-hover:bg-[#374BFF] transition-colors"></span>A
+                                                                Empresa</a></li>
+                                                <li><a href="#"
+                                                                class="text-slate-600 hover:text-[#374BFF] transition-colors flex items-center gap-2 group"><span
+                                                                        class="w-1 h-1 bg-slate-300 group-hover:bg-[#374BFF] transition-colors"></span>Nossa
+                                                                Frota</a></li>
+                                                <li><a href="solucoes-technical-flow.html"
+                                                                class="text-slate-600 hover:text-[#374BFF] transition-colors flex items-center gap-2 group"><span
+                                                                        class="w-1 h-1 bg-slate-300 group-hover:bg-[#374BFF] transition-colors"></span>Operações
+                                                                Especiais</a></li>
+                                                <li><a href="#"
+                                                                class="text-slate-600 hover:text-[#374BFF] transition-colors flex items-center gap-2 group"><span
+                                                                        class="w-1 h-1 bg-slate-300 group-hover:bg-[#374BFF] transition-colors"></span>Trabalhe
+                                                                Conosco</a></li>
+                                                <li><a href="fale-conosco.html"
+                                                                class="text-slate-600 hover:text-[#374BFF] transition-colors flex items-center gap-2 group"><span
+                                                                        class="w-1 h-1 bg-slate-300 group-hover:bg-[#374BFF] transition-colors"></span>Contato</a>
+                                                </li>
+                                                <li><a href="#"
+                                                                class="text-slate-600 hover:text-[#374BFF] transition-colors flex items-center gap-2 group"><span
+                                                                        class="w-1 h-1 bg-slate-300 group-hover:bg-[#374BFF] transition-colors"></span>Política
+                                                                de Privacidade</a></li>
+                                        </ul>
+                                </div>
+
+                                <!-- Coluna 4: Nossos Contatos -->
+                                <div>
+                                        <h4
+                                                class="font-display font-bold text-slate-900 uppercase tracking-widest text-xs mb-8 border-l-2 border-[#374BFF] pl-4">
+                                                NOSSOS CONTATOS</h4>
+                                        <ul class="space-y-6 text-sm normal-case tracking-normal">
+                                                <li class="flex items-start gap-4">
+                                                        <div
+                                                                class="w-8 h-8 rounded-lg bg-slate-100 flex items-center justify-center flex-shrink-0 text-[#374BFF]">
+                                                                <span
+                                                                        class="material-symbols-outlined text-[20px]">location_on</span>
+                                                        </div>
+                                                        <span class="text-slate-600">Rua Benjamin Negoseki, 18526 -
+                                                                Cachoeira, CEP 83021-250, São José dos Pinhais - PR</span>
+                                                </li>
+                                                <li class="flex items-center gap-4">
+                                                        <div
+                                                                class="w-8 h-8 rounded-lg bg-slate-100 flex items-center justify-center flex-shrink-0 text-[#374BFF]">
+                                                                <span
+                                                                        class="material-symbols-outlined text-[20px]">phone</span>
+                                                        </div>
+                                                        <a href="tel:4121186543"
+                                                                class="text-slate-600 hover:text-[#374BFF] transition-colors">(41)
+                                                                2118-6543</a>
+                                                </li>
+                                                <li class="flex items-center gap-4">
+                                                        <div
+                                                                class="w-8 h-8 rounded-lg bg-green-50 flex items-center justify-center flex-shrink-0 text-green-600">
+                                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-5 h-5" aria-hidden="true"><path d="M.06 24l1.69-6.16A11.88 11.88 0 0 1 .15 11.9C.15 5.34 5.5 0 12.07 0a11.84 11.84 0 0 1 8.42 3.49 11.81 11.81 0 0 1 3.48 8.42c0 6.56-5.35 11.9-11.9 11.9-2 0-3.95-.5-5.69-1.45L.06 24Zm6.6-3.8.36.22a9.87 9.87 0 0 0 5.04 1.38c5.45 0 9.89-4.43 9.89-9.89A9.83 9.83 0 0 0 19.05 4.93a9.83 9.83 0 0 0-6.99-2.9c-5.46 0-9.9 4.44-9.9 9.89 0 1.86.52 3.68 1.5 5.26l.24.37-1 3.66 3.76-.99Zm11.39-6.7c-.07-.12-.27-.2-.56-.34-.3-.15-1.76-.87-2.04-.97-.27-.1-.47-.15-.67.15-.2.3-.77.97-.94 1.17-.17.2-.35.22-.65.07-.3-.15-1.26-.46-2.4-1.48a9.07 9.07 0 0 1-1.66-2.07c-.18-.3-.02-.46.13-.61.13-.13.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.02-.52-.07-.15-.67-1.62-.92-2.21-.24-.58-.49-.5-.67-.51l-.57-.01a1.1 1.1 0 0 0-.8.37c-.27.3-1.04 1.02-1.04 2.49s1.07 2.88 1.22 3.08c.15.2 2.1 3.21 5.1 4.5.7.3 1.26.49 1.69.62.71.23 1.36.2 1.87.12.57-.08 1.76-.72 2.01-1.41.25-.7.25-1.29.17-1.41Z"/></svg>
+                                                        </div>
+                                                        <a href="https://wa.me/5541991189543"
+                                                                class="text-slate-600 hover:text-green-600 transition-colors font-bold">(41)
+                                                                99118-9543</a>
+                                                </li>
+                                                <li class="flex items-center gap-4">
+                                                        <div
+                                                                class="w-8 h-8 rounded-lg bg-slate-100 flex items-center justify-center flex-shrink-0 text-[#374BFF]">
+                                                                <span
+                                                                        class="material-symbols-outlined text-[20px]">mail</span>
+                                                        </div>
+                                                        <a href="mailto:contato@jrcompany.net.br"
+                                                                class="text-slate-600 hover:text-[#374BFF] transition-colors">contato@jrcompany.net.br</a>
+                                                </li>
+                                        </ul>
+                                </div>
+                        </div>
+
+                        <!-- Barra Inferior -->
+                        <div class="border-t border-slate-100 pt-10 flex flex-col items-center gap-6">
+                                <p class="text-[11px] text-slate-400 uppercase tracking-widest font-medium">
+                                        Otimização e criação com o ecossistema <span
+                                                class="text-[#374BFF]">ag-kit</span>
+                                </p>
+                        </div>
+                </div>
+        </footer>
+</body></html>

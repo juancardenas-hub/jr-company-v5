@@ -1,0 +1,2437 @@
+<!DOCTYPE html>
+
+<html class="light" data-lt-installed="true" lang="en">
+
+<head>
+        <meta charset="utf-8" />
+        <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+        <title>J.R. COMPANY | Logística e Engenharia de Precisão</title>
+        <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+        <!-- GSAP + ScrollTrigger (used by Como Funciona section) -->
+        <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js" defer></script>
+        <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js" defer></script>
+        <link href="https://fonts.googleapis.com" rel="preconnect" />
+        <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+        <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&amp;family=Vazirmatn:wght@400;500;600;700;800;900&amp;display=swap"
+                rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+                rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+                rel="stylesheet" />
+        <script id="tailwind-config">
+                tailwind.config = {
+                        darkMode: "class",
+                        theme: {
+                                extend: {
+                                        "colors": {
+                                                "surface-container-high": "#e2e7ff",
+                                                "secondary-fixed": "#dae2ff",
+                                                "on-secondary": "#ffffff",
+                                                "on-tertiary-container": "#bcc7ff",
+                                                "on-secondary-container": "#232856",
+                                                "on-background": "#1F1F21",
+                                                "on-primary-fixed-variant": "#2E3D6B",
+                                                "inverse-surface": "#1F1F21",
+                                                "surface-container": "#F4F4F4",
+                                                "surface-container-lowest": "#ffffff",
+                                                "surface-dim": "#E0E0E0",
+                                                "background": "#F4F4F4",
+                                                "surface-tint": "#2E3D6B",
+                                                "on-tertiary": "#ffffff",
+                                                "surface-bright": "#F4F4F4",
+                                                "on-error": "#ffffff",
+                                                "inverse-on-surface": "#F4F4F4",
+                                                "on-secondary-fixed": "#1F1F21",
+                                                "error": "#ba1a1a",
+                                                "primary-container": "#2E3D6B",
+                                                "on-surface-variant": "#434654",
+                                                "on-error-container": "#93000a",
+                                                "tertiary-container": "#232856",
+                                                "on-tertiary-fixed-variant": "#232856",
+                                                "surface-container-highest": "#E0E0E0",
+                                                "secondary": "#232856",
+                                                "primary": "#2E3D6B",
+                                                "tertiary-fixed-dim": "#b8c4ff",
+                                                "on-primary-container": "#ffffff",
+                                                "secondary-fixed-dim": "#b1c5ff",
+                                                "outline-variant": "#c3c6d6",
+                                                "surface-container-low": "#F4F4F4",
+                                                "primary-fixed-dim": "#b4c5ff",
+                                                "surface-variant": "#E0E0E0",
+                                                "on-tertiary-fixed": "#1F1F21",
+                                                "error-container": "#ffdad6",
+                                                "on-secondary-fixed-variant": "#232856",
+                                                "on-primary-fixed": "#1F1F21",
+                                                "tertiary": "#232856",
+                                                "surface": "#F4F4F4",
+                                                "tertiary-fixed": "#dde1ff",
+                                                "on-primary": "#ffffff",
+                                                "secondary-container": "#232856",
+                                                "inverse-primary": "#2E3D6B",
+                                                "outline": "#737685",
+                                                "on-surface": "#1F1F21",
+                                                "primary-fixed": "#2E3D6B"
+                                        },
+                                        "borderRadius": {
+                                                "DEFAULT": "0.25rem",
+                                                "lg": "0.5rem",
+                                                "xl": "0.75rem",
+                                                "full": "9999px"
+                                        },
+                                        "spacing": {
+                                                "lg": "24px",
+                                                "xl": "48px",
+                                                "sm": "8px",
+                                                "unit": "4px",
+                                                "xs": "4px",
+                                                "gutter": "20px",
+                                                "md": "16px",
+                                                "margin": "40px"
+                                        },
+                                        "fontFamily": {
+                                                "label-sm": [
+                                                        "Vazirmatn"
+                                                ],
+                                                "display": [
+                                                        "Vazirmatn"
+                                                ],
+                                                "headline-md": [
+                                                        "Vazirmatn"
+                                                ],
+                                                "headline-lg": [
+                                                        "Vazirmatn"
+                                                ],
+                                                "body-lg": [
+                                                        "Vazirmatn"
+                                                ],
+                                                "mono-data": [
+                                                        "Vazirmatn"
+                                                ],
+                                                "body-md": [
+                                                        "Vazirmatn"
+                                                ]
+                                        },
+                                        "fontSize": {
+                                                "label-sm": [
+                                                        "12px",
+                                                        {
+                                                                "lineHeight": "1",
+                                                                "letterSpacing": "0.05em",
+                                                                "fontWeight": "700"
+                                                        }
+                                                ],
+                                                "display": [
+                                                        "64px",
+                                                        {
+                                                                "lineHeight": "1.1",
+                                                                "letterSpacing": "-0.02em",
+                                                                "fontWeight": "400"
+                                                        }
+                                                ],
+                                                "headline-md": [
+                                                        "24px",
+                                                        {
+                                                                "lineHeight": "1.3",
+                                                                "fontWeight": "400"
+                                                        }
+                                                ],
+                                                "headline-lg": [
+                                                        "32px",
+                                                        {
+                                                                "lineHeight": "1.2",
+                                                                "fontWeight": "400"
+                                                        }
+                                                ],
+                                                "body-lg": [
+                                                        "18px",
+                                                        {
+                                                                "lineHeight": "1.6",
+                                                                "fontWeight": "400"
+                                                        }
+                                                ],
+                                                "mono-data": [
+                                                        "14px",
+                                                        {
+                                                                "lineHeight": "1",
+                                                                "letterSpacing": "0.01em",
+                                                                "fontWeight": "500"
+                                                        }
+                                                ],
+                                                "body-md": [
+                                                        "16px",
+                                                        {
+                                                                "lineHeight": "1.5",
+                                                                "fontWeight": "400"
+                                                        }
+                                                ],
+                                                "main-title": [
+                                                        "52px",
+                                                        {
+                                                                "lineHeight": "1.1",
+                                                                "letterSpacing": "-0.02em",
+                                                                "fontWeight": "700"
+                                                        }
+                                                ]
+                                        }
+                                },
+                        },
+                }
+        </script>
+        <style>
+                .font-vazirmatn {
+                        font-family: 'Vazirmatn', sans-serif;
+                }
+
+                /* Rounded images */
+                section img {
+                        border-radius: 12px;
+                }
+
+                section div.overflow-hidden:not(.absolute) {
+                        border-radius: 12px;
+                }
+
+                /* Círculo Azul Estilizado (Glow) */
+                .blue-glow {
+                        position: absolute;
+                        border-radius: 50%;
+                        background: radial-gradient(circle, rgba(46, 61, 107, 0.15) 0%, rgba(46, 61, 107, 0) 70%);
+                        filter: blur(80px);
+                        pointer-events: none;
+                        z-index: 0;
+                        mix-blend-mode: multiply;
+                }
+
+                .bg-slate-950 .blue-glow,
+                .bg-on-surface .blue-glow {
+                        background: radial-gradient(circle, rgba(46, 61, 107, 0.25) 0%, rgba(46, 61, 107, 0) 70%);
+                        mix-blend-mode: screen;
+                }
+
+                /* Manter os fundos claros da home sem textura de linhas */
+                .blueprint-bg,
+                .blueprint-bg-dark {
+                        background-image: none !important;
+                }
+
+                /* Textura inteligente inspirada em Terminal Industries */
+                .smart-grid-bg {
+                        background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none'%3E%3Cpath d='M30 0 L30 60 M0 30 L60 30' stroke='rgba(255,255,255,0.03)' stroke-width='1'/%3E%3Cpath d='M28 30 L32 30 M30 28 L30 32' stroke='rgba(55,75,255,0.8)' stroke-width='2'/%3E%3C/g%3E%3C/svg%3E") !important;
+                        background-size: 60px 60px !important;
+                        background-attachment: fixed !important;
+                        background-position: center center !important;
+                }
+
+                /* Estilo para o detalhe da logo flutuante e acentos */
+                .logo-floating-detail {
+                        position: fixed;
+                        bottom: -10%;
+                        right: -10%;
+                        width: 50vw;
+                        height: 50vw;
+                        max-width: 800px;
+                        opacity: 0.04;
+                        pointer-events: none;
+                        z-index: 0;
+                        transform: rotate(-15deg);
+                        filter: blur(2px);
+                        transition: all 1.2s cubic-bezier(0.4, 0, 0.2, 1);
+                        background-image: url('https://gnsincorporadora.com.br/wp-content/uploads/2026/04/Group.png');
+                        background-size: contain;
+                        background-repeat: no-repeat;
+                        background-position: center;
+                }
+
+                .logo-accent-bg {
+                        position: absolute;
+                        pointer-events: none;
+                        z-index: 0;
+                        opacity: 0.05;
+                        transition: all 0.8s ease;
+                        background-size: contain;
+                        background-repeat: no-repeat;
+                        background-position: center;
+                }
+
+                .logo-accent-bg:hover {
+                        opacity: 0.1;
+                        transform: scale(1.05) rotate(2deg);
+                }
+
+                .logo-accent-left {
+                        left: -10%;
+                        top: 15%;
+                        transform: rotate(5deg);
+                        width: 40vw;
+                        max-width: 600px;
+                        background-image: url('https://gnsincorporadora.com.br/wp-content/uploads/2026/04/logo-s.png');
+                        filter: brightness(0) invert(1) opacity(0.3);
+                }
+
+                .logo-accent-right {
+                        right: -10%;
+                        bottom: 15%;
+                        transform: rotate(-10deg);
+                        width: 35vw;
+                        max-width: 500px;
+                        background-image: url('https://gnsincorporadora.com.br/wp-content/uploads/2026/04/Group.png');
+                }
+
+                .logo-accent-blue {
+                        opacity: 0.12;
+                        filter: saturate(1.5);
+                }
+
+                .logo-detail-small {
+                        width: 64px;
+                        height: 64px;
+                        opacity: 0.3;
+                        pointer-events: none;
+                        background-image: url('https://gnsincorporadora.com.br/wp-content/uploads/2026/04/logo-s.png');
+                        background-size: contain;
+                        background-repeat: no-repeat;
+                        filter: brightness(0.8);
+                        transition: transform 0.5s ease;
+                }
+
+                .logo-detail-small:hover {
+                        transform: rotate(15deg) scale(1.1);
+                }
+
+                /* Pill/Chip Styles Inspired by Screenshot */
+                .pill-container {
+                        display: inline-flex;
+                        align-items: center;
+                        gap: 12px;
+                        border-radius: 9999px;
+                        padding: 6px 16px;
+                        font-family: 'Vazirmatn', sans-serif;
+                        font-weight: 600;
+                        font-size: 13px;
+                        letter-spacing: 0.05em;
+                        text-transform: uppercase;
+                        transition: all 0.3s ease;
+                }
+
+                .pill-solid {
+                        background: #2E3D6B;
+                        color: white;
+                        box-shadow: 0 4px 15px rgba(46, 61, 107, 0.25);
+                }
+
+                .pill-outline {
+                        background: transparent;
+                        border: 1.5px solid rgba(46, 61, 107, 0.15);
+                        color: #1F1F21;
+                        padding-left: 6px; /* Adjust for icon */
+                }
+
+                .pill-outline-dark {
+                        border: 1.5px solid rgba(255, 255, 255, 0.15);
+                        color: white;
+                }
+
+                .pill-icon-bubble {
+                        width: 32px;
+                        height: 32px;
+                        border-radius: 50%;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        background: #2E3D6B;
+                        color: white;
+                        flex-shrink: 0;
+                }
+
+                .pill-icon-bubble-dark {
+                        background: #232856;
+                }
+
+                .pill-outline:hover {
+                        border-color: #2E3D6B;
+                        background: rgba(46, 61, 107, 0.05);
+                }
+
+                .btn-gradient {
+                        background: linear-gradient(135deg, #142C8E 0%, #1F49D8 52%, #2D5BFF 100%) !important;
+                        background-size: 140% 140% !important;
+                        background-position: 0% 50% !important;
+                        border: 1px solid rgba(255, 255, 255, 0.18) !important;
+                        border-radius: 10px !important;
+                        color: #FFFFFF !important;
+                        box-shadow: 0 10px 24px rgba(31, 73, 216, 0.28), inset 0 1px 0 rgba(255, 255, 255, 0.22);
+                        transition: transform 0.3s ease, box-shadow 0.3s ease, filter 0.3s ease, background-position 0.3s ease !important;
+                }
+
+                .btn-gradient:hover {
+                        background-position: 100% 50% !important;
+                        filter: brightness(1.1);
+                        transform: translateY(-2px);
+                        box-shadow: 0 14px 30px rgba(31, 73, 216, 0.38), 0 4px 12px rgba(20, 44, 142, 0.22), inset 0 1px 0 rgba(255, 255, 255, 0.28);
+                }
+
+                .btn-gradient:focus-visible {
+                        outline: 3px solid rgba(45, 91, 255, 0.32);
+                        outline-offset: 3px;
+                }
+
+                .home-section-title {
+                        font-family: 'Vazirmatn', sans-serif !important;
+                        font-size: clamp(32px, 4vw, 52px) !important;
+                        line-height: 1.12 !important;
+                        letter-spacing: 0 !important;
+                        font-weight: 800 !important;
+                        color: #111827 !important;
+                        text-wrap: balance;
+                }
+
+                .home-section-title .title-accent {
+                        color: #142C8E !important;
+                        font-weight: 900 !important;
+                        background: linear-gradient(135deg, #142C8E 0%, #1F49D8 55%, #2D5BFF 100%);
+                        -webkit-background-clip: text;
+                        background-clip: text;
+                        -webkit-text-fill-color: transparent;
+                }
+
+                .home-tech-gradient {
+                        background: linear-gradient(135deg, #142C8E 0%, #1F49D8 52%, #2D5BFF 100%);
+                        -webkit-background-clip: text;
+                        background-clip: text;
+                        color: #2D5BFF !important;
+                        -webkit-text-fill-color: transparent;
+                        text-shadow: 0 0 18px rgba(45, 91, 255, 0.18);
+                        transition: filter 0.3s ease, text-shadow 0.3s ease;
+                }
+
+                .home-tech-gradient:hover {
+                        filter: brightness(1.12);
+                        text-shadow: 0 0 22px rgba(45, 91, 255, 0.24);
+                }
+        
+                .sticky-stack {
+                        position: sticky;
+                        top: min(0px, calc(100vh - 100%));
+                }
+
+                /* === Diferenciais Section – Micro-interactions & Scroll Animations === */
+
+                /* Base hidden state for scroll-reveal elements */
+                .diff-reveal {
+                        opacity: 0;
+                        transform: translate3d(0, 34px, 0);
+                        transition: opacity 0.9s cubic-bezier(0.16, 1, 0.3, 1),
+                                    transform 0.9s cubic-bezier(0.16, 1, 0.3, 1);
+                        will-change: opacity, transform;
+                }
+                .diff-reveal.is-visible {
+                        opacity: 1;
+                        transform: translate3d(0, 0, 0);
+                        will-change: auto;
+                }
+                /* Stagger delays for the 4 grid cards */
+                .diff-reveal[data-delay="1"] { transition-delay: 0.08s; }
+                .diff-reveal[data-delay="2"] { transition-delay: 0.18s; }
+                .diff-reveal[data-delay="3"] { transition-delay: 0.28s; }
+                .diff-reveal[data-delay="4"] { transition-delay: 0.38s; }
+
+                /* Enhanced grid card hover */
+                .diff-card {
+                        position: relative;
+                        transition: background 0.5s cubic-bezier(0.4, 0, 0.2, 1),
+                                    box-shadow 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+                }
+                .diff-card::after {
+                        content: '';
+                        position: absolute;
+                        inset: 0;
+                        opacity: 0;
+                        background: radial-gradient(ellipse at 30% 30%, rgba(46, 61, 107, 0.08) 0%, transparent 70%);
+                        transition: opacity 0.5s ease;
+                        pointer-events: none;
+                }
+                .diff-card:hover {
+                        background: rgba(15, 23, 42, 0.8) !important;
+                        box-shadow: inset 0 0 40px rgba(46, 61, 107, 0.06);
+                }
+                .diff-card:hover::after {
+                        opacity: 1;
+                }
+
+                /* Icon micro-animation on hover */
+                .diff-card .diff-icon {
+                        transition: transform 0.4s cubic-bezier(0.34, 1.56, 0.64, 1),
+                                    filter 0.4s ease,
+                                    color 0.3s ease;
+                }
+                .diff-card:hover .diff-icon {
+                        transform: scale(1.18) translateY(-2px);
+                        filter: drop-shadow(0 0 12px rgba(46, 61, 107, 0.6));
+                }
+
+                /* Card title underline reveal on hover */
+                .diff-card .diff-title {
+                        position: relative;
+                        display: inline-block;
+                }
+                .diff-card .diff-title::after {
+                        content: '';
+                        position: absolute;
+                        left: 0;
+                        bottom: -4px;
+                        width: 0;
+                        height: 2px;
+                        background: #2E3D6B;
+                        transition: width 0.4s cubic-bezier(0.22, 1, 0.36, 1);
+                }
+                .diff-card:hover .diff-title::after {
+                        width: 100%;
+                }
+
+                /* Card text fade-in on hover */
+                .diff-card .diff-desc {
+                        transition: color 0.4s ease;
+                }
+                .diff-card:hover .diff-desc {
+                        color: #94a3b8;
+                }
+
+                /* Left content panel reveal */
+                .diff-left-reveal {
+                        opacity: 0;
+                        transform: translate3d(-18px, 28px, 0);
+                        transition: opacity 0.95s cubic-bezier(0.16, 1, 0.3, 1),
+                                    transform 0.95s cubic-bezier(0.16, 1, 0.3, 1);
+                        will-change: opacity, transform;
+                }
+                .diff-left-reveal.is-visible {
+                        opacity: 1;
+                        transform: translate3d(0, 0, 0);
+                        will-change: auto;
+                }
+
+                @media (max-width: 768px) {
+                        .diff-reveal {
+                                transform: translate3d(0, 22px, 0);
+                                transition-duration: 0.7s;
+                        }
+                        .diff-left-reveal {
+                                transform: translate3d(-8px, 20px, 0);
+                                transition-duration: 0.72s;
+                        }
+                }
+
+                @media (prefers-reduced-motion: reduce) {
+                        .diff-reveal,
+                        .diff-left-reveal {
+                                opacity: 1 !important;
+                                transform: none !important;
+                                transition: none !important;
+                                will-change: auto !important;
+                        }
+                }
+
+                /* === Segmentos Atendidos – cards premium === */
+                .seg-card {
+                        display: flex;
+                        align-items: center;
+                        gap: 1.25rem;
+                        padding: 1.5rem 1.75rem;
+                        background: #ffffff;
+                        border: 1px solid #e2e8f0;
+                        border-radius: 16px;
+                        box-shadow: 0 1px 2px rgba(15, 23, 42, 0.04);
+                        transition: transform 0.4s cubic-bezier(0.22, 1, 0.36, 1),
+                                    box-shadow 0.4s cubic-bezier(0.22, 1, 0.36, 1),
+                                    border-color 0.4s ease,
+                                    background 0.4s ease;
+                }
+                .seg-card:hover {
+                        transform: translateY(-2px);
+                        border-color: #c7d2fe;
+                        box-shadow: 0 12px 32px -12px rgba(31, 73, 216, 0.18);
+                        background: linear-gradient(180deg, #ffffff 0%, #f5f8ff 100%);
+                }
+                .seg-card-icon {
+                        flex-shrink: 0;
+                        width: 48px;
+                        height: 48px;
+                        border-radius: 12px;
+                        background: #eff4ff;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        color: #1F49D8;
+                        transition: background 0.4s ease, transform 0.4s cubic-bezier(0.34, 1.56, 0.64, 1);
+                }
+                .seg-card-icon .material-symbols-outlined {
+                        font-size: 26px;
+                }
+                .seg-card:hover .seg-card-icon {
+                        background: #e0e9ff;
+                        transform: scale(1.06);
+                }
+                .seg-card-title {
+                        font-family: 'Vazirmatn', sans-serif;
+                        font-size: 17px;
+                        font-weight: 600;
+                        color: #0f172a;
+                        line-height: 1.3;
+                        margin-bottom: 4px;
+                }
+                .seg-card-desc {
+                        font-size: 14px;
+                        color: #64748b;
+                        line-height: 1.5;
+                }
+                .seg-eyebrow {
+                        display: inline-block;
+                        font-family: 'Vazirmatn', sans-serif;
+                        font-size: 12px;
+                        font-weight: 600;
+                        letter-spacing: 0.3em;
+                        text-transform: uppercase;
+                        color: #1F49D8;
+                        margin-bottom: 1.5rem;
+                }
+                @media (max-width: 768px) {
+                        .seg-card {
+                                padding: 1.25rem 1.25rem;
+                                gap: 1rem;
+                        }
+                        .seg-card-icon {
+                                width: 44px;
+                                height: 44px;
+                        }
+                }
+
+                /* Hero — estética cinematográfica dos títulos (sem alterar lógica/animações) */
+                .hero-title-shadow {
+                        text-shadow:
+                                0 6px 28px rgba(0, 0, 0, 0.55),
+                                0 2px 10px rgba(0, 0, 0, 0.45),
+                                0 1px 2px rgba(0, 0, 0, 0.5);
+                }
+                .hero-text-shadow-soft {
+                        text-shadow:
+                                0 2px 10px rgba(0, 0, 0, 0.55),
+                                0 1px 3px rgba(0, 0, 0, 0.45);
+                }
+                .hero-title-accent {
+                        background: none;
+                        -webkit-text-fill-color: #2D5BFF;
+                        color: #2D5BFF;
+                        font-weight: 900;
+                        text-shadow: none;
+                        filter: none;
+                }
+                /* === Operações / Cases — premium card grid (estilo enterprise SaaS / logística) === */
+                .cases-section {
+                        --case-radius: 16px;
+                }
+                .cases-grid {
+                        display: grid;
+                        grid-template-columns: repeat(3, minmax(0, 1fr));
+                        gap: 2.25rem;
+                }
+                @media (max-width: 1024px) {
+                        .cases-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1.75rem; }
+                }
+                @media (max-width: 640px) {
+                        .cases-grid { grid-template-columns: 1fr; gap: 1.5rem; }
+                }
+                .case-card {
+                        display: flex;
+                        flex-direction: column;
+                        background: #ffffff;
+                        border: 1px solid #e6eaf2;
+                        border-radius: var(--case-radius);
+                        overflow: hidden;
+                        text-decoration: none;
+                        color: inherit;
+                        box-shadow: 0 1px 2px rgba(15, 23, 42, 0.04);
+                        transition: transform 0.5s cubic-bezier(0.22, 1, 0.36, 1),
+                                                box-shadow 0.5s cubic-bezier(0.22, 1, 0.36, 1),
+                                                border-color 0.4s ease;
+                        will-change: transform;
+                }
+                .case-card:hover {
+                        transform: translateY(-4px) scale(1.005);
+                        border-color: #c7d2fe;
+                        box-shadow:
+                                0 18px 40px -18px rgba(31, 73, 216, 0.22),
+                                0 8px 18px -10px rgba(15, 23, 42, 0.10);
+                }
+                .case-card-media {
+                        position: relative;
+                        width: 100%;
+                        aspect-ratio: 16 / 11;
+                        overflow: hidden;
+                        background: #f1f5f9;
+                }
+                .case-card-media img {
+                        width: 100%;
+                        height: 100%;
+                        object-fit: cover;
+                        transform: scale(1.001);
+                        transition: transform 0.9s cubic-bezier(0.22, 1, 0.36, 1),
+                                                filter 0.6s ease;
+                        filter: saturate(1) contrast(1);
+                }
+                .case-card:hover .case-card-media img {
+                        transform: scale(1.06);
+                        filter: saturate(1.05) contrast(1.02);
+                }
+                .case-card-media::after {
+                        content: '';
+                        position: absolute;
+                        inset: 0;
+                        background: linear-gradient(180deg, rgba(15, 23, 42, 0) 55%, rgba(15, 23, 42, 0.18) 100%);
+                        opacity: 0;
+                        transition: opacity 0.4s ease;
+                        pointer-events: none;
+                }
+                .case-card:hover .case-card-media::after { opacity: 1; }
+                .case-card-body {
+                        display: flex;
+                        flex-direction: column;
+                        gap: 0.75rem;
+                        padding: 1.75rem 1.75rem 1.85rem;
+                        flex: 1;
+                }
+                .case-card-eyebrow {
+                        font-family: 'Vazirmatn', sans-serif;
+                        font-size: 11px;
+                        font-weight: 700;
+                        letter-spacing: 0.22em;
+                        text-transform: uppercase;
+                        color: #1F49D8;
+                }
+                .case-card-title {
+                        font-family: 'Vazirmatn', sans-serif;
+                        font-size: 1.15rem;
+                        line-height: 1.32;
+                        font-weight: 700;
+                        color: #0f172a;
+                        text-wrap: balance;
+                        transition: color 0.3s ease;
+                }
+                .case-card:hover .case-card-title { color: #142C8E; }
+                .case-card-desc {
+                        font-family: 'Vazirmatn', sans-serif;
+                        font-size: 0.95rem;
+                        line-height: 1.55;
+                        color: #475569;
+                        display: -webkit-box;
+                        -webkit-line-clamp: 3;
+                        -webkit-box-orient: vertical;
+                        overflow: hidden;
+                }
+                .case-card-link {
+                        margin-top: auto;
+                        display: inline-flex;
+                        align-items: center;
+                        gap: 0.5rem;
+                        padding-top: 1.25rem;
+                        font-family: 'Vazirmatn', sans-serif;
+                        font-size: 12px;
+                        font-weight: 700;
+                        letter-spacing: 0.18em;
+                        text-transform: uppercase;
+                        color: #142C8E;
+                }
+                .case-card-link .arrow {
+                        display: inline-block;
+                        transition: transform 0.4s cubic-bezier(0.22, 1, 0.36, 1);
+                }
+                .case-card:hover .case-card-link .arrow { transform: translateX(6px); }
+                @media (max-width: 640px) {
+                        .case-card-body { padding: 1.4rem 1.4rem 1.5rem; }
+                        .case-card-title { font-size: 1.05rem; }
+                }
+
+                /* Vinheta cinematográfica — cobre ~metade da tela, gradiente diagonal (estilo daytec) */
+                .hero-vignette {
+                        background:
+                                linear-gradient(
+                                        105deg,
+                                        rgba(0, 0, 0, 0.85) 0%,
+                                        rgba(0, 0, 0, 0.75) 18%,
+                                        rgba(0, 0, 0, 0.55) 35%,
+                                        rgba(0, 0, 0, 0.30) 50%,
+                                        rgba(0, 0, 0, 0.10) 65%,
+                                        rgba(0, 0, 0, 0) 80%
+                                ),
+                                linear-gradient(
+                                        to top,
+                                        rgba(0, 0, 0, 0.55) 0%,
+                                        rgba(0, 0, 0, 0.20) 40%,
+                                        rgba(0, 0, 0, 0) 75%
+                                );
+                }
+                /* Beat C usa lado direito — invertemos o diagonal */
+                [data-beat="c"] ~ .hero-vignette,
+                .hero-vignette--right {
+                        background:
+                                linear-gradient(
+                                        255deg,
+                                        rgba(0, 0, 0, 0.85) 0%,
+                                        rgba(0, 0, 0, 0.75) 18%,
+                                        rgba(0, 0, 0, 0.55) 35%,
+                                        rgba(0, 0, 0, 0.30) 50%,
+                                        rgba(0, 0, 0, 0.10) 65%,
+                                        rgba(0, 0, 0, 0) 80%
+                                ),
+                                linear-gradient(
+                                        to top,
+                                        rgba(0, 0, 0, 0.55) 0%,
+                                        rgba(0, 0, 0, 0.20) 40%,
+                                        rgba(0, 0, 0, 0) 75%
+                                );
+                }
+</style>
+</head>
+
+<body class="bg-surface text-on-surface font-vazirmatn antialiased selection:bg-primary-container selection:text-white">
+        <!-- Detalhe da Logo como Marca d'água Moderna (Fixed) -->
+        <div class="logo-floating-detail"></div>
+        <!-- TopNavBar -->
+        <nav
+                class="bg-white dark:bg-slate-950 font-['Vazirmatn'] uppercase tracking-tighter text-sm font-semibold full-width top-0 sticky rounded-none border-b border-slate-200 dark:border-slate-800 z-50">
+                <div class="flex justify-between items-center w-full px-8 py-4 max-w-[1440px] mx-auto">
+                        <a href="index.html" class="flex items-center"><img
+                                        src="https://jrcompany.net.br/wp-content/uploads/2023/12/jcr-transportes-logo.png"
+                                        alt="J.R. Company" class="h-10 w-auto"></a>
+                        <div class="hidden md:flex space-x-8 items-center">
+                                <a class="text-[#2E3D6B] border-b-2 border-[#2E3D6B] pb-1 hover:text-[#2E3D6B] transition-colors duration-200 opacity-80"
+                                        href="#">Home</a>
+                                <a class="text-slate-900 dark:text-slate-300 hover:text-[#2E3D6B] transition-colors duration-200"
+                                        href="#">A JR Company</a>
+                                <a class="text-slate-900 dark:text-slate-300 hover:text-[#2E3D6B] transition-colors duration-200"
+                                        href="#">Soluções</a>
+                                <a class="text-slate-900 dark:text-slate-300 hover:text-[#2E3D6B] transition-colors duration-200"
+                                        href="#">Operações</a>
+                                <a class="text-slate-900 dark:text-slate-300 hover:text-[#2E3D6B] transition-colors duration-200"
+                                        href="#">Diferenciais</a>
+                                <a class="text-slate-900 dark:text-slate-300 hover:text-[#2E3D6B] transition-colors duration-200"
+                                        href="#">Contato</a>
+                        </div>
+                        <div class="hidden md:flex items-center space-x-4">
+                                <button class="px-6 py-3 btn-gradient text-white rounded-full hover:bg-[#1F1F21] transition-colors uppercase tracking-widest text-xs font-bold"
+                                        style="">Falar com especialista</button>
+                        </div>
+                        <button class="md:hidden text-slate-900 dark:text-white" style="">
+                                <span class="material-symbols-outlined" style="">menu</span>
+                        </button>
+                </div>
+        </nav>
+        <main>
+                <!-- Hero Section: Scroll-driven image sequence -->
+                <section id="scroll-hero" class="relative w-full bg-slate-950 sticky-stack z-[10]" style="height: 400vh;">
+                        <div class="sticky top-0 h-screen w-full overflow-hidden">
+                                <!-- Loader -->
+                                <div id="hero-loader" class="absolute inset-0 z-30 flex flex-col items-center justify-center bg-slate-950 text-white">
+                                        <img src="https://jrcompany.net.br/wp-content/uploads/2023/12/jcr-transportes-logo.png"
+                                             alt="J.R. Company" class="h-12 mb-6 filter brightness-0 invert" />
+                                        <div class="w-[260px] h-[2px] bg-white/10 mb-2 relative overflow-hidden">
+                                                <div id="hero-loader-bar" class="absolute top-0 left-0 h-full bg-[#2E3D6B] transition-all duration-150" style="width:0%"></div>
+                                        </div>
+                                        <div class="flex justify-between w-[260px] uppercase tracking-widest text-[10px]">
+                                                <span class="text-slate-400">Carregando operação</span>
+                                                <span id="hero-loader-pct" class="text-[#2E3D6B] font-bold">0%</span>
+                                        </div>
+                                </div>
+
+                                <!-- Canvas -->
+                                <canvas id="hero-canvas" class="absolute inset-0 w-full h-full z-0"></canvas>
+
+                                <!-- Vinheta sutil para legibilidade -->
+                                <div class="hero-vignette pointer-events-none absolute inset-0 z-[1]"></div>
+
+                                <!-- Beat A -->
+                                <div data-beat="a" class="absolute inset-x-0 bottom-0 px-6 sm:px-10 md:px-16 pb-14 md:pb-20 z-10 flex justify-start opacity-0 translate-y-5 transition-all duration-300">
+                                        <div class="max-w-4xl flex flex-col gap-4">
+                                                <span class="hero-text-shadow-soft font-['Vazirmatn'] font-semibold text-white/90 uppercase tracking-widest text-[11px] md:text-xs">
+                                                        Divisão de Engenharia Logística
+                                                </span>
+                                                <h1 class="hero-title-shadow font-['Vazirmatn'] font-bold text-5xl md:text-7xl xl:text-8xl tracking-[-0.03em] leading-[0.95] text-white">
+                                                        Estrutura real para <span class="hero-title-accent">operações críticas.</span>
+                                                </h1>
+                                                <p class="hero-text-shadow-soft font-['Space_Grotesk'] text-slate-200 text-base md:text-lg max-w-2xl">
+                                                        Planejamento técnico, execução segura e controle total em cada etapa.
+                                                </p>
+                                        </div>
+                                </div>
+
+                                <!-- Beat B -->
+                                <div data-beat="b" class="absolute inset-x-0 bottom-0 px-6 sm:px-10 md:px-16 pb-14 md:pb-20 z-10 flex justify-start opacity-0 translate-y-5 transition-all duration-300">
+                                        <div class="max-w-4xl flex flex-col gap-4">
+                                                <span class="hero-text-shadow-soft font-['Vazirmatn'] font-semibold text-white/80 uppercase tracking-widest text-[11px] md:text-xs">
+                                                        01 &mdash; Planejamento
+                                                </span>
+                                                <h2 class="hero-title-shadow font-['Vazirmatn'] font-bold text-5xl md:text-7xl xl:text-8xl tracking-[-0.03em] leading-[0.95] text-white">
+                                                        Cada operação começa <span class="hero-title-accent">antes do içamento.</span>
+                                                </h2>
+                                                <p class="hero-text-shadow-soft font-['Space_Grotesk'] text-slate-200 text-base md:text-lg max-w-2xl">
+                                                        Cálculo de carga, análise de solo, plano de rigging e estudo de rota — projetados pela nossa equipe de engenharia.
+                                                </p>
+                                        </div>
+                                </div>
+
+                                <!-- Beat C -->
+                                <div data-beat="c" class="absolute inset-x-0 bottom-0 px-6 sm:px-10 md:px-16 pb-14 md:pb-20 z-10 flex justify-start text-left opacity-0 translate-y-5 transition-all duration-300">
+                                        <div class="max-w-4xl flex flex-col gap-4 items-start">
+                                                <span class="hero-text-shadow-soft font-['Vazirmatn'] font-semibold text-white/80 uppercase tracking-widest text-[11px] md:text-xs">
+                                                        02 &mdash; Execução
+                                                </span>
+                                                <h2 class="hero-title-shadow font-['Vazirmatn'] font-bold text-5xl md:text-7xl xl:text-8xl tracking-[-0.03em] leading-[0.95] text-white">
+                                                        Equipes certificadas. <span class="hero-title-accent">Manobras milimétricas.</span>
+                                                </h2>
+                                                <p class="hero-text-shadow-soft font-['Space_Grotesk'] text-slate-200 text-base md:text-lg max-w-2xl">
+                                                        Equipamentos calibrados, protocolos NR-11 e NR-12, e supervisão técnica em cada manobra crítica.
+                                                </p>
+                                        </div>
+                                </div>
+
+                                <!-- Scroll hint -->
+                                <div id="hero-scroll-hint" class="absolute bottom-4 left-1/2 -translate-x-1/2 z-10 flex flex-col items-center text-slate-400 transition-opacity duration-300">
+                                        <span class="font-['Space_Grotesk'] uppercase tracking-widest text-[10px] mb-1">Role para explorar</span>
+                                        <span class="material-symbols-outlined text-[#2E3D6B] text-[20px] animate-bounce">expand_more</span>
+                                </div>
+                        </div>
+                </section>
+
+                <script>
+                (function() {
+                        const FRAME_COUNT = 120;
+                        const section = document.getElementById('scroll-hero');
+                        const canvas = document.getElementById('hero-canvas');
+                        const loader = document.getElementById('hero-loader');
+                        const loaderBar = document.getElementById('hero-loader-bar');
+                        const loaderPct = document.getElementById('hero-loader-pct');
+                        const scrollHint = document.getElementById('hero-scroll-hint');
+                        const beats = {
+                                a: document.querySelector('[data-beat="a"]'),
+                                b: document.querySelector('[data-beat="b"]'),
+                                c: document.querySelector('[data-beat="c"]')
+                        };
+                        const ctx = canvas.getContext('2d');
+                        const images = [];
+                        let loaded = 0;
+                        let allLoaded = false;
+                        let smoothProgress = 0;
+                        let targetProgress = 0;
+
+                        // Preload
+                        for (let i = 0; i < FRAME_COUNT; i++) {
+                                const img = new Image();
+                                img.src = 'sequence/frame_' + i + '.webp';
+                                const done = () => {
+                                        loaded++;
+                                        const pct = Math.floor((loaded / FRAME_COUNT) * 100);
+                                        if (loaderBar) loaderBar.style.width = pct + '%';
+                                        if (loaderPct) loaderPct.textContent = pct + '%';
+                                        if (loaded === FRAME_COUNT) {
+                                                allLoaded = true;
+                                                if (loader) {
+                                                        loader.style.transition = 'opacity 400ms';
+                                                        loader.style.opacity = '0';
+                                                        setTimeout(() => loader.remove(), 450);
+                                                }
+                                        }
+                                };
+                                img.onload = done;
+                                img.onerror = done;
+                                images[i] = img;
+                        }
+
+                        function resizeCanvas() {
+                                canvas.width = canvas.clientWidth * window.devicePixelRatio;
+                                canvas.height = canvas.clientHeight * window.devicePixelRatio;
+                        }
+                        resizeCanvas();
+                        window.addEventListener('resize', resizeCanvas);
+
+                        function lerp(a, b, t) { return a + (b - a) * t; }
+
+                        function getProgress() {
+                                const rect = section.getBoundingClientRect();
+                                const total = rect.height - window.innerHeight;
+                                if (total <= 0) return 0;
+                                const p = -rect.top / total;
+                                return Math.max(0, Math.min(1, p));
+                        }
+
+                        function inRange(p, start, end) {
+                                if (p < start || p > end) return 0;
+                                const fadeIn = start + (end - start) * 0.1;
+                                const fadeOut = end - (end - start) * 0.1;
+                                if (p < fadeIn) return (p - start) / (fadeIn - start);
+                                if (p > fadeOut) return 1 - (p - fadeOut) / (end - fadeOut);
+                                return 1;
+                        }
+
+                        function setBeat(el, vis) {
+                                if (!el) return;
+                                el.style.opacity = vis;
+                                el.style.transform = 'translateY(' + ((1 - vis) * 20) + 'px)';
+                        }
+
+                        function render() {
+                                targetProgress = getProgress();
+                                smoothProgress = lerp(smoothProgress, targetProgress, 0.1);
+
+                                if (allLoaded) {
+                                        let idx = Math.floor(smoothProgress * FRAME_COUNT);
+                                        if (idx >= FRAME_COUNT) idx = FRAME_COUNT - 1;
+                                        if (idx < 0) idx = 0;
+                                        const img = images[idx];
+                                        if (img && img.complete && img.naturalWidth > 0) {
+                                                ctx.clearRect(0, 0, canvas.width, canvas.height);
+                                                const hRatio = canvas.width / img.width;
+                                                const vRatio = canvas.height / img.height;
+                                                const ratio = Math.max(hRatio, vRatio);
+                                                const w = img.width * ratio;
+                                                const h = img.height * ratio;
+                                                const x = (canvas.width - w) / 2;
+                                                const y = (canvas.height - h) / 2;
+                                                ctx.drawImage(img, x, y, w, h);
+                                        }
+                                }
+
+                                setBeat(beats.a, inRange(smoothProgress, 0.02, 0.20));
+                                setBeat(beats.b, inRange(smoothProgress, 0.27, 0.45));
+                                setBeat(beats.c, inRange(smoothProgress, 0.52, 0.70));
+                                if (scrollHint) scrollHint.style.opacity = Math.max(0, 1 - smoothProgress * 10);
+
+                                requestAnimationFrame(render);
+                        }
+                        render();
+                })();
+                </script>
+                <!-- Prova de Capacidade -->
+                <section class="w-full bg-slate-50 py-32 lg:py-48 blueprint-bg relative sticky-stack z-[20]">
+                        <div class="absolute bottom-full left-0 w-full h-[16px] md:h-[24px] pointer-events-none z-20 flex justify-between">
+                                <svg class="w-[16px] h-[16px] md:w-[24px] md:h-[24px] text-slate-50" fill="currentColor" viewBox="0 0 24 24"><path d="M0 24V0c0 13.255 10.745 24 24 24H0z" /></svg>
+                                <svg class="w-[16px] h-[16px] md:w-[24px] md:h-[24px] text-slate-50" fill="currentColor" viewBox="0 0 24 24"><path d="M24 24V0c0 13.255-10.745 24-24 24h24z" /></svg>
+                        
+<div class="animated-border-line absolute bottom-0 left-[16px] md:left-[24px] right-[16px] md:right-[24px] h-[1px] md:h-[2px] bg-gradient-to-r from-transparent via-[#2E3D6B] to-transparent transform scale-x-0 opacity-0 transition-all duration-1000 ease-out origin-center z-30"></div>
+</div>
+                        <div class="max-w-[1440px] mx-auto px-8 relative z-30">
+                                <div
+                                        class="mb-16 border-b border-slate-200 pb-8 flex flex-col md:flex-row justify-between items-end gap-8">
+                                        <h2 class="home-section-title max-w-2xl"
+                                                style="">Operações complexas exigem estrutura, <span
+                                                        class="title-accent" style="">não improviso.</span>
+                                        </h2>
+                                </div>
+                                <div
+                                        class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-0 border border-slate-200 bg-white rounded-2xl overflow-hidden">
+                                        <!-- Metric 1 -->
+                                        <div
+                                                class="p-8 border-b md:border-b-0 md:border-r border-slate-200 flex flex-col justify-between h-48 group hover:bg-slate-50 transition-colors">
+                                                <span class="font-label-sm text-label-sm text-slate-500 uppercase"
+                                                        style="">Volume Transportado</span>
+                                                <div>
+                                                        <div class="font-display text-[48px] font-bold text-[#2E3D6B] tracking-tighter leading-none mb-2"
+                                                                style="">+450k</div>
+                                                        <div class="font-mono-data text-mono-data text-slate-700"
+                                                                style="">Toneladas Ano</div>
+                                                </div>
+                                        </div>
+                                        <!-- Metric 2 -->
+                                        <div
+                                                class="p-8 border-b md:border-b-0 lg:border-r border-slate-200 flex flex-col justify-between h-48 group hover:bg-slate-50 transition-colors">
+                                                <span class="font-label-sm text-label-sm text-slate-500 uppercase"
+                                                        style="">Projetos Concluídos</span>
+                                                <div>
+                                                        <div class="font-display text-[48px] font-bold text-[#2E3D6B] tracking-tighter leading-none mb-2"
+                                                                style="">+1.2k</div>
+                                                        <div class="font-mono-data text-mono-data text-slate-700"
+                                                                style="">Operações Especiais</div>
+                                                </div>
+                                        </div>
+                                        <!-- Metric 3 -->
+                                        <div
+                                                class="p-8 border-b md:border-b-0 md:border-r border-slate-200 flex flex-col justify-between h-48 group hover:bg-slate-50 transition-colors">
+                                                <span class="font-label-sm text-label-sm text-slate-500 uppercase"
+                                                        style="">Frota Especializada</span>
+                                                <div>
+                                                        <div class="font-display text-[48px] font-bold text-[#2E3D6B] tracking-tighter leading-none mb-2"
+                                                                style="">+85</div>
+                                                        <div class="font-mono-data text-mono-data text-slate-700"
+                                                                style="">Equipamentos Pesados</div>
+                                                </div>
+                                        </div>
+                                        <!-- Metric 4 -->
+                                        <div
+                                                class="p-8 flex flex-col justify-between h-48 group hover:bg-slate-50 transition-colors">
+                                                <span class="font-label-sm text-label-sm text-slate-500 uppercase"
+                                                        style="">Cobertura</span>
+                                                <div>
+                                                        <div class="font-display text-[48px] font-bold text-[#2E3D6B] tracking-tighter leading-none mb-2"
+                                                                style="">100%</div>
+                                                        <div class="font-mono-data text-mono-data text-slate-700"
+                                                                style="">Território Nacional</div>
+                                                </div>
+                                        </div>
+                                </div>
+                        </div>
+                </section>
+                <!-- Pilares Operacionais -->
+                <section class="w-full bg-white py-32 lg:py-48 relative overflow-hidden sticky-stack z-[30]">
+                        <div class="absolute bottom-full left-0 w-full h-[16px] md:h-[24px] pointer-events-none z-20 flex justify-between">
+                                <svg class="w-[16px] h-[16px] md:w-[24px] md:h-[24px] text-slate-50" fill="currentColor" viewBox="0 0 24 24"><path d="M0 24V0c0 13.255 10.745 24 24 24H0z" /></svg>
+                                <svg class="w-[16px] h-[16px] md:w-[24px] md:h-[24px] text-slate-50" fill="currentColor" viewBox="0 0 24 24"><path d="M24 24V0c0 13.255-10.745 24-24 24h24z" /></svg>
+                        
+<div class="animated-border-line absolute bottom-0 left-[16px] md:left-[24px] right-[16px] md:right-[24px] h-[1px] md:h-[2px] bg-gradient-to-r from-transparent via-[#2E3D6B] to-transparent transform scale-x-0 opacity-0 transition-all duration-1000 ease-out origin-center z-30"></div>
+</div>
+                        <!-- Logo Detail Right Blue (from example image) -->
+                        <div class="logo-accent-bg logo-accent-right logo-accent-blue"></div>
+                        
+                        <!-- Círculo azul estilizado -->
+                        <div class="blue-glow" style="width: 300px; height: 300px; top: -100px; right: -100px;"></div>
+                        
+                        <div class="max-w-[1440px] mx-auto px-8 relative z-30">
+                                <div class="diff-left-reveal mb-16 max-w-3xl">
+                                        <span class="seg-eyebrow">ATUAÇÕES ESPECIALIZADAS</span>
+                                        <h2 class="home-section-title mb-8">
+                                                Nossas <span class="title-accent">Atuações</span>
+                                        </h2>
+                                        <p class="font-body-lg text-body-lg text-slate-600 max-w-2xl leading-relaxed">
+                                                Soluções integradas para operações que exigem planejamento técnico, precisão na execução e controle em cada etapa.
+                                        </p>
+                                </div>
+                                <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-6">
+                                        <!-- Card 1 -->
+                                        <div
+                                                class="border border-slate-200 bg-white hover:border-[#2E3D6B] transition-colors group flex flex-col rounded-2xl overflow-hidden">
+                                                <div
+                                                        class="h-48 bg-slate-100 border-b border-slate-200 relative overflow-hidden">
+                                                        <img alt="Oversized load transport"
+                                                                class="w-full h-full object-cover grayscale opacity-80 group-hover:grayscale-0 transition-all duration-500"
+                                                                data-alt="Massive industrial wind turbine blade being transported by a specialized heavy-duty truck on a highway under clear skies"
+                                                                src="https://lh3.googleusercontent.com/aida-public/AB6AXuB7p65gylT4qYb83fqWO1u4zCcm81e-CxQSbjH4tcNFuX5jY7dQTASxY1BRwTIFOm93xu5ElMPB_tl9VVIrRNKjYeybTHDE3UBSfo2o7R8l0u8NKF-2q59WiMmU1dUQr77JAirkgSaG0HONRUrN22ZN7XqBhhW8pDD7UE-BKr4jgI6UPT5DXSyZCPIcN4Vj61ZUR23oohaleGak3Cstw1yK2vXtslPfoeaxA9QcIoOhpoM-7m0HzaGNahyCrRpdGGMHpEQrIzZkhhra"
+                                                                style="" />
+                                                </div>
+                                                <div class="p-6 flex-grow flex flex-col">
+                                                        <h3 class="font-headline-md text-headline-md text-slate-900 mb-2 font-semibold"
+                                                                style="">JRC Exced</h3>
+                                                        <p class="font-body-md text-body-md text-slate-600 mb-4 flex-grow"
+                                                                style="">Transporte de cargas superdimensionadas e
+                                                                indivisíveis. Engenharia de rotas e escolta credenciada.
+                                                        </p>
+                                                        
+                                                        <!-- Chips for features -->
+                                                        <div class="flex flex-wrap gap-2 mb-6">
+                                                                <div class="pill-container pill-outline text-[10px] py-1 px-3 gap-2">
+                                                                        <div class="pill-icon-bubble w-5 h-5 text-[12px]"><span class="material-symbols-outlined text-sm">engineering</span></div>
+                                                                        Escolta
+                                                                </div>
+                                                                <div class="pill-container pill-outline text-[10px] py-1 px-3 gap-2">
+                                                                        <div class="pill-icon-bubble w-5 h-5 text-[12px]"><span class="material-symbols-outlined text-sm">route</span></div>
+                                                                        Viabilidade
+                                                                </div>
+                                                        </div>
+
+                                                        <a class="font-label-sm text-label-sm text-[#2E3D6B] uppercase tracking-widest inline-flex items-center gap-2 group-hover:gap-4 transition-all"
+                                                                href="#" style="">
+                                                                Ver solução <span
+                                                                        class="material-symbols-outlined text-[16px]"
+                                                                        style="">arrow_forward</span>
+                                                        </a>
+                                                </div>
+                                        </div>
+                                        <!-- Card 2 -->
+                                        <div
+                                                class="border border-slate-200 bg-white hover:border-[#2E3D6B] transition-colors group flex flex-col rounded-2xl overflow-hidden">
+                                                <div
+                                                        class="h-48 bg-slate-100 border-b border-slate-200 relative overflow-hidden">
+                                                        <img alt="Industrial lifting"
+                                                                class="w-full h-full object-cover grayscale opacity-80 group-hover:grayscale-0 transition-all duration-500"
+                                                                data-alt="Heavy industrial crane lifting massive steel beams at a construction site with technical precision and safety rigging"
+                                                                src="https://lh3.googleusercontent.com/aida-public/AB6AXuA4dKRkGF_CahMuNKHIXDrWqRlCX__BemUMekHrT9v6FSvqnTMZwt65hlkQmtlc3ffhLNirTboGslFxZz9dOXcUY_4M6Y7jVv9rDtFg39yGXW78YXtjXMMn9VWHkmqQHupH989WaFGwJPIMjzI_CdSgdmH9CSUPMUQWVFleU6wYuKVWAigJYxBcFHrUiBJvu29a9CNd1NueJ5_l3R934EMrutFeQ0DszyNLrjY-GB745YTBzcP3vX5VuaF1En8fwO8CknuWwcUH3fSJ"
+                                                                style="" />
+                                                </div>
+                                                <div class="p-6 flex-grow flex flex-col">
+                                                        <h3 class="font-headline-md text-headline-md text-slate-900 mb-2 font-semibold"
+                                                                style="">JRC MOV</h3>
+                                                        <p class="font-body-md text-body-md text-slate-600 mb-4 flex-grow"
+                                                                style="">Movimentação industrial, içamento técnico e
+                                                                remoção de equipamentos de grande porte com precisão
+                                                                milimétrica.</p>
+
+                                                        <!-- Chips for features -->
+                                                        <div class="flex flex-wrap gap-2 mb-6">
+                                                                <div class="pill-container pill-outline text-[10px] py-1 px-3 gap-2">
+                                                                        <div class="pill-icon-bubble w-5 h-5 text-[12px] pill-icon-bubble-dark"><span class="material-symbols-outlined text-sm">precision_manufacturing</span></div>
+                                                                        Içamento
+                                                                </div>
+                                                                <div class="pill-container pill-outline text-[10px] py-1 px-3 gap-2">
+                                                                        <div class="pill-icon-bubble w-5 h-5 text-[12px] pill-icon-bubble-dark"><span class="material-symbols-outlined text-sm">architecture</span></div>
+                                                                        Rigging
+                                                                </div>
+                                                        </div>
+
+                                                        <a class="font-label-sm text-label-sm text-[#2E3D6B] uppercase tracking-widest inline-flex items-center gap-2 group-hover:gap-4 transition-all"
+                                                                href="#" style="">
+                                                                Ver solução <span
+                                                                        class="material-symbols-outlined text-[16px]"
+                                                                        style="">arrow_forward</span>
+                                                        </a>
+                                                </div>
+                                        </div>
+                                        <!-- Card 3 -->
+                                        <div
+                                                class="border border-slate-200 bg-white hover:border-[#2E3D6B] transition-colors group flex flex-col rounded-2xl overflow-hidden">
+                                                <div
+                                                        class="h-48 bg-slate-100 border-b border-slate-200 relative overflow-hidden">
+                                                        <img alt="Warehouse logistics"
+                                                                class="w-full h-full object-cover grayscale opacity-80 group-hover:grayscale-0 transition-all duration-500"
+                                                                data-alt="High-tech automated warehouse interior with massive shelving units and precision robotic forklifts organizing industrial cargo"
+                                                                src="https://lh3.googleusercontent.com/aida-public/AB6AXuCAyv707z4T754VB9Y19UEroRKsSJB_MX-G1UpnfOvhQi8zfEdlhsB3qEq8xNCjUScKqD3sRQ6Pn79qSvoA52saE1LK_hcDK34pk9WhpFqOE1QhrGEehDyrEXFUttv0FRm_zW50g39yS73OuAT9-xWItHuKUkF7HPsscbh2LDXeNlkKzPinO8-zMdTs1xVGAbrp3zW-W7jRwGCmN75VlOh5ht5Dn-PZx290clBxpIWAzlqVIZii7LCOfpmarkXkZZfVCzdA7LSX7ZRF"
+                                                                style="" />
+                                                </div>
+                                                <div class="p-6 flex-grow flex flex-col">
+                                                        <h3 class="font-headline-md text-headline-md text-slate-900 mb-2 font-semibold"
+                                                                style="">JRC Log</h3>
+                                                        <p class="font-body-md text-body-md text-slate-600 mb-6 flex-grow"
+                                                                style="">Gestão de armazéns, controle de inventário e
+                                                                distribuição integrada para cadeias de suprimentos
+                                                                complexas.</p>
+                                                        <a class="font-label-sm text-label-sm text-[#2E3D6B] uppercase tracking-widest inline-flex items-center gap-2 group-hover:gap-4 transition-all"
+                                                                href="#" style="">
+                                                                Ver solução <span
+                                                                        class="material-symbols-outlined text-[16px]"
+                                                                        style="">arrow_forward</span>
+                                                        </a>
+                                                </div>
+                                        </div>
+                                        <!-- Card 4 -->
+                                        <div
+                                                class="border border-slate-200 bg-white hover:border-[#2E3D6B] transition-colors group flex flex-col rounded-2xl overflow-hidden">
+                                                <div
+                                                        class="h-48 bg-slate-100 border-b border-slate-200 relative overflow-hidden">
+                                                        <img alt="International shipping"
+                                                                class="w-full h-full object-cover grayscale opacity-80 group-hover:grayscale-0 transition-all duration-500"
+                                                                data-alt="Massive cargo ship loaded with colorful containers navigating through rough ocean waters, representing global trade and logistics"
+                                                                src="https://lh3.googleusercontent.com/aida-public/AB6AXuBHXhYPak38C3h5wypicsOHahJzZUpba7RNNmYpF9fK7V-uh6gobyApqL8jY2oFKoWeIlKHvhcPedvfFpBnauGv1kuk7rnAdg8REqL3CiMChKWqkH8mCrlSCzo_derlXWZn1oI6TiNXmS-at2_pqiVuFuXWV2G7M7JpkrfC0qNLlzKSH3SsXISSdFDvLy-iw38e5PVD2BMnAYnigMCHbL742usL8-UWNTrJfeOF9Pq0fnu14NaNkjZaXh0fI6toHhkXIjpaDkBhe6s5"
+                                                                style="" />
+                                                </div>
+                                                <div class="p-6 flex-grow flex flex-col">
+                                                        <h3 class="font-headline-md text-headline-md text-slate-900 mb-2 font-semibold"
+                                                                style="">JRC Comex</h3>
+                                                        <p class="font-body-md text-body-md text-slate-600 mb-6 flex-grow"
+                                                                style="">Desembaraço aduaneiro, agenciamento de cargas
+                                                                internacionais e consultoria tributária especializada.
+                                                        </p>
+                                                        <a class="font-label-sm text-label-sm text-[#2E3D6B] uppercase tracking-widest inline-flex items-center gap-2 group-hover:gap-4 transition-all"
+                                                                href="#" style="">
+                                                                Ver solução <span
+                                                                        class="material-symbols-outlined text-[16px]"
+                                                                        style="">arrow_forward</span>
+                                                        </a>
+                                                </div>
+                                        </div>
+                                </div>
+                        </div>
+                </section>
+                <!-- Diferenciais / Technical Focus -->
+                <section class="w-full bg-slate-950 text-white relative smart-grid-bg py-32 lg:py-48 overflow-hidden sticky-stack z-[40]">
+                        <div class="absolute bottom-full left-0 w-full h-[16px] md:h-[24px] pointer-events-none z-20 flex justify-between">
+                                <svg class="w-[16px] h-[16px] md:w-[24px] md:h-[24px] text-white" fill="currentColor" viewBox="0 0 24 24"><path d="M0 24V0c0 13.255 10.745 24 24 24H0z" /></svg>
+                                <svg class="w-[16px] h-[16px] md:w-[24px] md:h-[24px] text-white" fill="currentColor" viewBox="0 0 24 24"><path d="M24 24V0c0 13.255-10.745 24-24 24h24z" /></svg>
+                        
+<div class="animated-border-line absolute bottom-0 left-[16px] md:left-[24px] right-[16px] md:right-[24px] h-[1px] md:h-[2px] bg-gradient-to-r from-transparent via-[#2E3D6B] to-transparent transform scale-x-0 opacity-0 transition-all duration-1000 ease-out origin-center z-30"></div>
+</div>
+                        <div class="max-w-[1440px] mx-auto grid grid-cols-1 lg:grid-cols-2 relative z-30">
+                                <!-- Left Content -->
+                                <div
+                                        class="diff-left-reveal p-12 lg:p-24 border-b lg:border-b-0 lg:border-r border-slate-800 flex flex-col justify-center">
+                                        <h2 class="font-display text-[40px] md:text-[56px] leading-tight mb-8"
+                                                style="">Precisão não é<br />opcional.<br /><span
+                                                        class="home-tech-gradient font-bold" style="">É processo.</span>
+                                        </h2>
+                                        <p class="font-body-lg text-body-lg text-slate-400 mb-6 max-w-lg" style="">
+                                                Nossa infraestrutura tecnológica e frota especializada operam sob
+                                                rigorosos protocolos de segurança e qualidade, garantindo
+                                                previsibilidade em ambientes complexos.</p>
+                                        
+                                        <!-- Status Pills in Dark Section -->
+                                        <div class="flex flex-wrap gap-3 mb-10">
+                                                <div class="pill-container pill-outline pill-outline-dark text-[11px] py-2 px-4">
+                                                        <div class="pill-icon-bubble w-6 h-6"><span class="material-symbols-outlined text-xs">verified</span></div>
+                                                        ISO 9001
+                                                </div>
+                                                <div class="pill-container pill-outline pill-outline-dark text-[11px] py-2 px-4">
+                                                        <div class="pill-icon-bubble w-6 h-6"><span class="material-symbols-outlined text-xs">shield_with_heart</span></div>
+                                                        SASSMAQ
+                                                </div>
+                                        </div>
+
+                                        <div>
+                                                <button class="px-8 py-4 btn-gradient text-white rounded-full transition-colors uppercase tracking-widest text-xs font-bold"
+                                                        style="">Entender como operamos</button>
+                                        </div>
+                                </div>
+                                <!-- Right Grid -->
+                                <div class="grid grid-cols-1 sm:grid-cols-2 border-slate-800">
+                                        <div class="diff-card diff-reveal p-12 border-b sm:border-r border-slate-800" data-delay="1">
+                                                <span class="material-symbols-outlined text-4xl home-tech-gradient mb-6 block diff-icon">architecture</span>
+                                                <h4 class="diff-title font-label-sm text-label-sm uppercase tracking-widest mb-4">Planejamento Técnico</h4>
+                                                <p class="diff-desc font-body-md text-slate-400">Estudos de viabilidade
+                                                        geométrica, vistorias de rota e projetos CAD para operações
+                                                        críticas.</p>
+                                        </div>
+                                        <div class="diff-card diff-reveal p-12 border-b border-slate-800" data-delay="2">
+                                                <span class="material-symbols-outlined text-4xl home-tech-gradient mb-6 block diff-icon">verified_user</span>
+                                                <h4 class="diff-title font-label-sm text-label-sm uppercase tracking-widest mb-4">Gerenciamento de Risco</h4>
+                                                <p class="diff-desc font-body-md text-slate-400">Análise estrutural,
+                                                        apólices de seguro customizadas e escolta ostensiva
+                                                        especializada.</p>
+                                        </div>
+                                        <div class="diff-card diff-reveal p-12 border-b sm:border-b-0 sm:border-r border-slate-800" data-delay="3">
+                                                <span class="material-symbols-outlined text-4xl home-tech-gradient mb-6 block diff-icon">satellite_alt</span>
+                                                <h4 class="diff-title font-label-sm text-label-sm uppercase tracking-widest mb-4">Telemetria Avançada</h4>
+                                                <p class="diff-desc font-body-md text-slate-400">Monitoramento 24/7 de
+                                                        frota, controle de temperatura e tracking em tempo real via
+                                                        satélite.</p>
+                                        </div>
+                                        <div class="diff-card diff-reveal p-12" data-delay="4">
+                                                <span class="material-symbols-outlined text-4xl home-tech-gradient mb-6 block diff-icon">engineering</span>
+                                                <h4 class="diff-title font-label-sm text-label-sm uppercase tracking-widest mb-4">Equipe Especializada</h4>
+                                                <p class="diff-desc font-body-md text-slate-400">Engenheiros, riggers e
+                                                        operadores certificados para movimentação de cargas
+                                                        indivisíveis.</p>
+                                        </div>
+                                </div>
+                        </div>
+                </section>
+                <!-- Como Funciona / Process (scroll-driven, scoped: .cf-*) -->
+                <style>
+                /* === Como Funciona — scroll-driven section (scoped) ===
+                   IMPORTANTE: nunca usar overflow:hidden em ancestrais do .cf-pin,
+                   senão o position:sticky deixa de funcionar contra a viewport. */
+                .cf-section { background: #ffffff; }
+                .cf-track { position: relative; height: 360vh; }
+                .cf-pin {
+                        position: sticky;
+                        top: 0;
+                        height: 100vh;
+                        display: flex;
+                        align-items: center;
+                }
+                .cf-inner { width: 100%; }
+                .cf-head {
+                        display: flex;
+                        align-items: center;
+                        justify-content: space-between;
+                        gap: 32px;
+                        margin-bottom: clamp(32px, 5vh, 64px);
+                }
+                .cf-head-line {
+                        flex: 1;
+                        height: 1px;
+                        background: #2E3D6B;
+                        max-width: 240px;
+                        opacity: .4;
+                }
+                .cf-meta {
+                        display: flex;
+                        align-items: center;
+                        gap: 16px;
+                        font-family: 'JetBrains Mono', ui-monospace, monospace;
+                        font-size: 11px;
+                        letter-spacing: .25em;
+                        text-transform: uppercase;
+                        color: #475569;
+                        white-space: nowrap;
+                }
+                .cf-meta-bar {
+                        position: relative;
+                        width: 140px;
+                        height: 2px;
+                        background: rgba(46, 61, 107, .15);
+                        overflow: hidden;
+                }
+                .cf-meta-bar::after {
+                        content: "";
+                        position: absolute;
+                        inset: 0 auto 0 0;
+                        width: var(--cf-progress, 0%);
+                        background: linear-gradient(90deg, #142C8E 0%, #2D5BFF 100%);
+                        transition: width .15s linear;
+                }
+                .cf-stage {
+                        display: grid;
+                        grid-template-columns: 1fr;
+                        gap: 32px;
+                        align-items: stretch;
+                }
+                @media (min-width: 1024px) {
+                        .cf-stage {
+                                grid-template-columns: minmax(0, 1fr) minmax(0, 1.05fr);
+                                gap: clamp(48px, 6vw, 96px);
+                                align-items: center;
+                        }
+                }
+                .cf-text-col {
+                        position: relative;
+                        min-height: clamp(240px, 38vh, 360px);
+                        padding-bottom: 56px;
+                }
+                .cf-step {
+                        position: absolute;
+                        inset: 0;
+                        opacity: 0;
+                        transform: translateY(40px);
+                        will-change: opacity, transform;
+                        pointer-events: none;
+                }
+                .cf-step.is-active {
+                        opacity: 1;
+                        transform: translateY(0);
+                        pointer-events: auto;
+                }
+                .cf-step-num {
+                        display: block;
+                        font-family: 'JetBrains Mono', ui-monospace, monospace;
+                        font-size: clamp(56px, 9vw, 112px);
+                        font-weight: 700;
+                        line-height: 1;
+                        letter-spacing: -0.04em;
+                        color: transparent;
+                        background: linear-gradient(135deg, #142C8E 0%, #2D5BFF 100%);
+                        -webkit-background-clip: text;
+                        background-clip: text;
+                        margin-bottom: 24px;
+                }
+                .cf-step-title {
+                        font-family: 'Vazirmatn', sans-serif;
+                        font-size: clamp(28px, 3.4vw, 44px);
+                        font-weight: 800;
+                        line-height: 1.1;
+                        color: #0F172A;
+                        margin-bottom: 16px;
+                        text-wrap: balance;
+                }
+                .cf-step-desc {
+                        font-size: clamp(15px, 1.15vw, 18px);
+                        line-height: 1.6;
+                        color: #475569;
+                        max-width: 36ch;
+                }
+                .cf-visual-col {
+                        position: relative;
+                        aspect-ratio: 5 / 4;
+                        background: #0B1220;
+                        border-radius: 4px;
+                        overflow: hidden;
+                        border: 1px solid rgba(46, 61, 107, .35);
+                        box-shadow: 0 30px 80px -40px rgba(15, 23, 42, .35);
+                }
+                .cf-visual-col::before {
+                        content: "";
+                        position: absolute;
+                        inset: 0;
+                        background-image:
+                                radial-gradient(rgba(255, 255, 255, .08) 1px, transparent 1px),
+                                radial-gradient(rgba(255, 255, 255, .04) 1px, transparent 1px);
+                        background-size: 3px 3px, 7px 7px;
+                        background-position: 0 0, 1px 1px;
+                        opacity: .6;
+                        pointer-events: none;
+                }
+                .cf-visual-col::after {
+                        content: "";
+                        position: absolute;
+                        inset: 0;
+                        background:
+                                linear-gradient(transparent 0%, transparent 95%, rgba(45, 91, 255, .08) 100%) 0 0 / 100% 32px,
+                                linear-gradient(90deg, transparent 0%, transparent 95%, rgba(45, 91, 255, .08) 100%) 0 0 / 32px 100%;
+                        pointer-events: none;
+                }
+                .cf-visual {
+                        position: absolute;
+                        inset: 0;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        opacity: 0;
+                        transform: scale(1.04);
+                        transition: opacity .65s cubic-bezier(.22,1,.36,1), transform .9s cubic-bezier(.22,1,.36,1);
+                        will-change: opacity, transform;
+                }
+                .cf-visual.is-active { opacity: 1; transform: scale(1); }
+                .cf-visual svg {
+                        width: 78%;
+                        height: 78%;
+                        max-width: 540px;
+                        color: #BFD0FF;
+                }
+                .cf-visual-tag {
+                        position: absolute;
+                        top: 20px;
+                        left: 20px;
+                        font-family: 'JetBrains Mono', ui-monospace, monospace;
+                        font-size: 10px;
+                        letter-spacing: .25em;
+                        text-transform: uppercase;
+                        color: #6FE39A;
+                        z-index: 2;
+                }
+                .cf-visual-tag.right {
+                        left: auto;
+                        right: 20px;
+                        color: #FFB36F;
+                }
+                .cf-foot {
+                        margin-top: clamp(28px, 4vh, 48px);
+                        display: flex;
+                        align-items: center;
+                        gap: 16px;
+                }
+                .cf-meta--foot {
+                        margin-left: auto;
+                }
+                .cf-foot-mark {
+                        width: 4px;
+                        height: 28px;
+                        background: #2E3D6B;
+                        flex: 0 0 auto;
+                }
+                .cf-foot-text {
+                        font-family: 'JetBrains Mono', ui-monospace, monospace;
+                        font-size: 11px;
+                        letter-spacing: .25em;
+                        text-transform: uppercase;
+                        color: #475569;
+                }
+                .cf-dots {
+                        display: flex;
+                        gap: 10px;
+                        position: absolute;
+                        left: 0;
+                        bottom: 0;
+                        margin-top: 0;
+                        z-index: 3;
+                        align-items: center;
+                        padding-top: 18px;
+                }
+                .cf-dot {
+                        width: clamp(34px, 4vw, 56px);
+                        height: 2px;
+                        background: rgba(46, 61, 107, .22);
+                        transition: background .3s ease, width .3s ease, opacity .3s ease;
+                }
+                .cf-dot.is-active {
+                        background: linear-gradient(90deg, #142C8E, #2D5BFF);
+                        width: clamp(52px, 5.4vw, 76px);
+                }
+                @media (max-width: 1023px) {
+                        .cf-track { height: 360vh; }
+                        .cf-visual-col { aspect-ratio: 4 / 3; }
+                        .cf-text-col {
+                                min-height: clamp(280px, 42vh, 420px);
+                                padding-bottom: 48px;
+                        }
+                        .cf-dots {
+                                bottom: 0;
+                        }
+                }
+                @media (prefers-reduced-motion: reduce) {
+                        .cf-track { height: auto; }
+                        .cf-pin { position: relative; height: auto; padding: 64px 0; }
+                        .cf-step { position: relative; opacity: 1; transform: none; margin-bottom: 48px; }
+                        .cf-visual { position: relative; opacity: 1; transform: none; }
+                        .cf-text-col { min-height: auto; padding-bottom: 0; }
+                        .cf-dots { position: relative; bottom: auto; margin-top: 8px; }
+                }
+                </style>
+                <section class="cf-section w-full bg-white relative sticky-stack z-[50]">
+                        <div class="absolute bottom-full left-0 w-full h-[16px] md:h-[24px] pointer-events-none z-20 flex justify-between">
+                                <svg class="w-[16px] h-[16px] md:w-[24px] md:h-[24px] text-slate-950" fill="currentColor" viewBox="0 0 24 24"><path d="M0 24V0c0 13.255 10.745 24 24 24H0z" /></svg>
+                                <svg class="w-[16px] h-[16px] md:w-[24px] md:h-[24px] text-slate-950" fill="currentColor" viewBox="0 0 24 24"><path d="M24 24V0c0 13.255-10.745 24-24 24h24z" /></svg>
+
+<div class="animated-border-line absolute bottom-0 left-[16px] md:left-[24px] right-[16px] md:right-[24px] h-[1px] md:h-[2px] bg-gradient-to-r from-transparent via-[#2E3D6B] to-transparent transform scale-x-0 opacity-0 transition-all duration-1000 ease-out origin-center z-30"></div>
+</div>
+                        <div class="cf-track" id="cf-track">
+                                <div class="cf-pin">
+                                        <div class="cf-inner max-w-[1440px] mx-auto px-8 relative z-30">
+                                                <div class="cf-head">
+                                                        <h2 class="home-section-title">Como <span class="title-accent">Funciona</span></h2>
+                                                </div>
+                                                <div class="cf-stage">
+                                                        <div class="cf-text-col">
+                                                                <article class="cf-step is-active" data-step="1">
+                                                                        <span class="cf-step-num">01.</span>
+                                                                        <h3 class="cf-step-title">Diagnóstico da operação</h3>
+                                                                        <p class="cf-step-desc">Mapeamento técnico completo da estrutura atual.</p>
+                                                                </article>
+                                                                <article class="cf-step" data-step="2">
+                                                                        <span class="cf-step-num">02.</span>
+                                                                        <h3 class="cf-step-title">Planejamento técnico</h3>
+                                                                        <p class="cf-step-desc">Estratégia operacional personalizada para cada projeto.</p>
+                                                                </article>
+                                                                <article class="cf-step" data-step="3">
+                                                                        <span class="cf-step-num">03.</span>
+                                                                        <h3 class="cf-step-title">Execução coordenada</h3>
+                                                                        <p class="cf-step-desc">Implementação sincronizada com máxima precisão.</p>
+                                                                </article>
+                                                                <article class="cf-step" data-step="4">
+                                                                        <span class="cf-step-num">04.</span>
+                                                                        <h3 class="cf-step-title">Monitoramento e entrega</h3>
+                                                                        <p class="cf-step-desc">Validação contínua e otimização de performance.</p>
+                                                                </article>
+                                                                <div class="cf-dots" aria-hidden="true">
+                                                                        <span class="cf-dot is-active" data-dot="1"></span>
+                                                                        <span class="cf-dot" data-dot="2"></span>
+                                                                        <span class="cf-dot" data-dot="3"></span>
+                                                                        <span class="cf-dot" data-dot="4"></span>
+                                                                </div>
+                                                        </div>
+                                                        <div class="cf-visual-col" aria-hidden="true">
+                                                                <span class="cf-visual-tag">. SCAN: 01</span>
+                                                                <span class="cf-visual-tag right" id="cf-visual-tag-right">. STATUS: ACTIVE</span>
+
+                                                                <div class="cf-visual is-active" data-step="1">
+                                                                        <svg viewBox="0 0 400 320" fill="none" stroke="currentColor" stroke-width="1" xmlns="http://www.w3.org/2000/svg">
+                                                                                <rect x="40" y="40" width="320" height="240" stroke-dasharray="4 6" opacity=".4"/>
+                                                                                <rect x="80" y="80" width="240" height="160"/>
+                                                                                <line x1="40" y1="160" x2="360" y2="160" stroke-dasharray="2 4" opacity=".5"/>
+                                                                                <line x1="200" y1="40" x2="200" y2="280" stroke-dasharray="2 4" opacity=".5"/>
+                                                                                <circle cx="200" cy="160" r="8" fill="#6FE39A" stroke="none"/>
+                                                                                <circle cx="200" cy="160" r="22" opacity=".5"/>
+                                                                                <circle cx="200" cy="160" r="48" opacity=".25"/>
+                                                                                <text x="220" y="158" font-family="monospace" font-size="9" fill="#6FE39A" stroke="none">SCAN</text>
+                                                                        </svg>
+                                                                </div>
+
+                                                                <div class="cf-visual" data-step="2">
+                                                                        <svg viewBox="0 0 400 320" fill="none" stroke="currentColor" stroke-width="1" xmlns="http://www.w3.org/2000/svg">
+                                                                                <path d="M40 240 L120 180 L200 200 L280 120 L360 80" stroke-width="1.5"/>
+                                                                                <circle cx="40" cy="240" r="4" fill="currentColor" stroke="none"/>
+                                                                                <circle cx="120" cy="180" r="4" fill="currentColor" stroke="none"/>
+                                                                                <circle cx="200" cy="200" r="4" fill="currentColor" stroke="none"/>
+                                                                                <circle cx="280" cy="120" r="4" fill="currentColor" stroke="none"/>
+                                                                                <circle cx="360" cy="80" r="4" fill="#6FE39A" stroke="none"/>
+                                                                                <line x1="40" y1="280" x2="360" y2="280" stroke-dasharray="2 4" opacity=".4"/>
+                                                                                <line x1="40" y1="40" x2="40" y2="280" stroke-dasharray="2 4" opacity=".4"/>
+                                                                                <rect x="260" y="40" width="100" height="60" stroke-dasharray="3 4" opacity=".35"/>
+                                                                                <text x="268" y="60" font-family="monospace" font-size="9" fill="#FFB36F" stroke="none">PLAN.v2</text>
+                                                                                <text x="268" y="78" font-family="monospace" font-size="8" opacity=".7">ROUTE OK</text>
+                                                                        </svg>
+                                                                </div>
+
+                                                                <div class="cf-visual" data-step="3">
+                                                                        <svg viewBox="0 0 400 320" fill="none" stroke="currentColor" stroke-width="1" xmlns="http://www.w3.org/2000/svg">
+                                                                                <rect x="60" y="200" width="120" height="50"/>
+                                                                                <rect x="180" y="200" width="160" height="50"/>
+                                                                                <circle cx="100" cy="262" r="12"/>
+                                                                                <circle cx="160" cy="262" r="12"/>
+                                                                                <circle cx="220" cy="262" r="12"/>
+                                                                                <circle cx="300" cy="262" r="12"/>
+                                                                                <line x1="60" y1="290" x2="340" y2="290" stroke-dasharray="2 4" opacity=".4"/>
+                                                                                <path d="M340 225 L370 225 L370 245" />
+                                                                                <line x1="60" y1="120" x2="340" y2="120" stroke-dasharray="3 5" opacity=".35"/>
+                                                                                <text x="60" y="110" font-family="monospace" font-size="9" fill="#6FE39A" stroke="none">. RUN: T+00:42</text>
+                                                                                <text x="220" y="110" font-family="monospace" font-size="9" fill="#FFB36F" stroke="none">. CONVOY:04</text>
+                                                                        </svg>
+                                                                </div>
+
+                                                                <div class="cf-visual" data-step="4">
+                                                                        <svg viewBox="0 0 400 320" fill="none" stroke="currentColor" stroke-width="1" xmlns="http://www.w3.org/2000/svg">
+                                                                                <rect x="40" y="40" width="320" height="200" opacity=".4" stroke-dasharray="3 5"/>
+                                                                                <polyline points="40,200 90,180 140,190 190,140 240,150 290,100 340,80 360,90"/>
+                                                                                <line x1="40" y1="120" x2="360" y2="120" stroke-dasharray="2 4" opacity=".25"/>
+                                                                                <line x1="40" y1="160" x2="360" y2="160" stroke-dasharray="2 4" opacity=".25"/>
+                                                                                <circle cx="340" cy="80" r="6" fill="#6FE39A" stroke="none"/>
+                                                                                <circle cx="340" cy="80" r="14" opacity=".5"/>
+                                                                                <text x="50" y="60" font-family="monospace" font-size="9" fill="#6FE39A" stroke="none">DELIVERED</text>
+                                                                                <text x="50" y="76" font-family="monospace" font-size="8" opacity=".7">KPI · UPTIME 99.4%</text>
+                                                                                <rect x="40" y="260" width="320" height="20" opacity=".5"/>
+                                                                                <rect x="40" y="260" width="280" height="20" fill="#2D5BFF" opacity=".25" stroke="none"/>
+                                                                        </svg>
+                                                                </div>
+                                                        </div>
+                                                </div>
+                                                <div class="cf-foot">
+                                                        <p class="cf-foot-text">Cada operação é tratada como um projeto crítico.</p>
+                                                        <div class="cf-meta cf-meta--foot">
+                                                                <span><span id="cf-current">01</span> / 04</span>
+                                                        </div>
+                                                </div>
+                                        </div>
+                                </div>
+                        </div>
+                </section>
+                <script>
+                (function () {
+                        const init = function () {
+                        const track = document.getElementById('cf-track');
+                        if (!track) return;
+                        const steps = track.querySelectorAll('.cf-step');
+                        const visuals = track.querySelectorAll('.cf-visual');
+                        const dots = track.querySelectorAll('.cf-dot');
+                        const currentEl = document.getElementById('cf-current');
+                        const metaBar = document.getElementById('cf-meta-bar');
+                        const tagRight = document.getElementById('cf-visual-tag-right');
+                        const total = steps.length;
+                        const tagStates = ['. STATUS: ACTIVE', '. PLAN: READY', '. EXEC: RUNNING', '. KPI: VALIDATED'];
+
+                        const reduceMotion = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+                        if (reduceMotion) {
+                                steps.forEach(s => s.classList.add('is-active'));
+                                visuals.forEach(v => v.classList.add('is-active'));
+                                return;
+                        }
+
+                        let activeIndex = -1;
+                        const setActive = (idx) => {
+                                if (idx === activeIndex) return;
+                                activeIndex = idx;
+                                steps.forEach((el, i) => el.classList.toggle('is-active', i === idx));
+                                visuals.forEach((el, i) => el.classList.toggle('is-active', i === idx));
+                                dots.forEach((el, i) => el.classList.toggle('is-active', i === idx));
+                                if (currentEl) currentEl.textContent = String(idx + 1).padStart(2, '0');
+                                if (tagRight) tagRight.textContent = tagStates[idx] || tagStates[0];
+                        };
+
+                        const onScroll = () => {
+                                const rect = track.getBoundingClientRect();
+                                const vh = window.innerHeight;
+                                const scrollable = rect.height - vh;
+                                if (scrollable <= 0) { setActive(0); return; }
+                                const scrolled = Math.min(Math.max(-rect.top, 0), scrollable);
+                                const progress = scrolled / scrollable;
+                                if (metaBar) metaBar.style.setProperty('--cf-progress', (progress * 100).toFixed(1) + '%');
+                                const idx = Math.min(total - 1, Math.floor(progress * total - 0.0001 + (progress === 0 ? 0 : 0)));
+                                const safeIdx = Math.max(0, Math.min(total - 1, Math.floor(progress * total)));
+                                setActive(safeIdx === total ? total - 1 : safeIdx);
+                        };
+
+                        let raf = null;
+                        const requestTick = () => {
+                                if (raf) return;
+                                raf = requestAnimationFrame(() => { raf = null; onScroll(); });
+                        };
+
+                        // Use GSAP ScrollTrigger if available for smoother scrub; otherwise raw scroll handler.
+                        if (window.gsap && window.ScrollTrigger) {
+                                gsap.registerPlugin(ScrollTrigger);
+                                ScrollTrigger.create({
+                                        trigger: track,
+                                        start: 'top top',
+                                        end: 'bottom bottom',
+                                        scrub: true,
+                                        onUpdate: (self) => {
+                                                const progress = self.progress;
+                                                if (metaBar) metaBar.style.setProperty('--cf-progress', (progress * 100).toFixed(1) + '%');
+                                                const safeIdx = Math.max(0, Math.min(total - 1, Math.floor(progress * total)));
+                                                setActive(safeIdx);
+                                        }
+                                });
+                        } else {
+                                window.addEventListener('scroll', requestTick, { passive: true });
+                                window.addEventListener('resize', requestTick);
+                                requestTick();
+                        }
+                        };
+                        if (document.readyState === 'loading') {
+                                window.addEventListener('DOMContentLoaded', function () {
+                                        // Defer one tick so GSAP defer-loaded scripts have a chance to attach.
+                                        if (window.gsap && window.ScrollTrigger) { init(); }
+                                        else { window.addEventListener('load', init, { once: true }); }
+                                });
+                        } else {
+                                if (window.gsap && window.ScrollTrigger) { init(); }
+                                else { window.addEventListener('load', init, { once: true }); }
+                        }
+                })();
+                </script>
+                <!-- Operações / Cases -->
+                <section class="cases-section w-full bg-white py-32 lg:py-48 blueprint-bg relative sticky-stack z-[60]">
+                        <div class="absolute bottom-full left-0 w-full h-[16px] md:h-[24px] pointer-events-none z-20 flex justify-between">
+                                <svg class="w-[16px] h-[16px] md:w-[24px] md:h-[24px] text-slate-50" fill="currentColor" viewBox="0 0 24 24"><path d="M0 24V0c0 13.255 10.745 24 24 24H0z" /></svg>
+                                <svg class="w-[16px] h-[16px] md:w-[24px] md:h-[24px] text-slate-50" fill="currentColor" viewBox="0 0 24 24"><path d="M24 24V0c0 13.255-10.745 24-24 24h24z" /></svg>
+
+<div class="animated-border-line absolute bottom-0 left-[16px] md:left-[24px] right-[16px] md:right-[24px] h-[1px] md:h-[2px] bg-gradient-to-r from-transparent via-[#2E3D6B] to-transparent transform scale-x-0 opacity-0 transition-all duration-1000 ease-out origin-center z-30"></div>
+</div>
+                        <div class="max-w-[1440px] mx-auto px-8 relative z-30">
+                                <div class="flex flex-col items-center mb-20 text-center diff-left-reveal">
+                                        <span class="font-mono-data text-mono-data text-slate-500 uppercase tracking-widest mb-4">Operações / Cases</span>
+                                        <h2 class="home-section-title max-w-4xl">
+                                                Projetos que exigem precisão <span class="title-accent">começam com planejamento técnico.</span>
+                                        </h2>
+                                        <p class="mt-6 max-w-2xl text-slate-600 text-base md:text-lg leading-relaxed">
+                                                Cases reais de engenharia logística aplicada a operações críticas — do planejamento técnico à execução milimétrica.
+                                        </p>
+                                </div>
+
+                                <div class="cases-grid mb-16">
+                                        <a href="cases-operacoes.html" class="case-card diff-reveal" data-delay="1">
+                                                <div class="case-card-media">
+                                                        <img alt="Operação Logística — Indústria de base"
+                                                                src="https://lh3.googleusercontent.com/aida-public/AB6AXuCwPrKqzSKhegYPJ2XBBh_AnzWwPNFAs17-rYubmlE9BLNLm5vYtK4yE1kztUR5N2fDrUXF4Q7HpQTM7Bst9QLXLkZYS04MddxQmMmQiesv9979ZnATbyoEl0FXWMa5uAOV1wc81G2KGrQ_-U7cdpcO0hmI02Mu99mzdVN8XU-lw-cNsB1hdxM8XB5I47e2NjD3GkjrD8fZtoTzVacd_8ylSFX0uiVzoU5jbSytJdng5i8jnEJz4QckEXXyOofdIJmlM5S3a2YWx3Kl" />
+                                                </div>
+                                                <div class="case-card-body">
+                                                        <span class="case-card-eyebrow">Case · Indústria</span>
+                                                        <h3 class="case-card-title">Transporte de carga excedente para planta industrial</h3>
+                                                        <p class="case-card-desc">
+                                                                Planejamento geométrico, vistoria de rota e execução técnica para movimentação de equipamento crítico em corredor logístico restrito.
+                                                        </p>
+                                                        <span class="case-card-link">Ler case <span class="arrow">→</span></span>
+                                                </div>
+                                        </a>
+
+                                        <a href="cases-operacoes.html" class="case-card diff-reveal" data-delay="2">
+                                                <div class="case-card-media">
+                                                        <img alt="Operação Logística — Setor de energia"
+                                                                src="https://lh3.googleusercontent.com/aida-public/AB6AXuB-dpnH7nt9DPJyoDWzQ5wsPfa7n6O89771H92rCFbLaWPqDMrtMdrc_Vh2b6DzpEQqwoktVrtfK_oMCEdsU-LYnsZIFw_DrFSOGk7H45oKQe2999xyvrOGvIG8-RWoObBBQ1bs24JzlUf1-q7uUUjj4KtoIbgLyiNjW5OQyQZq5orTvswgpttvM0FAhJ_BHSWCGY7RQzgDKhcIKuDemUOuCGdnzX8fpI9b1n13jPIVK6w6pCN4Mam9JjgOVsVOhNvtcNhOpcbhCVnz" />
+                                                </div>
+                                                <div class="case-card-body">
+                                                        <span class="case-card-eyebrow">Case · Energia</span>
+                                                        <h3 class="case-card-title">Içamento e posicionamento em subestação de alta tensão</h3>
+                                                        <p class="case-card-desc">
+                                                                Projeto CAD, gerenciamento de risco e equipe certificada para uma operação noturna de alta sensibilidade — sem incidentes e dentro da janela técnica.
+                                                        </p>
+                                                        <span class="case-card-link">Ler case <span class="arrow">→</span></span>
+                                                </div>
+                                        </a>
+
+                                        <a href="cases-operacoes.html" class="case-card diff-reveal" data-delay="3">
+                                                <div class="case-card-media">
+                                                        <img alt="Operação Logística — Construção pesada"
+                                                                src="https://lh3.googleusercontent.com/aida-public/AB6AXuDR3MBmXG9J0BMnHjK5HnBZbqLM8L2ZU0bLBKUTZgFzU69WG81WxGRn8xVbrYHzr_1QBKQ759jYC5fpV6keAmd4ElNxSzANAPBpdilL1ji-RrORBDw-cp1aBGjLBse9ZJPe32tV3QSKl6DtsRZRsxVGoj_wMw19ZxIdSZapshAPO39kloM_LLp2yeN83SfQVzgrArrVQuX3ynm0LgD9QyfJMfc6X73qcYBegFQj6b5wuoCM4mOQWV7opYQvys9csC-63CKbCU8zwdXg" />
+                                                </div>
+                                                <div class="case-card-body">
+                                                        <span class="case-card-eyebrow">Case · Construção</span>
+                                                        <h3 class="case-card-title">Logística integrada para obra de grande porte</h3>
+                                                        <p class="case-card-desc">
+                                                                Telemetria avançada e coordenação multi-frota garantindo entregas just-in-time em canteiro com acesso restrito e janela operacional limitada.
+                                                        </p>
+                                                        <span class="case-card-link">Ler case <span class="arrow">→</span></span>
+                                                </div>
+                                        </a>
+                                </div>
+
+                                <div class="flex justify-center">
+                                        <a href="cases-operacoes.html" class="inline-block px-8 py-4 btn-gradient text-white uppercase tracking-widest text-xs font-bold">
+                                                Ver operações realizadas
+                                        </a>
+                                </div>
+                        </div>
+                </section>
+                <!-- Segmentos Atendidos -->
+                <section class="w-full bg-slate-50 py-32 lg:py-48 blueprint-bg relative sticky-stack z-[70]">
+                        <div class="absolute bottom-full left-0 w-full h-[16px] md:h-[24px] pointer-events-none z-20 flex justify-between">
+                                <svg class="w-[16px] h-[16px] md:w-[24px] md:h-[24px] text-white" fill="currentColor" viewBox="0 0 24 24"><path d="M0 24V0c0 13.255 10.745 24 24 24H0z" /></svg>
+                                <svg class="w-[16px] h-[16px] md:w-[24px] md:h-[24px] text-white" fill="currentColor" viewBox="0 0 24 24"><path d="M24 24V0c0 13.255-10.745 24-24 24h24z" /></svg>
+                        
+<div class="animated-border-line absolute bottom-0 left-[16px] md:left-[24px] right-[16px] md:right-[24px] h-[1px] md:h-[2px] bg-gradient-to-r from-transparent via-[#2E3D6B] to-transparent transform scale-x-0 opacity-0 transition-all duration-1000 ease-out origin-center z-30"></div>
+</div>
+                        <div class="max-w-[1440px] mx-auto px-8 relative z-30">
+                                <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-24 items-center">
+                                        <!-- Coluna Esquerda -->
+                                        <div class="diff-left-reveal">
+                                                <span class="seg-eyebrow">Segmentos atendidos</span>
+                                                <h2 class="home-section-title mb-8">
+                                                        Soluções para os setores que <span class="title-accent">movem o Brasil</span>
+                                                </h2>
+                                                <p class="font-body-lg text-body-lg text-slate-600 max-w-xl leading-relaxed">
+                                                        Atuamos com profundidade técnica em segmentos que exigem precisão, planejamento estrutural e operações milimétricas — entregando engenharia logística para projetos de alta complexidade em todo o país.
+                                                </p>
+                                        </div>
+                                        <!-- Coluna Direita -->
+                                        <div class="flex flex-col gap-4">
+                                                <!-- Card 1 -->
+                                                <div class="seg-card diff-reveal" data-delay="1">
+                                                        <div class="seg-card-icon">
+                                                                <span class="material-symbols-outlined">factory</span>
+                                                        </div>
+                                                        <div class="flex-1">
+                                                                <h3 class="seg-card-title">Indústrias</h3>
+                                                                <p class="seg-card-desc">Operações estruturais para plantas industriais e processos de alta complexidade.</p>
+                                                        </div>
+                                                </div>
+                                                <!-- Card 2 -->
+                                                <div class="seg-card diff-reveal" data-delay="2">
+                                                        <div class="seg-card-icon">
+                                                                <span class="material-symbols-outlined">bolt</span>
+                                                        </div>
+                                                        <div class="flex-1">
+                                                                <h3 class="seg-card-title">Energia</h3>
+                                                                <p class="seg-card-desc">Suporte técnico para usinas, subestações e infraestrutura energética.</p>
+                                                        </div>
+                                                </div>
+                                                <!-- Card 3 -->
+                                                <div class="seg-card diff-reveal" data-delay="3">
+                                                        <div class="seg-card-icon">
+                                                                <span class="material-symbols-outlined">construction</span>
+                                                        </div>
+                                                        <div class="flex-1">
+                                                                <h3 class="seg-card-title">Construção</h3>
+                                                                <p class="seg-card-desc">Logística e içamentos especiais para obras de grande porte.</p>
+                                                        </div>
+                                                </div>
+                                                <!-- Card 4 -->
+                                                <div class="seg-card diff-reveal" data-delay="4">
+                                                        <div class="seg-card-icon">
+                                                                <span class="material-symbols-outlined">domain</span>
+                                                        </div>
+                                                        <div class="flex-1">
+                                                                <h3 class="seg-card-title">Infraestrutura</h3>
+                                                                <p class="seg-card-desc">Movimentação estratégica para projetos de infraestrutura nacional.</p>
+                                                        </div>
+                                                </div>
+                                        </div>
+                                </div>
+                        </div>
+                </section>
+                <!-- Notícias / Blog Section -->
+                <section class="w-full bg-slate-100 py-32 lg:py-48 blueprint-bg relative sticky-stack z-[80]">
+                        <div class="absolute bottom-full left-0 w-full h-[16px] md:h-[24px] pointer-events-none z-20 flex justify-between">
+                                <svg class="w-[16px] h-[16px] md:w-[24px] md:h-[24px] text-slate-50" fill="currentColor" viewBox="0 0 24 24"><path d="M0 24V0c0 13.255 10.745 24 24 24H0z" /></svg>
+                                <svg class="w-[16px] h-[16px] md:w-[24px] md:h-[24px] text-slate-50" fill="currentColor" viewBox="0 0 24 24"><path d="M24 24V0c0 13.255-10.745 24-24 24h24z" /></svg>
+                        
+<div class="animated-border-line absolute bottom-0 left-[16px] md:left-[24px] right-[16px] md:right-[24px] h-[1px] md:h-[2px] bg-gradient-to-r from-transparent via-[#2E3D6B] to-transparent transform scale-x-0 opacity-0 transition-all duration-1000 ease-out origin-center z-30"></div>
+</div>
+                        <div class="max-w-[1440px] mx-auto px-8 relative z-30">
+                                <div class="flex flex-col items-center mb-16 text-center">
+                                        <h2 class="home-section-title max-w-4xl"
+                                                style="">Notícias / <span
+                                                        class="title-accent">Blog</span></h2>
+                                        <p class="font-body-lg text-body-lg text-slate-600 mt-6 max-w-2xl" style="">
+                                                Conteúdos técnicos sobre logística, engenharia operacional e projetos
+                                                complexos.</p>
+                                </div>
+                                <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
+                                        <!-- Article 1 -->
+                                        <div
+                                                class="flex flex-col border border-slate-200 bg-white hover:border-[#004AC6] transition-colors group rounded-2xl overflow-hidden">
+                                                <div
+                                                        class="h-64 relative overflow-hidden bg-slate-100 border-b border-slate-200">
+                                                        <img alt="Como dimensionar cargas excedentes"
+                                                                class="w-full h-full object-cover grayscale opacity-80 group-hover:grayscale-0 transition-all duration-500"
+                                                                src="https://lh3.googleusercontent.com/aida-public/AB6AXuBh8IJgOnyRBOq-xmsndRSrBchmcP07R0LjAedOVhCS9IrnfwrZzZF2-LDPIP_R3D91G3q9s8kiARKFozXJYMJah6sjFjgSWhKxE49ibUFxAikps4aCqksbswD86RqKRJ6iiwt6YOISB4I0I0N7_r8uDC0dNsW1ZGfJyHB2SYwoKu4pW9RoM_peeyqFWIpKfPc-_LrJVhBkCLoYExILmQjhvyGMT2Zc1f56i70J9BLYM2RoeWTQDBnnuvS3qzb6ugnbLedWiVc9l-GZ" />
+                                                </div>
+                                                <div class="p-8 flex-grow flex flex-col">
+                                                        <div class="flex items-center gap-2 text-slate-500 text-xs uppercase tracking-widest mb-4">
+                                                                <span class="material-symbols-outlined text-[16px] text-[#004AC6]">calendar_today</span>
+                                                                <time datetime="2026-04-22">22 Abr 2026</time>
+                                                        </div>
+                                                        <h3
+                                                                class="font-vazirmatn text-xl font-semibold text-slate-900 leading-snug mb-4">
+                                                                Como dimensionar cargas excedentes com segurança</h3>
+                                                        <p class="text-slate-600 text-sm leading-relaxed mb-6 flex-grow">
+                                                                Critérios técnicos para análise de rota, escolta e licenciamento em operações com cargas indivisíveis e fora do gabarito.
+                                                        </p>
+                                                        <a href="noticias-conteudo.html"
+                                                                class="inline-flex items-center gap-2 text-[#004AC6] font-semibold uppercase tracking-widest text-xs group/cta self-start">
+                                                                Saiba Mais
+                                                                <span class="material-symbols-outlined text-[18px] transition-transform duration-300 group-hover/cta:translate-x-1">arrow_forward</span>
+                                                        </a>
+                                                </div>
+                                        </div>
+                                        <!-- Article 2 -->
+                                        <div
+                                                class="flex flex-col border border-slate-200 bg-white hover:border-[#004AC6] transition-colors group rounded-2xl overflow-hidden">
+                                                <div
+                                                        class="h-64 relative overflow-hidden bg-slate-100 border-b border-slate-200">
+                                                        <img alt="Impacto do planejamento técnico"
+                                                                class="w-full h-full object-cover grayscale opacity-80 group-hover:grayscale-0 transition-all duration-500"
+                                                                src="https://lh3.googleusercontent.com/aida-public/AB6AXuBs_hDOddtUSOKqczkE-uLlvmG2dx8kA6WOWr-5o0VjmfWBOo0zSc_kMSRTB0ewGlgQxt9NrBkLu5n5VGtqrDtRNAJq3-hm5QZhwF2dUtitsb9eYRHkmbC0h0kYv-awmGLcgdxSa8YrOmteQKxAcXslWixh6NYJ2Uty7zDvlmfx2lWWctzu0B47uoSl-KEaA1oX1QE7rNXtn6WPI4HLCJn6ErGZdDSk3NmZFJh6u4D2BCZ9KKQdzzTNJDCGc3WqDhIMUT0Qj0wR2CLh" />
+                                                </div>
+                                                <div class="p-8 flex-grow flex flex-col">
+                                                        <div class="flex items-center gap-2 text-slate-500 text-xs uppercase tracking-widest mb-4">
+                                                                <span class="material-symbols-outlined text-[16px] text-[#004AC6]">calendar_today</span>
+                                                                <time datetime="2026-04-08">08 Abr 2026</time>
+                                                        </div>
+                                                        <h3
+                                                                class="font-vazirmatn text-xl font-semibold text-slate-900 leading-snug mb-4">
+                                                                O impacto do planejamento técnico em operações
+                                                                industriais</h3>
+                                                        <p class="text-slate-600 text-sm leading-relaxed mb-6 flex-grow">
+                                                                Como o estudo prévio de viabilidade reduz custos, mitiga riscos e garante prazos em movimentações industriais de grande porte.
+                                                        </p>
+                                                        <a href="noticias-conteudo.html"
+                                                                class="inline-flex items-center gap-2 text-[#004AC6] font-semibold uppercase tracking-widest text-xs group/cta self-start">
+                                                                Saiba Mais
+                                                                <span class="material-symbols-outlined text-[18px] transition-transform duration-300 group-hover/cta:translate-x-1">arrow_forward</span>
+                                                        </a>
+                                                </div>
+                                        </div>
+                                        <!-- Article 3 -->
+                                        <div
+                                                class="flex flex-col border border-slate-200 bg-white hover:border-[#004AC6] transition-colors group rounded-2xl overflow-hidden">
+                                                <div
+                                                        class="h-64 relative overflow-hidden bg-slate-100 border-b border-slate-200">
+                                                        <img alt="Erros críticos em operações logísticas"
+                                                                class="w-full h-full object-cover grayscale opacity-80 group-hover:grayscale-0 transition-all duration-500"
+                                                                src="https://lh3.googleusercontent.com/aida-public/AB6AXuBagAEPpN8pnO7dlr4Jd2vK7jVx1ebW4EFhsArLbOCxc7_9_LiIPwEdnAzLB2bk4gRzCC_w7Bo78MPEMsUymdw-0RdRtP3jac-bnOfYA2kEs31r_GdI2pd6yJVsvNB8Oj8wfDFr3MkqfFO8hrtMouPILsqiZ5FVfPncwsdW_qJklGD6_jeOR8j7Gp33g23QMToPZ3jg0ScilCKzxS2h3zCLJ47MMwsnQCfoZEPnc43dRHKWIuzxS2MAWh0iQvzqa_qArj5V9tsjlRnL" />
+                                                </div>
+                                                <div class="p-8 flex-grow flex flex-col">
+                                                        <div class="flex items-center gap-2 text-slate-500 text-xs uppercase tracking-widest mb-4">
+                                                                <span class="material-symbols-outlined text-[16px] text-[#004AC6]">calendar_today</span>
+                                                                <time datetime="2026-03-25">25 Mar 2026</time>
+                                                        </div>
+                                                        <h3
+                                                                class="font-vazirmatn text-xl font-semibold text-slate-900 leading-snug mb-4">
+                                                                Erros críticos em operações logísticas complexas</h3>
+                                                        <p class="text-slate-600 text-sm leading-relaxed mb-6 flex-grow">
+                                                                Falhas recorrentes em projetos de transporte especial e o que fazer para evitá-las desde a engenharia da operação.
+                                                        </p>
+                                                        <a href="noticias-conteudo.html"
+                                                                class="inline-flex items-center gap-2 text-[#004AC6] font-semibold uppercase tracking-widest text-xs group/cta self-start">
+                                                                Saiba Mais
+                                                                <span class="material-symbols-outlined text-[18px] transition-transform duration-300 group-hover/cta:translate-x-1">arrow_forward</span>
+                                                        </a>
+                                                </div>
+                                        </div>
+                                </div>
+                                <div class="flex justify-center">
+                                        <button
+                                                class="px-8 py-4 btn-gradient text-white uppercase tracking-widest text-xs font-bold">
+                                        Ver Todos os Artigos
+                                        </button>
+                                </div>
+                        </div>
+                </section>
+                <!-- Final CTA -->
+                <section class="w-full bg-[#2E3D6B] relative pb-32 lg:pb-48 pt-40 lg:pt-56 sticky-stack z-[90]">
+                        <div class="absolute bottom-full left-0 w-full h-[16px] md:h-[24px] pointer-events-none z-20 flex justify-between">
+                                <svg class="w-[16px] h-[16px] md:w-[24px] md:h-[24px] text-slate-100" fill="currentColor" viewBox="0 0 24 24"><path d="M0 24V0c0 13.255 10.745 24 24 24H0z" /></svg>
+                                <svg class="w-[16px] h-[16px] md:w-[24px] md:h-[24px] text-slate-100" fill="currentColor" viewBox="0 0 24 24"><path d="M24 24V0c0 13.255-10.745 24-24 24h24z" /></svg>
+                        
+<div class="animated-border-line absolute top-8 left-[16px] md:left-[24px] right-[16px] md:right-[24px] h-[1px] md:h-[2px] bg-gradient-to-r from-transparent via-[#485b99] to-transparent transform scale-x-0 opacity-0 transition-all duration-1000 ease-out origin-center z-30"></div>
+</div>
+                        <div class="max-w-[1440px] mx-auto px-8 relative z-30">
+                                <div class="flex flex-col items-start text-left w-full max-w-4xl">
+                                        <h2 class="font-display text-white font-semibold tracking-tight mb-6 md:mb-8 hero-title-shadow"
+                                                style="font-size: clamp(44px, 6.4vw, 88px); line-height: 1.05; letter-spacing: -0.02em;">Seu projeto exige precisão?</h2>
+                                        <p class="font-body-lg text-blue-200 max-w-2xl leading-relaxed text-[17px] md:text-[19px] mb-10 md:mb-12 hero-text-shadow-soft" style="">Fale com nosso time de engenharia
+                                                logística para desenhar a solução estrutural da sua próxima operação.
+                                        </p>
+                                        <div class="flex-shrink-0">
+                                                <button class="cta-final-btn px-10 md:px-12 py-5 md:py-6 btn-gradient text-white uppercase tracking-[0.18em] text-[13px] font-bold shadow-lg hover:shadow-blue-500/25 transition-all duration-300"
+                                                        style="">
+                                                        Agendar Consultoria Técnica
+                                                </button>
+                                        </div>
+                                </div>
+                        </div>
+                </section>
+        </main>
+        <!-- Footer -->
+        <!-- Footer -->
+        <footer class="text-white w-full pt-36 lg:pt-48 pb-10 px-8 relative overflow-hidden sticky-stack z-[100]" style="background-color: #0B1530;">
+                        <div class="absolute bottom-full left-0 w-full h-[16px] md:h-[24px] pointer-events-none z-20 flex justify-between">
+                                <svg class="w-[16px] h-[16px] md:w-[24px] md:h-[24px]" style="color: #0B1530;" fill="currentColor" viewBox="0 0 24 24"><path d="M0 24V0c0 13.255 10.745 24 24 24H0z" /></svg>
+                                <svg class="w-[16px] h-[16px] md:w-[24px] md:h-[24px]" style="color: #0B1530;" fill="currentColor" viewBox="0 0 24 24"><path d="M24 24V0c0 13.255-10.745 24-24 24h24z" /></svg>
+                        
+<div class="animated-border-line absolute bottom-0 left-[16px] md:left-[24px] right-[16px] md:right-[24px] h-[1px] md:h-[2px] bg-gradient-to-r from-transparent via-[#2E3D6B] to-transparent transform scale-x-0 opacity-0 transition-all duration-1000 ease-out origin-center z-30"></div>
+</div>
+                <div class="max-w-[1440px] mx-auto relative z-30">
+                        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
+                                <!-- Coluna 1: Identidade e Redes -->
+                                <div class="flex flex-col gap-8">
+                                        <a href="index.html">
+                                                <img src="https://jrcompany.net.br/wp-content/uploads/2023/12/jcr-transportes-logo.png"
+                                                        alt="J.R. Company" class="h-12 w-auto">
+                                        </a>
+                                        <div class="flex gap-4">
+                                                <a href="#"
+                                                        class="w-10 h-10 rounded-full bg-slate-800/60 flex items-center justify-center text-slate-300 hover:bg-[#2E3D6B] hover:text-white transition-all duration-300 shadow-sm">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-5 h-5" aria-hidden="true"><path d="M13.5 21v-7.5h2.5l.4-3h-2.9V8.6c0-.86.24-1.45 1.48-1.45H16.5V4.5c-.27-.04-1.2-.12-2.28-.12-2.26 0-3.81 1.38-3.81 3.91V10.5H8v3h2.41V21h3.09Z"/></svg>
+                                                </a>
+                                                <a href="#"
+                                                        class="w-10 h-10 rounded-full bg-slate-800/60 flex items-center justify-center text-slate-300 hover:bg-[#2E3D6B] hover:text-white transition-all duration-300 shadow-sm">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-5 h-5" aria-hidden="true"><path d="M12 2.2c3.2 0 3.58.01 4.85.07 1.17.05 1.8.25 2.23.41.56.22.96.48 1.38.9.42.42.68.82.9 1.38.16.42.36 1.06.41 2.23.06 1.27.07 1.65.07 4.85s-.01 3.58-.07 4.85c-.05 1.17-.25 1.8-.41 2.23-.22.56-.48.96-.9 1.38-.42.42-.82.68-1.38.9-.42.16-1.06.36-2.23.41-1.27.06-1.65.07-4.85.07s-3.58-.01-4.85-.07c-1.17-.05-1.8-.25-2.23-.41a3.7 3.7 0 0 1-1.38-.9 3.7 3.7 0 0 1-.9-1.38c-.16-.42-.36-1.06-.41-2.23C2.21 15.58 2.2 15.2 2.2 12s.01-3.58.07-4.85c.05-1.17.25-1.8.41-2.23.22-.56.48-.96.9-1.38.42-.42.82-.68 1.38-.9.42-.16 1.06-.36 2.23-.41C8.42 2.21 8.8 2.2 12 2.2ZM12 0C8.74 0 8.33.01 7.05.07 5.78.13 4.9.33 4.14.63a5.92 5.92 0 0 0-2.13 1.39A5.92 5.92 0 0 0 .62 4.15c-.3.76-.5 1.64-.55 2.9C.01 8.33 0 8.74 0 12c0 3.26.01 3.67.07 4.95.06 1.27.26 2.14.55 2.9.32.84.74 1.55 1.4 2.21a5.92 5.92 0 0 0 2.12 1.4c.76.29 1.64.49 2.9.55C8.33 23.99 8.74 24 12 24s3.67-.01 4.95-.07c1.27-.06 2.14-.26 2.9-.55a6.16 6.16 0 0 0 3.52-3.52c.29-.76.49-1.64.55-2.9.06-1.28.07-1.69.07-4.95s-.01-3.67-.07-4.95c-.06-1.27-.26-2.14-.55-2.9a5.92 5.92 0 0 0-1.4-2.13A5.92 5.92 0 0 0 19.85.62c-.76-.3-1.64-.5-2.9-.55C15.67.01 15.26 0 12 0ZM12 5.84a6.16 6.16 0 1 0 0 12.32 6.16 6.16 0 0 0 0-12.32Zm0 10.16a4 4 0 1 1 0-8 4 4 0 0 1 0 8ZM19.85 5.59a1.44 1.44 0 1 1-2.88 0 1.44 1.44 0 0 1 2.88 0Z"/></svg>
+                                                </a>
+                                                <a href="#"
+                                                        class="w-10 h-10 rounded-full bg-slate-800/60 flex items-center justify-center text-slate-300 hover:bg-[#2E3D6B] hover:text-white transition-all duration-300 shadow-sm">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-5 h-5" aria-hidden="true"><path d="M20.45 20.45h-3.55v-5.57c0-1.33-.03-3.04-1.85-3.04-1.86 0-2.14 1.45-2.14 2.95v5.66H9.36V9h3.41v1.56h.05a3.74 3.74 0 0 1 3.36-1.85c3.6 0 4.27 2.37 4.27 5.45v6.29ZM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12ZM7.12 20.45H3.56V9h3.56v11.45ZM22.22 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.23.79 24 1.77 24h20.45C23.2 24 24 23.23 24 22.27V1.73C24 .77 23.2 0 22.22 0Z"/></svg>
+                                                </a>
+                                        </div>
+                                        <div class="text-slate-400 text-[11px] leading-relaxed uppercase tracking-wider">
+                                                <p class="font-bold text-white mb-1">J.R.C. Transportes de Cargas Ltda
+                                                </p>
+                                                <p>(J.R. Company - Operações Especiais)</p>
+                                                <p class="mt-2">CNPJ: 03.982.982/0003-14</p>
+                                        </div>
+                                </div>
+
+                                <!-- Coluna 2: Sobre -->
+                                <div>
+                                        <h4
+                                                class="font-display font-bold text-white uppercase tracking-widest text-xs mb-8 border-l-2 border-[#5C7AE8] pl-4">
+                                                SOBRE</h4>
+                                        <p class="text-slate-300 text-sm leading-relaxed normal-case tracking-normal">
+                                                A J.R. Company atua com excelência no mercado de logística, especializada no
+                                                transporte de cargas pesadas, excedentes e operações especiais. Com uma
+                                                equipe qualificada e uma robusta frota de bitrens e rodotrens, oferecemos
+                                                segurança e pontualidade na movimentação de máquinas e equipamentos para o
+                                                setor industrial.
+                                        </p>
+                                </div>
+
+                                <!-- Coluna 3: Acesso Rápido -->
+                                <div>
+                                        <h4
+                                                class="font-display font-bold text-white uppercase tracking-widest text-xs mb-8 border-l-2 border-[#5C7AE8] pl-4">
+                                                ACESSO RÁPIDO</h4>
+                                        <ul class="space-y-4 text-sm normal-case tracking-normal">
+                                                <li><a href="index.html"
+                                                                class="text-slate-300 hover:text-white transition-colors flex items-center gap-2 group"><span
+                                                                        class="w-1 h-1 bg-slate-600 group-hover:bg-[#5C7AE8] transition-colors"></span>Home</a>
+                                                </li>
+                                                <li><a href="sobre.html"
+                                                                class="text-slate-300 hover:text-white transition-colors flex items-center gap-2 group"><span
+                                                                        class="w-1 h-1 bg-slate-600 group-hover:bg-[#5C7AE8] transition-colors"></span>A
+                                                                Empresa</a></li>
+                                                <li><a href="#"
+                                                                class="text-slate-300 hover:text-white transition-colors flex items-center gap-2 group"><span
+                                                                        class="w-1 h-1 bg-slate-600 group-hover:bg-[#5C7AE8] transition-colors"></span>Nossa
+                                                                Frota</a></li>
+                                                <li><a href="solucoes-technical-flow.html"
+                                                                class="text-slate-300 hover:text-white transition-colors flex items-center gap-2 group"><span
+                                                                        class="w-1 h-1 bg-slate-600 group-hover:bg-[#5C7AE8] transition-colors"></span>Operações
+                                                                Especiais</a></li>
+                                                <li><a href="#"
+                                                                class="text-slate-300 hover:text-white transition-colors flex items-center gap-2 group"><span
+                                                                        class="w-1 h-1 bg-slate-600 group-hover:bg-[#5C7AE8] transition-colors"></span>Trabalhe
+                                                                Conosco</a></li>
+                                                <li><a href="fale-conosco.html"
+                                                                class="text-slate-300 hover:text-white transition-colors flex items-center gap-2 group"><span
+                                                                        class="w-1 h-1 bg-slate-600 group-hover:bg-[#5C7AE8] transition-colors"></span>Contato</a>
+                                                </li>
+                                                <li><a href="#"
+                                                                class="text-slate-300 hover:text-white transition-colors flex items-center gap-2 group"><span
+                                                                        class="w-1 h-1 bg-slate-600 group-hover:bg-[#5C7AE8] transition-colors"></span>Política
+                                                                de Privacidade</a></li>
+                                        </ul>
+                                </div>
+
+                                <!-- Coluna 4: Nossos Contatos -->
+                                <div>
+                                        <h4
+                                                class="font-display font-bold text-white uppercase tracking-widest text-xs mb-8 border-l-2 border-[#5C7AE8] pl-4">
+                                                NOSSOS CONTATOS</h4>
+                                        <ul class="space-y-6 text-sm normal-case tracking-normal">
+                                                <li class="flex items-start gap-4">
+                                                        <div
+                                                                class="w-8 h-8 rounded-lg bg-slate-800/60 flex items-center justify-center flex-shrink-0 text-[#5C7AE8]">
+                                                                <span
+                                                                        class="material-symbols-outlined text-[20px]">location_on</span>
+                                                        </div>
+                                                        <span class="text-slate-300">Rua Benjamin Negoseki, 18526 -
+                                                                Cachoeira, CEP 83021-250, São José dos Pinhais - PR</span>
+                                                </li>
+                                                <li class="flex items-center gap-4">
+                                                        <div
+                                                                class="w-8 h-8 rounded-lg bg-slate-800/60 flex items-center justify-center flex-shrink-0 text-[#5C7AE8]">
+                                                                <span
+                                                                        class="material-symbols-outlined text-[20px]">phone</span>
+                                                        </div>
+                                                        <a href="tel:4121186543"
+                                                                class="text-slate-300 hover:text-white transition-colors">(41)
+                                                                2118-6543</a>
+                                                </li>
+                                                <li class="flex items-center gap-4">
+                                                        <div
+                                                                class="w-8 h-8 rounded-lg bg-green-500/15 flex items-center justify-center flex-shrink-0 text-green-400">
+                                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-5 h-5" aria-hidden="true"><path d="M.06 24l1.69-6.16A11.88 11.88 0 0 1 .15 11.9C.15 5.34 5.5 0 12.07 0a11.84 11.84 0 0 1 8.42 3.49 11.81 11.81 0 0 1 3.48 8.42c0 6.56-5.35 11.9-11.9 11.9-2 0-3.95-.5-5.69-1.45L.06 24Zm6.6-3.8.36.22a9.87 9.87 0 0 0 5.04 1.38c5.45 0 9.89-4.43 9.89-9.89A9.83 9.83 0 0 0 19.05 4.93a9.83 9.83 0 0 0-6.99-2.9c-5.46 0-9.9 4.44-9.9 9.89 0 1.86.52 3.68 1.5 5.26l.24.37-1 3.66 3.76-.99Zm11.39-6.7c-.07-.12-.27-.2-.56-.34-.3-.15-1.76-.87-2.04-.97-.27-.1-.47-.15-.67.15-.2.3-.77.97-.94 1.17-.17.2-.35.22-.65.07-.3-.15-1.26-.46-2.4-1.48a9.07 9.07 0 0 1-1.66-2.07c-.18-.3-.02-.46.13-.61.13-.13.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.02-.52-.07-.15-.67-1.62-.92-2.21-.24-.58-.49-.5-.67-.51l-.57-.01a1.1 1.1 0 0 0-.8.37c-.27.3-1.04 1.02-1.04 2.49s1.07 2.88 1.22 3.08c.15.2 2.1 3.21 5.1 4.5.7.3 1.26.49 1.69.62.71.23 1.36.2 1.87.12.57-.08 1.76-.72 2.01-1.41.25-.7.25-1.29.17-1.41Z"/></svg>
+                                                        </div>
+                                                        <a href="https://wa.me/5541991189543"
+                                                                class="text-slate-300 hover:text-green-400 transition-colors font-bold">(41)
+                                                                99118-9543</a>
+                                                </li>
+                                                <li class="flex items-center gap-4">
+                                                        <div
+                                                                class="w-8 h-8 rounded-lg bg-slate-800/60 flex items-center justify-center flex-shrink-0 text-[#5C7AE8]">
+                                                                <span
+                                                                        class="material-symbols-outlined text-[20px]">mail</span>
+                                                        </div>
+                                                        <a href="mailto:contato@jrcompany.net.br"
+                                                                class="text-slate-300 hover:text-white transition-colors">contato@jrcompany.net.br</a>
+                                                </li>
+                                        </ul>
+                                </div>
+                        </div>
+
+                        <!-- Barra Inferior -->
+                        <div class="border-t border-slate-800 pt-10 flex flex-col items-center gap-6">
+                        </div>
+                </div>
+        </footer>
+
+                <script>
+                document.addEventListener('DOMContentLoaded', () => {
+                    const sections = document.querySelectorAll('.sticky-stack');
+                    const homeEntrySections = Array.from(document.querySelectorAll('main > section.sticky-stack:not(#scroll-hero)'));
+                    const reduceMotion = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+                    const useGsapEntry = !reduceMotion && window.gsap && window.ScrollTrigger;
+                    
+                    const observer = new IntersectionObserver((entries) => {
+                        entries.forEach(entry => {
+                            const borderLine = entry.target.querySelector('.animated-border-line');
+                            if (borderLine && !(useGsapEntry && homeEntrySections.includes(entry.target))) {
+                                if (entry.isIntersecting && entry.intersectionRatio > 0.1) {
+                                    borderLine.style.transform = 'scaleX(1)';
+                                    borderLine.style.opacity = '1';
+                                } else if (entry.intersectionRatio < 0.1 && entry.boundingClientRect.top > 0) {
+                                    borderLine.style.transform = 'scaleX(0)';
+                                    borderLine.style.opacity = '0';
+                                }
+                            }
+                        });
+                    }, { threshold: [0, 0.1, 0.5, 1.0] });
+
+                    sections.forEach(sec => observer.observe(sec));
+                    
+                    // Also add scale down effect to previous sections
+                    window.addEventListener('scroll', () => {
+                        sections.forEach((sec, index) => {
+                            const rect = sec.getBoundingClientRect();
+                            if (rect.top <= 0) {
+                                const nextSec = sections[index + 1];
+                                if (nextSec) {
+                                    const nextRect = nextSec.getBoundingClientRect();
+                                    const overlap = Math.max(0, window.innerHeight - nextRect.top);
+                                    const progress = Math.min(1, overlap / window.innerHeight);
+                                    const scale = 1 - (progress * 0.05);
+                                    const brightness = 1 - (progress * 0.4);
+                                }
+                            }
+                        });
+                    });
+
+                    const resetForReducedMotion = () => {
+                        document.querySelectorAll('main .diff-reveal, main .diff-left-reveal, main .animated-border-line').forEach(el => {
+                            el.classList.add('is-visible');
+                            el.style.opacity = '1';
+                            el.style.transform = el.classList.contains('animated-border-line') ? 'scaleX(1)' : 'none';
+                            el.style.clipPath = 'none';
+                        });
+                    };
+
+                    if (reduceMotion) {
+                        resetForReducedMotion();
+                        return;
+                    }
+
+                    const hasGsap = useGsapEntry;
+
+                    if (hasGsap) {
+                        gsap.registerPlugin(ScrollTrigger);
+
+                        const isMobile = window.matchMedia && window.matchMedia('(max-width: 768px)').matches;
+                        const revealDistance = isMobile ? 18 : 34;
+                        const titleDistance = isMobile ? 16 : 26;
+                        const cardDistance = isMobile ? 18 : 32;
+                        const baseDuration = isMobile ? 0.72 : 0.95;
+                        const cardDuration = isMobile ? 0.68 : 0.86;
+                        const cardStagger = isMobile ? 0.07 : 0.12;
+
+                        const revealSet = new Set();
+                        const prepare = (items) => {
+                            items.forEach(el => {
+                                if (!el || revealSet.has(el)) return;
+                                revealSet.add(el);
+                                el.dataset.entryTransition = el.style.transition || '';
+                                el.style.transition = 'none';
+                            });
+                        };
+                        const restoreTransitions = (items) => {
+                            items.forEach(el => {
+                                if (!el) return;
+                                el.classList.add('is-visible');
+                                if (el.dataset.entryTransition) {
+                                    el.style.transition = el.dataset.entryTransition;
+                                } else {
+                                    el.style.removeProperty('transition');
+                                }
+                                delete el.dataset.entryTransition;
+                                el.style.willChange = 'auto';
+                            });
+                            gsap.set(items, { clearProps: 'transform,clipPath,willChange' });
+                        };
+
+                        homeEntrySections.forEach((section) => {
+                            const line = section.querySelector('.animated-border-line');
+                            if (line) {
+                                gsap.set(line, {
+                                    scaleX: 0,
+                                    autoAlpha: 0,
+                                    transformOrigin: 'left center'
+                                });
+                                gsap.to(line, {
+                                    scaleX: 1,
+                                    autoAlpha: 1,
+                                    duration: isMobile ? 0.72 : 1,
+                                    ease: 'power4.out',
+                                    scrollTrigger: {
+                                        trigger: section,
+                                        start: 'top 86%',
+                                        once: true
+                                    }
+                                });
+                            }
+
+                            const revealContainers = Array.from(section.querySelectorAll('.diff-left-reveal'));
+                            revealContainers.forEach(container => {
+                                container.classList.add('is-visible');
+                                container.style.opacity = '1';
+                                container.style.transform = 'none';
+                            });
+
+                            const title = section.querySelector('.home-section-title, h2.font-display');
+                            const headingBlock = title
+                                ? (title.closest('.diff-left-reveal, .cf-head, .flex.flex-col.items-center, .flex.flex-col.items-start, .mb-16, .border-b') || title.parentElement)
+                                : section;
+                            const eyebrow = headingBlock.querySelector('.seg-eyebrow, .font-mono-data.text-mono-data');
+                            const titleText = headingBlock.querySelector('p');
+                            const headerItems = [eyebrow, title, titleText].filter(Boolean);
+
+                            if (headerItems.length) {
+                                prepare(headerItems);
+                                gsap.set(headerItems, {
+                                    autoAlpha: 0,
+                                    y: revealDistance,
+                                    force3D: true
+                                });
+
+                                const introTimeline = gsap.timeline({
+                                    scrollTrigger: {
+                                        trigger: section,
+                                        start: 'top 82%',
+                                        once: true
+                                    },
+                                    onComplete: () => restoreTransitions(headerItems)
+                                });
+
+                                if (eyebrow) {
+                                    introTimeline.to(eyebrow, {
+                                        autoAlpha: 1,
+                                        y: 0,
+                                        duration: baseDuration * 0.78,
+                                        ease: 'power3.out'
+                                    }, 0);
+                                }
+                                if (title) {
+                                    introTimeline.to(title, {
+                                        autoAlpha: 1,
+                                        y: 0,
+                                        duration: baseDuration,
+                                        ease: 'power4.out'
+                                    }, eyebrow ? 0.08 : 0);
+                                }
+                                if (titleText) {
+                                    introTimeline.to(titleText, {
+                                        autoAlpha: 1,
+                                        y: 0,
+                                        duration: baseDuration * 0.82,
+                                        ease: 'power3.out'
+                                    }, title ? 0.18 : 0);
+                                }
+                            }
+
+                            revealContainers.forEach((intro) => {
+                                const pieces = Array.from(intro.children).filter(child => !headerItems.includes(child));
+                                if (!pieces.length) return;
+                                prepare(pieces);
+                                gsap.fromTo(pieces, {
+                                    autoAlpha: 0,
+                                    y: titleDistance,
+                                    x: isMobile ? 0 : -10,
+                                    force3D: true
+                                }, {
+                                    autoAlpha: 1,
+                                    y: 0,
+                                    x: 0,
+                                    duration: baseDuration,
+                                    stagger: 0.1,
+                                    ease: 'power3.out',
+                                    scrollTrigger: {
+                                        trigger: intro,
+                                        start: 'top 84%',
+                                        once: true
+                                    },
+                                    onComplete: () => restoreTransitions(pieces)
+                                });
+                            });
+
+                            const explicitCards = Array.from(section.querySelectorAll('.diff-reveal, .case-card, .seg-card'));
+                            const structuralCards = Array.from(section.querySelectorAll(
+                                '.grid > .group.flex.flex-col.rounded-2xl, .grid > .flex.flex-col.border, .grid > .p-8'
+                            ));
+                            const cards = Array.from(new Set([...explicitCards, ...structuralCards]))
+                                .filter(card => !card.closest('footer') && !card.classList.contains('animated-border-line'));
+
+                            if (cards.length) {
+                                prepare(cards);
+                                gsap.set(cards, {
+                                    autoAlpha: 0,
+                                    y: cardDistance,
+                                    scale: isMobile ? 1 : 0.985,
+                                    clipPath: 'inset(10% 0% 0% 0%)',
+                                    force3D: true
+                                });
+
+                                gsap.to(cards, {
+                                    autoAlpha: 1,
+                                    y: 0,
+                                    scale: 1,
+                                    clipPath: 'inset(0% 0% 0% 0%)',
+                                    duration: cardDuration,
+                                    stagger: cardStagger,
+                                    ease: 'power3.out',
+                                    scrollTrigger: {
+                                        trigger: cards[0].parentElement || section,
+                                        start: 'top 84%',
+                                        once: true
+                                    },
+                                    onComplete: () => restoreTransitions(cards)
+                                });
+                            }
+
+                            const ctaItems = Array.from(section.querySelectorAll('.cta-final-btn, .btn-gradient')).filter(el => !cards.includes(el));
+                            if (ctaItems.length) {
+                                prepare(ctaItems);
+                                gsap.fromTo(ctaItems, {
+                                    autoAlpha: 0,
+                                    y: isMobile ? 12 : 18,
+                                    force3D: true
+                                }, {
+                                    autoAlpha: 1,
+                                    y: 0,
+                                    duration: isMobile ? 0.62 : 0.78,
+                                    ease: 'power3.out',
+                                    scrollTrigger: {
+                                        trigger: ctaItems[0],
+                                        start: 'top 88%',
+                                        once: true
+                                    },
+                                    onComplete: () => restoreTransitions(ctaItems)
+                                });
+                            }
+                        });
+                    } else {
+                        // Fallback for browsers where GSAP does not initialize.
+                        const diffRevealEls = document.querySelectorAll('main .diff-reveal, main .diff-left-reveal');
+                        const diffObserver = new IntersectionObserver((entries) => {
+                            entries.forEach(entry => {
+                                if (entry.isIntersecting) {
+                                    entry.target.classList.add('is-visible');
+                                    diffObserver.unobserve(entry.target);
+                                }
+                            });
+                        }, { threshold: 0.15, rootMargin: '0px 0px -60px 0px' });
+                        diffRevealEls.forEach(el => diffObserver.observe(el));
+                    }
+                });
+                </script>
+
+</body>
+
+</html>
