@@ -811,70 +811,57 @@
                                 0 2px 10px rgba(0, 0, 0, 0.55),
                                 0 1px 3px rgba(0, 0, 0, 0.45);
                 }
-                .final-cta-layout {
-                        display: grid;
-                        grid-template-columns: minmax(0, 1fr);
-                        gap: clamp(3rem, 6vw, 5.5rem);
-                        align-items: center;
+                .final-cta-video-bg {
+                        position: absolute;
+                        inset: 0;
+                        z-index: 1;
+                        overflow: hidden;
+                        pointer-events: none;
+                        background: #2E3D6B;
                 }
-                .final-cta-video-card {
-                        position: relative;
-                        width: 100%;
-                        max-width: 720px;
-                        justify-self: center;
-                        padding: 0.7rem;
-                        border: 1px solid rgba(184, 196, 255, 0.34);
-                        border-radius: 24px;
-                        background:
-                                linear-gradient(135deg, rgba(255, 255, 255, 0.13), rgba(255, 255, 255, 0.035)),
-                                rgba(11, 21, 48, 0.28);
-                        box-shadow:
-                                0 32px 80px -42px rgba(0, 0, 0, 0.88),
-                                0 18px 44px -34px rgba(45, 91, 255, 0.78),
-                                inset 0 1px 0 rgba(255, 255, 255, 0.14);
+                .final-cta-video-bg iframe {
+                        position: absolute;
+                        top: 50%;
+                        left: 50%;
+                        width: auto;
+                        min-width: 100%;
+                        height: 100%;
+                        aspect-ratio: 16 / 9;
+                        transform: translate(-50%, -50%);
+                        border: 0;
+                        opacity: 0.58;
+                        filter: saturate(1.08) contrast(1.08);
                 }
-                .final-cta-video-card::before {
+                .final-cta-video-bg::after {
                         content: '';
                         position: absolute;
-                        inset: -1px;
-                        border-radius: inherit;
-                        pointer-events: none;
+                        inset: 0;
+                        z-index: 2;
                         background:
-                                linear-gradient(135deg, rgba(92, 122, 232, 0.5), transparent 32%, rgba(255, 255, 255, 0.16) 70%, transparent);
-                        opacity: 0.6;
+                                linear-gradient(90deg, rgba(46, 61, 107, 0.98) 0%, rgba(46, 61, 107, 0.9) 36%, rgba(46, 61, 107, 0.44) 66%, rgba(11, 21, 48, 0.22) 100%),
+                                linear-gradient(180deg, rgba(46, 61, 107, 0.68) 0%, rgba(46, 61, 107, 0.06) 42%, rgba(46, 61, 107, 0.72) 100%);
                 }
-                .final-cta-video-frame {
-                        position: relative;
-                        z-index: 1;
-                        aspect-ratio: 16 / 9;
-                        width: 100%;
-                        overflow: hidden;
-                        border-radius: 18px;
-                        background: #0B1530;
-                        box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.08);
+                .final-cta-content {
+                        min-height: clamp(520px, 58vh, 720px);
+                        display: flex;
+                        align-items: center;
                 }
-                .final-cta-video-frame iframe {
-                        display: block;
-                        width: 100%;
-                        height: 100%;
-                        border: 0;
-                        border-radius: inherit;
+                .final-cta-copy {
+                        width: min(100%, 820px);
                 }
-                @media (min-width: 1024px) {
-                        .final-cta-layout {
-                                grid-template-columns: minmax(0, 0.92fr) minmax(420px, 1.08fr);
+                @media (max-width: 768px) {
+                        .final-cta-video-bg iframe {
+                                min-width: 210%;
+                                height: 100%;
+                                opacity: 0.36;
                         }
-                        .final-cta-video-card {
-                                justify-self: end;
+                        .final-cta-video-bg::after {
+                                background:
+                                        linear-gradient(180deg, rgba(46, 61, 107, 0.96) 0%, rgba(46, 61, 107, 0.76) 46%, rgba(46, 61, 107, 0.96) 100%),
+                                        linear-gradient(90deg, rgba(11, 21, 48, 0.42), rgba(46, 61, 107, 0.28));
                         }
-                }
-                @media (max-width: 640px) {
-                        .final-cta-video-card {
-                                padding: 0.42rem;
-                                border-radius: 18px;
-                        }
-                        .final-cta-video-frame {
-                                border-radius: 14px;
+                        .final-cta-content {
+                                min-height: clamp(560px, 74vh, 720px);
                         }
                 }
                 .hero-title-accent {
@@ -2266,16 +2253,24 @@
                         </div>
                 </section>
                 <!-- Final CTA -->
-                <section class="w-full bg-[#2E3D6B] relative pb-32 lg:pb-48 pt-40 lg:pt-56 sticky-stack z-[90]">
+                <section class="w-full bg-[#2E3D6B] relative overflow-hidden pb-32 lg:pb-48 pt-40 lg:pt-56 sticky-stack z-[90]">
                         <div class="absolute bottom-full left-0 w-full h-[16px] md:h-[24px] pointer-events-none z-20 flex justify-between">
                                 <svg class="w-[16px] h-[16px] md:w-[24px] md:h-[24px] text-slate-100" fill="currentColor" viewBox="0 0 24 24"><path d="M0 24V0c0 13.255 10.745 24 24 24H0z" /></svg>
                                 <svg class="w-[16px] h-[16px] md:w-[24px] md:h-[24px] text-slate-100" fill="currentColor" viewBox="0 0 24 24"><path d="M24 24V0c0 13.255-10.745 24-24 24h24z" /></svg>
                         
 <div class="animated-border-line absolute top-8 left-[16px] md:left-[24px] right-[16px] md:right-[24px] h-[1px] md:h-[2px] bg-gradient-to-r from-transparent via-[#485b99] to-transparent transform scale-x-0 opacity-0 transition-all duration-1000 ease-out origin-center z-30"></div>
 </div>
-                        <div class="max-w-[1440px] mx-auto px-8 relative z-30">
-                                <div class="final-cta-layout">
-                                <div class="flex flex-col items-start text-left w-full max-w-4xl">
+                        <div class="final-cta-video-bg" aria-hidden="true">
+                                <iframe
+                                        src="https://www.youtube.com/embed/-Zn5uLwhtu4?autoplay=1&amp;mute=1&amp;controls=0&amp;loop=1&amp;playlist=-Zn5uLwhtu4&amp;playsinline=1&amp;rel=0&amp;modestbranding=1"
+                                        title="J.R. Company - Operações Especiais"
+                                        loading="lazy"
+                                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                        allowfullscreen>
+                                </iframe>
+                        </div>
+                        <div class="final-cta-content max-w-[1440px] mx-auto px-8 relative z-30">
+                                <div class="final-cta-copy flex flex-col items-start text-left">
                                         <h2 class="font-display text-white font-semibold tracking-tight mb-6 md:mb-8 hero-title-shadow"
                                                 style="font-size: clamp(44px, 6.4vw, 88px); line-height: 1.05; letter-spacing: -0.02em;">Seu projeto exige precisão?</h2>
                                         <p class="font-body-lg text-blue-200 max-w-2xl leading-relaxed text-[17px] md:text-[19px] mb-10 md:mb-12 hero-text-shadow-soft" style="">Fale com nosso time de engenharia
@@ -2287,18 +2282,6 @@
                                                         Agendar Consultoria Técnica
                                                 </button>
                                         </div>
-                                </div>
-                                <div class="final-cta-video-card" aria-label="Vídeo institucional J.R. Company">
-                                        <div class="final-cta-video-frame">
-                                                <iframe
-                                                        src="https://www.youtube.com/embed/-Zn5uLwhtu4"
-                                                        title="J.R. Company - Operações Especiais"
-                                                        loading="lazy"
-                                                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                                                        allowfullscreen>
-                                                </iframe>
-                                        </div>
-                                </div>
                                 </div>
                         </div>
                 </section>
