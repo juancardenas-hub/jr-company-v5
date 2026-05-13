@@ -1,0 +1,44 @@
+﻿[
+    {
+        "slot":  1,
+        "id":  "card-cargas-excedentes",
+        "old_src":  "https://lh3.googleusercontent.com/aida-public/AB6AXuB7p65gylT4qYb83fqWO1u4zCcm81e-CxQSbjH4tcNFuX5jY7dQTASxY1BRwTIFOm93xu5ElMPB_tl9VVIrRNKjYeybTHDE3UBSfo2o7R8l0u8NKF-2q59WiMmU1dUQr77JAirkgSaG0HONRUrN22ZN7XqBhhW8pDD7UE-BKr4jgI6UPT5DXSyZCPIcN4Vj61ZUR23oohaleGak3Cstw1yK2vXtslPfoeaxA9QcIoOhpoM-7m0HzaGNahyCrRpdGGMHpEQrIzZkhhra",
+        "new_src":  "./images-site/card-cargas-excedentes.jpg"
+    },
+    {
+        "slot":  2,
+        "id":  "card-icamento-industrial",
+        "old_src":  "https://lh3.googleusercontent.com/aida-public/AB6AXuA4dKRkGF_CahMuNKHIXDrWqRlCX__BemUMekHrT9v6FSvqnTMZwt65hlkQmtlc3ffhLNirTboGslFxZz9dOXcUY_4M6Y7jVv9rDtFg39yGXW78YXtjXMMn9VWHkmqQHupH989WaFGwJPIMjzI_CdSgdmH9CSUPMUQWVFleU6wYuKVWAigJYxBcFHrUiBJvu29a9CNd1NueJ5_l3R934EMrutFeQ0DszyNLrjY-GB745YTBzcP3vX5VuaF1En8fwO8CknuWwcUH3fSJ",
+        "new_src":  "./images-site/card-icamento-industrial.jpg"
+    },
+    {
+        "slot":  3,
+        "id":  "card-logistica-armazem",
+        "old_src":  "https://lh3.googleusercontent.com/aida-public/AB6AXuCAyv707z4T754VB9Y19UEroRKsSJB_MX-G1UpnfOvhQi8zfEdlhsB3qEq8xNCjUScKqD3sRQ6Pn79qSvoA52saE1LK_hcDK34pk9WhpFqOE1QhrGEehDyrEXFUttv0FRm_zW50g39yS73OuAT9-xWItHuKUkF7HPsscbh2LDXeNlkKzPinO8-zMdTs1xVGAbrp3zW-W7jRwGCmN75VlOh5ht5Dn-PZx290clBxpIWAzlqVIZii7LCOfpmarkXkZZfVCzdA7LSX7ZRF",
+        "new_src":  "./images-site/card-logistica-armazem.jpg"
+    },
+    {
+        "slot":  4,
+        "id":  "card-internacional",
+        "old_src":  "https://lh3.googleusercontent.com/aida-public/AB6AXuBHXhYPak38C3h5wypicsOHahJzZUpba7RNNmYpF9fK7V-uh6gobyApqL8jY2oFKoWeIlKHvhcPedvfFpBnauGv1kuk7rnAdg8REqL3CiMChKWqkH8mCrlSCzo_derlXWZn1oI6TiNXmS-at2_pqiVuFuXWV2G7M7JpkrfC0qNLlzKSH3SsXISSdFDvLy-iw38e5PVD2BMnAYnigMCHbL742usL8-UWNTrJfeOF9Pq0fnu14NaNkjZaXh0fI6toHhkXIjpaDkBhe6s5",
+        "new_src":  "./images-site/card-internacional.jpg"
+    },
+    {
+        "slot":  5,
+        "id":  "case-industria-base",
+        "old_src":  "https://lh3.googleusercontent.com/aida-public/AB6AXuCwPrKqzSKhegYPJ2XBBh_AnzWwPNFAs17-rYubmlE9BLNLm5vYtK4yE1kztUR5N2fDrUXF4Q7HpQTM7Bst9QLXLkZYS04MddxQmMmQiesv9979ZnATbyoEl0FXWMa5uAOV1wc81G2KGrQ_-U7cdpcO0hmI02Mu99mzdVN8XU-lw-cNsB1hdxM8XB5I47e2NjD3GkjrD8fZtoTzVacd_8ylSFX0uiVzoU5jbSytJdng5i8jnEJz4QckEXXyOofdIJmlM5S3a2YWx3Kl",
+        "new_src":  "./images-site/case-industria-base.jpg"
+    },
+    {
+        "slot":  6,
+        "id":  "case-setor-energia",
+        "old_src":  "https://lh3.googleusercontent.com/aida-public/AB6AXuB-dpnH7nt9DPJyoDWzQ5wsPfa7n6O89771H92rCFbLaWPqDMrtMdrc_Vh2b6DzpEQqwoktVrtfK_oMCEdsU-LYnsZIFw_DrFSOGk7H45oKQe2999xyvrOGvIG8-RWoObBBQ1bs24JzlUf1-q7uUUjj4KtoIbgLyiNjW5OQyQZq5orTvswgpttvM0FAhJ_BHSWCGY7RQzgDKhcIKuDemUOuCGdnzX8fpI9b1n13jPIVK6w6pCN4Mam9JjgOVsVOhNvtcNhOpcbhCVnz",
+        "new_src":  "./images-site/case-setor-energia.jpg"
+    },
+    {
+        "slot":  7,
+        "id":  "case-construcao-pesada",
+        "old_src":  "https://lh3.googleusercontent.com/aida-public/AB6AXuDR3MBmXG9J0BMnHjK5HnBZbqLM8L2ZU0bLBKUTZgFzU69WG81WxGRn8xVbrYHzr_1QBKQ759jYC5fpV6keAmd4ElNxSzANAPBpdilL1ji-RrORBDw-cp1aBGjLBse9ZJPe32tV3QSKl6DtsRZRsxVGoj_wMw19ZxIdSZapshAPO39kloM_LLp2yeN83SfQVzgrArrVQuX3ynm0LgD9QyfJMfc6X73qcYBegFQj6b5wuoCM4mOQWV7opYQvys9csC-63CKbCU8zwdXg",
+        "new_src":  "./images-site/case-construcao-pesada.jpg"
+    }
+]

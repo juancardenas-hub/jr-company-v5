@@ -1,0 +1,58 @@
+﻿[
+    {
+        "slot":  1,
+        "id":  "card-cargas-excedentes",
+        "nome_slot":  "Card 1 - Cargas Excedentes",
+        "origem":  "C:\\Users\\hx-co\\OneDrive\\Documentos\\brigth\\JR Company\\video header\\IMG-20250217-WA0159.jpg",
+        "destino":  "C:\\Users\\hx-co\\OneDrive\\Documentos\\brigth\\JR Company\\VERSAO 5 (2) 08-05-26 16\\VERSAO 5 (2)\\VERSAO 1\\images-site\\card-cargas-excedentes.jpg",
+        "caminho_index":  "./images-site/card-cargas-excedentes.jpg"
+    },
+    {
+        "slot":  2,
+        "id":  "card-icamento-industrial",
+        "nome_slot":  "Card 2 - Içamento Industrial",
+        "origem":  "C:\\Users\\hx-co\\OneDrive\\Documentos\\brigth\\JR Company\\video header\\WhatsApp Image 2026-03-05 at 16.01.54.jpeg",
+        "destino":  "C:\\Users\\hx-co\\OneDrive\\Documentos\\brigth\\JR Company\\VERSAO 5 (2) 08-05-26 16\\VERSAO 5 (2)\\VERSAO 1\\images-site\\card-icamento-industrial.jpg",
+        "caminho_index":  "./images-site/card-icamento-industrial.jpg"
+    },
+    {
+        "slot":  3,
+        "id":  "card-logistica-armazem",
+        "nome_slot":  "Card 3 - Logística de Armazém",
+        "origem":  "C:\\Users\\hx-co\\OneDrive\\Documentos\\brigth\\JR Company\\video header\\WhatsApp Image 2026-03-05 at 15.02.51 (1).jpeg",
+        "destino":  "C:\\Users\\hx-co\\OneDrive\\Documentos\\brigth\\JR Company\\VERSAO 5 (2) 08-05-26 16\\VERSAO 5 (2)\\VERSAO 1\\images-site\\card-logistica-armazem.jpg",
+        "caminho_index":  "./images-site/card-logistica-armazem.jpg"
+    },
+    {
+        "slot":  4,
+        "id":  "card-internacional",
+        "nome_slot":  "Card 4 - Internacional",
+        "origem":  "C:\\Users\\hx-co\\OneDrive\\Documentos\\brigth\\JR Company\\video header\\IMG_20260326_082101.jpg",
+        "destino":  "C:\\Users\\hx-co\\OneDrive\\Documentos\\brigth\\JR Company\\VERSAO 5 (2) 08-05-26 16\\VERSAO 5 (2)\\VERSAO 1\\images-site\\card-internacional.jpg",
+        "caminho_index":  "./images-site/card-internacional.jpg"
+    },
+    {
+        "slot":  5,
+        "id":  "case-industria-base",
+        "nome_slot":  "Case 1 - Indústria de base",
+        "origem":  "C:\\Users\\hx-co\\OneDrive\\Documentos\\brigth\\JR Company\\video header\\WhatsApp Image 2026-03-05 at 15.11.31 (1).jpeg",
+        "destino":  "C:\\Users\\hx-co\\OneDrive\\Documentos\\brigth\\JR Company\\VERSAO 5 (2) 08-05-26 16\\VERSAO 5 (2)\\VERSAO 1\\images-site\\case-industria-base.jpg",
+        "caminho_index":  "./images-site/case-industria-base.jpg"
+    },
+    {
+        "slot":  6,
+        "id":  "case-setor-energia",
+        "nome_slot":  "Case 2 - Setor de energia",
+        "origem":  "C:\\Users\\hx-co\\OneDrive\\Documentos\\brigth\\JR Company\\video header\\IMG-20241220-WA0071.jpg",
+        "destino":  "C:\\Users\\hx-co\\OneDrive\\Documentos\\brigth\\JR Company\\VERSAO 5 (2) 08-05-26 16\\VERSAO 5 (2)\\VERSAO 1\\images-site\\case-setor-energia.jpg",
+        "caminho_index":  "./images-site/case-setor-energia.jpg"
+    },
+    {
+        "slot":  7,
+        "id":  "case-construcao-pesada",
+        "nome_slot":  "Case 3 - Construção pesada",
+        "origem":  "C:\\Users\\hx-co\\OneDrive\\Documentos\\brigth\\JR Company\\video header\\57.jpg",
+        "destino":  "C:\\Users\\hx-co\\OneDrive\\Documentos\\brigth\\JR Company\\VERSAO 5 (2) 08-05-26 16\\VERSAO 5 (2)\\VERSAO 1\\images-site\\case-construcao-pesada.jpg",
+        "caminho_index":  "./images-site/case-construcao-pesada.jpg"
+    }
+]
