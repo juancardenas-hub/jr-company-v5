@@ -414,6 +414,200 @@
                         top: min(0px, calc(100vh - 100%));
                 }
 
+                /* === Prova de Capacidade - operational dashboard metrics === */
+                .stats-section {
+                        background:
+                                radial-gradient(circle at 16% 12%, rgba(45, 91, 255, 0.08), transparent 30%),
+                                linear-gradient(180deg, #f8fafc 0%, #eef3fb 100%);
+                }
+
+                .stats-section::before {
+                        content: '';
+                        position: absolute;
+                        inset: 0;
+                        pointer-events: none;
+                        background-image:
+                                linear-gradient(rgba(46, 61, 107, 0.055) 1px, transparent 1px),
+                                linear-gradient(90deg, rgba(46, 61, 107, 0.045) 1px, transparent 1px);
+                        background-size: 48px 48px;
+                        mask-image: linear-gradient(180deg, rgba(0, 0, 0, 0.55), transparent 78%);
+                }
+
+                .stats-heading {
+                        position: relative;
+                        padding-bottom: 2rem;
+                }
+
+                .stats-heading::after {
+                        content: '';
+                        position: absolute;
+                        left: 0;
+                        bottom: 0;
+                        width: min(420px, 100%);
+                        height: 1px;
+                        background: linear-gradient(90deg, rgba(20, 44, 142, 0.75), rgba(45, 91, 255, 0.18), transparent);
+                }
+
+                .stats-grid {
+                        display: grid;
+                        grid-template-columns: repeat(4, minmax(0, 1fr));
+                        gap: 1rem;
+                }
+
+                .stats-card {
+                        position: relative;
+                        min-height: 220px;
+                        padding: 1.75rem;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: space-between;
+                        overflow: hidden;
+                        border: 1px solid rgba(148, 163, 184, 0.38);
+                        border-radius: 18px;
+                        background:
+                                linear-gradient(180deg, rgba(255, 255, 255, 0.96), rgba(248, 250, 252, 0.9)),
+                                #ffffff;
+                        box-shadow: 0 18px 48px -34px rgba(15, 23, 42, 0.34);
+                        transition:
+                                transform 0.42s cubic-bezier(0.16, 1, 0.3, 1),
+                                border-color 0.42s ease,
+                                box-shadow 0.42s ease,
+                                background 0.42s ease;
+                }
+
+                .stats-card::before {
+                        content: '';
+                        position: absolute;
+                        left: 0;
+                        right: 0;
+                        top: 0;
+                        height: 3px;
+                        background: linear-gradient(90deg, #142C8E 0%, #1F49D8 52%, #2D5BFF 100%);
+                        opacity: 0.92;
+                }
+
+                .stats-card::after {
+                        content: '';
+                        position: absolute;
+                        inset: 0;
+                        pointer-events: none;
+                        opacity: 0;
+                        background: radial-gradient(circle at 18% 0%, rgba(45, 91, 255, 0.12), transparent 44%);
+                        transition: opacity 0.42s ease;
+                }
+
+                .stats-card:hover {
+                        transform: translateY(-4px);
+                        border-color: rgba(31, 73, 216, 0.46);
+                        box-shadow: 0 24px 56px -34px rgba(20, 44, 142, 0.5);
+                        background:
+                                linear-gradient(180deg, rgba(255, 255, 255, 1), rgba(244, 248, 255, 0.94)),
+                                #ffffff;
+                }
+
+                .stats-card:hover::after {
+                        opacity: 1;
+                }
+
+                .stats-card-top,
+                .stats-card-value {
+                        position: relative;
+                        z-index: 1;
+                }
+
+                .stats-card-top {
+                        display: flex;
+                        align-items: flex-start;
+                        justify-content: space-between;
+                        gap: 1rem;
+                }
+
+                .stats-label {
+                        display: block;
+                        font-family: 'JetBrains Mono', ui-monospace, monospace;
+                        font-size: 0.68rem;
+                        line-height: 1.4;
+                        letter-spacing: 0.16em;
+                        text-transform: uppercase;
+                        color: #475569;
+                }
+
+                .stats-icon {
+                        width: 2.5rem;
+                        height: 2.5rem;
+                        display: inline-flex;
+                        align-items: center;
+                        justify-content: center;
+                        flex: 0 0 auto;
+                        color: #1F49D8;
+                        border: 1px solid rgba(31, 73, 216, 0.18);
+                        border-radius: 12px;
+                        background: linear-gradient(180deg, rgba(45, 91, 255, 0.1), rgba(255, 255, 255, 0.78));
+                }
+
+                .stats-icon .material-symbols-outlined {
+                        font-size: 1.35rem;
+                }
+
+                .stats-line {
+                        width: 54px;
+                        height: 1px;
+                        margin: 1.4rem 0 1.2rem;
+                        background: linear-gradient(90deg, #142C8E, rgba(45, 91, 255, 0));
+                        transform-origin: left center;
+                }
+
+                .stats-number {
+                        display: block;
+                        font-family: 'Vazirmatn', sans-serif;
+                        font-size: clamp(2.7rem, 4.3vw, 4.45rem);
+                        line-height: 0.95;
+                        font-weight: 900;
+                        letter-spacing: 0;
+                        color: #142C8E;
+                }
+
+                .stats-unit {
+                        display: block;
+                        margin-top: 0.75rem;
+                        font-family: 'JetBrains Mono', ui-monospace, monospace;
+                        font-size: 0.76rem;
+                        line-height: 1.45;
+                        letter-spacing: 0.08em;
+                        text-transform: uppercase;
+                        color: #334155;
+                }
+
+                @media (max-width: 1024px) {
+                        .stats-grid {
+                                grid-template-columns: repeat(2, minmax(0, 1fr));
+                        }
+                }
+
+                @media (max-width: 640px) {
+                        .stats-grid {
+                                grid-template-columns: 1fr;
+                                gap: 0.875rem;
+                        }
+                        .stats-card {
+                                min-height: 184px;
+                                padding: 1.35rem;
+                                border-radius: 16px;
+                        }
+                        .stats-number {
+                                font-size: clamp(2.55rem, 15vw, 3.4rem);
+                        }
+                }
+
+                @media (prefers-reduced-motion: reduce) {
+                        .stats-card,
+                        .stats-line {
+                                opacity: 1 !important;
+                                transform: none !important;
+                                transition: none !important;
+                        }
+                }
+
                 /* === Diferenciais Section – Micro-interactions & Scroll Animations === */
 
                 /* Base hidden state for scroll-reveal elements */
@@ -1010,7 +1204,7 @@
                 })();
                 </script>
                 <!-- Prova de Capacidade -->
-                <section class="w-full bg-slate-50 py-32 lg:py-48 blueprint-bg relative sticky-stack z-[20]">
+                <section class="stats-section w-full bg-slate-50 py-32 lg:py-48 blueprint-bg relative sticky-stack z-[20]">
                         <div class="absolute bottom-full left-0 w-full h-[16px] md:h-[24px] pointer-events-none z-20 flex justify-between">
                                 <svg class="w-[16px] h-[16px] md:w-[24px] md:h-[24px] text-slate-50" fill="currentColor" viewBox="0 0 24 24"><path d="M0 24V0c0 13.255 10.745 24 24 24H0z" /></svg>
                                 <svg class="w-[16px] h-[16px] md:w-[24px] md:h-[24px] text-slate-50" fill="currentColor" viewBox="0 0 24 24"><path d="M24 24V0c0 13.255-10.745 24-24 24h24z" /></svg>
@@ -1018,61 +1212,66 @@
 <div class="animated-border-line absolute bottom-0 left-[16px] md:left-[24px] right-[16px] md:right-[24px] h-[1px] md:h-[2px] bg-gradient-to-r from-transparent via-[#2E3D6B] to-transparent transform scale-x-0 opacity-0 transition-all duration-1000 ease-out origin-center z-30"></div>
 </div>
                         <div class="max-w-[1440px] mx-auto px-8 relative z-30">
-                                <div
-                                        class="mb-16 border-b border-slate-200 pb-8 flex flex-col md:flex-row justify-between items-end gap-8">
-                                        <h2 class="home-section-title max-w-2xl"
-                                                style="">Operações complexas exigem estrutura, <span
-                                                        class="title-accent" style="">não improviso.</span>
+                                <div class="stats-heading mb-16 flex flex-col md:flex-row justify-between items-end gap-8">
+                                        <h2 class="home-section-title max-w-2xl">
+                                                Operações complexas exigem estrutura, <span class="title-accent">não improviso.</span>
                                         </h2>
                                 </div>
-                                <div
-                                        class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-0 border border-slate-200 bg-white rounded-2xl overflow-hidden">
+                                <div class="stats-grid">
                                         <!-- Metric 1 -->
-                                        <div
-                                                class="p-8 border-b md:border-b-0 md:border-r border-slate-200 flex flex-col justify-between h-48 group hover:bg-slate-50 transition-colors">
-                                                <span class="font-label-sm text-label-sm text-slate-500 uppercase"
-                                                        style="">Volume Transportado</span>
-                                                <div>
-                                                        <div class="font-display text-[48px] font-bold text-[#2E3D6B] tracking-tighter leading-none mb-2"
-                                                                style="">+450k</div>
-                                                        <div class="font-mono-data text-mono-data text-slate-700"
-                                                                style="">Toneladas Ano</div>
+                                        <div class="stats-card">
+                                                <div class="stats-card-top">
+                                                        <span class="stats-label">Volume Transportado</span>
+                                                        <span class="stats-icon" aria-hidden="true">
+                                                                <span class="material-symbols-outlined">local_shipping</span>
+                                                        </span>
+                                                </div>
+                                                <div class="stats-card-value">
+                                                        <div class="stats-line"></div>
+                                                        <span class="stats-number" data-count-to="450" data-count-prefix="+" data-count-suffix="k" data-count-decimals="0">+450k</span>
+                                                        <span class="stats-unit">Toneladas Ano</span>
                                                 </div>
                                         </div>
                                         <!-- Metric 2 -->
-                                        <div
-                                                class="p-8 border-b md:border-b-0 lg:border-r border-slate-200 flex flex-col justify-between h-48 group hover:bg-slate-50 transition-colors">
-                                                <span class="font-label-sm text-label-sm text-slate-500 uppercase"
-                                                        style="">Projetos Concluídos</span>
-                                                <div>
-                                                        <div class="font-display text-[48px] font-bold text-[#2E3D6B] tracking-tighter leading-none mb-2"
-                                                                style="">+1.2k</div>
-                                                        <div class="font-mono-data text-mono-data text-slate-700"
-                                                                style="">Operações Especiais</div>
+                                        <div class="stats-card">
+                                                <div class="stats-card-top">
+                                                        <span class="stats-label">Projetos Concluídos</span>
+                                                        <span class="stats-icon" aria-hidden="true">
+                                                                <span class="material-symbols-outlined">task_alt</span>
+                                                        </span>
+                                                </div>
+                                                <div class="stats-card-value">
+                                                        <div class="stats-line"></div>
+                                                        <span class="stats-number" data-count-to="1.2" data-count-prefix="+" data-count-suffix="k" data-count-decimals="1">+1.2k</span>
+                                                        <span class="stats-unit">Operações Especiais</span>
                                                 </div>
                                         </div>
                                         <!-- Metric 3 -->
-                                        <div
-                                                class="p-8 border-b md:border-b-0 md:border-r border-slate-200 flex flex-col justify-between h-48 group hover:bg-slate-50 transition-colors">
-                                                <span class="font-label-sm text-label-sm text-slate-500 uppercase"
-                                                        style="">Frota Especializada</span>
-                                                <div>
-                                                        <div class="font-display text-[48px] font-bold text-[#2E3D6B] tracking-tighter leading-none mb-2"
-                                                                style="">+85</div>
-                                                        <div class="font-mono-data text-mono-data text-slate-700"
-                                                                style="">Equipamentos Pesados</div>
+                                        <div class="stats-card">
+                                                <div class="stats-card-top">
+                                                        <span class="stats-label">Frota Especializada</span>
+                                                        <span class="stats-icon" aria-hidden="true">
+                                                                <span class="material-symbols-outlined">precision_manufacturing</span>
+                                                        </span>
+                                                </div>
+                                                <div class="stats-card-value">
+                                                        <div class="stats-line"></div>
+                                                        <span class="stats-number" data-count-to="85" data-count-prefix="+" data-count-suffix="" data-count-decimals="0">+85</span>
+                                                        <span class="stats-unit">Equipamentos Pesados</span>
                                                 </div>
                                         </div>
                                         <!-- Metric 4 -->
-                                        <div
-                                                class="p-8 flex flex-col justify-between h-48 group hover:bg-slate-50 transition-colors">
-                                                <span class="font-label-sm text-label-sm text-slate-500 uppercase"
-                                                        style="">Cobertura</span>
-                                                <div>
-                                                        <div class="font-display text-[48px] font-bold text-[#2E3D6B] tracking-tighter leading-none mb-2"
-                                                                style="">100%</div>
-                                                        <div class="font-mono-data text-mono-data text-slate-700"
-                                                                style="">Território Nacional</div>
+                                        <div class="stats-card">
+                                                <div class="stats-card-top">
+                                                        <span class="stats-label">Cobertura</span>
+                                                        <span class="stats-icon" aria-hidden="true">
+                                                                <span class="material-symbols-outlined">public</span>
+                                                        </span>
+                                                </div>
+                                                <div class="stats-card-value">
+                                                        <div class="stats-line"></div>
+                                                        <span class="stats-number" data-count-to="100" data-count-prefix="" data-count-suffix="%" data-count-decimals="0">100%</span>
+                                                        <span class="stats-unit">Território Nacional</span>
                                                 </div>
                                         </div>
                                 </div>
@@ -2168,14 +2367,15 @@
                 <script>
                 document.addEventListener('DOMContentLoaded', () => {
                     const sections = document.querySelectorAll('.sticky-stack');
-                    const homeEntrySections = Array.from(document.querySelectorAll('main > section.sticky-stack:not(#scroll-hero)'));
+                    const statsSection = document.querySelector('.stats-section');
+                    const homeEntrySections = Array.from(document.querySelectorAll('main > section.sticky-stack:not(#scroll-hero):not(.stats-section)'));
                     const reduceMotion = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
                     const useGsapEntry = !reduceMotion && window.gsap && window.ScrollTrigger;
                     
                     const observer = new IntersectionObserver((entries) => {
                         entries.forEach(entry => {
                             const borderLine = entry.target.querySelector('.animated-border-line');
-                            if (borderLine && !(useGsapEntry && homeEntrySections.includes(entry.target))) {
+                            if (borderLine && !(useGsapEntry && (homeEntrySections.includes(entry.target) || entry.target === statsSection))) {
                                 if (entry.isIntersecting && entry.intersectionRatio > 0.1) {
                                     borderLine.style.transform = 'scaleX(1)';
                                     borderLine.style.opacity = '1';
@@ -2207,7 +2407,7 @@
                     });
 
                     const resetForReducedMotion = () => {
-                        document.querySelectorAll('main .diff-reveal, main .diff-left-reveal, main .animated-border-line').forEach(el => {
+                        document.querySelectorAll('main .diff-reveal, main .diff-left-reveal, main .animated-border-line, main .stats-card, main .stats-line').forEach(el => {
                             el.classList.add('is-visible');
                             el.style.opacity = '1';
                             el.style.transform = el.classList.contains('animated-border-line') ? 'scaleX(1)' : 'none';
@@ -2256,6 +2456,102 @@
                             });
                             gsap.set(items, { clearProps: 'transform,clipPath,willChange' });
                         };
+
+                        if (statsSection) {
+                            const statsLine = statsSection.querySelector('.animated-border-line');
+                            const statsTitle = statsSection.querySelector('.home-section-title');
+                            const statsCards = Array.from(statsSection.querySelectorAll('.stats-card'));
+                            const statsCardLines = Array.from(statsSection.querySelectorAll('.stats-line'));
+                            const statsNumbers = Array.from(statsSection.querySelectorAll('.stats-number'));
+
+                            const formatStat = (el, value) => {
+                                const decimals = Number(el.dataset.countDecimals || 0);
+                                const prefix = el.dataset.countPrefix || '';
+                                const suffix = el.dataset.countSuffix || '';
+                                return prefix + Number(value).toFixed(decimals) + suffix;
+                            };
+
+                            gsap.set([statsTitle, ...statsCards].filter(Boolean), {
+                                autoAlpha: 0,
+                                y: isMobile ? 20 : 32,
+                                force3D: true
+                            });
+                            gsap.set(statsCards, {
+                                scale: isMobile ? 1 : 0.96
+                            });
+                            gsap.set(statsCardLines, {
+                                scaleX: 0,
+                                transformOrigin: 'left center'
+                            });
+                            if (statsLine) {
+                                gsap.set(statsLine, {
+                                    scaleX: 0,
+                                    autoAlpha: 0,
+                                    transformOrigin: 'left center'
+                                });
+                            }
+
+                            const statsTimeline = gsap.timeline({
+                                scrollTrigger: {
+                                    trigger: statsSection,
+                                    start: 'top 82%',
+                                    once: true
+                                }
+                            });
+
+                            if (statsLine) {
+                                statsTimeline.to(statsLine, {
+                                    scaleX: 1,
+                                    autoAlpha: 1,
+                                    duration: isMobile ? 0.72 : 1,
+                                    ease: 'power4.out'
+                                }, 0);
+                            }
+
+                            if (statsTitle) {
+                                statsTimeline.to(statsTitle, {
+                                    autoAlpha: 1,
+                                    y: 0,
+                                    duration: isMobile ? 0.72 : 0.95,
+                                    ease: 'power4.out'
+                                }, 0.08);
+                            }
+
+                            if (statsCards.length) {
+                                statsTimeline.to(statsCards, {
+                                    autoAlpha: 1,
+                                    y: 0,
+                                    scale: 1,
+                                    duration: isMobile ? 0.78 : 0.98,
+                                    stagger: isMobile ? 0.08 : 0.14,
+                                    ease: 'power3.out'
+                                }, 0.22)
+                                .to(statsCardLines, {
+                                    scaleX: 1,
+                                    duration: isMobile ? 0.62 : 0.78,
+                                    stagger: isMobile ? 0.06 : 0.1,
+                                    ease: 'power4.out'
+                                }, 0.38)
+                                .add(() => {
+                                    statsNumbers.forEach(numberEl => {
+                                        const target = Number(numberEl.dataset.countTo || 0);
+                                        const counter = { value: 0 };
+                                        numberEl.textContent = formatStat(numberEl, 0);
+                                        gsap.to(counter, {
+                                            value: target,
+                                            duration: isMobile ? 1.4 : 1.75,
+                                            ease: 'power3.out',
+                                            onUpdate: () => {
+                                                numberEl.textContent = formatStat(numberEl, counter.value);
+                                            },
+                                            onComplete: () => {
+                                                numberEl.textContent = formatStat(numberEl, target);
+                                            }
+                                        });
+                                    });
+                                }, 0.42);
+                            }
+                        }
 
                         homeEntrySections.forEach((section) => {
                             const line = section.querySelector('.animated-border-line');
