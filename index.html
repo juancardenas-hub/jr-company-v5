@@ -811,6 +811,72 @@
                                 0 2px 10px rgba(0, 0, 0, 0.55),
                                 0 1px 3px rgba(0, 0, 0, 0.45);
                 }
+                .final-cta-layout {
+                        display: grid;
+                        grid-template-columns: minmax(0, 1fr);
+                        gap: clamp(3rem, 6vw, 5.5rem);
+                        align-items: center;
+                }
+                .final-cta-video-card {
+                        position: relative;
+                        width: 100%;
+                        max-width: 720px;
+                        justify-self: center;
+                        padding: 0.7rem;
+                        border: 1px solid rgba(184, 196, 255, 0.34);
+                        border-radius: 24px;
+                        background:
+                                linear-gradient(135deg, rgba(255, 255, 255, 0.13), rgba(255, 255, 255, 0.035)),
+                                rgba(11, 21, 48, 0.28);
+                        box-shadow:
+                                0 32px 80px -42px rgba(0, 0, 0, 0.88),
+                                0 18px 44px -34px rgba(45, 91, 255, 0.78),
+                                inset 0 1px 0 rgba(255, 255, 255, 0.14);
+                }
+                .final-cta-video-card::before {
+                        content: '';
+                        position: absolute;
+                        inset: -1px;
+                        border-radius: inherit;
+                        pointer-events: none;
+                        background:
+                                linear-gradient(135deg, rgba(92, 122, 232, 0.5), transparent 32%, rgba(255, 255, 255, 0.16) 70%, transparent);
+                        opacity: 0.6;
+                }
+                .final-cta-video-frame {
+                        position: relative;
+                        z-index: 1;
+                        aspect-ratio: 16 / 9;
+                        width: 100%;
+                        overflow: hidden;
+                        border-radius: 18px;
+                        background: #0B1530;
+                        box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.08);
+                }
+                .final-cta-video-frame iframe {
+                        display: block;
+                        width: 100%;
+                        height: 100%;
+                        border: 0;
+                        border-radius: inherit;
+                }
+                @media (min-width: 1024px) {
+                        .final-cta-layout {
+                                grid-template-columns: minmax(0, 0.92fr) minmax(420px, 1.08fr);
+                        }
+                        .final-cta-video-card {
+                                justify-self: end;
+                        }
+                }
+                @media (max-width: 640px) {
+                        .final-cta-video-card {
+                                padding: 0.42rem;
+                                border-radius: 18px;
+                        }
+                        .final-cta-video-frame {
+                                border-radius: 14px;
+                        }
+                }
                 .hero-title-accent {
                         background: none;
                         -webkit-text-fill-color: #2D5BFF;
@@ -1310,7 +1376,7 @@
                                                         <img alt="Oversized load transport"
                                                                 class="w-full h-full object-cover grayscale opacity-80 group-hover:grayscale-0 transition-all duration-500"
                                                                 data-alt="Massive industrial wind turbine blade being transported by a specialized heavy-duty truck on a highway under clear skies"
-                                                                src="https://lh3.googleusercontent.com/aida-public/AB6AXuB7p65gylT4qYb83fqWO1u4zCcm81e-CxQSbjH4tcNFuX5jY7dQTASxY1BRwTIFOm93xu5ElMPB_tl9VVIrRNKjYeybTHDE3UBSfo2o7R8l0u8NKF-2q59WiMmU1dUQr77JAirkgSaG0HONRUrN22ZN7XqBhhW8pDD7UE-BKr4jgI6UPT5DXSyZCPIcN4Vj61ZUR23oohaleGak3Cstw1yK2vXtslPfoeaxA9QcIoOhpoM-7m0HzaGNahyCrRpdGGMHpEQrIzZkhhra"
+                                                                src="./images-site/card-cargas-excedentes.jpg"
                                                                 style="" />
                                                 </div>
                                                 <div class="p-6 flex-grow flex flex-col">
@@ -1349,7 +1415,7 @@
                                                         <img alt="Industrial lifting"
                                                                 class="w-full h-full object-cover grayscale opacity-80 group-hover:grayscale-0 transition-all duration-500"
                                                                 data-alt="Heavy industrial crane lifting massive steel beams at a construction site with technical precision and safety rigging"
-                                                                src="https://lh3.googleusercontent.com/aida-public/AB6AXuA4dKRkGF_CahMuNKHIXDrWqRlCX__BemUMekHrT9v6FSvqnTMZwt65hlkQmtlc3ffhLNirTboGslFxZz9dOXcUY_4M6Y7jVv9rDtFg39yGXW78YXtjXMMn9VWHkmqQHupH989WaFGwJPIMjzI_CdSgdmH9CSUPMUQWVFleU6wYuKVWAigJYxBcFHrUiBJvu29a9CNd1NueJ5_l3R934EMrutFeQ0DszyNLrjY-GB745YTBzcP3vX5VuaF1En8fwO8CknuWwcUH3fSJ"
+                                                                src="./images-site/card-icamento-industrial.jpg"
                                                                 style="" />
                                                 </div>
                                                 <div class="p-6 flex-grow flex flex-col">
@@ -1388,7 +1454,7 @@
                                                         <img alt="Warehouse logistics"
                                                                 class="w-full h-full object-cover grayscale opacity-80 group-hover:grayscale-0 transition-all duration-500"
                                                                 data-alt="High-tech automated warehouse interior with massive shelving units and precision robotic forklifts organizing industrial cargo"
-                                                                src="https://lh3.googleusercontent.com/aida-public/AB6AXuCAyv707z4T754VB9Y19UEroRKsSJB_MX-G1UpnfOvhQi8zfEdlhsB3qEq8xNCjUScKqD3sRQ6Pn79qSvoA52saE1LK_hcDK34pk9WhpFqOE1QhrGEehDyrEXFUttv0FRm_zW50g39yS73OuAT9-xWItHuKUkF7HPsscbh2LDXeNlkKzPinO8-zMdTs1xVGAbrp3zW-W7jRwGCmN75VlOh5ht5Dn-PZx290clBxpIWAzlqVIZii7LCOfpmarkXkZZfVCzdA7LSX7ZRF"
+                                                                src="./images-site/card-logistica-armazem.jpg"
                                                                 style="" />
                                                 </div>
                                                 <div class="p-6 flex-grow flex flex-col">
@@ -1414,7 +1480,7 @@
                                                         <img alt="International shipping"
                                                                 class="w-full h-full object-cover grayscale opacity-80 group-hover:grayscale-0 transition-all duration-500"
                                                                 data-alt="Massive cargo ship loaded with colorful containers navigating through rough ocean waters, representing global trade and logistics"
-                                                                src="https://lh3.googleusercontent.com/aida-public/AB6AXuBHXhYPak38C3h5wypicsOHahJzZUpba7RNNmYpF9fK7V-uh6gobyApqL8jY2oFKoWeIlKHvhcPedvfFpBnauGv1kuk7rnAdg8REqL3CiMChKWqkH8mCrlSCzo_derlXWZn1oI6TiNXmS-at2_pqiVuFuXWV2G7M7JpkrfC0qNLlzKSH3SsXISSdFDvLy-iw38e5PVD2BMnAYnigMCHbL742usL8-UWNTrJfeOF9Pq0fnu14NaNkjZaXh0fI6toHhkXIjpaDkBhe6s5"
+                                                                src="./images-site/card-internacional.jpg"
                                                                 style="" />
                                                 </div>
                                                 <div class="p-6 flex-grow flex flex-col">
@@ -1971,7 +2037,7 @@
                                         <a href="cases-operacoes.html" class="case-card diff-reveal" data-delay="1">
                                                 <div class="case-card-media">
                                                         <img alt="Operação Logística — Indústria de base"
-                                                                src="https://lh3.googleusercontent.com/aida-public/AB6AXuCwPrKqzSKhegYPJ2XBBh_AnzWwPNFAs17-rYubmlE9BLNLm5vYtK4yE1kztUR5N2fDrUXF4Q7HpQTM7Bst9QLXLkZYS04MddxQmMmQiesv9979ZnATbyoEl0FXWMa5uAOV1wc81G2KGrQ_-U7cdpcO0hmI02Mu99mzdVN8XU-lw-cNsB1hdxM8XB5I47e2NjD3GkjrD8fZtoTzVacd_8ylSFX0uiVzoU5jbSytJdng5i8jnEJz4QckEXXyOofdIJmlM5S3a2YWx3Kl" />
+                                                                src="./images-site/case-industria-base.jpg" />
                                                 </div>
                                                 <div class="case-card-body">
                                                         <span class="case-card-eyebrow">Case · Indústria</span>
@@ -1986,7 +2052,7 @@
                                         <a href="cases-operacoes.html" class="case-card diff-reveal" data-delay="2">
                                                 <div class="case-card-media">
                                                         <img alt="Operação Logística — Setor de energia"
-                                                                src="https://lh3.googleusercontent.com/aida-public/AB6AXuB-dpnH7nt9DPJyoDWzQ5wsPfa7n6O89771H92rCFbLaWPqDMrtMdrc_Vh2b6DzpEQqwoktVrtfK_oMCEdsU-LYnsZIFw_DrFSOGk7H45oKQe2999xyvrOGvIG8-RWoObBBQ1bs24JzlUf1-q7uUUjj4KtoIbgLyiNjW5OQyQZq5orTvswgpttvM0FAhJ_BHSWCGY7RQzgDKhcIKuDemUOuCGdnzX8fpI9b1n13jPIVK6w6pCN4Mam9JjgOVsVOhNvtcNhOpcbhCVnz" />
+                                                                src="./images-site/case-setor-energia.jpg" />
                                                 </div>
                                                 <div class="case-card-body">
                                                         <span class="case-card-eyebrow">Case · Energia</span>
@@ -2001,7 +2067,7 @@
                                         <a href="cases-operacoes.html" class="case-card diff-reveal" data-delay="3">
                                                 <div class="case-card-media">
                                                         <img alt="Operação Logística — Construção pesada"
-                                                                src="https://lh3.googleusercontent.com/aida-public/AB6AXuDR3MBmXG9J0BMnHjK5HnBZbqLM8L2ZU0bLBKUTZgFzU69WG81WxGRn8xVbrYHzr_1QBKQ759jYC5fpV6keAmd4ElNxSzANAPBpdilL1ji-RrORBDw-cp1aBGjLBse9ZJPe32tV3QSKl6DtsRZRsxVGoj_wMw19ZxIdSZapshAPO39kloM_LLp2yeN83SfQVzgrArrVQuX3ynm0LgD9QyfJMfc6X73qcYBegFQj6b5wuoCM4mOQWV7opYQvys9csC-63CKbCU8zwdXg" />
+                                                                src="./images-site/case-construcao-pesada.jpg" />
                                                 </div>
                                                 <div class="case-card-body">
                                                         <span class="case-card-eyebrow">Case · Construção</span>
@@ -2110,6 +2176,7 @@
                                                 class="flex flex-col border border-slate-200 bg-white hover:border-[#004AC6] transition-colors group rounded-2xl overflow-hidden">
                                                 <div
                                                         class="h-64 relative overflow-hidden bg-slate-100 border-b border-slate-200">
+                                                        <!-- IA-PENDING slot 8: ver images-site/_prompts-ia.md -->
                                                         <img alt="Como dimensionar cargas excedentes"
                                                                 class="w-full h-full object-cover grayscale opacity-80 group-hover:grayscale-0 transition-all duration-500"
                                                                 src="https://lh3.googleusercontent.com/aida-public/AB6AXuBh8IJgOnyRBOq-xmsndRSrBchmcP07R0LjAedOVhCS9IrnfwrZzZF2-LDPIP_R3D91G3q9s8kiARKFozXJYMJah6sjFjgSWhKxE49ibUFxAikps4aCqksbswD86RqKRJ6iiwt6YOISB4I0I0N7_r8uDC0dNsW1ZGfJyHB2SYwoKu4pW9RoM_peeyqFWIpKfPc-_LrJVhBkCLoYExILmQjhvyGMT2Zc1f56i70J9BLYM2RoeWTQDBnnuvS3qzb6ugnbLedWiVc9l-GZ" />
@@ -2137,6 +2204,7 @@
                                                 class="flex flex-col border border-slate-200 bg-white hover:border-[#004AC6] transition-colors group rounded-2xl overflow-hidden">
                                                 <div
                                                         class="h-64 relative overflow-hidden bg-slate-100 border-b border-slate-200">
+                                                        <!-- IA-PENDING slot 9: ver images-site/_prompts-ia.md -->
                                                         <img alt="Impacto do planejamento técnico"
                                                                 class="w-full h-full object-cover grayscale opacity-80 group-hover:grayscale-0 transition-all duration-500"
                                                                 src="https://lh3.googleusercontent.com/aida-public/AB6AXuBs_hDOddtUSOKqczkE-uLlvmG2dx8kA6WOWr-5o0VjmfWBOo0zSc_kMSRTB0ewGlgQxt9NrBkLu5n5VGtqrDtRNAJq3-hm5QZhwF2dUtitsb9eYRHkmbC0h0kYv-awmGLcgdxSa8YrOmteQKxAcXslWixh6NYJ2Uty7zDvlmfx2lWWctzu0B47uoSl-KEaA1oX1QE7rNXtn6WPI4HLCJn6ErGZdDSk3NmZFJh6u4D2BCZ9KKQdzzTNJDCGc3WqDhIMUT0Qj0wR2CLh" />
@@ -2165,6 +2233,7 @@
                                                 class="flex flex-col border border-slate-200 bg-white hover:border-[#004AC6] transition-colors group rounded-2xl overflow-hidden">
                                                 <div
                                                         class="h-64 relative overflow-hidden bg-slate-100 border-b border-slate-200">
+                                                        <!-- IA-PENDING slot 10: ver images-site/_prompts-ia.md -->
                                                         <img alt="Erros críticos em operações logísticas"
                                                                 class="w-full h-full object-cover grayscale opacity-80 group-hover:grayscale-0 transition-all duration-500"
                                                                 src="https://lh3.googleusercontent.com/aida-public/AB6AXuBagAEPpN8pnO7dlr4Jd2vK7jVx1ebW4EFhsArLbOCxc7_9_LiIPwEdnAzLB2bk4gRzCC_w7Bo78MPEMsUymdw-0RdRtP3jac-bnOfYA2kEs31r_GdI2pd6yJVsvNB8Oj8wfDFr3MkqfFO8hrtMouPILsqiZ5FVfPncwsdW_qJklGD6_jeOR8j7Gp33g23QMToPZ3jg0ScilCKzxS2h3zCLJ47MMwsnQCfoZEPnc43dRHKWIuzxS2MAWh0iQvzqa_qArj5V9tsjlRnL" />
@@ -2205,6 +2274,7 @@
 <div class="animated-border-line absolute top-8 left-[16px] md:left-[24px] right-[16px] md:right-[24px] h-[1px] md:h-[2px] bg-gradient-to-r from-transparent via-[#485b99] to-transparent transform scale-x-0 opacity-0 transition-all duration-1000 ease-out origin-center z-30"></div>
 </div>
                         <div class="max-w-[1440px] mx-auto px-8 relative z-30">
+                                <div class="final-cta-layout">
                                 <div class="flex flex-col items-start text-left w-full max-w-4xl">
                                         <h2 class="font-display text-white font-semibold tracking-tight mb-6 md:mb-8 hero-title-shadow"
                                                 style="font-size: clamp(44px, 6.4vw, 88px); line-height: 1.05; letter-spacing: -0.02em;">Seu projeto exige precisão?</h2>
@@ -2217,6 +2287,18 @@
                                                         Agendar Consultoria Técnica
                                                 </button>
                                         </div>
+                                </div>
+                                <div class="final-cta-video-card" aria-label="Vídeo institucional J.R. Company">
+                                        <div class="final-cta-video-frame">
+                                                <iframe
+                                                        src="https://www.youtube.com/embed/-Zn5uLwhtu4"
+                                                        title="J.R. Company - Operações Especiais"
+                                                        loading="lazy"
+                                                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                                        allowfullscreen>
+                                                </iframe>
+                                        </div>
+                                </div>
                                 </div>
                         </div>
                 </section>
