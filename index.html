@@ -10,16 +10,308 @@
         <!-- GSAP + ScrollTrigger (used by Como Funciona section) -->
         <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js" defer></script>
         <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js" defer></script>
+        <!-- Material Symbols (icons) — only Google asset kept, required for icon glyphs -->
         <link href="https://fonts.googleapis.com" rel="preconnect" />
         <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
-        <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&amp;family=Vazirmatn:wght@400;500;600;700;800;900&amp;display=swap"
-                rel="stylesheet" />
         <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
                 rel="stylesheet" />
-        <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
-                rel="stylesheet" />
-        <!-- JRC local typography system (display / body / technical) -->
-        <link rel="stylesheet" href="fonts/jrc/typography.css" />
+        <!-- =====================================================================
+             JRC LOCAL TYPOGRAPHY — Purista (industrial / engineering identity)
+             Replaces Google Fonts (Vazirmatn / Space Grotesk) with the official
+             brand font hosted locally in ./fonts/. Vazirmatn and Space Grotesk
+             are RE-DECLARED as @font-face pointing to Purista, so every existing
+             `font-['Vazirmatn']` / `font-['Space_Grotesk']` inline class in the
+             HTML automatically resolves to Purista without touching markup.
+             ===================================================================== -->
+        <style id="jrc-purista-typography">
+        /* ---------- @font-face: Purista (5 weights × normal+italic) ---------- */
+        @font-face { font-family: "Purista"; font-style: normal; font-weight: 100; font-display: swap;
+                src: url("./fonts/Purista-Thin.woff2") format("woff2"),
+                         url("./fonts/Purista-Thin.woff")  format("woff"),
+                         url("./fonts/Purista-Thin.ttf")   format("truetype"); }
+        @font-face { font-family: "Purista"; font-style: italic; font-weight: 100; font-display: swap;
+                src: url("./fonts/Purista-ThinItalic.woff2") format("woff2"),
+                         url("./fonts/Purista-ThinItalic.woff")  format("woff"),
+                         url("./fonts/Purista-ThinItalic.ttf")   format("truetype"); }
+        @font-face { font-family: "Purista"; font-style: normal; font-weight: 300; font-display: swap;
+                src: url("./fonts/Purista-Light.woff2") format("woff2"),
+                         url("./fonts/Purista-Light.woff")  format("woff"),
+                         url("./fonts/Purista-Light.ttf")   format("truetype"); }
+        @font-face { font-family: "Purista"; font-style: italic; font-weight: 300; font-display: swap;
+                src: url("./fonts/Purista-LightItalic.woff2") format("woff2"),
+                         url("./fonts/Purista-LightItalic.woff")  format("woff"),
+                         url("./fonts/Purista-LightItalic.ttf")   format("truetype"); }
+        @font-face { font-family: "Purista"; font-style: normal; font-weight: 400; font-display: swap;
+                src: url("./fonts/Purista-Light.woff2") format("woff2"),
+                         url("./fonts/Purista-Light.woff")  format("woff"),
+                         url("./fonts/Purista-Light.ttf")   format("truetype"); }
+        @font-face { font-family: "Purista"; font-style: normal; font-weight: 500; font-display: swap;
+                src: url("./fonts/Purista-Medium.woff2") format("woff2"),
+                         url("./fonts/Purista-Medium.woff")  format("woff"),
+                         url("./fonts/Purista-Medium.ttf")   format("truetype"); }
+        @font-face { font-family: "Purista"; font-style: italic; font-weight: 500; font-display: swap;
+                src: url("./fonts/Purista-MediumItalic.woff2") format("woff2"),
+                         url("./fonts/Purista-MediumItalic.woff")  format("woff"),
+                         url("./fonts/Purista-MediumItalic.ttf")   format("truetype"); }
+        @font-face { font-family: "Purista"; font-style: normal; font-weight: 600; font-display: swap;
+                src: url("./fonts/Purista-SemiBold.woff2") format("woff2"),
+                         url("./fonts/Purista-SemiBold.woff")  format("woff"),
+                         url("./fonts/Purista-SemiBold.ttf")   format("truetype"); }
+        @font-face { font-family: "Purista"; font-style: italic; font-weight: 600; font-display: swap;
+                src: url("./fonts/Purista-SemiBoldItalic.woff2") format("woff2"),
+                         url("./fonts/Purista-SemiBoldItalic.woff")  format("woff"),
+                         url("./fonts/Purista-SemiBoldItalic.ttf")   format("truetype"); }
+        @font-face { font-family: "Purista"; font-style: normal; font-weight: 700 900; font-display: swap;
+                src: url("./fonts/Purista-Bold.woff2") format("woff2"),
+                         url("./fonts/Purista-Bold.woff")  format("woff"),
+                         url("./fonts/Purista-Bold.ttf")   format("truetype"); }
+        @font-face { font-family: "Purista"; font-style: italic; font-weight: 700 900; font-display: swap;
+                src: url("./fonts/Purista-BoldItalic.woff2") format("woff2"),
+                         url("./fonts/Purista-BoldItalic.woff")  format("woff"),
+                         url("./fonts/Purista-BoldItalic.ttf")   format("truetype"); }
+
+        /* ---------- Aliases: Vazirmatn & Space Grotesk → Purista ---------- */
+        @font-face { font-family: "Vazirmatn"; font-style: normal; font-weight: 100; font-display: swap;
+                src: url("./fonts/Purista-Thin.woff2") format("woff2"),
+                         url("./fonts/Purista-Thin.woff")  format("woff"),
+                         url("./fonts/Purista-Thin.ttf")   format("truetype"); }
+        @font-face { font-family: "Vazirmatn"; font-style: normal; font-weight: 300 400; font-display: swap;
+                src: url("./fonts/Purista-Light.woff2") format("woff2"),
+                         url("./fonts/Purista-Light.woff")  format("woff"),
+                         url("./fonts/Purista-Light.ttf")   format("truetype"); }
+        @font-face { font-family: "Vazirmatn"; font-style: normal; font-weight: 500; font-display: swap;
+                src: url("./fonts/Purista-Medium.woff2") format("woff2"),
+                         url("./fonts/Purista-Medium.woff")  format("woff"),
+                         url("./fonts/Purista-Medium.ttf")   format("truetype"); }
+        @font-face { font-family: "Vazirmatn"; font-style: normal; font-weight: 600; font-display: swap;
+                src: url("./fonts/Purista-SemiBold.woff2") format("woff2"),
+                         url("./fonts/Purista-SemiBold.woff")  format("woff"),
+                         url("./fonts/Purista-SemiBold.ttf")   format("truetype"); }
+        @font-face { font-family: "Vazirmatn"; font-style: normal; font-weight: 700 900; font-display: swap;
+                src: url("./fonts/Purista-Bold.woff2") format("woff2"),
+                         url("./fonts/Purista-Bold.woff")  format("woff"),
+                         url("./fonts/Purista-Bold.ttf")   format("truetype"); }
+        @font-face { font-family: "Space Grotesk"; font-style: normal; font-weight: 300 400; font-display: swap;
+                src: url("./fonts/Purista-Light.woff2") format("woff2"),
+                         url("./fonts/Purista-Light.woff")  format("woff"),
+                         url("./fonts/Purista-Light.ttf")   format("truetype"); }
+        @font-face { font-family: "Space Grotesk"; font-style: normal; font-weight: 500; font-display: swap;
+                src: url("./fonts/Purista-Medium.woff2") format("woff2"),
+                         url("./fonts/Purista-Medium.woff")  format("woff"),
+                         url("./fonts/Purista-Medium.ttf")   format("truetype"); }
+        @font-face { font-family: "Space Grotesk"; font-style: normal; font-weight: 600; font-display: swap;
+                src: url("./fonts/Purista-SemiBold.woff2") format("woff2"),
+                         url("./fonts/Purista-SemiBold.woff")  format("woff"),
+                         url("./fonts/Purista-SemiBold.ttf")   format("truetype"); }
+        @font-face { font-family: "Space Grotesk"; font-style: normal; font-weight: 700 900; font-display: swap;
+                src: url("./fonts/Purista-Bold.woff2") format("woff2"),
+                         url("./fonts/Purista-Bold.woff")  format("woff"),
+                         url("./fonts/Purista-Bold.ttf")   format("truetype"); }
+
+        /* ---------- JRC roles (sistema antigo, mapeado para Purista) ---------- */
+        @font-face { font-family: "JRC Display"; font-style: normal; font-weight: 700 900; font-display: swap;
+                src: url("./fonts/Purista-Bold.woff2") format("woff2"),
+                         url("./fonts/Purista-Bold.woff")  format("woff"),
+                         url("./fonts/Purista-Bold.ttf")   format("truetype"); }
+        @font-face { font-family: "JRC Body"; font-style: normal; font-weight: 300 600; font-display: swap;
+                src: url("./fonts/Purista-Light.woff2") format("woff2"),
+                         url("./fonts/Purista-Light.woff")  format("woff"),
+                         url("./fonts/Purista-Light.ttf")   format("truetype"); }
+        @font-face { font-family: "JRC Technical"; font-style: normal; font-weight: 500 700; font-display: swap;
+                src: url("./fonts/Purista-Medium.woff2") format("woff2"),
+                         url("./fonts/Purista-Medium.woff")  format("woff"),
+                         url("./fonts/Purista-Medium.ttf")   format("truetype"); }
+
+        /* ---------- Design tokens ---------- */
+        :root {
+                --font-display:   "Purista", "JRC Display", "Vazirmatn", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+                --font-body:      "Purista", "JRC Body",    "Vazirmatn", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+                --font-technical: "Purista", "JRC Technical","Vazirmatn", ui-monospace, "SF Mono", Menlo, Consolas, monospace;
+                --fw-thin: 100; --fw-light: 300; --fw-regular: 400; --fw-medium: 500;
+                --fw-semibold: 600; --fw-bold: 700; --fw-black: 900;
+                --tracking-tight:-0.02em; --tracking-snug:-0.005em; --tracking-normal:0;
+                --tracking-wide:0.06em; --tracking-wider:0.12em; --tracking-widest:0.22em;
+        }
+
+        html, body {
+                font-family: var(--font-body);
+                font-weight: var(--fw-light);
+                line-height: 1.6;
+                -webkit-font-smoothing: antialiased;
+                -moz-osx-font-smoothing: grayscale;
+                text-rendering: optimizeLegibility;
+                font-feature-settings: "kern" 1, "liga" 1, "calt" 1;
+        }
+
+        h1, h2, h3, h4, h5, h6 {
+                font-family: var(--font-display);
+                font-weight: var(--fw-bold);
+                line-height: 1.05;
+                letter-spacing: var(--tracking-snug);
+        }
+
+        .hero-title-shadow, h1.hero-title-shadow {
+                font-family: var(--font-display) !important;
+                font-weight: var(--fw-bold) !important;
+                letter-spacing: -0.03em !important;
+                line-height: 0.95;
+                text-transform: none;
+        }
+
+        .hero-text-shadow-soft {
+                font-family: var(--font-technical) !important;
+                font-weight: var(--fw-semibold) !important;
+                letter-spacing: var(--tracking-widest) !important;
+                text-transform: uppercase;
+        }
+
+        .home-section-title,
+        .home-section-title * {
+                font-family: var(--font-display) !important;
+                font-weight: var(--fw-bold) !important;
+                letter-spacing: 0 !important;
+                line-height: 1.05 !important;
+                text-wrap: balance;
+        }
+
+        .atuacoes-hero__title,
+        .atuacoes-hero__title .atuacoes-hero__line {
+                font-family: var(--font-display) !important;
+                font-weight: var(--fw-bold) !important;
+                text-transform: uppercase;
+                letter-spacing: 0.005em !important;
+        }
+
+        .stats-number, .atuacoes-stat__value,
+        .metric-number, .stat-number {
+                font-family: var(--font-display) !important;
+                font-weight: var(--fw-bold) !important;
+                letter-spacing: -0.01em !important;
+                line-height: 0.95;
+                font-feature-settings: "tnum" 1, "lnum" 1;
+        }
+
+        .atuacoes-stat__label, .stats-label, .stats-unit {
+                font-family: var(--font-technical) !important;
+                font-weight: var(--fw-medium) !important;
+                letter-spacing: var(--tracking-wider) !important;
+                text-transform: uppercase;
+        }
+
+        .solucoes-title, .solucoes-title-accent {
+                font-family: var(--font-display) !important;
+                font-weight: var(--fw-bold) !important;
+                text-transform: uppercase;
+                letter-spacing: 0 !important;
+        }
+        .solucoes-card-title,
+        .solucoes-card .card-title,
+        .solucoes-card h3,
+        .solucoes-card h4 {
+                font-family: var(--font-display) !important;
+                font-weight: var(--fw-bold) !important;
+                text-transform: uppercase;
+                letter-spacing: var(--tracking-wide) !important;
+        }
+        .solucoes-card [class*="badge"],
+        .solucoes-card [class*="kicker"],
+        .solucoes-card [class*="eyebrow"],
+        .solucoes-card [class*="label"] {
+                font-family: var(--font-technical) !important;
+                font-weight: var(--fw-semibold) !important;
+                letter-spacing: var(--tracking-widest) !important;
+                text-transform: uppercase;
+        }
+
+        .cf-step-num, .step-number, .step-num {
+                font-family: var(--font-display) !important;
+                font-weight: var(--fw-bold) !important;
+                letter-spacing: -0.02em !important;
+                line-height: 1;
+                font-feature-settings: "tnum" 1, "lnum" 1;
+        }
+        .cf-step-title {
+                font-family: var(--font-display) !important;
+                font-weight: var(--fw-semibold) !important;
+                letter-spacing: -0.005em !important;
+        }
+        .cf-step-desc {
+                font-family: var(--font-body) !important;
+                font-weight: var(--fw-light) !important;
+                letter-spacing: 0 !important;
+                line-height: 1.55;
+        }
+
+        .title-accent, .hero-title-accent,
+        .precision-title-accent, .solucoes-title-accent {
+                font-family: var(--font-display) !important;
+                font-weight: var(--fw-bold) !important;
+        }
+
+        p, li, dd,
+        .body-text, .description, .card-description,
+        .feature-text, .footer-text, .blog-summary {
+                font-family: var(--font-body);
+                font-weight: var(--fw-light);
+                line-height: 1.6;
+        }
+
+        header nav a, .nav-link, .site-nav a, .main-nav a {
+                font-family: var(--font-body);
+                font-weight: var(--fw-medium);
+                letter-spacing: 0.04em;
+        }
+
+        button, .btn, .cta, [role="button"],
+        input[type="button"], input[type="submit"],
+        .btn-gradient, .btn-outline {
+                font-family: var(--font-body);
+                font-weight: var(--fw-medium);
+                letter-spacing: 0.02em;
+        }
+
+        .eyebrow, .badge, .technical-label, .label-small,
+        .kicker, .section-eyebrow, .pill-label {
+                font-family: var(--font-technical);
+                font-weight: var(--fw-semibold);
+                text-transform: uppercase;
+                letter-spacing: var(--tracking-widest);
+                line-height: 1.2;
+        }
+
+        .material-symbols-outlined,
+        [class*="material-symbols"] {
+                font-family: 'Material Symbols Outlined' !important;
+                font-weight: normal !important;
+                letter-spacing: normal !important;
+                text-transform: none !important;
+        }
+
+        @media (max-width: 1024px) {
+                .hero-title-shadow, .home-section-title { line-height: 1.0 !important; }
+        }
+        @media (max-width: 768px) {
+                .hero-title-shadow { letter-spacing: -0.015em !important; }
+                .eyebrow, .technical-label, .kicker,
+                .section-eyebrow, .pill-label,
+                .hero-text-shadow-soft,
+                .atuacoes-stat__label { letter-spacing: 0.16em !important; }
+        }
+        @media (max-width: 480px) {
+                .hero-title-shadow {
+                        letter-spacing: 0 !important;
+                        line-height: 1.02 !important;
+                        word-break: keep-all;
+                        overflow-wrap: break-word;
+                }
+                .eyebrow, .technical-label, .kicker,
+                .section-eyebrow, .pill-label,
+                .hero-text-shadow-soft,
+                .atuacoes-stat__label { letter-spacing: 0.12em !important; }
+                body { font-size: 16px; }
+        }
+        </style>
+        <!-- (Tipografia JRC consolidada no bloco acima) -->
         <script id="tailwind-config">
                 tailwind.config = {
                         darkMode: "class",
@@ -191,6 +483,21 @@
 
                 section div.overflow-hidden:not(.absolute) {
                         border-radius: 12px;
+                }
+
+                .home-container {
+                        width: calc(100% - 48px);
+                        max-width: 1440px;
+                        margin-inline: auto;
+                        padding-inline: 28px;
+                        box-sizing: border-box;
+                }
+
+                @media (max-width: 980px) {
+                        .home-container {
+                                width: calc(100% - 32px);
+                                padding-inline: 16px;
+                        }
                 }
 
                 /* Círculo Azul Estilizado (Glow) */
@@ -733,7 +1040,6 @@
                 }
 
                 .precision-shell {
-                        width: min(calc(100% - clamp(32px, 6vw, 96px)), 1440px);
                         margin-inline: auto;
                 }
 
@@ -993,10 +1299,6 @@
                 @media (max-width: 720px) {
                         .precision-section {
                                 padding-block: 56px;
-                        }
-
-                        .precision-shell {
-                                width: calc(100% - 32px);
                         }
 
                         .precision-panel {
@@ -1706,7 +2008,7 @@
                                 <div class="hero-vignette pointer-events-none absolute inset-0 z-[1]"></div>
 
                                 <!-- Beat A -->
-                                <div data-beat="a" class="absolute inset-x-0 bottom-0 px-6 sm:px-10 md:px-16 pb-14 md:pb-20 z-10 flex justify-start opacity-0 translate-y-5 transition-all duration-300">
+                                <div data-beat="a" class="home-container absolute inset-x-0 bottom-0 pb-14 md:pb-20 z-10 flex justify-start opacity-0 translate-y-5 transition-all duration-300">
                                         <div class="max-w-4xl flex flex-col gap-4">
                                                 <span class="hero-text-shadow-soft font-['Vazirmatn'] font-semibold text-white/90 uppercase tracking-widest text-[11px] md:text-xs">
                                                         Divisão de Engenharia Logística
@@ -1721,7 +2023,7 @@
                                 </div>
 
                                 <!-- Beat B -->
-                                <div data-beat="b" class="absolute inset-x-0 bottom-0 px-6 sm:px-10 md:px-16 pb-14 md:pb-20 z-10 flex justify-start opacity-0 translate-y-5 transition-all duration-300">
+                                <div data-beat="b" class="home-container absolute inset-x-0 bottom-0 pb-14 md:pb-20 z-10 flex justify-start opacity-0 translate-y-5 transition-all duration-300">
                                         <div class="max-w-4xl flex flex-col gap-4">
                                                 <span class="hero-text-shadow-soft font-['Vazirmatn'] font-semibold text-white/80 uppercase tracking-widest text-[11px] md:text-xs">
                                                         01 &mdash; Planejamento
@@ -1736,7 +2038,7 @@
                                 </div>
 
                                 <!-- Beat C -->
-                                <div data-beat="c" class="absolute inset-x-0 bottom-0 px-6 sm:px-10 md:px-16 pb-14 md:pb-20 z-10 flex justify-start text-left opacity-0 translate-y-5 transition-all duration-300">
+                                <div data-beat="c" class="home-container absolute inset-x-0 bottom-0 pb-14 md:pb-20 z-10 flex justify-start text-left opacity-0 translate-y-5 transition-all duration-300">
                                         <div class="max-w-4xl flex flex-col gap-4 items-start">
                                                 <span class="hero-text-shadow-soft font-['Vazirmatn'] font-semibold text-white/80 uppercase tracking-widest text-[11px] md:text-xs">
                                                         02 &mdash; Execução
@@ -2115,7 +2417,7 @@
                                         }
                                 }
                         </style>
-                        <div class="max-w-[1440px] mx-auto px-8 relative z-30">
+                        <div class="home-container relative z-30">
                                 <div class="atuacoes-hero">
                                         <!-- LEFT: copy + CTA -->
                                         <div class="atuacoes-hero__left">
@@ -2282,6 +2584,10 @@
                                         object-position: center;
                                         transition: transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
                                 }
+                                .solucoes-section .solucoes-card__img--exced { object-position: 78% 50%; }
+                                .solucoes-section .solucoes-card__img--mov   { object-position: 28% 30%; }
+                                .solucoes-section .solucoes-card__img--log   { object-position: 35% 45%; }
+                                .solucoes-section .solucoes-card__img--comex { object-position: 22% 35%; }
                                 .solucoes-section .solucoes-card:hover .solucoes-card__img {
                                         transform: scale(1.06);
                                 }
@@ -2386,7 +2692,7 @@
                                         }
                                 }
                         </style>
-                        <div class="max-w-[1440px] mx-auto px-8 relative z-30 solucoes-section">
+                        <div class="home-container relative z-30 solucoes-section">
                                 <div class="diff-left-reveal solucoes-header">
                                         <span class="solucoes-eyebrow">ATUAÇÕES ESPECIALIZADAS</span>
                                         <h2 class="solucoes-title">
@@ -2398,9 +2704,9 @@
                                 </div>
                                 <div class="solucoes-grid">
                                         <!-- Card 1: JRC Exced -->
-                                        <a href="#" class="solucoes-card" aria-label="JRC Exced — transporte de cargas superdimensionadas e indivisíveis">
-                                                <img class="solucoes-card__img"
-                                                        src="./images-site/card-cargas-excedentes.jpg"
+                                        <a href="#" class="solucoes-card solucoes-card--exced" aria-label="JRC Exced — transporte de cargas superdimensionadas e indivisíveis">
+                                                <img class="solucoes-card__img solucoes-card__img--exced"
+                                                        src="./images-site/solucao-jrc-exced.png"
                                                         alt="Transporte de cargas superdimensionadas e indivisíveis" />
                                                 <span class="solucoes-card__overlay" aria-hidden="true"></span>
                                                 <div class="solucoes-card__content">
@@ -2418,9 +2724,9 @@
                                                 </div>
                                         </a>
                                         <!-- Card 2: JRC MOV -->
-                                        <a href="#" class="solucoes-card" aria-label="JRC MOV — movimentação industrial e içamento técnico">
-                                                <img class="solucoes-card__img"
-                                                        src="./images-site/card-icamento-industrial.jpg"
+                                        <a href="#" class="solucoes-card solucoes-card--mov" aria-label="JRC MOV — movimentação industrial e içamento técnico">
+                                                <img class="solucoes-card__img solucoes-card__img--mov"
+                                                        src="./images-site/solucao-jrc-mov.png"
                                                         alt="Movimentação industrial e içamento técnico" />
                                                 <span class="solucoes-card__overlay" aria-hidden="true"></span>
                                                 <div class="solucoes-card__content">
@@ -2438,9 +2744,9 @@
                                                 </div>
                                         </a>
                                         <!-- Card 3: JRC LOG -->
-                                        <a href="#" class="solucoes-card" aria-label="JRC LOG — gestão de armazéns e distribuição integrada">
-                                                <img class="solucoes-card__img"
-                                                        src="./images-site/card-logistica-armazem.jpg"
+                                        <a href="#" class="solucoes-card solucoes-card--log" aria-label="JRC LOG — gestão de armazéns e distribuição integrada">
+                                                <img class="solucoes-card__img solucoes-card__img--log"
+                                                        src="./images-site/solucao-jrc-log.png"
                                                         alt="Gestão de armazéns e distribuição integrada" />
                                                 <span class="solucoes-card__overlay" aria-hidden="true"></span>
                                                 <div class="solucoes-card__content">
@@ -2458,9 +2764,9 @@
                                                 </div>
                                         </a>
                                         <!-- Card 4: JRC COMEX -->
-                                        <a href="#" class="solucoes-card" aria-label="JRC COMEX — desembaraço aduaneiro e agenciamento de cargas internacionais">
-                                                <img class="solucoes-card__img"
-                                                        src="./images-site/card-internacional.jpg"
+                                        <a href="#" class="solucoes-card solucoes-card--comex" aria-label="JRC COMEX — desembaraço aduaneiro e agenciamento de cargas internacionais">
+                                                <img class="solucoes-card__img solucoes-card__img--comex"
+                                                        src="./images-site/solucao-jrc-comex.png"
                                                         alt="Desembaraço aduaneiro e agenciamento de cargas internacionais" />
                                                 <span class="solucoes-card__overlay" aria-hidden="true"></span>
                                                 <div class="solucoes-card__content">
@@ -2482,7 +2788,7 @@
                 </section>
                 <!-- Diferenciais / Technical Focus -->
                 <section class="precision-section w-full relative sticky-stack z-[40]" aria-labelledby="precision-title">
-                        <div class="precision-shell">
+                        <div class="precision-shell home-container">
                                 <div class="precision-panel">
                                         <span class="precision-bg-shape precision-bg-shape--top" aria-hidden="true"></span>
                                         <span class="precision-bg-shape precision-bg-shape--right" aria-hidden="true"></span>
@@ -2550,7 +2856,7 @@
                         display: flex;
                         align-items: center;
                 }
-                .cf-inner { width: 100%; }
+                .cf-inner { box-sizing: border-box; }
                 .cf-head {
                         display: flex;
                         align-items: center;
@@ -2653,66 +2959,26 @@
                 .cf-visual-col {
                         position: relative;
                         aspect-ratio: 5 / 4;
-                        background: #0B1220;
-                        border-radius: 4px;
+                        background: #ffffff;
+                        border-radius: 28px;
                         overflow: hidden;
-                        border: 1px solid rgba(46, 61, 107, .35);
                         box-shadow: 0 30px 80px -40px rgba(15, 23, 42, .35);
-                }
-                .cf-visual-col::before {
-                        content: "";
-                        position: absolute;
-                        inset: 0;
-                        background-image:
-                                radial-gradient(rgba(255, 255, 255, .08) 1px, transparent 1px),
-                                radial-gradient(rgba(255, 255, 255, .04) 1px, transparent 1px);
-                        background-size: 3px 3px, 7px 7px;
-                        background-position: 0 0, 1px 1px;
-                        opacity: .6;
-                        pointer-events: none;
-                }
-                .cf-visual-col::after {
-                        content: "";
-                        position: absolute;
-                        inset: 0;
-                        background:
-                                linear-gradient(transparent 0%, transparent 95%, rgba(45, 91, 255, .08) 100%) 0 0 / 100% 32px,
-                                linear-gradient(90deg, transparent 0%, transparent 95%, rgba(45, 91, 255, .08) 100%) 0 0 / 32px 100%;
-                        pointer-events: none;
                 }
                 .cf-visual {
                         position: absolute;
                         inset: 0;
-                        display: flex;
-                        align-items: center;
-                        justify-content: center;
                         opacity: 0;
                         transform: scale(1.04);
                         transition: opacity .65s cubic-bezier(.22,1,.36,1), transform .9s cubic-bezier(.22,1,.36,1);
                         will-change: opacity, transform;
                 }
                 .cf-visual.is-active { opacity: 1; transform: scale(1); }
-                .cf-visual svg {
-                        width: 78%;
-                        height: 78%;
-                        max-width: 540px;
-                        color: #BFD0FF;
-                }
-                .cf-visual-tag {
-                        position: absolute;
-                        top: 20px;
-                        left: 20px;
-                        font-family: 'JetBrains Mono', ui-monospace, monospace;
-                        font-size: 10px;
-                        letter-spacing: .25em;
-                        text-transform: uppercase;
-                        color: #6FE39A;
-                        z-index: 2;
-                }
-                .cf-visual-tag.right {
-                        left: auto;
-                        right: 20px;
-                        color: #FFB36F;
+                .cf-visual img {
+                        display: block;
+                        width: 100%;
+                        height: 100%;
+                        object-fit: cover;
+                        object-position: center;
                 }
                 .cf-foot {
                         margin-top: clamp(28px, 4vh, 48px);
@@ -2759,7 +3025,10 @@
                 }
                 @media (max-width: 1023px) {
                         .cf-track { height: 360vh; }
-                        .cf-visual-col { aspect-ratio: 4 / 3; }
+                        .cf-visual-col {
+                                aspect-ratio: 16 / 11;
+                                border-radius: 22px;
+                        }
                         .cf-text-col {
                                 min-height: clamp(280px, 42vh, 420px);
                                 padding-bottom: 48px;
@@ -2786,7 +3055,7 @@
 </div>
                         <div class="cf-track" id="cf-track">
                                 <div class="cf-pin">
-                                        <div class="cf-inner max-w-[1440px] mx-auto px-8 relative z-30">
+                                        <div class="cf-inner home-container relative z-30">
                                                 <div class="cf-head">
                                                         <h2 class="home-section-title">Como <span class="title-accent">Funciona</span></h2>
                                                 </div>
@@ -2820,67 +3089,20 @@
                                                                 </div>
                                                         </div>
                                                         <div class="cf-visual-col" aria-hidden="true">
-                                                                <span class="cf-visual-tag">. SCAN: 01</span>
-                                                                <span class="cf-visual-tag right" id="cf-visual-tag-right">. STATUS: ACTIVE</span>
-
                                                                 <div class="cf-visual is-active" data-step="1">
-                                                                        <svg viewBox="0 0 400 320" fill="none" stroke="currentColor" stroke-width="1" xmlns="http://www.w3.org/2000/svg">
-                                                                                <rect x="40" y="40" width="320" height="240" stroke-dasharray="4 6" opacity=".4"/>
-                                                                                <rect x="80" y="80" width="240" height="160"/>
-                                                                                <line x1="40" y1="160" x2="360" y2="160" stroke-dasharray="2 4" opacity=".5"/>
-                                                                                <line x1="200" y1="40" x2="200" y2="280" stroke-dasharray="2 4" opacity=".5"/>
-                                                                                <circle cx="200" cy="160" r="8" fill="#6FE39A" stroke="none"/>
-                                                                                <circle cx="200" cy="160" r="22" opacity=".5"/>
-                                                                                <circle cx="200" cy="160" r="48" opacity=".25"/>
-                                                                                <text x="220" y="158" font-family="monospace" font-size="9" fill="#6FE39A" stroke="none">SCAN</text>
-                                                                        </svg>
+                                                                        <img src="./images-site/como-funciona/diagnostico-da-operacao.png" alt="" loading="lazy" decoding="async">
                                                                 </div>
 
                                                                 <div class="cf-visual" data-step="2">
-                                                                        <svg viewBox="0 0 400 320" fill="none" stroke="currentColor" stroke-width="1" xmlns="http://www.w3.org/2000/svg">
-                                                                                <path d="M40 240 L120 180 L200 200 L280 120 L360 80" stroke-width="1.5"/>
-                                                                                <circle cx="40" cy="240" r="4" fill="currentColor" stroke="none"/>
-                                                                                <circle cx="120" cy="180" r="4" fill="currentColor" stroke="none"/>
-                                                                                <circle cx="200" cy="200" r="4" fill="currentColor" stroke="none"/>
-                                                                                <circle cx="280" cy="120" r="4" fill="currentColor" stroke="none"/>
-                                                                                <circle cx="360" cy="80" r="4" fill="#6FE39A" stroke="none"/>
-                                                                                <line x1="40" y1="280" x2="360" y2="280" stroke-dasharray="2 4" opacity=".4"/>
-                                                                                <line x1="40" y1="40" x2="40" y2="280" stroke-dasharray="2 4" opacity=".4"/>
-                                                                                <rect x="260" y="40" width="100" height="60" stroke-dasharray="3 4" opacity=".35"/>
-                                                                                <text x="268" y="60" font-family="monospace" font-size="9" fill="#FFB36F" stroke="none">PLAN.v2</text>
-                                                                                <text x="268" y="78" font-family="monospace" font-size="8" opacity=".7">ROUTE OK</text>
-                                                                        </svg>
+                                                                        <img src="./images-site/como-funciona/planejamento-tecnico-02.png" alt="" loading="lazy" decoding="async">
                                                                 </div>
 
                                                                 <div class="cf-visual" data-step="3">
-                                                                        <svg viewBox="0 0 400 320" fill="none" stroke="currentColor" stroke-width="1" xmlns="http://www.w3.org/2000/svg">
-                                                                                <rect x="60" y="200" width="120" height="50"/>
-                                                                                <rect x="180" y="200" width="160" height="50"/>
-                                                                                <circle cx="100" cy="262" r="12"/>
-                                                                                <circle cx="160" cy="262" r="12"/>
-                                                                                <circle cx="220" cy="262" r="12"/>
-                                                                                <circle cx="300" cy="262" r="12"/>
-                                                                                <line x1="60" y1="290" x2="340" y2="290" stroke-dasharray="2 4" opacity=".4"/>
-                                                                                <path d="M340 225 L370 225 L370 245" />
-                                                                                <line x1="60" y1="120" x2="340" y2="120" stroke-dasharray="3 5" opacity=".35"/>
-                                                                                <text x="60" y="110" font-family="monospace" font-size="9" fill="#6FE39A" stroke="none">. RUN: T+00:42</text>
-                                                                                <text x="220" y="110" font-family="monospace" font-size="9" fill="#FFB36F" stroke="none">. CONVOY:04</text>
-                                                                        </svg>
+                                                                        <img src="./images-site/como-funciona/diagnostico-da-operacao.png" alt="" loading="lazy" decoding="async">
                                                                 </div>
 
                                                                 <div class="cf-visual" data-step="4">
-                                                                        <svg viewBox="0 0 400 320" fill="none" stroke="currentColor" stroke-width="1" xmlns="http://www.w3.org/2000/svg">
-                                                                                <rect x="40" y="40" width="320" height="200" opacity=".4" stroke-dasharray="3 5"/>
-                                                                                <polyline points="40,200 90,180 140,190 190,140 240,150 290,100 340,80 360,90"/>
-                                                                                <line x1="40" y1="120" x2="360" y2="120" stroke-dasharray="2 4" opacity=".25"/>
-                                                                                <line x1="40" y1="160" x2="360" y2="160" stroke-dasharray="2 4" opacity=".25"/>
-                                                                                <circle cx="340" cy="80" r="6" fill="#6FE39A" stroke="none"/>
-                                                                                <circle cx="340" cy="80" r="14" opacity=".5"/>
-                                                                                <text x="50" y="60" font-family="monospace" font-size="9" fill="#6FE39A" stroke="none">DELIVERED</text>
-                                                                                <text x="50" y="76" font-family="monospace" font-size="8" opacity=".7">KPI · UPTIME 99.4%</text>
-                                                                                <rect x="40" y="260" width="320" height="20" opacity=".5"/>
-                                                                                <rect x="40" y="260" width="280" height="20" fill="#2D5BFF" opacity=".25" stroke="none"/>
-                                                                        </svg>
+                                                                        <img src="./images-site/como-funciona/diagnostico-da-operacao.png" alt="" loading="lazy" decoding="async">
                                                                 </div>
                                                         </div>
                                                 </div>
@@ -2904,9 +3126,7 @@
                         const dots = track.querySelectorAll('.cf-dot');
                         const currentEl = document.getElementById('cf-current');
                         const metaBar = document.getElementById('cf-meta-bar');
-                        const tagRight = document.getElementById('cf-visual-tag-right');
                         const total = steps.length;
-                        const tagStates = ['. STATUS: ACTIVE', '. PLAN: READY', '. EXEC: RUNNING', '. KPI: VALIDATED'];
 
                         const reduceMotion = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
                         if (reduceMotion) {
@@ -2923,7 +3143,6 @@
                                 visuals.forEach((el, i) => el.classList.toggle('is-active', i === idx));
                                 dots.forEach((el, i) => el.classList.toggle('is-active', i === idx));
                                 if (currentEl) currentEl.textContent = String(idx + 1).padStart(2, '0');
-                                if (tagRight) tagRight.textContent = tagStates[idx] || tagStates[0];
                         };
 
                         const onScroll = () => {
@@ -2986,7 +3205,7 @@
 
 <div class="animated-border-line absolute bottom-0 left-[16px] md:left-[24px] right-[16px] md:right-[24px] h-[1px] md:h-[2px] bg-gradient-to-r from-transparent via-[#2E3D6B] to-transparent transform scale-x-0 opacity-0 transition-all duration-1000 ease-out origin-center z-30"></div>
 </div>
-                        <div class="max-w-[1440px] mx-auto px-8 relative z-30">
+                        <div class="home-container relative z-30">
                                 <div class="flex flex-col items-center mb-20 text-center diff-left-reveal">
                                         <span class="font-mono-data text-mono-data text-slate-500 uppercase tracking-widest mb-4">Operações / Cases</span>
                                         <h2 class="home-section-title max-w-4xl">
@@ -3059,7 +3278,7 @@
                         
 <div class="animated-border-line absolute bottom-0 left-[16px] md:left-[24px] right-[16px] md:right-[24px] h-[1px] md:h-[2px] bg-gradient-to-r from-transparent via-[#2E3D6B] to-transparent transform scale-x-0 opacity-0 transition-all duration-1000 ease-out origin-center z-30"></div>
 </div>
-                        <div class="max-w-[1440px] mx-auto px-8 relative z-30">
+                        <div class="home-container relative z-30">
                                 <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-24 items-center">
                                         <!-- Coluna Esquerda -->
                                         <div class="diff-left-reveal">
@@ -3125,7 +3344,7 @@
                         
 <div class="animated-border-line absolute bottom-0 left-[16px] md:left-[24px] right-[16px] md:right-[24px] h-[1px] md:h-[2px] bg-gradient-to-r from-transparent via-[#2E3D6B] to-transparent transform scale-x-0 opacity-0 transition-all duration-1000 ease-out origin-center z-30"></div>
 </div>
-                        <div class="max-w-[1440px] mx-auto px-8 relative z-30">
+                        <div class="home-container relative z-30">
                                 <div class="flex flex-col items-center mb-16 text-center">
                                         <h2 class="home-section-title max-w-4xl"
                                                 style="">Notícias / <span
@@ -3242,7 +3461,7 @@
                                         <source src="https://despertare.store/wp-content/uploads/2026/05/abc.mp4" type="video/mp4">
                                 </video>
                         </div>
-                        <div class="final-cta-content max-w-[1440px] mx-auto px-8 relative z-30">
+                        <div class="final-cta-content home-container relative z-30">
                                 <div class="final-cta-copy flex flex-col items-start text-left">
                                         <h2 class="font-display text-white font-semibold tracking-tight mb-6 md:mb-8 hero-title-shadow"
                                                 style="font-size: clamp(44px, 6.4vw, 88px); line-height: 1.05; letter-spacing: -0.02em;">Seu projeto exige precisão?</h2>
