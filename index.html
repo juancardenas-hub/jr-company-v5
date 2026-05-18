@@ -18,6 +18,8 @@
                 rel="stylesheet" />
         <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
                 rel="stylesheet" />
+        <!-- JRC local typography system (display / body / technical) -->
+        <link rel="stylesheet" href="fonts/jrc/typography.css" />
         <script id="tailwind-config">
                 tailwind.config = {
                         darkMode: "class",
@@ -725,6 +727,333 @@
                         }
                 }
 
+                .precision-section {
+                        background: #ffffff;
+                        padding-block: clamp(64px, 8vw, 128px);
+                }
+
+                .precision-shell {
+                        width: min(calc(100% - clamp(32px, 6vw, 96px)), 1440px);
+                        margin-inline: auto;
+                }
+
+                .precision-panel {
+                        position: relative;
+                        display: flex;
+                        align-items: center;
+                        overflow: hidden;
+                        isolation: isolate;
+                        min-height: clamp(620px, 58vw, 760px);
+                        padding: clamp(56px, 7.2vw, 112px) clamp(28px, 6.5vw, 104px);
+                        border-radius: 0;
+                        background:
+                                radial-gradient(circle at 12% 24%, rgba(20, 44, 142, 0.28), transparent 34%),
+                                radial-gradient(circle at 86% 76%, rgba(45, 91, 255, 0.13), transparent 30%),
+                                linear-gradient(135deg, #050a18 0%, #020617 54%, #01030a 100%);
+                        box-shadow: none;
+                }
+
+                .precision-panel::after {
+                        content: '';
+                        position: absolute;
+                        inset: 0;
+                        z-index: 1;
+                        pointer-events: none;
+                        background: linear-gradient(90deg, rgba(255, 255, 255, 0.025), transparent 25%, rgba(255, 255, 255, 0.018));
+                }
+
+                .precision-bg-shape {
+                        position: absolute;
+                        z-index: 0;
+                        pointer-events: none;
+                        background: linear-gradient(135deg, #061044 0%, #10247f 46%, #2448ff 100%);
+                        -webkit-mask-repeat: no-repeat;
+                        mask-repeat: no-repeat;
+                        opacity: 0.12;
+                        mix-blend-mode: screen;
+                }
+
+                .precision-bg-shape--top {
+                        width: 560px;
+                        height: 172px;
+                        top: -112px;
+                        left: 40px;
+                        -webkit-mask-image: url("public/images/decor/logo-fondo-a-top.svg");
+                        mask-image: url("public/images/decor/logo-fondo-a-top.svg");
+                        -webkit-mask-position: center;
+                        mask-position: center;
+                        -webkit-mask-size: contain;
+                        mask-size: contain;
+                        opacity: 0.10;
+                        transform: rotate(0deg);
+                }
+
+                .precision-bg-shape--right {
+                        width: 620px;
+                        height: 598px;
+                        top: 120px;
+                        right: -120px;
+                        -webkit-mask-image: url("public/images/decor/logo-fondo-a-chevron.svg");
+                        mask-image: url("public/images/decor/logo-fondo-a-chevron.svg");
+                        -webkit-mask-position: center;
+                        mask-position: center;
+                        -webkit-mask-size: contain;
+                        mask-size: contain;
+                        opacity: 0.14;
+                        clip-path: inset(0 0 18% 16%);
+                        transform: rotate(0deg);
+                }
+
+                .precision-content {
+                        position: relative;
+                        z-index: 2;
+                        display: grid;
+                        grid-template-columns: minmax(0, 0.92fr) minmax(0, 1.08fr);
+                        gap: clamp(48px, 5.6vw, 88px);
+                        align-items: center;
+                        width: 100%;
+                }
+
+                .precision-copy {
+                        max-width: 540px;
+                }
+
+                .precision-title {
+                        margin: 0 0 clamp(24px, 2.8vw, 34px);
+                        font-family: 'Space Grotesk', var(--font-display);
+                        font-size: clamp(42px, 3.95vw, 72px);
+                        font-weight: 900;
+                        line-height: 0.98;
+                        letter-spacing: 0.01em;
+                        text-transform: uppercase;
+                        color: #ffffff;
+                        text-wrap: balance;
+                }
+
+                .precision-title-line {
+                        display: block;
+                        white-space: nowrap;
+                }
+
+                .precision-title-accent {
+                        color: #075cff;
+                        text-shadow: 0 0 24px rgba(45, 91, 255, 0.28);
+                }
+
+                .precision-text {
+                        max-width: 520px;
+                        margin: 0 0 28px;
+                        color: rgba(226, 232, 240, 0.72);
+                        font-size: clamp(16px, 1.15vw, 18px);
+                        line-height: 1.65;
+                }
+
+                .precision-badges {
+                        display: flex;
+                        flex-wrap: wrap;
+                        gap: 12px;
+                        margin-bottom: clamp(30px, 3.5vw, 46px);
+                }
+
+                .precision-badge {
+                        display: inline-flex;
+                        align-items: center;
+                        gap: 10px;
+                        min-height: 42px;
+                        padding: 8px 17px 8px 10px;
+                        border: 1px solid rgba(255, 255, 255, 0.14);
+                        border-radius: 999px;
+                        background: rgba(2, 6, 23, 0.28);
+                        color: rgba(255, 255, 255, 0.92);
+                        font-family: var(--font-technical);
+                        font-size: 11px;
+                        font-weight: 700;
+                        letter-spacing: 0.08em;
+                        text-transform: uppercase;
+                }
+
+                .precision-badge-icon {
+                        display: inline-flex;
+                        align-items: center;
+                        justify-content: center;
+                        width: 25px;
+                        height: 25px;
+                        border-radius: 999px;
+                        background: rgba(45, 91, 255, 0.18);
+                        color: #88a6ff;
+                        font-size: 16px !important;
+                        box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.08);
+                }
+
+                .precision-cta {
+                        display: inline-flex;
+                        align-items: center;
+                        justify-content: center;
+                        min-height: 68px;
+                        padding: 18px 46px;
+                        border-radius: 999px;
+                        background: linear-gradient(135deg, #142C8E 0%, #1F49D8 48%, #0B74FF 100%);
+                        color: #ffffff;
+                        font-family: var(--font-body);
+                        font-size: clamp(18px, 1.45vw, 24px);
+                        font-weight: 500;
+                        line-height: 1;
+                        text-decoration: none;
+                        box-shadow: 0 18px 38px rgba(11, 116, 255, 0.28), inset 0 1px 0 rgba(255, 255, 255, 0.22);
+                        transition: transform 0.28s ease, filter 0.28s ease, box-shadow 0.28s ease;
+                }
+
+                .precision-cta:hover {
+                        transform: translateY(-3px);
+                        filter: brightness(1.08);
+                        box-shadow: 0 24px 48px rgba(11, 116, 255, 0.36), inset 0 1px 0 rgba(255, 255, 255, 0.28);
+                }
+
+                .precision-cta:focus-visible {
+                        outline: 3px solid rgba(45, 91, 255, 0.36);
+                        outline-offset: 4px;
+                }
+
+                .precision-grid {
+                        display: grid;
+                        grid-template-columns: repeat(2, minmax(0, 1fr));
+                        align-self: center;
+                        border-left: 1px solid rgba(255, 255, 255, 0.08);
+                }
+
+                .precision-feature {
+                        position: relative;
+                        min-height: 260px;
+                        padding: clamp(34px, 4vw, 54px) clamp(28px, 3.4vw, 48px);
+                        background: transparent;
+                        transition: background 0.3s ease;
+                }
+
+                .precision-feature:nth-child(odd) {
+                        border-right: 1px solid rgba(255, 255, 255, 0.08);
+                }
+
+                .precision-feature:nth-child(-n + 2) {
+                        border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+                }
+
+                .precision-feature:hover {
+                        background: rgba(255, 255, 255, 0.025);
+                }
+
+                .precision-feature-icon {
+                        display: block;
+                        margin-bottom: 28px;
+                        color: #075cff;
+                        font-size: 34px !important;
+                        line-height: 1 !important;
+                        text-shadow: 0 0 18px rgba(45, 91, 255, 0.24);
+                        transition: transform 0.28s ease, filter 0.28s ease;
+                }
+
+                .precision-feature:hover .precision-feature-icon {
+                        transform: translateY(-2px);
+                        filter: brightness(1.2);
+                }
+
+                .precision-feature-title {
+                        margin: 0 0 14px;
+                        color: #ffffff;
+                        font-family: var(--font-technical);
+                        font-size: 13px;
+                        font-weight: 800;
+                        line-height: 1.25;
+                        letter-spacing: 0.1em;
+                        text-transform: uppercase;
+                }
+
+                .precision-feature-text {
+                        max-width: 320px;
+                        margin: 0;
+                        color: rgba(203, 213, 225, 0.72);
+                        font-size: 16px;
+                        line-height: 1.55;
+                }
+
+                @media (max-width: 1180px) {
+                        .precision-content {
+                                grid-template-columns: 1fr;
+                                gap: 48px;
+                        }
+
+                        .precision-copy {
+                                max-width: 720px;
+                        }
+
+                        .precision-grid {
+                                border-left: 0;
+                        }
+                }
+
+                @media (max-width: 720px) {
+                        .precision-section {
+                                padding-block: 56px;
+                        }
+
+                        .precision-shell {
+                                width: calc(100% - 32px);
+                        }
+
+                        .precision-panel {
+                                min-height: auto;
+                                padding: 38px 22px;
+                                border-radius: 0;
+                        }
+
+                        .precision-bg-shape--top {
+                                width: 420px;
+                                height: 128px;
+                                top: -82px;
+                                left: -36px;
+                                opacity: 0.09;
+                        }
+
+                        .precision-bg-shape--right {
+                                width: 520px;
+                                height: 502px;
+                                top: 188px;
+                                right: -326px;
+                                opacity: 0.11;
+                        }
+
+                        .precision-title {
+                                font-size: clamp(36px, 11vw, 48px);
+                                line-height: 1.02;
+                        }
+
+                        .precision-text {
+                                font-size: 16px;
+                        }
+
+                        .precision-cta {
+                                width: 100%;
+                                min-height: 60px;
+                                padding-inline: 24px;
+                        }
+
+                        .precision-grid {
+                                grid-template-columns: 1fr;
+                        }
+
+                        .precision-feature {
+                                min-height: auto;
+                                padding: 30px 0;
+                        }
+
+                        .precision-feature:nth-child(odd) {
+                                border-right: 0;
+                        }
+
+                        .precision-feature:nth-child(-n + 3) {
+                                border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+                        }
+                }
+
                 /* === Segmentos Atendidos – cards premium === */
                 .seg-card {
                         display: flex;
@@ -817,29 +1146,43 @@
                         z-index: 1;
                         overflow: hidden;
                         pointer-events: none;
-                        background: #2E3D6B;
+                        background: #020617;
                 }
-                .final-cta-video-bg iframe {
+                .final-cta-video-bg video {
                         position: absolute;
                         top: 50%;
                         left: 50%;
-                        width: auto;
-                        min-width: 100%;
+                        width: 100%;
                         height: 100%;
-                        aspect-ratio: 16 / 9;
-                        transform: translate(-50%, -50%);
+                        object-fit: cover;
+                        object-position: center right;
+                        transform: translate(-50%, -50%) scale(1.14);
+                        transform-origin: center;
                         border: 0;
-                        opacity: 0.58;
-                        filter: saturate(1.08) contrast(1.08);
+                        opacity: 1;
+                        filter: saturate(1.05) contrast(1.05);
                 }
                 .final-cta-video-bg::after {
-                        content: '';
+                        content: "";
                         position: absolute;
                         inset: 0;
                         z-index: 2;
                         background:
-                                linear-gradient(90deg, rgba(46, 61, 107, 0.98) 0%, rgba(46, 61, 107, 0.9) 36%, rgba(46, 61, 107, 0.44) 66%, rgba(11, 21, 48, 0.22) 100%),
-                                linear-gradient(180deg, rgba(46, 61, 107, 0.68) 0%, rgba(46, 61, 107, 0.06) 42%, rgba(46, 61, 107, 0.72) 100%);
+                                linear-gradient(
+                                        90deg,
+                                        rgba(0, 0, 0, 0.88) 0%,
+                                        rgba(0, 0, 0, 0.78) 26%,
+                                        rgba(0, 0, 0, 0.50) 48%,
+                                        rgba(0, 0, 0, 0.22) 70%,
+                                        rgba(0, 0, 0, 0.08) 100%
+                                ),
+                                linear-gradient(
+                                        180deg,
+                                        rgba(0, 0, 0, 0.24) 0%,
+                                        rgba(0, 0, 0, 0.08) 45%,
+                                        rgba(0, 0, 0, 0.48) 100%
+                                );
+                        pointer-events: none;
                 }
                 .final-cta-content {
                         min-height: clamp(520px, 58vh, 720px);
@@ -850,15 +1193,14 @@
                         width: min(100%, 820px);
                 }
                 @media (max-width: 768px) {
-                        .final-cta-video-bg iframe {
-                                min-width: 210%;
-                                height: 100%;
-                                opacity: 0.36;
+                        .final-cta-video-bg video {
+                                object-position: center;
+                                transform: translate(-50%, -50%) scale(1.22);
                         }
                         .final-cta-video-bg::after {
                                 background:
-                                        linear-gradient(180deg, rgba(46, 61, 107, 0.96) 0%, rgba(46, 61, 107, 0.76) 46%, rgba(46, 61, 107, 0.96) 100%),
-                                        linear-gradient(90deg, rgba(11, 21, 48, 0.42), rgba(46, 61, 107, 0.28));
+                                        linear-gradient(90deg, rgba(0, 0, 0, 0.9) 0%, rgba(0, 0, 0, 0.76) 58%, rgba(0, 0, 0, 0.48) 100%),
+                                        linear-gradient(180deg, rgba(0, 0, 0, 0.36) 0%, rgba(0, 0, 0, 0.12) 45%, rgba(0, 0, 0, 0.56) 100%);
                         }
                         .final-cta-content {
                                 min-height: clamp(560px, 74vh, 720px);
@@ -1042,36 +1384,304 @@
 <body class="bg-surface text-on-surface font-vazirmatn antialiased selection:bg-primary-container selection:text-white">
         <!-- Detalhe da Logo como Marca d'água Moderna (Fixed) -->
         <div class="logo-floating-detail"></div>
-        <!-- TopNavBar -->
-        <nav
-                class="bg-white dark:bg-slate-950 font-['Vazirmatn'] uppercase tracking-tighter text-sm font-semibold full-width top-0 sticky rounded-none border-b border-slate-200 dark:border-slate-800 z-50">
-                <div class="flex justify-between items-center w-full px-8 py-4 max-w-[1440px] mx-auto">
-                        <a href="index.html" class="flex items-center"><img
-                                        src="https://jrcompany.net.br/wp-content/uploads/2023/12/jcr-transportes-logo.png"
-                                        alt="J.R. Company" class="h-10 w-auto"></a>
-                        <div class="hidden md:flex space-x-8 items-center">
-                                <a class="text-[#2E3D6B] border-b-2 border-[#2E3D6B] pb-1 hover:text-[#2E3D6B] transition-colors duration-200 opacity-80"
-                                        href="#">Home</a>
-                                <a class="text-slate-900 dark:text-slate-300 hover:text-[#2E3D6B] transition-colors duration-200"
-                                        href="#">A JR Company</a>
-                                <a class="text-slate-900 dark:text-slate-300 hover:text-[#2E3D6B] transition-colors duration-200"
-                                        href="#">Soluções</a>
-                                <a class="text-slate-900 dark:text-slate-300 hover:text-[#2E3D6B] transition-colors duration-200"
-                                        href="#">Operações</a>
-                                <a class="text-slate-900 dark:text-slate-300 hover:text-[#2E3D6B] transition-colors duration-200"
-                                        href="#">Diferenciais</a>
-                                <a class="text-slate-900 dark:text-slate-300 hover:text-[#2E3D6B] transition-colors duration-200"
-                                        href="#">Contato</a>
-                        </div>
-                        <div class="hidden md:flex items-center space-x-4">
-                                <button class="px-6 py-3 btn-gradient text-white rounded-full hover:bg-[#1F1F21] transition-colors uppercase tracking-widest text-xs font-bold"
-                                        style="">Falar com especialista</button>
-                        </div>
-                        <button class="md:hidden text-slate-900 dark:text-white" style="">
-                                <span class="material-symbols-outlined" style="">menu</span>
-                        </button>
-                </div>
-        </nav>
+<!--
+  J.R. Company Premium Floating Header
+  Glassmorphism, floats over hero, fully responsive.
+  Drop-in component. Inject in <body> right after opening tag.
+-->
+<style>
+  /* === JR Floating Header === */
+  .jr-fh {
+    position: fixed;
+    top: 24px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: calc(100% - 48px);
+    max-width: 1440px;
+    z-index: 1000;
+    background: rgba(10, 12, 18, 0.55);
+    -webkit-backdrop-filter: blur(14px) saturate(140%);
+    backdrop-filter: blur(14px) saturate(140%);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 16px;
+    box-shadow:
+      0 12px 32px rgba(0, 0, 0, 0.28),
+      0 1px 0 rgba(255, 255, 255, 0.05) inset;
+    font-family: 'Vazirmatn', sans-serif;
+    transition: top 280ms ease, background 280ms ease, box-shadow 280ms ease, width 280ms ease;
+  }
+  .jr-fh.scrolled {
+    top: 14px;
+    background: rgba(10, 12, 18, 0.78);
+    box-shadow: 0 10px 28px rgba(0, 0, 0, 0.45);
+  }
+  .jr-fh__inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 24px;
+    padding: 14px 28px;
+    min-height: 64px;
+  }
+  .jr-fh__logo {
+    display: inline-flex;
+    align-items: center;
+    flex-shrink: 0;
+    text-decoration: none;
+  }
+  .jr-fh__logo img {
+    height: 36px;
+    width: auto;
+    display: block;
+    filter: brightness(0) invert(1);
+    transition: opacity 200ms ease;
+  }
+  .jr-fh__logo:hover img { opacity: 0.85; }
+
+  .jr-fh__nav {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    flex: 1;
+    justify-content: center;
+  }
+  .jr-fh__nav a {
+    position: relative;
+    color: rgba(255, 255, 255, 0.82);
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 0.005em;
+    text-decoration: none;
+    padding: 8px 2px;
+    white-space: nowrap;
+    transition: color 200ms ease;
+  }
+  .jr-fh__nav a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 2px;
+    height: 2px;
+    background: linear-gradient(90deg, #374BFF, #6B82FF);
+    border-radius: 2px;
+    transform: scaleX(0);
+    transform-origin: center;
+    transition: transform 250ms ease;
+  }
+  .jr-fh__nav a:hover { color: #ffffff; }
+  .jr-fh__nav a:hover::after,
+  .jr-fh__nav a.active::after { transform: scaleX(1); }
+  .jr-fh__nav a.active { color: #ffffff; }
+
+  .jr-fh__cta {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    flex-shrink: 0;
+    background: linear-gradient(135deg, #374BFF 0%, #2E3D6B 100%);
+    color: #ffffff !important;
+    text-decoration: none;
+    padding: 12px 22px;
+    border-radius: 999px;
+    border: none;
+    font-family: inherit;
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 0.01em;
+    cursor: pointer;
+    white-space: nowrap;
+    box-shadow: 0 8px 20px rgba(55, 75, 255, 0.35);
+    transition: transform 200ms ease, box-shadow 200ms ease, filter 200ms ease;
+  }
+  .jr-fh__cta:hover {
+    transform: translateY(-1px);
+    filter: brightness(1.08);
+    box-shadow: 0 10px 26px rgba(55, 75, 255, 0.5);
+  }
+
+  .jr-fh__burger {
+    display: none;
+    background: transparent;
+    border: 1px solid rgba(255, 255, 255, 0.14);
+    color: #ffffff;
+    width: 42px;
+    height: 42px;
+    border-radius: 12px;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: background 200ms ease, border-color 200ms ease;
+  }
+  .jr-fh__burger:hover {
+    background: rgba(255, 255, 255, 0.06);
+    border-color: rgba(255, 255, 255, 0.22);
+  }
+  .jr-fh__burger .material-symbols-outlined { font-size: 22px; }
+
+  /* === Mobile menu overlay === */
+  .jr-fh-mobile {
+    position: fixed;
+    inset: 0;
+    z-index: 1100;
+    background: rgba(10, 12, 18, 0.96);
+    -webkit-backdrop-filter: blur(20px);
+    backdrop-filter: blur(20px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 22px;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 280ms ease, visibility 280ms ease;
+    font-family: 'Vazirmatn', sans-serif;
+  }
+  .jr-fh-mobile.open { opacity: 1; visibility: visible; }
+  .jr-fh-mobile a {
+    color: #ffffff;
+    font-size: 22px;
+    font-weight: 600;
+    text-decoration: none;
+    letter-spacing: 0.01em;
+    transition: color 200ms ease;
+  }
+  .jr-fh-mobile a:hover { color: #6B82FF; }
+  .jr-fh-mobile .jr-fh__cta { margin-top: 12px; font-size: 14px; padding: 14px 28px; }
+  .jr-fh-mobile__close {
+    position: absolute;
+    top: 22px;
+    right: 22px;
+    background: transparent;
+    border: 1px solid rgba(255, 255, 255, 0.16);
+    color: #ffffff;
+    width: 44px;
+    height: 44px;
+    border-radius: 12px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: background 200ms ease;
+  }
+  .jr-fh-mobile__close:hover { background: rgba(255, 255, 255, 0.06); }
+  .jr-fh-mobile__logo {
+    position: absolute;
+    top: 26px;
+    left: 26px;
+  }
+  .jr-fh-mobile__logo img {
+    height: 32px;
+    filter: brightness(0) invert(1);
+  }
+
+  body.jr-fh-locked { overflow: hidden; }
+
+  /* === Responsive === */
+  @media (max-width: 1100px) {
+    .jr-fh__nav { gap: 22px; }
+    .jr-fh__nav a { font-size: 13px; }
+  }
+  @media (max-width: 980px) {
+    .jr-fh {
+      width: calc(100% - 32px);
+      top: 16px;
+      border-radius: 14px;
+    }
+    .jr-fh__inner { padding: 10px 16px; min-height: 58px; }
+    .jr-fh__nav,
+    .jr-fh__cta { display: none; }
+    .jr-fh__burger { display: inline-flex; }
+    .jr-fh__logo img { height: 32px; }
+  }
+</style>
+
+<nav class="jr-fh" id="jrFloatingHeader" aria-label="Navegação principal">
+  <div class="jr-fh__inner">
+    <a href="index.html" class="jr-fh__logo" aria-label="J.R. Company - Início">
+      <img src="https://jrcompany.net.br/wp-content/uploads/2023/12/jcr-transportes-logo.png" alt="J.R. Company" />
+    </a>
+    <div class="jr-fh__nav">
+      <a href="index.html" data-page="index.html">Home</a>
+      <a href="sobre.html" data-page="sobre.html">Sobre</a>
+      <a href="solucoes.html" data-page="solucoes.html">Nossas Soluções</a>
+      <a href="cases-operacoes.html" data-page="cases-operacoes.html">Operações</a>
+      <a href="diferenciais.html" data-page="diferenciais.html">Diferenciais</a>
+      <a href="fale-conosco.html" data-page="fale-conosco.html">Contato</a>
+    </div>
+    <a href="fale-conosco.html" class="jr-fh__cta">Fale com especialista</a>
+    <button class="jr-fh__burger" id="jrFhBurger" aria-label="Abrir menu" aria-expanded="false">
+      <span class="material-symbols-outlined">menu</span>
+    </button>
+  </div>
+</nav>
+
+<div class="jr-fh-mobile" id="jrFhMobile" role="dialog" aria-modal="true" aria-label="Menu de navegação">
+  <a href="index.html" class="jr-fh-mobile__logo" aria-label="J.R. Company - Início">
+    <img src="https://jrcompany.net.br/wp-content/uploads/2023/12/jcr-transportes-logo.png" alt="J.R. Company" />
+  </a>
+  <button class="jr-fh-mobile__close" id="jrFhMobileClose" aria-label="Fechar menu">
+    <span class="material-symbols-outlined">close</span>
+  </button>
+  <a href="index.html">Home</a>
+  <a href="sobre.html">Sobre</a>
+  <a href="solucoes.html">Nossas Soluções</a>
+  <a href="cases-operacoes.html">Operações</a>
+  <a href="diferenciais.html">Diferenciais</a>
+  <a href="fale-conosco.html">Contato</a>
+  <a href="fale-conosco.html" class="jr-fh__cta">Fale com especialista</a>
+</div>
+
+<script>
+(function () {
+  var header = document.getElementById('jrFloatingHeader');
+  var burger = document.getElementById('jrFhBurger');
+  var mobile = document.getElementById('jrFhMobile');
+  var closeBtn = document.getElementById('jrFhMobileClose');
+
+  function onScroll() {
+    if (!header) return;
+    if (window.scrollY > 30) header.classList.add('scrolled');
+    else header.classList.remove('scrolled');
+  }
+  window.addEventListener('scroll', onScroll, { passive: true });
+  onScroll();
+
+  function openMenu() {
+    if (!mobile) return;
+    mobile.classList.add('open');
+    document.body.classList.add('jr-fh-locked');
+    if (burger) burger.setAttribute('aria-expanded', 'true');
+  }
+  function closeMenu() {
+    if (!mobile) return;
+    mobile.classList.remove('open');
+    document.body.classList.remove('jr-fh-locked');
+    if (burger) burger.setAttribute('aria-expanded', 'false');
+  }
+  if (burger) burger.addEventListener('click', openMenu);
+  if (closeBtn) closeBtn.addEventListener('click', closeMenu);
+  if (mobile) {
+    mobile.querySelectorAll('a').forEach(function (a) {
+      a.addEventListener('click', closeMenu);
+    });
+  }
+  document.addEventListener('keydown', function (e) {
+    if (e.key === 'Escape') closeMenu();
+  });
+
+  // Mark active page
+  try {
+    var path = (window.location.pathname.split('/').pop() || 'index.html').toLowerCase();
+    if (!path) path = 'index.html';
+    document.querySelectorAll('.jr-fh__nav a').forEach(function (a) {
+      var dp = (a.getAttribute('data-page') || '').toLowerCase();
+      if (dp === path) a.classList.add('active');
+    });
+  } catch (e) {}
+})();
+</script>
+
         <main>
                 <!-- Hero Section: Scroll-driven image sequence -->
                 <section id="scroll-hero" class="relative w-full bg-slate-950 sticky-stack z-[10]" style="height: 400vh;">
@@ -1264,68 +1874,322 @@
                         
 <div class="animated-border-line absolute bottom-0 left-[16px] md:left-[24px] right-[16px] md:right-[24px] h-[1px] md:h-[2px] bg-gradient-to-r from-transparent via-[#2E3D6B] to-transparent transform scale-x-0 opacity-0 transition-all duration-1000 ease-out origin-center z-30"></div>
 </div>
+                        <!-- Scoped styles for the new Atuações Especializadas section -->
+                        <style>
+                                .atuacoes-hero {
+                                        display: grid;
+                                        grid-template-columns: minmax(0, 0.95fr) minmax(0, 1.15fr);
+                                        gap: clamp(2rem, 5vw, 5rem);
+                                        align-items: center;
+                                }
+                                .atuacoes-hero__left {
+                                        max-width: 540px;
+                                }
+                                .atuacoes-hero__title {
+                                        display: flex;
+                                        flex-direction: column;
+                                        font-family: 'Vazirmatn', sans-serif !important;
+                                        font-weight: 900 !important;
+                                        font-size: clamp(38px, 5.6vw, 76px) !important;
+                                        line-height: 0.96 !important;
+                                        letter-spacing: -0.01em !important;
+                                        margin: 0 0 1.75rem 0;
+                                        text-transform: uppercase;
+                                        color: #0F172A !important;
+                                }
+                                .atuacoes-hero__title .atuacoes-hero__line {
+                                        display: block;
+                                }
+                                .atuacoes-hero__title .atuacoes-hero__line.title-accent {
+                                        color: #1F49D8 !important;
+                                        background: linear-gradient(135deg, #142C8E 0%, #1F49D8 55%, #2D5BFF 100%);
+                                        -webkit-background-clip: text;
+                                        background-clip: text;
+                                        -webkit-text-fill-color: transparent;
+                                }
+                                .atuacoes-hero__desc {
+                                        font-family: 'Inter', 'Vazirmatn', sans-serif;
+                                        font-size: clamp(15px, 1.05vw, 17px);
+                                        line-height: 1.65;
+                                        color: #475569;
+                                        margin: 0 0 2.25rem 0;
+                                        max-width: 460px;
+                                }
+                                .atuacoes-hero__cta {
+                                        display: inline-flex;
+                                        align-items: center;
+                                        justify-content: center;
+                                        padding: 1rem 2.25rem;
+                                        border-radius: 999px !important;
+                                        font-family: 'Vazirmatn', sans-serif;
+                                        font-weight: 600;
+                                        font-size: 15px;
+                                        letter-spacing: 0.01em;
+                                        text-decoration: none;
+                                        color: #fff !important;
+                                }
+                                .atuacoes-hero__right {
+                                        display: grid;
+                                        grid-template-columns: repeat(2, minmax(0, 1fr));
+                                        gap: 1.25rem;
+                                }
+                                .atuacoes-card {
+                                        position: relative;
+                                        display: block;
+                                        aspect-ratio: 3 / 4;
+                                        border-radius: 22px;
+                                        overflow: hidden;
+                                        text-decoration: none;
+                                        background: #0F172A;
+                                        box-shadow:
+                                                0 20px 50px -25px rgba(15, 23, 42, 0.45),
+                                                0 6px 18px -10px rgba(15, 23, 42, 0.25);
+                                        transition: transform 0.45s cubic-bezier(0.16, 1, 0.3, 1),
+                                                    box-shadow 0.45s ease;
+                                }
+                                .atuacoes-card:hover {
+                                        transform: translateY(-4px);
+                                        box-shadow:
+                                                0 28px 60px -28px rgba(15, 23, 42, 0.55),
+                                                0 10px 24px -12px rgba(31, 73, 216, 0.25);
+                                }
+                                .atuacoes-card__img {
+                                        position: absolute;
+                                        inset: 0;
+                                        width: 100%;
+                                        height: 100%;
+                                        object-fit: cover;
+                                        transition: transform 0.7s cubic-bezier(0.16, 1, 0.3, 1);
+                                }
+                                .atuacoes-card:hover .atuacoes-card__img {
+                                        transform: scale(1.05);
+                                }
+                                .atuacoes-card__gradient {
+                                        position: absolute;
+                                        inset: 0;
+                                        background: linear-gradient(180deg,
+                                                rgba(15, 23, 42, 0) 38%,
+                                                rgba(15, 23, 42, 0.55) 72%,
+                                                rgba(15, 23, 42, 0.92) 100%);
+                                        pointer-events: none;
+                                }
+                                .atuacoes-card__arrow {
+                                        position: absolute;
+                                        top: 1.25rem;
+                                        right: 1.25rem;
+                                        width: 42px;
+                                        height: 42px;
+                                        display: inline-flex;
+                                        align-items: center;
+                                        justify-content: center;
+                                        border-radius: 999px;
+                                        background: rgba(255, 255, 255, 0.92);
+                                        color: #0F172A;
+                                        backdrop-filter: blur(6px);
+                                        transition: background 0.3s ease, transform 0.3s ease;
+                                }
+                                .atuacoes-card:hover .atuacoes-card__arrow {
+                                        background: #1F49D8;
+                                        color: #fff;
+                                        transform: translate(2px, -2px);
+                                }
+                                .atuacoes-card__overlay {
+                                        position: absolute;
+                                        left: 1.5rem;
+                                        right: 1.5rem;
+                                        bottom: 1.5rem;
+                                        color: #fff;
+                                }
+                                .atuacoes-card__title {
+                                        font-family: 'Vazirmatn', sans-serif;
+                                        font-size: clamp(20px, 1.6vw, 26px);
+                                        font-weight: 700;
+                                        line-height: 1.15;
+                                        margin: 0 0 0.4rem 0;
+                                        text-shadow: 0 2px 12px rgba(0, 0, 0, 0.35);
+                                }
+                                .atuacoes-card__subtitle {
+                                        font-family: 'Inter', 'Vazirmatn', sans-serif;
+                                        font-size: 14px;
+                                        line-height: 1.45;
+                                        color: rgba(255, 255, 255, 0.88);
+                                        margin: 0;
+                                        text-shadow: 0 1px 8px rgba(0, 0, 0, 0.4);
+                                }
+
+                                /* Bottom stats row — reset/override the legacy .stats-card look */
+                                .atuacoes-stats {
+                                        margin-top: clamp(3rem, 6vw, 5.5rem);
+                                        display: grid;
+                                        grid-template-columns: repeat(4, minmax(0, 1fr));
+                                        gap: 0;
+                                        padding-top: 2.5rem;
+                                        border-top: 1px solid rgba(148, 163, 184, 0.35);
+                                }
+                                .atuacoes-stats .stats-card {
+                                        position: relative;
+                                        background: transparent !important;
+                                        border: 0 !important;
+                                        border-radius: 0 !important;
+                                        box-shadow: none !important;
+                                        padding: 0.5rem 2rem !important;
+                                        min-height: 0 !important;
+                                        display: flex !important;
+                                        flex-direction: column !important;
+                                        justify-content: flex-start !important;
+                                        align-items: flex-start !important;
+                                        gap: 0.35rem;
+                                        overflow: visible !important;
+                                }
+                                .atuacoes-stats .stats-card::before,
+                                .atuacoes-stats .stats-card::after {
+                                        content: none !important;
+                                }
+                                .atuacoes-stats .stats-card + .stats-card {
+                                        border-left: 1px solid rgba(148, 163, 184, 0.35);
+                                }
+                                .atuacoes-stats .stats-card .stats-line {
+                                        display: none;
+                                }
+                                .atuacoes-stat__value {
+                                        font-family: 'Vazirmatn', sans-serif;
+                                        font-weight: 900;
+                                        font-size: clamp(34px, 3.4vw, 52px);
+                                        line-height: 1;
+                                        color: #0F172A;
+                                        letter-spacing: -0.01em;
+                                }
+                                .atuacoes-stat__label {
+                                        font-family: 'Inter', 'Vazirmatn', sans-serif;
+                                        font-size: 14px;
+                                        font-weight: 500;
+                                        color: #64748b;
+                                        letter-spacing: 0.01em;
+                                }
+
+                                @media (max-width: 1024px) {
+                                        .atuacoes-hero {
+                                                grid-template-columns: 1fr;
+                                                gap: 2.5rem;
+                                        }
+                                        .atuacoes-hero__left {
+                                                max-width: none;
+                                        }
+                                        .atuacoes-hero__desc {
+                                                max-width: none;
+                                        }
+                                        .atuacoes-stats {
+                                                grid-template-columns: repeat(2, minmax(0, 1fr));
+                                                row-gap: 2rem;
+                                        }
+                                        .atuacoes-stats .stats-card {
+                                                padding: 0.5rem 1.25rem !important;
+                                        }
+                                        .atuacoes-stats .stats-card:nth-child(3) {
+                                                border-left: 0;
+                                        }
+                                }
+                                @media (max-width: 640px) {
+                                        .atuacoes-hero__right {
+                                                grid-template-columns: 1fr;
+                                                gap: 1rem;
+                                        }
+                                        .atuacoes-card {
+                                                aspect-ratio: 16 / 11;
+                                        }
+                                        .atuacoes-stats {
+                                                grid-template-columns: 1fr;
+                                                row-gap: 1.5rem;
+                                                padding-top: 2rem;
+                                        }
+                                        .atuacoes-stats .stats-card {
+                                                padding: 0.25rem 0 !important;
+                                                flex-direction: row !important;
+                                                align-items: baseline !important;
+                                                gap: 0.9rem;
+                                        }
+                                        .atuacoes-stats .stats-card + .stats-card {
+                                                border-left: 0;
+                                                border-top: 1px solid rgba(148, 163, 184, 0.25);
+                                                padding-top: 1.25rem !important;
+                                        }
+                                }
+                        </style>
                         <div class="max-w-[1440px] mx-auto px-8 relative z-30">
-                                <div class="stats-heading mb-16 flex flex-col md:flex-row justify-between items-end gap-8">
-                                        <h2 class="home-section-title max-w-2xl">
-                                                Operações complexas exigem estrutura, <span class="title-accent">não improviso.</span>
-                                        </h2>
+                                <div class="atuacoes-hero">
+                                        <!-- LEFT: copy + CTA -->
+                                        <div class="atuacoes-hero__left">
+                                                <span class="seg-eyebrow">ATUAÇÕES ESPECIALIZADAS</span>
+                                                <h2 class="home-section-title atuacoes-hero__title">
+                                                        <span class="atuacoes-hero__line">OPERAÇÕES</span>
+                                                        <span class="atuacoes-hero__line">COMPLEXAS</span>
+                                                        <span class="atuacoes-hero__line title-accent">EXIGEM</span>
+                                                        <span class="atuacoes-hero__line title-accent">ESTRUTURA</span>
+                                                </h2>
+                                                <p class="atuacoes-hero__desc">
+                                                        Soluções técnicas para operações especiais, transporte de cargas excedentes, logística pesada e projetos que exigem planejamento, segurança e execução precisa.
+                                                </p>
+                                                <a href="fale-conosco.html" class="atuacoes-hero__cta btn-gradient">Fale com especialista</a>
+                                        </div>
+
+                                        <!-- RIGHT: two premium image cards -->
+                                        <div class="atuacoes-hero__right">
+                                                <a href="cases-operacoes.html" class="atuacoes-card" aria-label="Cargas Especiais — transporte técnico para operações de alta complexidade">
+                                                        <img class="atuacoes-card__img"
+                                                                src="./images-site/card-cargas-excedentes.jpg"
+                                                                alt="Cargas especiais — transporte técnico para operações de alta complexidade" />
+                                                        <span class="atuacoes-card__gradient" aria-hidden="true"></span>
+                                                        <span class="atuacoes-card__arrow" aria-hidden="true">
+                                                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round">
+                                                                        <line x1="7" y1="17" x2="17" y2="7"></line>
+                                                                        <polyline points="8 7 17 7 17 16"></polyline>
+                                                                </svg>
+                                                        </span>
+                                                        <div class="atuacoes-card__overlay">
+                                                                <h3 class="atuacoes-card__title">Cargas Especiais</h3>
+                                                                <p class="atuacoes-card__subtitle">Transporte técnico para operações de alta complexidade.</p>
+                                                        </div>
+                                                </a>
+                                                <a href="diferenciais.html" class="atuacoes-card" aria-label="Logística Pesada — planejamento e execução para grandes estruturas">
+                                                        <img class="atuacoes-card__img"
+                                                                src="./images-site/case-construcao-pesada.jpg"
+                                                                alt="Logística pesada — planejamento e execução para grandes estruturas" />
+                                                        <span class="atuacoes-card__gradient" aria-hidden="true"></span>
+                                                        <span class="atuacoes-card__arrow" aria-hidden="true">
+                                                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round">
+                                                                        <line x1="7" y1="17" x2="17" y2="7"></line>
+                                                                        <polyline points="8 7 17 7 17 16"></polyline>
+                                                                </svg>
+                                                        </span>
+                                                        <div class="atuacoes-card__overlay">
+                                                                <h3 class="atuacoes-card__title">Logística Pesada</h3>
+                                                                <p class="atuacoes-card__subtitle">Planejamento e execução para grandes estruturas.</p>
+                                                        </div>
+                                                </a>
+                                        </div>
                                 </div>
-                                <div class="stats-grid">
-                                        <!-- Metric 1 -->
+
+                                <!-- Bottom horizontal stats row -->
+                                <div class="atuacoes-stats">
                                         <div class="stats-card">
-                                                <div class="stats-card-top">
-                                                        <span class="stats-label">Volume Transportado</span>
-                                                        <span class="stats-icon" aria-hidden="true">
-                                                                <span class="material-symbols-outlined">local_shipping</span>
-                                                        </span>
-                                                </div>
-                                                <div class="stats-card-value">
-                                                        <div class="stats-line"></div>
-                                                        <span class="stats-number" data-count-to="450" data-count-prefix="+" data-count-suffix="k" data-count-decimals="0">+450k</span>
-                                                        <span class="stats-unit">Toneladas Ano</span>
-                                                </div>
+                                                <div class="stats-line"></div>
+                                                <span class="stats-number atuacoes-stat__value" data-count-to="24" data-count-prefix="" data-count-suffix="+" data-count-decimals="0">24+</span>
+                                                <span class="atuacoes-stat__label">Anos de experiência</span>
                                         </div>
-                                        <!-- Metric 2 -->
                                         <div class="stats-card">
-                                                <div class="stats-card-top">
-                                                        <span class="stats-label">Projetos Concluídos</span>
-                                                        <span class="stats-icon" aria-hidden="true">
-                                                                <span class="material-symbols-outlined">task_alt</span>
-                                                        </span>
-                                                </div>
-                                                <div class="stats-card-value">
-                                                        <div class="stats-line"></div>
-                                                        <span class="stats-number" data-count-to="1.2" data-count-prefix="+" data-count-suffix="k" data-count-decimals="1">+1.2k</span>
-                                                        <span class="stats-unit">Operações Especiais</span>
-                                                </div>
+                                                <div class="stats-line"></div>
+                                                <span class="stats-number atuacoes-stat__value" data-count-to="450" data-count-prefix="" data-count-suffix="k+" data-count-decimals="0">450k+</span>
+                                                <span class="atuacoes-stat__label">Toneladas transportadas</span>
                                         </div>
-                                        <!-- Metric 3 -->
                                         <div class="stats-card">
-                                                <div class="stats-card-top">
-                                                        <span class="stats-label">Frota Especializada</span>
-                                                        <span class="stats-icon" aria-hidden="true">
-                                                                <span class="material-symbols-outlined">precision_manufacturing</span>
-                                                        </span>
-                                                </div>
-                                                <div class="stats-card-value">
-                                                        <div class="stats-line"></div>
-                                                        <span class="stats-number" data-count-to="85" data-count-prefix="+" data-count-suffix="" data-count-decimals="0">+85</span>
-                                                        <span class="stats-unit">Equipamentos Pesados</span>
-                                                </div>
+                                                <div class="stats-line"></div>
+                                                <span class="stats-number atuacoes-stat__value" data-count-to="85" data-count-prefix="" data-count-suffix="+" data-count-decimals="0">85+</span>
+                                                <span class="atuacoes-stat__label">Equipamentos pesados</span>
                                         </div>
-                                        <!-- Metric 4 -->
                                         <div class="stats-card">
-                                                <div class="stats-card-top">
-                                                        <span class="stats-label">Cobertura</span>
-                                                        <span class="stats-icon" aria-hidden="true">
-                                                                <span class="material-symbols-outlined">public</span>
-                                                        </span>
-                                                </div>
-                                                <div class="stats-card-value">
-                                                        <div class="stats-line"></div>
-                                                        <span class="stats-number" data-count-to="100" data-count-prefix="" data-count-suffix="%" data-count-decimals="0">100%</span>
-                                                        <span class="stats-unit">Território Nacional</span>
-                                                </div>
+                                                <div class="stats-line"></div>
+                                                <span class="stats-number atuacoes-stat__value" data-count-to="100" data-count-prefix="" data-count-suffix="%" data-count-decimals="0">100%</span>
+                                                <span class="atuacoes-stat__label">Território nacional</span>
                                         </div>
                                 </div>
                         </div>
@@ -1344,217 +2208,330 @@
                         <!-- Círculo azul estilizado -->
                         <div class="blue-glow" style="width: 300px; height: 300px; top: -100px; right: -100px;"></div>
                         
-                        <div class="max-w-[1440px] mx-auto px-8 relative z-30">
-                                <div class="diff-left-reveal mb-16 max-w-3xl">
-                                        <span class="seg-eyebrow">ATUAÇÕES ESPECIALIZADAS</span>
-                                        <h2 class="home-section-title mb-8">
-                                                Nossas <span class="title-accent">Atuações</span>
+                        <!-- Scoped styles for the redesigned "Nossas Soluções" section -->
+                        <style>
+                                /* All rules scoped under .solucoes-section to avoid affecting the rest of the site */
+                                .solucoes-section .solucoes-header {
+                                        max-width: 720px;
+                                }
+                                .solucoes-section .solucoes-eyebrow {
+                                        display: inline-block;
+                                        font-family: 'Inter', 'Vazirmatn', sans-serif;
+                                        font-size: 13px;
+                                        font-weight: 600;
+                                        letter-spacing: 0.16em;
+                                        text-transform: uppercase;
+                                        color: #1F49D8;
+                                        margin: 0 0 1.25rem 0;
+                                }
+                                .solucoes-section .solucoes-title {
+                                        font-family: 'Vazirmatn', sans-serif;
+                                        font-weight: 900;
+                                        font-size: clamp(40px, 5.4vw, 76px);
+                                        line-height: 0.96;
+                                        letter-spacing: -0.01em;
+                                        text-transform: uppercase;
+                                        color: #0F172A;
+                                        margin: 0 0 1.5rem 0;
+                                }
+                                .solucoes-section .solucoes-title .solucoes-title-accent {
+                                        color: #1F49D8;
+                                }
+                                .solucoes-section .solucoes-desc {
+                                        font-family: 'Inter', 'Vazirmatn', sans-serif;
+                                        font-size: clamp(15px, 1.05vw, 17px);
+                                        line-height: 1.65;
+                                        color: #475569;
+                                        max-width: 620px;
+                                        margin: 0;
+                                }
+                                .solucoes-section .solucoes-grid {
+                                        margin-top: clamp(2.5rem, 5vw, 4rem);
+                                        display: grid;
+                                        grid-template-columns: repeat(4, minmax(0, 1fr));
+                                        gap: clamp(1rem, 1.6vw, 1.5rem);
+                                }
+                                .solucoes-section .solucoes-card {
+                                        position: relative;
+                                        display: block;
+                                        aspect-ratio: 3 / 4;
+                                        min-height: 380px;
+                                        border-radius: 22px;
+                                        overflow: hidden;
+                                        text-decoration: none;
+                                        background: #0F172A;
+                                        box-shadow:
+                                                0 20px 50px -25px rgba(15, 23, 42, 0.45),
+                                                0 6px 18px -10px rgba(15, 23, 42, 0.25);
+                                        transition: transform 0.45s cubic-bezier(0.16, 1, 0.3, 1),
+                                                    box-shadow 0.45s ease;
+                                        isolation: isolate;
+                                }
+                                .solucoes-section .solucoes-card:hover {
+                                        transform: translateY(-4px);
+                                        box-shadow:
+                                                0 28px 60px -28px rgba(15, 23, 42, 0.6),
+                                                0 12px 28px -14px rgba(31, 73, 216, 0.35);
+                                }
+                                .solucoes-section .solucoes-card__img {
+                                        position: absolute;
+                                        inset: 0;
+                                        width: 100%;
+                                        height: 100%;
+                                        object-fit: cover;
+                                        object-position: center;
+                                        transition: transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+                                }
+                                .solucoes-section .solucoes-card:hover .solucoes-card__img {
+                                        transform: scale(1.06);
+                                }
+                                .solucoes-section .solucoes-card__overlay {
+                                        position: absolute;
+                                        inset: 0;
+                                        background: linear-gradient(180deg,
+                                                rgba(15, 23, 42, 0) 28%,
+                                                rgba(15, 23, 42, 0.55) 62%,
+                                                rgba(15, 23, 42, 0.96) 100%);
+                                        pointer-events: none;
+                                        transition: background 0.4s ease;
+                                }
+                                .solucoes-section .solucoes-card:hover .solucoes-card__overlay {
+                                        background: linear-gradient(180deg,
+                                                rgba(15, 23, 42, 0.08) 22%,
+                                                rgba(15, 23, 42, 0.65) 58%,
+                                                rgba(15, 23, 42, 0.97) 100%);
+                                }
+                                .solucoes-section .solucoes-card__content {
+                                        position: absolute;
+                                        left: 1.75rem;
+                                        right: 1.75rem;
+                                        bottom: 1.6rem;
+                                        color: #fff;
+                                }
+                                .solucoes-section .solucoes-card__title {
+                                        font-family: 'Vazirmatn', sans-serif;
+                                        font-weight: 900;
+                                        font-size: clamp(26px, 2.2vw, 34px);
+                                        line-height: 0.95;
+                                        text-transform: uppercase;
+                                        letter-spacing: 0.005em;
+                                        margin: 0 0 0.9rem 0;
+                                        color: #ffffff;
+                                        text-shadow: 0 2px 14px rgba(0, 0, 0, 0.45);
+                                }
+                                .solucoes-section .solucoes-card__title-line {
+                                        display: block;
+                                }
+                                .solucoes-section .solucoes-card__desc {
+                                        font-family: 'Inter', 'Vazirmatn', sans-serif;
+                                        font-size: 14px;
+                                        line-height: 1.5;
+                                        color: rgba(255, 255, 255, 0.88);
+                                        margin: 0 0 1.1rem 0;
+                                        max-width: 280px;
+                                        text-shadow: 0 1px 8px rgba(0, 0, 0, 0.45);
+                                }
+                                .solucoes-section .solucoes-card__cta {
+                                        display: inline-flex;
+                                        align-items: center;
+                                        gap: 0.45rem;
+                                        font-family: 'Inter', 'Vazirmatn', sans-serif;
+                                        font-size: 13px;
+                                        font-weight: 500;
+                                        color: #ffffff;
+                                        text-decoration: none;
+                                        letter-spacing: 0.02em;
+                                        transition: gap 0.3s ease;
+                                }
+                                .solucoes-section .solucoes-card:hover .solucoes-card__cta {
+                                        gap: 0.85rem;
+                                }
+                                .solucoes-section .solucoes-card__cta svg {
+                                        transition: transform 0.3s ease;
+                                }
+                                .solucoes-section .solucoes-card:hover .solucoes-card__cta svg {
+                                        transform: translateX(3px);
+                                }
+
+                                @media (max-width: 1024px) {
+                                        .solucoes-section .solucoes-grid {
+                                                grid-template-columns: repeat(2, minmax(0, 1fr));
+                                                gap: 1.25rem;
+                                        }
+                                        .solucoes-section .solucoes-card {
+                                                aspect-ratio: 4 / 5;
+                                                min-height: 340px;
+                                        }
+                                }
+                                @media (max-width: 640px) {
+                                        .solucoes-section .solucoes-grid {
+                                                grid-template-columns: 1fr;
+                                                gap: 1.1rem;
+                                        }
+                                        .solucoes-section .solucoes-card {
+                                                aspect-ratio: 16 / 11;
+                                                min-height: 280px;
+                                        }
+                                        .solucoes-section .solucoes-card__title {
+                                                font-size: 26px;
+                                        }
+                                        .solucoes-section .solucoes-card__desc {
+                                                font-size: 13.5px;
+                                                max-width: none;
+                                        }
+                                        .solucoes-section .solucoes-card__content {
+                                                left: 1.4rem;
+                                                right: 1.4rem;
+                                                bottom: 1.35rem;
+                                        }
+                                }
+                        </style>
+                        <div class="max-w-[1440px] mx-auto px-8 relative z-30 solucoes-section">
+                                <div class="diff-left-reveal solucoes-header">
+                                        <span class="solucoes-eyebrow">ATUAÇÕES ESPECIALIZADAS</span>
+                                        <h2 class="solucoes-title">
+                                                NOSSAS <span class="solucoes-title-accent">SOLUÇÕES</span>
                                         </h2>
-                                        <p class="font-body-lg text-body-lg text-slate-600 max-w-2xl leading-relaxed">
+                                        <p class="solucoes-desc">
                                                 Soluções integradas para operações que exigem planejamento técnico, precisão na execução e controle em cada etapa.
                                         </p>
                                 </div>
-                                <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-6">
-                                        <!-- Card 1 -->
-                                        <div
-                                                class="border border-slate-200 bg-white hover:border-[#2E3D6B] transition-colors group flex flex-col rounded-2xl overflow-hidden">
-                                                <div
-                                                        class="h-48 bg-slate-100 border-b border-slate-200 relative overflow-hidden">
-                                                        <img alt="Oversized load transport"
-                                                                class="w-full h-full object-cover grayscale opacity-80 group-hover:grayscale-0 transition-all duration-500"
-                                                                data-alt="Massive industrial wind turbine blade being transported by a specialized heavy-duty truck on a highway under clear skies"
-                                                                src="./images-site/card-cargas-excedentes.jpg"
-                                                                style="" />
+                                <div class="solucoes-grid">
+                                        <!-- Card 1: JRC Exced -->
+                                        <a href="#" class="solucoes-card" aria-label="JRC Exced — transporte de cargas superdimensionadas e indivisíveis">
+                                                <img class="solucoes-card__img"
+                                                        src="./images-site/card-cargas-excedentes.jpg"
+                                                        alt="Transporte de cargas superdimensionadas e indivisíveis" />
+                                                <span class="solucoes-card__overlay" aria-hidden="true"></span>
+                                                <div class="solucoes-card__content">
+                                                        <h3 class="solucoes-card__title">
+                                                                <span class="solucoes-card__title-line">JRC</span>
+                                                                <span class="solucoes-card__title-line">EXCED</span>
+                                                        </h3>
+                                                        <p class="solucoes-card__desc">Transporte de cargas superdimensionadas e indivisíveis. Engenharia de rotas e escolta credenciada.</p>
+                                                        <span class="solucoes-card__cta">
+                                                                Ver solução
+                                                                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                                                        <polyline points="9 6 15 12 9 18"></polyline>
+                                                                </svg>
+                                                        </span>
                                                 </div>
-                                                <div class="p-6 flex-grow flex flex-col">
-                                                        <h3 class="font-headline-md text-headline-md text-slate-900 mb-2 font-semibold"
-                                                                style="">JRC Exced</h3>
-                                                        <p class="font-body-md text-body-md text-slate-600 mb-4 flex-grow"
-                                                                style="">Transporte de cargas superdimensionadas e
-                                                                indivisíveis. Engenharia de rotas e escolta credenciada.
-                                                        </p>
-                                                        
-                                                        <!-- Chips for features -->
-                                                        <div class="flex flex-wrap gap-2 mb-6">
-                                                                <div class="pill-container pill-outline text-[10px] py-1 px-3 gap-2">
-                                                                        <div class="pill-icon-bubble w-5 h-5 text-[12px]"><span class="material-symbols-outlined text-sm">engineering</span></div>
-                                                                        Escolta
-                                                                </div>
-                                                                <div class="pill-container pill-outline text-[10px] py-1 px-3 gap-2">
-                                                                        <div class="pill-icon-bubble w-5 h-5 text-[12px]"><span class="material-symbols-outlined text-sm">route</span></div>
-                                                                        Viabilidade
-                                                                </div>
-                                                        </div>
-
-                                                        <a class="font-label-sm text-label-sm text-[#2E3D6B] uppercase tracking-widest inline-flex items-center gap-2 group-hover:gap-4 transition-all"
-                                                                href="#" style="">
-                                                                Ver solução <span
-                                                                        class="material-symbols-outlined text-[16px]"
-                                                                        style="">arrow_forward</span>
-                                                        </a>
+                                        </a>
+                                        <!-- Card 2: JRC MOV -->
+                                        <a href="#" class="solucoes-card" aria-label="JRC MOV — movimentação industrial e içamento técnico">
+                                                <img class="solucoes-card__img"
+                                                        src="./images-site/card-icamento-industrial.jpg"
+                                                        alt="Movimentação industrial e içamento técnico" />
+                                                <span class="solucoes-card__overlay" aria-hidden="true"></span>
+                                                <div class="solucoes-card__content">
+                                                        <h3 class="solucoes-card__title">
+                                                                <span class="solucoes-card__title-line">JRC</span>
+                                                                <span class="solucoes-card__title-line">MOV</span>
+                                                        </h3>
+                                                        <p class="solucoes-card__desc">Movimentação industrial, içamento técnico e remoção de equipamentos de grande porte com precisão milimétrica.</p>
+                                                        <span class="solucoes-card__cta">
+                                                                Ver solução
+                                                                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                                                        <polyline points="9 6 15 12 9 18"></polyline>
+                                                                </svg>
+                                                        </span>
                                                 </div>
-                                        </div>
-                                        <!-- Card 2 -->
-                                        <div
-                                                class="border border-slate-200 bg-white hover:border-[#2E3D6B] transition-colors group flex flex-col rounded-2xl overflow-hidden">
-                                                <div
-                                                        class="h-48 bg-slate-100 border-b border-slate-200 relative overflow-hidden">
-                                                        <img alt="Industrial lifting"
-                                                                class="w-full h-full object-cover grayscale opacity-80 group-hover:grayscale-0 transition-all duration-500"
-                                                                data-alt="Heavy industrial crane lifting massive steel beams at a construction site with technical precision and safety rigging"
-                                                                src="./images-site/card-icamento-industrial.jpg"
-                                                                style="" />
+                                        </a>
+                                        <!-- Card 3: JRC LOG -->
+                                        <a href="#" class="solucoes-card" aria-label="JRC LOG — gestão de armazéns e distribuição integrada">
+                                                <img class="solucoes-card__img"
+                                                        src="./images-site/card-logistica-armazem.jpg"
+                                                        alt="Gestão de armazéns e distribuição integrada" />
+                                                <span class="solucoes-card__overlay" aria-hidden="true"></span>
+                                                <div class="solucoes-card__content">
+                                                        <h3 class="solucoes-card__title">
+                                                                <span class="solucoes-card__title-line">JRC</span>
+                                                                <span class="solucoes-card__title-line">LOG</span>
+                                                        </h3>
+                                                        <p class="solucoes-card__desc">Gestão de armazéns, controle de inventário e distribuição integrada para cadeias de suprimentos complexas.</p>
+                                                        <span class="solucoes-card__cta">
+                                                                Ver solução
+                                                                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                                                        <polyline points="9 6 15 12 9 18"></polyline>
+                                                                </svg>
+                                                        </span>
                                                 </div>
-                                                <div class="p-6 flex-grow flex flex-col">
-                                                        <h3 class="font-headline-md text-headline-md text-slate-900 mb-2 font-semibold"
-                                                                style="">JRC MOV</h3>
-                                                        <p class="font-body-md text-body-md text-slate-600 mb-4 flex-grow"
-                                                                style="">Movimentação industrial, içamento técnico e
-                                                                remoção de equipamentos de grande porte com precisão
-                                                                milimétrica.</p>
-
-                                                        <!-- Chips for features -->
-                                                        <div class="flex flex-wrap gap-2 mb-6">
-                                                                <div class="pill-container pill-outline text-[10px] py-1 px-3 gap-2">
-                                                                        <div class="pill-icon-bubble w-5 h-5 text-[12px] pill-icon-bubble-dark"><span class="material-symbols-outlined text-sm">precision_manufacturing</span></div>
-                                                                        Içamento
-                                                                </div>
-                                                                <div class="pill-container pill-outline text-[10px] py-1 px-3 gap-2">
-                                                                        <div class="pill-icon-bubble w-5 h-5 text-[12px] pill-icon-bubble-dark"><span class="material-symbols-outlined text-sm">architecture</span></div>
-                                                                        Rigging
-                                                                </div>
-                                                        </div>
-
-                                                        <a class="font-label-sm text-label-sm text-[#2E3D6B] uppercase tracking-widest inline-flex items-center gap-2 group-hover:gap-4 transition-all"
-                                                                href="#" style="">
-                                                                Ver solução <span
-                                                                        class="material-symbols-outlined text-[16px]"
-                                                                        style="">arrow_forward</span>
-                                                        </a>
+                                        </a>
+                                        <!-- Card 4: JRC COMEX -->
+                                        <a href="#" class="solucoes-card" aria-label="JRC COMEX — desembaraço aduaneiro e agenciamento de cargas internacionais">
+                                                <img class="solucoes-card__img"
+                                                        src="./images-site/card-internacional.jpg"
+                                                        alt="Desembaraço aduaneiro e agenciamento de cargas internacionais" />
+                                                <span class="solucoes-card__overlay" aria-hidden="true"></span>
+                                                <div class="solucoes-card__content">
+                                                        <h3 class="solucoes-card__title">
+                                                                <span class="solucoes-card__title-line">JRC</span>
+                                                                <span class="solucoes-card__title-line">COMEX</span>
+                                                        </h3>
+                                                        <p class="solucoes-card__desc">Desembaraço aduaneiro, agenciamento de cargas internacionais e consultoria tributária especializada.</p>
+                                                        <span class="solucoes-card__cta">
+                                                                Ver solução
+                                                                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                                                        <polyline points="9 6 15 12 9 18"></polyline>
+                                                                </svg>
+                                                        </span>
                                                 </div>
-                                        </div>
-                                        <!-- Card 3 -->
-                                        <div
-                                                class="border border-slate-200 bg-white hover:border-[#2E3D6B] transition-colors group flex flex-col rounded-2xl overflow-hidden">
-                                                <div
-                                                        class="h-48 bg-slate-100 border-b border-slate-200 relative overflow-hidden">
-                                                        <img alt="Warehouse logistics"
-                                                                class="w-full h-full object-cover grayscale opacity-80 group-hover:grayscale-0 transition-all duration-500"
-                                                                data-alt="High-tech automated warehouse interior with massive shelving units and precision robotic forklifts organizing industrial cargo"
-                                                                src="./images-site/card-logistica-armazem.jpg"
-                                                                style="" />
-                                                </div>
-                                                <div class="p-6 flex-grow flex flex-col">
-                                                        <h3 class="font-headline-md text-headline-md text-slate-900 mb-2 font-semibold"
-                                                                style="">JRC Log</h3>
-                                                        <p class="font-body-md text-body-md text-slate-600 mb-6 flex-grow"
-                                                                style="">Gestão de armazéns, controle de inventário e
-                                                                distribuição integrada para cadeias de suprimentos
-                                                                complexas.</p>
-                                                        <a class="font-label-sm text-label-sm text-[#2E3D6B] uppercase tracking-widest inline-flex items-center gap-2 group-hover:gap-4 transition-all"
-                                                                href="#" style="">
-                                                                Ver solução <span
-                                                                        class="material-symbols-outlined text-[16px]"
-                                                                        style="">arrow_forward</span>
-                                                        </a>
-                                                </div>
-                                        </div>
-                                        <!-- Card 4 -->
-                                        <div
-                                                class="border border-slate-200 bg-white hover:border-[#2E3D6B] transition-colors group flex flex-col rounded-2xl overflow-hidden">
-                                                <div
-                                                        class="h-48 bg-slate-100 border-b border-slate-200 relative overflow-hidden">
-                                                        <img alt="International shipping"
-                                                                class="w-full h-full object-cover grayscale opacity-80 group-hover:grayscale-0 transition-all duration-500"
-                                                                data-alt="Massive cargo ship loaded with colorful containers navigating through rough ocean waters, representing global trade and logistics"
-                                                                src="./images-site/card-internacional.jpg"
-                                                                style="" />
-                                                </div>
-                                                <div class="p-6 flex-grow flex flex-col">
-                                                        <h3 class="font-headline-md text-headline-md text-slate-900 mb-2 font-semibold"
-                                                                style="">JRC Comex</h3>
-                                                        <p class="font-body-md text-body-md text-slate-600 mb-6 flex-grow"
-                                                                style="">Desembaraço aduaneiro, agenciamento de cargas
-                                                                internacionais e consultoria tributária especializada.
-                                                        </p>
-                                                        <a class="font-label-sm text-label-sm text-[#2E3D6B] uppercase tracking-widest inline-flex items-center gap-2 group-hover:gap-4 transition-all"
-                                                                href="#" style="">
-                                                                Ver solução <span
-                                                                        class="material-symbols-outlined text-[16px]"
-                                                                        style="">arrow_forward</span>
-                                                        </a>
-                                                </div>
-                                        </div>
+                                        </a>
                                 </div>
                         </div>
                 </section>
                 <!-- Diferenciais / Technical Focus -->
-                <section class="w-full bg-slate-950 text-white relative smart-grid-bg py-32 lg:py-48 overflow-hidden sticky-stack z-[40]">
-                        <div class="absolute bottom-full left-0 w-full h-[16px] md:h-[24px] pointer-events-none z-20 flex justify-between">
-                                <svg class="w-[16px] h-[16px] md:w-[24px] md:h-[24px] text-white" fill="currentColor" viewBox="0 0 24 24"><path d="M0 24V0c0 13.255 10.745 24 24 24H0z" /></svg>
-                                <svg class="w-[16px] h-[16px] md:w-[24px] md:h-[24px] text-white" fill="currentColor" viewBox="0 0 24 24"><path d="M24 24V0c0 13.255-10.745 24-24 24h24z" /></svg>
-                        
-<div class="animated-border-line absolute bottom-0 left-[16px] md:left-[24px] right-[16px] md:right-[24px] h-[1px] md:h-[2px] bg-gradient-to-r from-transparent via-[#2E3D6B] to-transparent transform scale-x-0 opacity-0 transition-all duration-1000 ease-out origin-center z-30"></div>
-</div>
-                        <div class="max-w-[1440px] mx-auto grid grid-cols-1 lg:grid-cols-2 relative z-30">
-                                <!-- Left Content -->
-                                <div
-                                        class="diff-left-reveal p-12 lg:p-24 border-b lg:border-b-0 lg:border-r border-slate-800 flex flex-col justify-center">
-                                        <h2 class="font-display text-[40px] md:text-[56px] leading-tight mb-8"
-                                                style="">Precisão não é<br />opcional.<br /><span
-                                                        class="home-tech-gradient font-bold" style="">É processo.</span>
-                                        </h2>
-                                        <p class="font-body-lg text-body-lg text-slate-400 mb-6 max-w-lg" style="">
-                                                Nossa infraestrutura tecnológica e frota especializada operam sob
-                                                rigorosos protocolos de segurança e qualidade, garantindo
-                                                previsibilidade em ambientes complexos.</p>
-                                        
-                                        <!-- Status Pills in Dark Section -->
-                                        <div class="flex flex-wrap gap-3 mb-10">
-                                                <div class="pill-container pill-outline pill-outline-dark text-[11px] py-2 px-4">
-                                                        <div class="pill-icon-bubble w-6 h-6"><span class="material-symbols-outlined text-xs">verified</span></div>
-                                                        ISO 9001
-                                                </div>
-                                                <div class="pill-container pill-outline pill-outline-dark text-[11px] py-2 px-4">
-                                                        <div class="pill-icon-bubble w-6 h-6"><span class="material-symbols-outlined text-xs">shield_with_heart</span></div>
-                                                        SASSMAQ
-                                                </div>
-                                        </div>
+                <section class="precision-section w-full relative sticky-stack z-[40]" aria-labelledby="precision-title">
+                        <div class="precision-shell">
+                                <div class="precision-panel">
+                                        <span class="precision-bg-shape precision-bg-shape--top" aria-hidden="true"></span>
+                                        <span class="precision-bg-shape precision-bg-shape--right" aria-hidden="true"></span>
 
-                                        <div>
-                                                <button class="px-8 py-4 btn-gradient text-white rounded-full transition-colors uppercase tracking-widest text-xs font-bold"
-                                                        style="">Entender como operamos</button>
-                                        </div>
-                                </div>
-                                <!-- Right Grid -->
-                                <div class="grid grid-cols-1 sm:grid-cols-2 border-slate-800">
-                                        <div class="diff-card diff-reveal p-12 border-b sm:border-r border-slate-800" data-delay="1">
-                                                <span class="material-symbols-outlined text-4xl home-tech-gradient mb-6 block diff-icon">architecture</span>
-                                                <h4 class="diff-title font-label-sm text-label-sm uppercase tracking-widest mb-4">Planejamento Técnico</h4>
-                                                <p class="diff-desc font-body-md text-slate-400">Estudos de viabilidade
-                                                        geométrica, vistorias de rota e projetos CAD para operações
-                                                        críticas.</p>
-                                        </div>
-                                        <div class="diff-card diff-reveal p-12 border-b border-slate-800" data-delay="2">
-                                                <span class="material-symbols-outlined text-4xl home-tech-gradient mb-6 block diff-icon">verified_user</span>
-                                                <h4 class="diff-title font-label-sm text-label-sm uppercase tracking-widest mb-4">Gerenciamento de Risco</h4>
-                                                <p class="diff-desc font-body-md text-slate-400">Análise estrutural,
-                                                        apólices de seguro customizadas e escolta ostensiva
-                                                        especializada.</p>
-                                        </div>
-                                        <div class="diff-card diff-reveal p-12 border-b sm:border-b-0 sm:border-r border-slate-800" data-delay="3">
-                                                <span class="material-symbols-outlined text-4xl home-tech-gradient mb-6 block diff-icon">satellite_alt</span>
-                                                <h4 class="diff-title font-label-sm text-label-sm uppercase tracking-widest mb-4">Telemetria Avançada</h4>
-                                                <p class="diff-desc font-body-md text-slate-400">Monitoramento 24/7 de
-                                                        frota, controle de temperatura e tracking em tempo real via
-                                                        satélite.</p>
-                                        </div>
-                                        <div class="diff-card diff-reveal p-12" data-delay="4">
-                                                <span class="material-symbols-outlined text-4xl home-tech-gradient mb-6 block diff-icon">engineering</span>
-                                                <h4 class="diff-title font-label-sm text-label-sm uppercase tracking-widest mb-4">Equipe Especializada</h4>
-                                                <p class="diff-desc font-body-md text-slate-400">Engenheiros, riggers e
-                                                        operadores certificados para movimentação de cargas
-                                                        indivisíveis.</p>
+                                        <div class="precision-content">
+                                                <div class="precision-copy diff-left-reveal">
+                                                        <h2 id="precision-title" class="precision-title font-display">
+                                                                <span class="precision-title-line">PRECISÃO NÃO</span>
+                                                                <span class="precision-title-line">É OPCIONAL.</span>
+                                                                <span class="precision-title-line precision-title-accent">É PROCESSO.</span>
+                                                        </h2>
+                                                        <p class="precision-text">Nossa infraestrutura tecnológica e frota especializada operam sob rigorosos protocolos de segurança e qualidade, garantindo previsibilidade em ambientes complexos.</p>
+
+                                                        <div class="precision-badges" aria-label="Certificações">
+                                                                <div class="precision-badge">
+                                                                        <span class="material-symbols-outlined precision-badge-icon" aria-hidden="true">verified</span>
+                                                                        ISO 9001
+                                                                </div>
+                                                                <div class="precision-badge">
+                                                                        <span class="material-symbols-outlined precision-badge-icon" aria-hidden="true">shield</span>
+                                                                        SASSMAQ
+                                                                </div>
+                                                        </div>
+
+                                                        <a href="fale-conosco.html" class="precision-cta">Fale com especialista</a>
+                                                </div>
+
+                                                <div class="precision-grid">
+                                                        <article class="precision-feature diff-reveal" data-delay="1">
+                                                                <span class="material-symbols-outlined precision-feature-icon" aria-hidden="true">architecture</span>
+                                                                <h3 class="precision-feature-title">PLANEJAMENTO TÉCNICO</h3>
+                                                                <p class="precision-feature-text">Estudos de viabilidade geométrica, vistorias de rota e projetos CAD para operações críticas.</p>
+                                                        </article>
+                                                        <article class="precision-feature diff-reveal" data-delay="2">
+                                                                <span class="material-symbols-outlined precision-feature-icon" aria-hidden="true">verified_user</span>
+                                                                <h3 class="precision-feature-title">GERENCIAMENTO DE RISCO</h3>
+                                                                <p class="precision-feature-text">Análise estrutural, apólices de seguro customizadas e escolta ostensiva especializada.</p>
+                                                        </article>
+                                                        <article class="precision-feature diff-reveal" data-delay="3">
+                                                                <span class="material-symbols-outlined precision-feature-icon" aria-hidden="true">satellite_alt</span>
+                                                                <h3 class="precision-feature-title">TELEMETRIA AVANÇADA</h3>
+                                                                <p class="precision-feature-text">Monitoramento 24/7 de frota, controle de temperatura e tracking em tempo real via satélite.</p>
+                                                        </article>
+                                                        <article class="precision-feature diff-reveal" data-delay="4">
+                                                                <span class="material-symbols-outlined precision-feature-icon" aria-hidden="true">engineering</span>
+                                                                <h3 class="precision-feature-title">EQUIPE ESPECIALIZADA</h3>
+                                                                <p class="precision-feature-text">Engenheiros, riggers e operadores certificados para movimentação de cargas indivisíveis.</p>
+                                                        </article>
+                                                </div>
                                         </div>
                                 </div>
                         </div>
@@ -2024,7 +3001,7 @@
                                         <a href="cases-operacoes.html" class="case-card diff-reveal" data-delay="1">
                                                 <div class="case-card-media">
                                                         <img alt="Operação Logística — Indústria de base"
-                                                                src="./images-site/case-industria-base.jpg" />
+                                                                src="./public/images/cases/case-1.png" />
                                                 </div>
                                                 <div class="case-card-body">
                                                         <span class="case-card-eyebrow">Case · Indústria</span>
@@ -2039,7 +3016,7 @@
                                         <a href="cases-operacoes.html" class="case-card diff-reveal" data-delay="2">
                                                 <div class="case-card-media">
                                                         <img alt="Operação Logística — Setor de energia"
-                                                                src="./images-site/case-setor-energia.jpg" />
+                                                                src="./public/images/cases/case-2.png" />
                                                 </div>
                                                 <div class="case-card-body">
                                                         <span class="case-card-eyebrow">Case · Energia</span>
@@ -2054,7 +3031,7 @@
                                         <a href="cases-operacoes.html" class="case-card diff-reveal" data-delay="3">
                                                 <div class="case-card-media">
                                                         <img alt="Operação Logística — Construção pesada"
-                                                                src="./images-site/case-construcao-pesada.jpg" />
+                                                                src="./public/images/cases/case-3.png" />
                                                 </div>
                                                 <div class="case-card-body">
                                                         <span class="case-card-eyebrow">Case · Construção</span>
@@ -2166,7 +3143,7 @@
                                                         <!-- IA-PENDING slot 8: ver images-site/_prompts-ia.md -->
                                                         <img alt="Como dimensionar cargas excedentes"
                                                                 class="w-full h-full object-cover grayscale opacity-80 group-hover:grayscale-0 transition-all duration-500"
-                                                                src="https://lh3.googleusercontent.com/aida-public/AB6AXuBh8IJgOnyRBOq-xmsndRSrBchmcP07R0LjAedOVhCS9IrnfwrZzZF2-LDPIP_R3D91G3q9s8kiARKFozXJYMJah6sjFjgSWhKxE49ibUFxAikps4aCqksbswD86RqKRJ6iiwt6YOISB4I0I0N7_r8uDC0dNsW1ZGfJyHB2SYwoKu4pW9RoM_peeyqFWIpKfPc-_LrJVhBkCLoYExILmQjhvyGMT2Zc1f56i70J9BLYM2RoeWTQDBnnuvS3qzb6ugnbLedWiVc9l-GZ" />
+                                                                src="./images-site/blog/1.png" />
                                                 </div>
                                                 <div class="p-8 flex-grow flex flex-col">
                                                         <div class="flex items-center gap-2 text-slate-500 text-xs uppercase tracking-widest mb-4">
@@ -2194,7 +3171,7 @@
                                                         <!-- IA-PENDING slot 9: ver images-site/_prompts-ia.md -->
                                                         <img alt="Impacto do planejamento técnico"
                                                                 class="w-full h-full object-cover grayscale opacity-80 group-hover:grayscale-0 transition-all duration-500"
-                                                                src="https://lh3.googleusercontent.com/aida-public/AB6AXuBs_hDOddtUSOKqczkE-uLlvmG2dx8kA6WOWr-5o0VjmfWBOo0zSc_kMSRTB0ewGlgQxt9NrBkLu5n5VGtqrDtRNAJq3-hm5QZhwF2dUtitsb9eYRHkmbC0h0kYv-awmGLcgdxSa8YrOmteQKxAcXslWixh6NYJ2Uty7zDvlmfx2lWWctzu0B47uoSl-KEaA1oX1QE7rNXtn6WPI4HLCJn6ErGZdDSk3NmZFJh6u4D2BCZ9KKQdzzTNJDCGc3WqDhIMUT0Qj0wR2CLh" />
+                                                                src="./images-site/blog/2.png" />
                                                 </div>
                                                 <div class="p-8 flex-grow flex flex-col">
                                                         <div class="flex items-center gap-2 text-slate-500 text-xs uppercase tracking-widest mb-4">
@@ -2223,7 +3200,7 @@
                                                         <!-- IA-PENDING slot 10: ver images-site/_prompts-ia.md -->
                                                         <img alt="Erros críticos em operações logísticas"
                                                                 class="w-full h-full object-cover grayscale opacity-80 group-hover:grayscale-0 transition-all duration-500"
-                                                                src="https://lh3.googleusercontent.com/aida-public/AB6AXuBagAEPpN8pnO7dlr4Jd2vK7jVx1ebW4EFhsArLbOCxc7_9_LiIPwEdnAzLB2bk4gRzCC_w7Bo78MPEMsUymdw-0RdRtP3jac-bnOfYA2kEs31r_GdI2pd6yJVsvNB8Oj8wfDFr3MkqfFO8hrtMouPILsqiZ5FVfPncwsdW_qJklGD6_jeOR8j7Gp33g23QMToPZ3jg0ScilCKzxS2h3zCLJ47MMwsnQCfoZEPnc43dRHKWIuzxS2MAWh0iQvzqa_qArj5V9tsjlRnL" />
+                                                                src="./images-site/blog/3.png" />
                                                 </div>
                                                 <div class="p-8 flex-grow flex flex-col">
                                                         <div class="flex items-center gap-2 text-slate-500 text-xs uppercase tracking-widest mb-4">
@@ -2261,13 +3238,9 @@
 <div class="animated-border-line absolute top-8 left-[16px] md:left-[24px] right-[16px] md:right-[24px] h-[1px] md:h-[2px] bg-gradient-to-r from-transparent via-[#485b99] to-transparent transform scale-x-0 opacity-0 transition-all duration-1000 ease-out origin-center z-30"></div>
 </div>
                         <div class="final-cta-video-bg" aria-hidden="true">
-                                <iframe
-                                        src="https://www.youtube.com/embed/-Zn5uLwhtu4?autoplay=1&amp;mute=1&amp;controls=0&amp;loop=1&amp;playlist=-Zn5uLwhtu4&amp;playsinline=1&amp;rel=0&amp;modestbranding=1"
-                                        title="J.R. Company - Operações Especiais"
-                                        loading="lazy"
-                                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                                        allowfullscreen>
-                                </iframe>
+                                <video autoplay muted loop playsinline preload="metadata">
+                                        <source src="https://despertare.store/wp-content/uploads/2026/05/abc.mp4" type="video/mp4">
+                                </video>
                         </div>
                         <div class="final-cta-content max-w-[1440px] mx-auto px-8 relative z-30">
                                 <div class="final-cta-copy flex flex-col items-start text-left">

@@ -10,6 +10,8 @@
 <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&amp;family=Vazirmatn:wght@400;500;600;700;800;900&amp;display=swap" rel="stylesheet"/>
 <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
 <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- JRC local typography system (display / body / technical) -->
+<link rel="stylesheet" href="fonts/jrc/typography.css"/>
 <script id="tailwind-config">
         tailwind.config = {
           darkMode: "class",
@@ -277,26 +279,304 @@
     </style>
 </head>
 <body class="bg-surface-bright text-on-surface font-body-md min-h-screen flex flex-col blueprint-grid">
-<!-- TopNavBar -->
-<nav class="bg-white dark:bg-slate-950 font-['Vazirmatn'] uppercase tracking-tighter text-sm font-semibold full-width top-0 sticky rounded-none border-b border-slate-200 dark:border-slate-800 z-50">
-<div class="flex justify-between items-center w-full px-8 py-4 max-w-[1440px] mx-auto">
-<a href="index.html" class="flex items-center"><img src="https://jrcompany.net.br/wp-content/uploads/2023/12/jcr-transportes-logo.png" alt="J.R. Company" class="h-10 w-auto"></a>
-<div class="hidden md:flex space-x-8 items-center">
-<a class="text-[#374BFF] border-b-2 border-[#374BFF] pb-1 hover:text-[#374BFF] transition-colors duration-200 opacity-80" href="#">Home</a>
-<a class="text-slate-900 dark:text-slate-300 hover:text-[#374BFF] transition-colors duration-200" href="#">A JR Company</a>
-<a class="text-slate-900 dark:text-slate-300 hover:text-[#374BFF] transition-colors duration-200" href="#">Soluções</a>
-<a class="text-slate-900 dark:text-slate-300 hover:text-[#374BFF] transition-colors duration-200" href="#">Operações</a>
-<a class="text-slate-900 dark:text-slate-300 hover:text-[#374BFF] transition-colors duration-200" href="#">Diferenciais</a>
-<a class="text-slate-900 dark:text-slate-300 hover:text-[#374BFF] transition-colors duration-200" href="#">Contato</a>
-</div>
-<div class="hidden md:flex items-center space-x-4">
-<button class="px-6 py-3 btn-gradient text-white rounded-full transition-colors uppercase tracking-widest text-xs font-bold" style="">Falar com especialista</button>
-</div>
-<button class="rounded-xl md:hidden text-slate-900 dark:text-white" style="">
-<span class="material-symbols-outlined" style="">menu</span>
-</button>
-</div>
+<!--
+  J.R. Company Premium Floating Header
+  Glassmorphism, floats over hero, fully responsive.
+  Drop-in component. Inject in <body> right after opening tag.
+-->
+<style>
+  /* === JR Floating Header === */
+  .jr-fh {
+    position: fixed;
+    top: 24px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: calc(100% - 48px);
+    max-width: 1440px;
+    z-index: 1000;
+    background: rgba(10, 12, 18, 0.55);
+    -webkit-backdrop-filter: blur(14px) saturate(140%);
+    backdrop-filter: blur(14px) saturate(140%);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 16px;
+    box-shadow:
+      0 12px 32px rgba(0, 0, 0, 0.28),
+      0 1px 0 rgba(255, 255, 255, 0.05) inset;
+    font-family: 'Vazirmatn', sans-serif;
+    transition: top 280ms ease, background 280ms ease, box-shadow 280ms ease, width 280ms ease;
+  }
+  .jr-fh.scrolled {
+    top: 14px;
+    background: rgba(10, 12, 18, 0.78);
+    box-shadow: 0 10px 28px rgba(0, 0, 0, 0.45);
+  }
+  .jr-fh__inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 24px;
+    padding: 14px 28px;
+    min-height: 64px;
+  }
+  .jr-fh__logo {
+    display: inline-flex;
+    align-items: center;
+    flex-shrink: 0;
+    text-decoration: none;
+  }
+  .jr-fh__logo img {
+    height: 36px;
+    width: auto;
+    display: block;
+    filter: brightness(0) invert(1);
+    transition: opacity 200ms ease;
+  }
+  .jr-fh__logo:hover img { opacity: 0.85; }
+
+  .jr-fh__nav {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    flex: 1;
+    justify-content: center;
+  }
+  .jr-fh__nav a {
+    position: relative;
+    color: rgba(255, 255, 255, 0.82);
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 0.005em;
+    text-decoration: none;
+    padding: 8px 2px;
+    white-space: nowrap;
+    transition: color 200ms ease;
+  }
+  .jr-fh__nav a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 2px;
+    height: 2px;
+    background: linear-gradient(90deg, #374BFF, #6B82FF);
+    border-radius: 2px;
+    transform: scaleX(0);
+    transform-origin: center;
+    transition: transform 250ms ease;
+  }
+  .jr-fh__nav a:hover { color: #ffffff; }
+  .jr-fh__nav a:hover::after,
+  .jr-fh__nav a.active::after { transform: scaleX(1); }
+  .jr-fh__nav a.active { color: #ffffff; }
+
+  .jr-fh__cta {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    flex-shrink: 0;
+    background: linear-gradient(135deg, #374BFF 0%, #2E3D6B 100%);
+    color: #ffffff !important;
+    text-decoration: none;
+    padding: 12px 22px;
+    border-radius: 999px;
+    border: none;
+    font-family: inherit;
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 0.01em;
+    cursor: pointer;
+    white-space: nowrap;
+    box-shadow: 0 8px 20px rgba(55, 75, 255, 0.35);
+    transition: transform 200ms ease, box-shadow 200ms ease, filter 200ms ease;
+  }
+  .jr-fh__cta:hover {
+    transform: translateY(-1px);
+    filter: brightness(1.08);
+    box-shadow: 0 10px 26px rgba(55, 75, 255, 0.5);
+  }
+
+  .jr-fh__burger {
+    display: none;
+    background: transparent;
+    border: 1px solid rgba(255, 255, 255, 0.14);
+    color: #ffffff;
+    width: 42px;
+    height: 42px;
+    border-radius: 12px;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: background 200ms ease, border-color 200ms ease;
+  }
+  .jr-fh__burger:hover {
+    background: rgba(255, 255, 255, 0.06);
+    border-color: rgba(255, 255, 255, 0.22);
+  }
+  .jr-fh__burger .material-symbols-outlined { font-size: 22px; }
+
+  /* === Mobile menu overlay === */
+  .jr-fh-mobile {
+    position: fixed;
+    inset: 0;
+    z-index: 1100;
+    background: rgba(10, 12, 18, 0.96);
+    -webkit-backdrop-filter: blur(20px);
+    backdrop-filter: blur(20px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 22px;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 280ms ease, visibility 280ms ease;
+    font-family: 'Vazirmatn', sans-serif;
+  }
+  .jr-fh-mobile.open { opacity: 1; visibility: visible; }
+  .jr-fh-mobile a {
+    color: #ffffff;
+    font-size: 22px;
+    font-weight: 600;
+    text-decoration: none;
+    letter-spacing: 0.01em;
+    transition: color 200ms ease;
+  }
+  .jr-fh-mobile a:hover { color: #6B82FF; }
+  .jr-fh-mobile .jr-fh__cta { margin-top: 12px; font-size: 14px; padding: 14px 28px; }
+  .jr-fh-mobile__close {
+    position: absolute;
+    top: 22px;
+    right: 22px;
+    background: transparent;
+    border: 1px solid rgba(255, 255, 255, 0.16);
+    color: #ffffff;
+    width: 44px;
+    height: 44px;
+    border-radius: 12px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: background 200ms ease;
+  }
+  .jr-fh-mobile__close:hover { background: rgba(255, 255, 255, 0.06); }
+  .jr-fh-mobile__logo {
+    position: absolute;
+    top: 26px;
+    left: 26px;
+  }
+  .jr-fh-mobile__logo img {
+    height: 32px;
+    filter: brightness(0) invert(1);
+  }
+
+  body.jr-fh-locked { overflow: hidden; }
+
+  /* === Responsive === */
+  @media (max-width: 1100px) {
+    .jr-fh__nav { gap: 22px; }
+    .jr-fh__nav a { font-size: 13px; }
+  }
+  @media (max-width: 980px) {
+    .jr-fh {
+      width: calc(100% - 32px);
+      top: 16px;
+      border-radius: 14px;
+    }
+    .jr-fh__inner { padding: 10px 16px; min-height: 58px; }
+    .jr-fh__nav,
+    .jr-fh__cta { display: none; }
+    .jr-fh__burger { display: inline-flex; }
+    .jr-fh__logo img { height: 32px; }
+  }
+</style>
+
+<nav class="jr-fh" id="jrFloatingHeader" aria-label="Navegação principal">
+  <div class="jr-fh__inner">
+    <a href="index.html" class="jr-fh__logo" aria-label="J.R. Company - Início">
+      <img src="https://jrcompany.net.br/wp-content/uploads/2023/12/jcr-transportes-logo.png" alt="J.R. Company" />
+    </a>
+    <div class="jr-fh__nav">
+      <a href="index.html" data-page="index.html">Home</a>
+      <a href="sobre.html" data-page="sobre.html">Sobre</a>
+      <a href="solucoes.html" data-page="solucoes.html">Nossas Soluções</a>
+      <a href="cases-operacoes.html" data-page="cases-operacoes.html">Operações</a>
+      <a href="diferenciais.html" data-page="diferenciais.html">Diferenciais</a>
+      <a href="fale-conosco.html" data-page="fale-conosco.html">Contato</a>
+    </div>
+    <a href="fale-conosco.html" class="jr-fh__cta">Fale com especialista</a>
+    <button class="jr-fh__burger" id="jrFhBurger" aria-label="Abrir menu" aria-expanded="false">
+      <span class="material-symbols-outlined">menu</span>
+    </button>
+  </div>
 </nav>
+
+<div class="jr-fh-mobile" id="jrFhMobile" role="dialog" aria-modal="true" aria-label="Menu de navegação">
+  <a href="index.html" class="jr-fh-mobile__logo" aria-label="J.R. Company - Início">
+    <img src="https://jrcompany.net.br/wp-content/uploads/2023/12/jcr-transportes-logo.png" alt="J.R. Company" />
+  </a>
+  <button class="jr-fh-mobile__close" id="jrFhMobileClose" aria-label="Fechar menu">
+    <span class="material-symbols-outlined">close</span>
+  </button>
+  <a href="index.html">Home</a>
+  <a href="sobre.html">Sobre</a>
+  <a href="solucoes.html">Nossas Soluções</a>
+  <a href="cases-operacoes.html">Operações</a>
+  <a href="diferenciais.html">Diferenciais</a>
+  <a href="fale-conosco.html">Contato</a>
+  <a href="fale-conosco.html" class="jr-fh__cta">Fale com especialista</a>
+</div>
+
+<script>
+(function () {
+  var header = document.getElementById('jrFloatingHeader');
+  var burger = document.getElementById('jrFhBurger');
+  var mobile = document.getElementById('jrFhMobile');
+  var closeBtn = document.getElementById('jrFhMobileClose');
+
+  function onScroll() {
+    if (!header) return;
+    if (window.scrollY > 30) header.classList.add('scrolled');
+    else header.classList.remove('scrolled');
+  }
+  window.addEventListener('scroll', onScroll, { passive: true });
+  onScroll();
+
+  function openMenu() {
+    if (!mobile) return;
+    mobile.classList.add('open');
+    document.body.classList.add('jr-fh-locked');
+    if (burger) burger.setAttribute('aria-expanded', 'true');
+  }
+  function closeMenu() {
+    if (!mobile) return;
+    mobile.classList.remove('open');
+    document.body.classList.remove('jr-fh-locked');
+    if (burger) burger.setAttribute('aria-expanded', 'false');
+  }
+  if (burger) burger.addEventListener('click', openMenu);
+  if (closeBtn) closeBtn.addEventListener('click', closeMenu);
+  if (mobile) {
+    mobile.querySelectorAll('a').forEach(function (a) {
+      a.addEventListener('click', closeMenu);
+    });
+  }
+  document.addEventListener('keydown', function (e) {
+    if (e.key === 'Escape') closeMenu();
+  });
+
+  // Mark active page
+  try {
+    var path = (window.location.pathname.split('/').pop() || 'index.html').toLowerCase();
+    if (!path) path = 'index.html';
+    document.querySelectorAll('.jr-fh__nav a').forEach(function (a) {
+      var dp = (a.getAttribute('data-page') || '').toLowerCase();
+      if (dp === path) a.classList.add('active');
+    });
+  } catch (e) {}
+})();
+</script>
+
 <!-- Main Content -->
 <main class="flex-grow w-full max-w-[1440px] mx-auto flex flex-col">
 <!-- HERO -->

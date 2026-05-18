@@ -1,0 +1,107 @@
+﻿{
+    "generated_at":  "2026-05-13T03:36:55",
+    "source_index":  "C:\\Users\\hx-co\\OneDrive\\Documentos\\brigth\\JR Company\\VERSAO 5 (2) 08-05-26 16\\VERSAO 5 (2)\\VERSAO 1\\index.html",
+    "total":  10,
+    "slots":  [
+                  {
+                      "n":  1,
+                      "id":  "card-cargas-excedentes",
+                      "secao":  "Cards de serviços",
+                      "linha_html":  1310,
+                      "alt_text_atual":  "Oversized load transport",
+                      "url_atual":  "https://lh3.googleusercontent.com/aida-public/AB6AXuB7p65gylT4qYb83fqWO1u4zCcm81e-CxQSbjH4tcNFuX5jY7dQTASxY1BRwTIFOm93xu5ElMPB_tl9VVIrRNKjYeybTHDE3UBSfo2o7R8l0u8NKF-2q59WiMmU1dUQr77JAirkgSaG0HONRUrN22ZN7XqBhhW8pDD7UE-BKr4jgI6UPT5DXSyZCPIcN4Vj61ZUR23oohaleGak3Cstw1yK2vXtslPfoeaxA9QcIoOhpoM-7m0HzaGNahyCrRpdGGMHpEQrIzZkhhra",
+                      "data_alt_atual":  "Massive industrial wind turbine blade being transported by a specialized heavy-duty truck on a highway under clear skies",
+                      "proporcao_esperada":  "Responsiva; container h-48 (12rem) com object-cover"
+                  },
+                  {
+                      "n":  2,
+                      "id":  "card-icamento-industrial",
+                      "secao":  "Cards de serviços",
+                      "linha_html":  1349,
+                      "alt_text_atual":  "Industrial lifting",
+                      "url_atual":  "https://lh3.googleusercontent.com/aida-public/AB6AXuA4dKRkGF_CahMuNKHIXDrWqRlCX__BemUMekHrT9v6FSvqnTMZwt65hlkQmtlc3ffhLNirTboGslFxZz9dOXcUY_4M6Y7jVv9rDtFg39yGXW78YXtjXMMn9VWHkmqQHupH989WaFGwJPIMjzI_CdSgdmH9CSUPMUQWVFleU6wYuKVWAigJYxBcFHrUiBJvu29a9CNd1NueJ5_l3R934EMrutFeQ0DszyNLrjY-GB745YTBzcP3vX5VuaF1En8fwO8CknuWwcUH3fSJ",
+                      "data_alt_atual":  "Heavy industrial crane lifting massive steel beams at a construction site with technical precision and safety rigging",
+                      "proporcao_esperada":  "Responsiva; container h-48 (12rem) com object-cover"
+                  },
+                  {
+                      "n":  3,
+                      "id":  "card-logistica-armazem",
+                      "secao":  "Cards de serviços",
+                      "linha_html":  1388,
+                      "alt_text_atual":  "Warehouse logistics",
+                      "url_atual":  "https://lh3.googleusercontent.com/aida-public/AB6AXuCAyv707z4T754VB9Y19UEroRKsSJB_MX-G1UpnfOvhQi8zfEdlhsB3qEq8xNCjUScKqD3sRQ6Pn79qSvoA52saE1LK_hcDK34pk9WhpFqOE1QhrGEehDyrEXFUttv0FRm_zW50g39yS73OuAT9-xWItHuKUkF7HPsscbh2LDXeNlkKzPinO8-zMdTs1xVGAbrp3zW-W7jRwGCmN75VlOh5ht5Dn-PZx290clBxpIWAzlqVIZii7LCOfpmarkXkZZfVCzdA7LSX7ZRF",
+                      "data_alt_atual":  "High-tech automated warehouse interior with massive shelving units and precision robotic forklifts organizing industrial cargo",
+                      "proporcao_esperada":  "Responsiva; container h-48 (12rem) com object-cover"
+                  },
+                  {
+                      "n":  4,
+                      "id":  "card-internacional",
+                      "secao":  "Cards de serviços",
+                      "linha_html":  1414,
+                      "alt_text_atual":  "International shipping",
+                      "url_atual":  "https://lh3.googleusercontent.com/aida-public/AB6AXuBHXhYPak38C3h5wypicsOHahJzZUpba7RNNmYpF9fK7V-uh6gobyApqL8jY2oFKoWeIlKHvhcPedvfFpBnauGv1kuk7rnAdg8REqL3CiMChKWqkH8mCrlSCzo_derlXWZn1oI6TiNXmS-at2_pqiVuFuXWV2G7M7JpkrfC0qNLlzKSH3SsXISSdFDvLy-iw38e5PVD2BMnAYnigMCHbL742usL8-UWNTrJfeOF9Pq0fnu14NaNkjZaXh0fI6toHhkXIjpaDkBhe6s5",
+                      "data_alt_atual":  "Massive cargo ship loaded with colorful containers navigating through rough ocean waters, representing global trade and logistics",
+                      "proporcao_esperada":  "Responsiva; container h-48 (12rem) com object-cover"
+                  },
+                  {
+                      "n":  5,
+                      "id":  "case-industria-base",
+                      "secao":  "Cases",
+                      "linha_html":  1973,
+                      "alt_text_atual":  "Operação Logística — Indústria de base",
+                      "url_atual":  "https://lh3.googleusercontent.com/aida-public/AB6AXuCwPrKqzSKhegYPJ2XBBh_AnzWwPNFAs17-rYubmlE9BLNLm5vYtK4yE1kztUR5N2fDrUXF4Q7HpQTM7Bst9QLXLkZYS04MddxQmMmQiesv9979ZnATbyoEl0FXWMa5uAOV1wc81G2KGrQ_-U7cdpcO0hmI02Mu99mzdVN8XU-lw-cNsB1hdxM8XB5I47e2NjD3GkjrD8fZtoTzVacd_8ylSFX0uiVzoU5jbSytJdng5i8jnEJz4QckEXXyOofdIJmlM5S3a2YWx3Kl",
+                      "data_alt_atual":  null,
+                      "proporcao_esperada":  "16:11; .case-card-media aspect-ratio 16 / 11 com object-cover"
+                  },
+                  {
+                      "n":  6,
+                      "id":  "case-setor-energia",
+                      "secao":  "Cases",
+                      "linha_html":  1988,
+                      "alt_text_atual":  "Operação Logística — Setor de energia",
+                      "url_atual":  "https://lh3.googleusercontent.com/aida-public/AB6AXuB-dpnH7nt9DPJyoDWzQ5wsPfa7n6O89771H92rCFbLaWPqDMrtMdrc_Vh2b6DzpEQqwoktVrtfK_oMCEdsU-LYnsZIFw_DrFSOGk7H45oKQe2999xyvrOGvIG8-RWoObBBQ1bs24JzlUf1-q7uUUjj4KtoIbgLyiNjW5OQyQZq5orTvswgpttvM0FAhJ_BHSWCGY7RQzgDKhcIKuDemUOuCGdnzX8fpI9b1n13jPIVK6w6pCN4Mam9JjgOVsVOhNvtcNhOpcbhCVnz",
+                      "data_alt_atual":  null,
+                      "proporcao_esperada":  "16:11; .case-card-media aspect-ratio 16 / 11 com object-cover"
+                  },
+                  {
+                      "n":  7,
+                      "id":  "case-construcao-pesada",
+                      "secao":  "Cases",
+                      "linha_html":  2003,
+                      "alt_text_atual":  "Operação Logística — Construção pesada",
+                      "url_atual":  "https://lh3.googleusercontent.com/aida-public/AB6AXuDR3MBmXG9J0BMnHjK5HnBZbqLM8L2ZU0bLBKUTZgFzU69WG81WxGRn8xVbrYHzr_1QBKQ759jYC5fpV6keAmd4ElNxSzANAPBpdilL1ji-RrORBDw-cp1aBGjLBse9ZJPe32tV3QSKl6DtsRZRsxVGoj_wMw19ZxIdSZapshAPO39kloM_LLp2yeN83SfQVzgrArrVQuX3ynm0LgD9QyfJMfc6X73qcYBegFQj6b5wuoCM4mOQWV7opYQvys9csC-63CKbCU8zwdXg",
+                      "data_alt_atual":  null,
+                      "proporcao_esperada":  "16:11; .case-card-media aspect-ratio 16 / 11 com object-cover"
+                  },
+                  {
+                      "n":  8,
+                      "id":  "blog-dimensionar-cargas",
+                      "secao":  "Blog",
+                      "linha_html":  2113,
+                      "alt_text_atual":  "Como dimensionar cargas excedentes",
+                      "url_atual":  "https://lh3.googleusercontent.com/aida-public/AB6AXuBh8IJgOnyRBOq-xmsndRSrBchmcP07R0LjAedOVhCS9IrnfwrZzZF2-LDPIP_R3D91G3q9s8kiARKFozXJYMJah6sjFjgSWhKxE49ibUFxAikps4aCqksbswD86RqKRJ6iiwt6YOISB4I0I0N7_r8uDC0dNsW1ZGfJyHB2SYwoKu4pW9RoM_peeyqFWIpKfPc-_LrJVhBkCLoYExILmQjhvyGMT2Zc1f56i70J9BLYM2RoeWTQDBnnuvS3qzb6ugnbLedWiVc9l-GZ",
+                      "data_alt_atual":  null,
+                      "proporcao_esperada":  "Responsiva; container h-64 (16rem) com object-cover"
+                  },
+                  {
+                      "n":  9,
+                      "id":  "blog-planejamento-tecnico",
+                      "secao":  "Blog",
+                      "linha_html":  2140,
+                      "alt_text_atual":  "Impacto do planejamento técnico",
+                      "url_atual":  "https://lh3.googleusercontent.com/aida-public/AB6AXuBs_hDOddtUSOKqczkE-uLlvmG2dx8kA6WOWr-5o0VjmfWBOo0zSc_kMSRTB0ewGlgQxt9NrBkLu5n5VGtqrDtRNAJq3-hm5QZhwF2dUtitsb9eYRHkmbC0h0kYv-awmGLcgdxSa8YrOmteQKxAcXslWixh6NYJ2Uty7zDvlmfx2lWWctzu0B47uoSl-KEaA1oX1QE7rNXtn6WPI4HLCJn6ErGZdDSk3NmZFJh6u4D2BCZ9KKQdzzTNJDCGc3WqDhIMUT0Qj0wR2CLh",
+                      "data_alt_atual":  null,
+                      "proporcao_esperada":  "Responsiva; container h-64 (16rem) com object-cover"
+                  },
+                  {
+                      "n":  10,
+                      "id":  "blog-erros-criticos",
+                      "secao":  "Blog",
+                      "linha_html":  2168,
+                      "alt_text_atual":  "Erros críticos em operações logísticas",
+                      "url_atual":  "https://lh3.googleusercontent.com/aida-public/AB6AXuBagAEPpN8pnO7dlr4Jd2vK7jVx1ebW4EFhsArLbOCxc7_9_LiIPwEdnAzLB2bk4gRzCC_w7Bo78MPEMsUymdw-0RdRtP3jac-bnOfYA2kEs31r_GdI2pd6yJVsvNB8Oj8wfDFr3MkqfFO8hrtMouPILsqiZ5FVfPncwsdW_qJklGD6_jeOR8j7Gp33g23QMToPZ3jg0ScilCKzxS2h3zCLJ47MMwsnQCfoZEPnc43dRHKWIuzxS2MAWh0iQvzqa_qArj5V9tsjlRnL",
+                      "data_alt_atual":  null,
+                      "proporcao_esperada":  "Responsiva; container h-64 (16rem) com object-cover"
+                  }
+              ]
+}

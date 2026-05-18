@@ -1,0 +1,542 @@
+﻿{
+    "generated_at":  "2026-05-13T03:35:54",
+    "scanned_root":  "C:\\Users\\hx-co\\OneDrive\\Documentos\\brigth\\JR Company",
+    "total_candidates":  72,
+    "allowed_dirs":  [
+                         "Raiz /JR Company/",
+                         "/video header/",
+                         "/video header/frames/finais/",
+                         "/Geral Glow 2026/"
+                     ],
+    "ignored_fragments":  [
+                              "/sequence/",
+                              "/frames gif/",
+                              "/_originais/",
+                              "/Maersk*/",
+                              "/_files/",
+                              "/VERSAO 4",
+                              "/VERSAO 4 (1) backup"
+                          ],
+    "valid_extensions":  [
+                             ".jpg",
+                             ".jpeg",
+                             ".png",
+                             ".webp",
+                             ".gif"
+                         ],
+    "excluded_filenames":  [
+                               "logo s.png",
+                               "Group.png",
+                               "Group.svg",
+                               "Vector.png",
+                               "Ellipse 1.png",
+                               "Ellipse 1.svg",
+                               "textura 1.svg"
+                           ],
+    "candidates":  [
+                       {
+                           "caminho_absoluto":  "C:\\Users\\hx-co\\OneDrive\\Documentos\\brigth\\JR Company\\video header\\frames\\finais\\2.png",
+                           "caminho_relativo_jr_company":  "video header/frames/finais/2.png",
+                           "nome":  "2.png",
+                           "tamanho_bytes":  1956972,
+                           "extensao":  ".png"
+                       },
+                       {
+                           "caminho_absoluto":  "C:\\Users\\hx-co\\OneDrive\\Documentos\\brigth\\JR Company\\video header\\frames\\finais\\2a.png",
+                           "caminho_relativo_jr_company":  "video header/frames/finais/2a.png",
+                           "nome":  "2a.png",
+                           "tamanho_bytes":  1944733,
+                           "extensao":  ".png"
+                       },
+                       {
+                           "caminho_absoluto":  "C:\\Users\\hx-co\\OneDrive\\Documentos\\brigth\\JR Company\\video header\\frames\\finais\\1.png",
+                           "caminho_relativo_jr_company":  "video header/frames/finais/1.png",
+                           "nome":  "1.png",
+                           "tamanho_bytes":  1902665,
+                           "extensao":  ".png"
+                       },
+                       {
+                           "caminho_absoluto":  "C:\\Users\\hx-co\\OneDrive\\Documentos\\brigth\\JR Company\\video header\\frames\\finais\\1A.png",
+                           "caminho_relativo_jr_company":  "video header/frames/finais/1A.png",
+                           "nome":  "1A.png",
+                           "tamanho_bytes":  1873854,
+                           "extensao":  ".png"
+                       },
+                       {
+                           "caminho_absoluto":  "C:\\Users\\hx-co\\OneDrive\\Documentos\\brigth\\JR Company\\video header\\frames\\finais\\2b-01.png",
+                           "caminho_relativo_jr_company":  "video header/frames/finais/2b-01.png",
+                           "nome":  "2b-01.png",
+                           "tamanho_bytes":  1851369,
+                           "extensao":  ".png"
+                       },
+                       {
+                           "caminho_absoluto":  "C:\\Users\\hx-co\\OneDrive\\Documentos\\brigth\\JR Company\\video header\\frames\\finais\\3.png",
+                           "caminho_relativo_jr_company":  "video header/frames/finais/3.png",
+                           "nome":  "3.png",
+                           "tamanho_bytes":  2470587,
+                           "extensao":  ".png"
+                       },
+                       {
+                           "caminho_absoluto":  "C:\\Users\\hx-co\\OneDrive\\Documentos\\brigth\\JR Company\\video header\\frames\\finais\\3a.png",
+                           "caminho_relativo_jr_company":  "video header/frames/finais/3a.png",
+                           "nome":  "3a.png",
+                           "tamanho_bytes":  2530607,
+                           "extensao":  ".png"
+                       },
+                       {
+                           "caminho_absoluto":  "C:\\Users\\hx-co\\OneDrive\\Documentos\\brigth\\JR Company\\video header\\frames\\finais\\2c.png",
+                           "caminho_relativo_jr_company":  "video header/frames/finais/2c.png",
+                           "nome":  "2c.png",
+                           "tamanho_bytes":  2282824,
+                           "extensao":  ".png"
+                       },
+                       {
+                           "caminho_absoluto":  "C:\\Users\\hx-co\\OneDrive\\Documentos\\brigth\\JR Company\\video header\\frames\\finais\\2d-01.png",
+                           "caminho_relativo_jr_company":  "video header/frames/finais/2d-01.png",
+                           "nome":  "2d-01.png",
+                           "tamanho_bytes":  2199627,
+                           "extensao":  ".png"
+                       },
+                       {
+                           "caminho_absoluto":  "C:\\Users\\hx-co\\OneDrive\\Documentos\\brigth\\JR Company\\video header\\WhatsApp Image 2026-03-05 at 15.11.31 (1).jpeg",
+                           "caminho_relativo_jr_company":  "video header/WhatsApp Image 2026-03-05 at 15.11.31 (1).jpeg",
+                           "nome":  "WhatsApp Image 2026-03-05 at 15.11.31 (1).jpeg",
+                           "tamanho_bytes":  163938,
+                           "extensao":  ".jpeg"
+                       },
+                       {
+                           "caminho_absoluto":  "C:\\Users\\hx-co\\OneDrive\\Documentos\\brigth\\JR Company\\video header\\WhatsApp Image 2026-03-05 at 16.01.54.jpeg",
+                           "caminho_relativo_jr_company":  "video header/WhatsApp Image 2026-03-05 at 16.01.54.jpeg",
+                           "nome":  "WhatsApp Image 2026-03-05 at 16.01.54.jpeg",
+                           "tamanho_bytes":  278900,
+                           "extensao":  ".jpeg"
+                       },
+                       {
+                           "caminho_absoluto":  "C:\\Users\\hx-co\\OneDrive\\Documentos\\brigth\\JR Company\\video header\\WhatsApp Image 2026-03-05 at 15.02.51.jpeg",
+                           "caminho_relativo_jr_company":  "video header/WhatsApp Image 2026-03-05 at 15.02.51.jpeg",
+                           "nome":  "WhatsApp Image 2026-03-05 at 15.02.51.jpeg",
+                           "tamanho_bytes":  290055,
+                           "extensao":  ".jpeg"
+                       },
+                       {
+                           "caminho_absoluto":  "C:\\Users\\hx-co\\OneDrive\\Documentos\\brigth\\JR Company\\video header\\WhatsApp Image 2026-03-05 at 15.02.52.jpeg",
+                           "caminho_relativo_jr_company":  "video header/WhatsApp Image 2026-03-05 at 15.02.52.jpeg",
+                           "nome":  "WhatsApp Image 2026-03-05 at 15.02.52.jpeg",
+                           "tamanho_bytes":  253007,
+                           "extensao":  ".jpeg"
+                       },
+                       {
+                           "caminho_absoluto":  "C:\\Users\\hx-co\\OneDrive\\Documentos\\brigth\\JR Company\\video header\\WhatsApp Image 2026-03-11 at 13.22.07 (2).jpeg",
+                           "caminho_relativo_jr_company":  "video header/WhatsApp Image 2026-03-11 at 13.22.07 (2).jpeg",
+                           "nome":  "WhatsApp Image 2026-03-11 at 13.22.07 (2).jpeg",
+                           "tamanho_bytes":  160251,
+                           "extensao":  ".jpeg"
+                       },
+                       {
+                           "caminho_absoluto":  "C:\\Users\\hx-co\\OneDrive\\Documentos\\brigth\\JR Company\\video header\\WhatsApp Image 2026-03-24 at 15.08.06 (2).jpeg",
+                           "caminho_relativo_jr_company":  "video header/WhatsApp Image 2026-03-24 at 15.08.06 (2).jpeg",
+                           "nome":  "WhatsApp Image 2026-03-24 at 15.08.06 (2).jpeg",
+                           "tamanho_bytes":  138192,
+                           "extensao":  ".jpeg"
+                       },
+                       {
+                           "caminho_absoluto":  "C:\\Users\\hx-co\\OneDrive\\Documentos\\brigth\\JR Company\\video header\\WhatsApp Image 2026-03-24 at 15.08.07 (5).jpeg",
+                           "caminho_relativo_jr_company":  "video header/WhatsApp Image 2026-03-24 at 15.08.07 (5).jpeg",
+                           "nome":  "WhatsApp Image 2026-03-24 at 15.08.07 (5).jpeg",
+                           "tamanho_bytes":  198025,
+                           "extensao":  ".jpeg"
+                       },
+                       {
+                           "caminho_absoluto":  "C:\\Users\\hx-co\\OneDrive\\Documentos\\brigth\\JR Company\\video header\\WhatsApp Image 2026-03-24 at 15.08.06 (10).jpeg",
+                           "caminho_relativo_jr_company":  "video header/WhatsApp Image 2026-03-24 at 15.08.06 (10).jpeg",
+                           "nome":  "WhatsApp Image 2026-03-24 at 15.08.06 (10).jpeg",
+                           "tamanho_bytes":  161021,
+                           "extensao":  ".jpeg"
+                       },
+                       {
+                           "caminho_absoluto":  "C:\\Users\\hx-co\\OneDrive\\Documentos\\brigth\\JR Company\\video header\\WhatsApp Image 2026-03-24 at 15.08.06 (11).jpeg",
+                           "caminho_relativo_jr_company":  "video header/WhatsApp Image 2026-03-24 at 15.08.06 (11).jpeg",
+                           "nome":  "WhatsApp Image 2026-03-24 at 15.08.06 (11).jpeg",
+                           "tamanho_bytes":  161653,
+                           "extensao":  ".jpeg"
+                       },
+                       {
+                           "caminho_absoluto":  "C:\\Users\\hx-co\\OneDrive\\Documentos\\brigth\\JR Company\\video header\\frames\\finais\\ChatGPT Image 13 may 2026, 01_55_33 a.m.png",
+                           "caminho_relativo_jr_company":  "video header/frames/finais/ChatGPT Image 13 may 2026, 01_55_33 a.m.png",
+                           "nome":  "ChatGPT Image 13 may 2026, 01_55_33 a.m.png",
+                           "tamanho_bytes":  2492271,
+                           "extensao":  ".png"
+                       },
+                       {
+                           "caminho_absoluto":  "C:\\Users\\hx-co\\OneDrive\\Documentos\\brigth\\JR Company\\video header\\frames\\finais\\ChatGPT Image 13 may 2026, 01_55_40 a.m.png",
+                           "caminho_relativo_jr_company":  "video header/frames/finais/ChatGPT Image 13 may 2026, 01_55_40 a.m.png",
+                           "nome":  "ChatGPT Image 13 may 2026, 01_55_40 a.m.png",
+                           "tamanho_bytes":  2835871,
+                           "extensao":  ".png"
+                       },
+                       {
+                           "caminho_absoluto":  "C:\\Users\\hx-co\\OneDrive\\Documentos\\brigth\\JR Company\\video header\\frames\\finais\\ChatGPT Image 13 may 2026, 01_55_13 a.m.png",
+                           "caminho_relativo_jr_company":  "video header/frames/finais/ChatGPT Image 13 may 2026, 01_55_13 a.m.png",
+                           "nome":  "ChatGPT Image 13 may 2026, 01_55_13 a.m.png",
+                           "tamanho_bytes":  2242913,
+                           "extensao":  ".png"
+                       },
+                       {
+                           "caminho_absoluto":  "C:\\Users\\hx-co\\OneDrive\\Documentos\\brigth\\JR Company\\video header\\frames\\finais\\ChatGPT Image 13 may 2026, 01_55_20 a.m.png",
+                           "caminho_relativo_jr_company":  "video header/frames/finais/ChatGPT Image 13 may 2026, 01_55_20 a.m.png",
+                           "nome":  "ChatGPT Image 13 may 2026, 01_55_20 a.m.png",
+                           "tamanho_bytes":  2657458,
+                           "extensao":  ".png"
+                       },
+                       {
+                           "caminho_absoluto":  "C:\\Users\\hx-co\\OneDrive\\Documentos\\brigth\\JR Company\\video header\\frames\\finais\\ChatGPT Image 13 may 2026, 01_55_50 a.m.png",
+                           "caminho_relativo_jr_company":  "video header/frames/finais/ChatGPT Image 13 may 2026, 01_55_50 a.m.png",
+                           "nome":  "ChatGPT Image 13 may 2026, 01_55_50 a.m.png",
+                           "tamanho_bytes":  2609828,
+                           "extensao":  ".png"
+                       },
+                       {
+                           "caminho_absoluto":  "C:\\Users\\hx-co\\OneDrive\\Documentos\\brigth\\JR Company\\Geral Glow 2026\\POST 01 - Capa.png",
+                           "caminho_relativo_jr_company":  "Geral Glow 2026/POST 01 - Capa.png",
+                           "nome":  "POST 01 - Capa.png",
+                           "tamanho_bytes":  435690,
+                           "extensao":  ".png"
+                       },
+                       {
+                           "caminho_absoluto":  "C:\\Users\\hx-co\\OneDrive\\Documentos\\brigth\\JR Company\\Geral Glow 2026\\POST 01 - Card 26.png",
+                           "caminho_relativo_jr_company":  "Geral Glow 2026/POST 01 - Card 26.png",
+                           "nome":  "POST 01 - Card 26.png",
+                           "tamanho_bytes":  417744,
+                           "extensao":  ".png"
+                       },
+                       {
+                           "caminho_absoluto":  "C:\\Users\\hx-co\\OneDrive\\Documentos\\brigth\\JR Company\\video header\\frames\\finais\\ChatGPT Image 13 may 2026, 01_55_55 a.m.png",
+                           "caminho_relativo_jr_company":  "video header/frames/finais/ChatGPT Image 13 may 2026, 01_55_55 a.m.png",
+                           "nome":  "ChatGPT Image 13 may 2026, 01_55_55 a.m.png",
+                           "tamanho_bytes":  2128255,
+                           "extensao":  ".png"
+                       },
+                       {
+                           "caminho_absoluto":  "C:\\Users\\hx-co\\OneDrive\\Documentos\\brigth\\JR Company\\video header\\frames\\finais\\ChatGPT Image 13 may 2026, 01_56_13 a.m.png",
+                           "caminho_relativo_jr_company":  "video header/frames/finais/ChatGPT Image 13 may 2026, 01_56_13 a.m.png",
+                           "nome":  "ChatGPT Image 13 may 2026, 01_56_13 a.m.png",
+                           "tamanho_bytes":  1999329,
+                           "extensao":  ".png"
+                       },
+                       {
+                           "caminho_absoluto":  "C:\\Users\\hx-co\\OneDrive\\Documentos\\brigth\\JR Company\\video header\\frames\\finais\\5.png",
+                           "caminho_relativo_jr_company":  "video header/frames/finais/5.png",
+                           "nome":  "5.png",
+                           "tamanho_bytes":  2195830,
+                           "extensao":  ".png"
+                       },
+                       {
+                           "caminho_absoluto":  "C:\\Users\\hx-co\\OneDrive\\Documentos\\brigth\\JR Company\\video header\\frames\\finais\\5a.png",
+                           "caminho_relativo_jr_company":  "video header/frames/finais/5a.png",
+                           "nome":  "5a.png",
+                           "tamanho_bytes":  1770757,
+                           "extensao":  ".png"
+                       },
+                       {
+                           "caminho_absoluto":  "C:\\Users\\hx-co\\OneDrive\\Documentos\\brigth\\JR Company\\video header\\frames\\finais\\4.png",
+                           "caminho_relativo_jr_company":  "video header/frames/finais/4.png",
+                           "nome":  "4.png",
+                           "tamanho_bytes":  2305856,
+                           "extensao":  ".png"
+                       },
+                       {
+                           "caminho_absoluto":  "C:\\Users\\hx-co\\OneDrive\\Documentos\\brigth\\JR Company\\video header\\frames\\finais\\4a.png",
+                           "caminho_relativo_jr_company":  "video header/frames/finais/4a.png",
+                           "nome":  "4a.png",
+                           "tamanho_bytes":  2331452,
+                           "extensao":  ".png"
+                       },
+                       {
+                           "caminho_absoluto":  "C:\\Users\\hx-co\\OneDrive\\Documentos\\brigth\\JR Company\\video header\\frames\\finais\\ChatGPT Image 12 may 2026, 12_34_43 a.m.png",
+                           "caminho_relativo_jr_company":  "video header/frames/finais/ChatGPT Image 12 may 2026, 12_34_43 a.m.png",
+                           "nome":  "ChatGPT Image 12 may 2026, 12_34_43 a.m.png",
+                           "tamanho_bytes":  2996318,
+                           "extensao":  ".png"
+                       },
+                       {
+                           "caminho_absoluto":  "C:\\Users\\hx-co\\OneDrive\\Documentos\\brigth\\JR Company\\video header\\frames\\finais\\ChatGPT Image 12 may 2026, 12_38_56 a.m.png",
+                           "caminho_relativo_jr_company":  "video header/frames/finais/ChatGPT Image 12 may 2026, 12_38_56 a.m.png",
+                           "nome":  "ChatGPT Image 12 may 2026, 12_38_56 a.m.png",
+                           "tamanho_bytes":  2412814,
+                           "extensao":  ".png"
+                       },
+                       {
+                           "caminho_absoluto":  "C:\\Users\\hx-co\\OneDrive\\Documentos\\brigth\\JR Company\\video header\\frames\\finais\\ChatGPT Image 12 may 2026, 12_57_14 p.m.png",
+                           "caminho_relativo_jr_company":  "video header/frames/finais/ChatGPT Image 12 may 2026, 12_57_14 p.m.png",
+                           "nome":  "ChatGPT Image 12 may 2026, 12_57_14 p.m.png",
+                           "tamanho_bytes":  2128255,
+                           "extensao":  ".png"
+                       },
+                       {
+                           "caminho_absoluto":  "C:\\Users\\hx-co\\OneDrive\\Documentos\\brigth\\JR Company\\video header\\frames\\finais\\ChatGPT Image 12 may 2026, 12_35_04 a.m.png",
+                           "caminho_relativo_jr_company":  "video header/frames/finais/ChatGPT Image 12 may 2026, 12_35_04 a.m.png",
+                           "nome":  "ChatGPT Image 12 may 2026, 12_35_04 a.m.png",
+                           "tamanho_bytes":  2655782,
+                           "extensao":  ".png"
+                       },
+                       {
+                           "caminho_absoluto":  "C:\\Users\\hx-co\\OneDrive\\Documentos\\brigth\\JR Company\\video header\\frames\\finais\\ChatGPT Image 12 may 2026, 12_35_21 a.m.png",
+                           "caminho_relativo_jr_company":  "video header/frames/finais/ChatGPT Image 12 may 2026, 12_35_21 a.m.png",
+                           "nome":  "ChatGPT Image 12 may 2026, 12_35_21 a.m.png",
+                           "tamanho_bytes":  2260826,
+                           "extensao":  ".png"
+                       },
+                       {
+                           "caminho_absoluto":  "C:\\Users\\hx-co\\OneDrive\\Documentos\\brigth\\JR Company\\video header\\chamine-tequali3.jpeg",
+                           "caminho_relativo_jr_company":  "video header/chamine-tequali3.jpeg",
+                           "nome":  "chamine-tequali3.jpeg",
+                           "tamanho_bytes":  133741,
+                           "extensao":  ".jpeg"
+                       },
+                       {
+                           "caminho_absoluto":  "C:\\Users\\hx-co\\OneDrive\\Documentos\\brigth\\JR Company\\video header\\DSCN1121.JPG",
+                           "caminho_relativo_jr_company":  "video header/DSCN1121.JPG",
+                           "nome":  "DSCN1121.JPG",
+                           "tamanho_bytes":  3554038,
+                           "extensao":  ".jpg"
+                       },
+                       {
+                           "caminho_absoluto":  "C:\\Users\\hx-co\\OneDrive\\Documentos\\brigth\\JR Company\\video header\\B7610dGH757F0HsoPXtg.jpeg",
+                           "caminho_relativo_jr_company":  "video header/B7610dGH757F0HsoPXtg.jpeg",
+                           "nome":  "B7610dGH757F0HsoPXtg.jpeg",
+                           "tamanho_bytes":  268181,
+                           "extensao":  ".jpeg"
+                       },
+                       {
+                           "caminho_absoluto":  "C:\\Users\\hx-co\\OneDrive\\Documentos\\brigth\\JR Company\\video header\\Case.Over Projects.TCP.jpg",
+                           "caminho_relativo_jr_company":  "video header/Case.Over Projects.TCP.jpg",
+                           "nome":  "Case.Over Projects.TCP.jpg",
+                           "tamanho_bytes":  201595,
+                           "extensao":  ".jpg"
+                       },
+                       {
+                           "caminho_absoluto":  "C:\\Users\\hx-co\\OneDrive\\Documentos\\brigth\\JR Company\\video header\\Foto (1).jpg",
+                           "caminho_relativo_jr_company":  "video header/Foto (1).jpg",
+                           "nome":  "Foto (1).jpg",
+                           "tamanho_bytes":  1090559,
+                           "extensao":  ".jpg"
+                       },
+                       {
+                           "caminho_absoluto":  "C:\\Users\\hx-co\\OneDrive\\Documentos\\brigth\\JR Company\\video header\\IMG-20250217-WA0159.jpg",
+                           "caminho_relativo_jr_company":  "video header/IMG-20250217-WA0159.jpg",
+                           "nome":  "IMG-20250217-WA0159.jpg",
+                           "tamanho_bytes":  87354,
+                           "extensao":  ".jpg"
+                       },
+                       {
+                           "caminho_absoluto":  "C:\\Users\\hx-co\\OneDrive\\Documentos\\brigth\\JR Company\\video header\\IMG-20250217-WA0170.jpg",
+                           "caminho_relativo_jr_company":  "video header/IMG-20250217-WA0170.jpg",
+                           "nome":  "IMG-20250217-WA0170.jpg",
+                           "tamanho_bytes":  231766,
+                           "extensao":  ".jpg"
+                       },
+                       {
+                           "caminho_absoluto":  "C:\\Users\\hx-co\\OneDrive\\Documentos\\brigth\\JR Company\\video header\\Foto (3).jpg",
+                           "caminho_relativo_jr_company":  "video header/Foto (3).jpg",
+                           "nome":  "Foto (3).jpg",
+                           "tamanho_bytes":  1249407,
+                           "extensao":  ".jpg"
+                       },
+                       {
+                           "caminho_absoluto":  "C:\\Users\\hx-co\\OneDrive\\Documentos\\brigth\\JR Company\\video header\\IMG-20241220-WA0071.jpg",
+                           "caminho_relativo_jr_company":  "video header/IMG-20241220-WA0071.jpg",
+                           "nome":  "IMG-20241220-WA0071.jpg",
+                           "tamanho_bytes":  163417,
+                           "extensao":  ".jpg"
+                       },
+                       {
+                           "caminho_absoluto":  "C:\\Users\\hx-co\\OneDrive\\Documentos\\brigth\\JR Company\\3.png",
+                           "caminho_relativo_jr_company":  "3.png",
+                           "nome":  "3.png",
+                           "tamanho_bytes":  1568082,
+                           "extensao":  ".png"
+                       },
+                       {
+                           "caminho_absoluto":  "C:\\Users\\hx-co\\OneDrive\\Documentos\\brigth\\JR Company\\reymaster ads maio 2.png",
+                           "caminho_relativo_jr_company":  "reymaster ads maio 2.png",
+                           "nome":  "reymaster ads maio 2.png",
+                           "tamanho_bytes":  2016442,
+                           "extensao":  ".png"
+                       },
+                       {
+                           "caminho_absoluto":  "C:\\Users\\hx-co\\OneDrive\\Documentos\\brigth\\JR Company\\1.png",
+                           "caminho_relativo_jr_company":  "1.png",
+                           "nome":  "1.png",
+                           "tamanho_bytes":  1074514,
+                           "extensao":  ".png"
+                       },
+                       {
+                           "caminho_absoluto":  "C:\\Users\\hx-co\\OneDrive\\Documentos\\brigth\\JR Company\\2.png",
+                           "caminho_relativo_jr_company":  "2.png",
+                           "nome":  "2.png",
+                           "tamanho_bytes":  1430676,
+                           "extensao":  ".png"
+                       },
+                       {
+                           "caminho_absoluto":  "C:\\Users\\hx-co\\OneDrive\\Documentos\\brigth\\JR Company\\reymaster ads maio.png",
+                           "caminho_relativo_jr_company":  "reymaster ads maio.png",
+                           "nome":  "reymaster ads maio.png",
+                           "tamanho_bytes":  2128878,
+                           "extensao":  ".png"
+                       },
+                       {
+                           "caminho_absoluto":  "C:\\Users\\hx-co\\OneDrive\\Documentos\\brigth\\JR Company\\video header\\61.jpg",
+                           "caminho_relativo_jr_company":  "video header/61.jpg",
+                           "nome":  "61.jpg",
+                           "tamanho_bytes":  244408,
+                           "extensao":  ".jpg"
+                       },
+                       {
+                           "caminho_absoluto":  "C:\\Users\\hx-co\\OneDrive\\Documentos\\brigth\\JR Company\\video header\\Andritz_Filtro de Licor_2.jpg",
+                           "caminho_relativo_jr_company":  "video header/Andritz_Filtro de Licor_2.jpg",
+                           "nome":  "Andritz_Filtro de Licor_2.jpg",
+                           "tamanho_bytes":  63925,
+                           "extensao":  ".jpg"
+                       },
+                       {
+                           "caminho_absoluto":  "C:\\Users\\hx-co\\OneDrive\\Documentos\\brigth\\JR Company\\video header\\20260129_094839.jpg",
+                           "caminho_relativo_jr_company":  "video header/20260129_094839.jpg",
+                           "nome":  "20260129_094839.jpg",
+                           "tamanho_bytes":  4186694,
+                           "extensao":  ".jpg"
+                       },
+                       {
+                           "caminho_absoluto":  "C:\\Users\\hx-co\\OneDrive\\Documentos\\brigth\\JR Company\\video header\\57.jpg",
+                           "caminho_relativo_jr_company":  "video header/57.jpg",
+                           "nome":  "57.jpg",
+                           "tamanho_bytes":  170026,
+                           "extensao":  ".jpg"
+                       },
+                       {
+                           "caminho_absoluto":  "C:\\Users\\hx-co\\OneDrive\\Documentos\\brigth\\JR Company\\video header\\transformador8.jpeg",
+                           "caminho_relativo_jr_company":  "video header/transformador8.jpeg",
+                           "nome":  "transformador8.jpeg",
+                           "tamanho_bytes":  256247,
+                           "extensao":  ".jpeg"
+                       },
+                       {
+                           "caminho_absoluto":  "C:\\Users\\hx-co\\OneDrive\\Documentos\\brigth\\JR Company\\video header\\transformador9.jpeg",
+                           "caminho_relativo_jr_company":  "video header/transformador9.jpeg",
+                           "nome":  "transformador9.jpeg",
+                           "tamanho_bytes":  253401,
+                           "extensao":  ".jpeg"
+                       },
+                       {
+                           "caminho_absoluto":  "C:\\Users\\hx-co\\OneDrive\\Documentos\\brigth\\JR Company\\video header\\transformador6.jpeg",
+                           "caminho_relativo_jr_company":  "video header/transformador6.jpeg",
+                           "nome":  "transformador6.jpeg",
+                           "tamanho_bytes":  175856,
+                           "extensao":  ".jpeg"
+                       },
+                       {
+                           "caminho_absoluto":  "C:\\Users\\hx-co\\OneDrive\\Documentos\\brigth\\JR Company\\video header\\transformador7.jpeg",
+                           "caminho_relativo_jr_company":  "video header/transformador7.jpeg",
+                           "nome":  "transformador7.jpeg",
+                           "tamanho_bytes":  229891,
+                           "extensao":  ".jpeg"
+                       },
+                       {
+                           "caminho_absoluto":  "C:\\Users\\hx-co\\OneDrive\\Documentos\\brigth\\JR Company\\video header\\WhatsApp Image 2025-09-30 at 15.38.14.jpeg",
+                           "caminho_relativo_jr_company":  "video header/WhatsApp Image 2025-09-30 at 15.38.14.jpeg",
+                           "nome":  "WhatsApp Image 2025-09-30 at 15.38.14.jpeg",
+                           "tamanho_bytes":  239734,
+                           "extensao":  ".jpeg"
+                       },
+                       {
+                           "caminho_absoluto":  "C:\\Users\\hx-co\\OneDrive\\Documentos\\brigth\\JR Company\\video header\\WhatsApp Image 2026-02-25 at 08.31.56.jpeg",
+                           "caminho_relativo_jr_company":  "video header/WhatsApp Image 2026-02-25 at 08.31.56.jpeg",
+                           "nome":  "WhatsApp Image 2026-02-25 at 08.31.56.jpeg",
+                           "tamanho_bytes":  150038,
+                           "extensao":  ".jpeg"
+                       },
+                       {
+                           "caminho_absoluto":  "C:\\Users\\hx-co\\OneDrive\\Documentos\\brigth\\JR Company\\video header\\WhatsApp Image 2026-03-05 at 15.02.51 (1).jpeg",
+                           "caminho_relativo_jr_company":  "video header/WhatsApp Image 2026-03-05 at 15.02.51 (1).jpeg",
+                           "nome":  "WhatsApp Image 2026-03-05 at 15.02.51 (1).jpeg",
+                           "tamanho_bytes":  280251,
+                           "extensao":  ".jpeg"
+                       },
+                       {
+                           "caminho_absoluto":  "C:\\Users\\hx-co\\OneDrive\\Documentos\\brigth\\JR Company\\video header\\WhatsApp Image 2026-01-16 at 09.23.05.jpeg",
+                           "caminho_relativo_jr_company":  "video header/WhatsApp Image 2026-01-16 at 09.23.05.jpeg",
+                           "nome":  "WhatsApp Image 2026-01-16 at 09.23.05.jpeg",
+                           "tamanho_bytes":  298168,
+                           "extensao":  ".jpeg"
+                       },
+                       {
+                           "caminho_absoluto":  "C:\\Users\\hx-co\\OneDrive\\Documentos\\brigth\\JR Company\\video header\\WhatsApp Image 2026-02-25 at 08.01.10.jpeg",
+                           "caminho_relativo_jr_company":  "video header/WhatsApp Image 2026-02-25 at 08.01.10.jpeg",
+                           "nome":  "WhatsApp Image 2026-02-25 at 08.01.10.jpeg",
+                           "tamanho_bytes":  150038,
+                           "extensao":  ".jpeg"
+                       },
+                       {
+                           "caminho_absoluto":  "C:\\Users\\hx-co\\OneDrive\\Documentos\\brigth\\JR Company\\video header\\IMG_20260326_082101.jpg",
+                           "caminho_relativo_jr_company":  "video header/IMG_20260326_082101.jpg",
+                           "nome":  "IMG_20260326_082101.jpg",
+                           "tamanho_bytes":  8208384,
+                           "extensao":  ".jpg"
+                       },
+                       {
+                           "caminho_absoluto":  "C:\\Users\\hx-co\\OneDrive\\Documentos\\brigth\\JR Company\\video header\\IMG_20260326_082128.jpg",
+                           "caminho_relativo_jr_company":  "video header/IMG_20260326_082128.jpg",
+                           "nome":  "IMG_20260326_082128.jpg",
+                           "tamanho_bytes":  8396800,
+                           "extensao":  ".jpg"
+                       },
+                       {
+                           "caminho_absoluto":  "C:\\Users\\hx-co\\OneDrive\\Documentos\\brigth\\JR Company\\video header\\IMG-20250217-WA0179.jpg",
+                           "caminho_relativo_jr_company":  "video header/IMG-20250217-WA0179.jpg",
+                           "nome":  "IMG-20250217-WA0179.jpg",
+                           "tamanho_bytes":  209856,
+                           "extensao":  ".jpg"
+                       },
+                       {
+                           "caminho_absoluto":  "C:\\Users\\hx-co\\OneDrive\\Documentos\\brigth\\JR Company\\video header\\IMG-20250217-WA0182.jpg",
+                           "caminho_relativo_jr_company":  "video header/IMG-20250217-WA0182.jpg",
+                           "nome":  "IMG-20250217-WA0182.jpg",
+                           "tamanho_bytes":  191878,
+                           "extensao":  ".jpg"
+                       },
+                       {
+                           "caminho_absoluto":  "C:\\Users\\hx-co\\OneDrive\\Documentos\\brigth\\JR Company\\video header\\JRC_Foto_02.jpg",
+                           "caminho_relativo_jr_company":  "video header/JRC_Foto_02.jpg",
+                           "nome":  "JRC_Foto_02.jpg",
+                           "tamanho_bytes":  104774,
+                           "extensao":  ".jpg"
+                       },
+                       {
+                           "caminho_absoluto":  "C:\\Users\\hx-co\\OneDrive\\Documentos\\brigth\\JR Company\\video header\\linha-de-eixo2.jpg",
+                           "caminho_relativo_jr_company":  "video header/linha-de-eixo2.jpg",
+                           "nome":  "linha-de-eixo2.jpg",
+                           "tamanho_bytes":  4140012,
+                           "extensao":  ".jpg"
+                       },
+                       {
+                           "caminho_absoluto":  "C:\\Users\\hx-co\\OneDrive\\Documentos\\brigth\\JR Company\\video header\\transformador4.jpeg",
+                           "caminho_relativo_jr_company":  "video header/transformador4.jpeg",
+                           "nome":  "transformador4.jpeg",
+                           "tamanho_bytes":  217796,
+                           "extensao":  ".jpeg"
+                       },
+                       {
+                           "caminho_absoluto":  "C:\\Users\\hx-co\\OneDrive\\Documentos\\brigth\\JR Company\\video header\\JRC_Foto_06.jpg",
+                           "caminho_relativo_jr_company":  "video header/JRC_Foto_06.jpg",
+                           "nome":  "JRC_Foto_06.jpg",
+                           "tamanho_bytes":  111178,
+                           "extensao":  ".jpg"
+                       },
+                       {
+                           "caminho_absoluto":  "C:\\Users\\hx-co\\OneDrive\\Documentos\\brigth\\JR Company\\video header\\JRC_Foto_14.jpg",
+                           "caminho_relativo_jr_company":  "video header/JRC_Foto_14.jpg",
+                           "nome":  "JRC_Foto_14.jpg",
+                           "tamanho_bytes":  140789,
+                           "extensao":  ".jpg"
+                       }
+                   ]
+}

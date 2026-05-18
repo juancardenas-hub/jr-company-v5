@@ -1,0 +1,1457 @@
+﻿{
+    "generated_at":  "2026-05-13T03:49:13",
+    "source_inventory":  "C:\\Users\\hx-co\\OneDrive\\Documentos\\brigth\\JR Company\\VERSAO 5 (2) 08-05-26 16\\VERSAO 5 (2)\\VERSAO 1\\inventario-imagens.json",
+    "total":  72,
+    "observacao":  "Catálogo criado na Fase 2 a partir de leitura visual das folhas de contato em _analise-visual. Qualidade subjetiva é informativa e não desqualifica imagens.",
+    "catalogo":  [
+                     {
+                         "n":  1,
+                         "caminho":  "C:\\Users\\hx-co\\OneDrive\\Documentos\\brigth\\JR Company\\video header\\frames\\finais\\2.png",
+                         "caminho_relativo_jr_company":  "video header/frames/finais/2.png",
+                         "nome":  "2.png",
+                         "tamanho_bytes":  1956972,
+                         "sujeito_principal":  "caminhão J.R. com trator/maquinário agrícola sobre prancha",
+                         "tema_dominante":  "transporte de maquinário pesado",
+                         "ambiente":  "rodovia ou pista aberta",
+                         "temos_logo_jr":  "sim",
+                         "iluminacao":  "golden hour",
+                         "qualidade_subjetiva":  "alta",
+                         "tags":  [
+                                      "caminhao-jr",
+                                      "prancha",
+                                      "maquinario",
+                                      "rodovia",
+                                      "carga-excedente",
+                                      "ia"
+                                  ]
+                     },
+                     {
+                         "n":  2,
+                         "caminho":  "C:\\Users\\hx-co\\OneDrive\\Documentos\\brigth\\JR Company\\video header\\frames\\finais\\2a.png",
+                         "caminho_relativo_jr_company":  "video header/frames/finais/2a.png",
+                         "nome":  "2a.png",
+                         "tamanho_bytes":  1944733,
+                         "sujeito_principal":  "caminhão J.R. com trator/maquinário agrícola sobre prancha",
+                         "tema_dominante":  "transporte de maquinário pesado",
+                         "ambiente":  "rodovia ou pista aberta",
+                         "temos_logo_jr":  "sim",
+                         "iluminacao":  "golden hour",
+                         "qualidade_subjetiva":  "alta",
+                         "tags":  [
+                                      "caminhao-jr",
+                                      "prancha",
+                                      "maquinario",
+                                      "rodovia",
+                                      "carga-excedente",
+                                      "ia"
+                                  ]
+                     },
+                     {
+                         "n":  3,
+                         "caminho":  "C:\\Users\\hx-co\\OneDrive\\Documentos\\brigth\\JR Company\\video header\\frames\\finais\\1.png",
+                         "caminho_relativo_jr_company":  "video header/frames/finais/1.png",
+                         "nome":  "1.png",
+                         "tamanho_bytes":  1902665,
+                         "sujeito_principal":  "caminhão J.R. transportando vaso cilíndrico industrial gigante",
+                         "tema_dominante":  "carga excedente industrial",
+                         "ambiente":  "rodovia ou pátio aberto",
+                         "temos_logo_jr":  "sim",
+                         "iluminacao":  "golden hour",
+                         "qualidade_subjetiva":  "alta",
+                         "tags":  [
+                                      "caminhao-jr",
+                                      "vaso-industrial",
+                                      "cilindro",
+                                      "carga-excedente",
+                                      "escala",
+                                      "ia"
+                                  ]
+                     },
+                     {
+                         "n":  4,
+                         "caminho":  "C:\\Users\\hx-co\\OneDrive\\Documentos\\brigth\\JR Company\\video header\\frames\\finais\\1A.png",
+                         "caminho_relativo_jr_company":  "video header/frames/finais/1A.png",
+                         "nome":  "1A.png",
+                         "tamanho_bytes":  1873854,
+                         "sujeito_principal":  "caminhão J.R. transportando vaso cilíndrico industrial gigante",
+                         "tema_dominante":  "carga excedente industrial",
+                         "ambiente":  "rodovia ou pátio aberto",
+                         "temos_logo_jr":  "sim",
+                         "iluminacao":  "golden hour",
+                         "qualidade_subjetiva":  "alta",
+                         "tags":  [
+                                      "caminhao-jr",
+                                      "vaso-industrial",
+                                      "cilindro",
+                                      "carga-excedente",
+                                      "escala",
+                                      "ia"
+                                  ]
+                     },
+                     {
+                         "n":  5,
+                         "caminho":  "C:\\Users\\hx-co\\OneDrive\\Documentos\\brigth\\JR Company\\video header\\frames\\finais\\2b-01.png",
+                         "caminho_relativo_jr_company":  "video header/frames/finais/2b-01.png",
+                         "nome":  "2b-01.png",
+                         "tamanho_bytes":  1851369,
+                         "sujeito_principal":  "caminhão J.R. transportando vaso cilíndrico industrial gigante",
+                         "tema_dominante":  "carga excedente industrial",
+                         "ambiente":  "rodovia ou pátio aberto",
+                         "temos_logo_jr":  "sim",
+                         "iluminacao":  "golden hour",
+                         "qualidade_subjetiva":  "alta",
+                         "tags":  [
+                                      "caminhao-jr",
+                                      "vaso-industrial",
+                                      "cilindro",
+                                      "carga-excedente",
+                                      "escala",
+                                      "ia"
+                                  ]
+                     },
+                     {
+                         "n":  6,
+                         "caminho":  "C:\\Users\\hx-co\\OneDrive\\Documentos\\brigth\\JR Company\\video header\\frames\\finais\\3.png",
+                         "caminho_relativo_jr_company":  "video header/frames/finais/3.png",
+                         "nome":  "3.png",
+                         "tamanho_bytes":  2470587,
+                         "sujeito_principal":  "caminhão J.R. com carga industrial em pátio logístico",
+                         "tema_dominante":  "pátio e logística de carga especial",
+                         "ambiente":  "pátio industrial com galpões e contêineres",
+                         "temos_logo_jr":  "sim",
+                         "iluminacao":  "golden hour",
+                         "qualidade_subjetiva":  "alta",
+                         "tags":  [
+                                      "caminhao-jr",
+                                      "patio",
+                                      "galpao",
+                                      "conteineres",
+                                      "armazenagem",
+                                      "ia"
+                                  ]
+                     },
+                     {
+                         "n":  7,
+                         "caminho":  "C:\\Users\\hx-co\\OneDrive\\Documentos\\brigth\\JR Company\\video header\\frames\\finais\\3a.png",
+                         "caminho_relativo_jr_company":  "video header/frames/finais/3a.png",
+                         "nome":  "3a.png",
+                         "tamanho_bytes":  2530607,
+                         "sujeito_principal":  "caminhão J.R. com estrutura metálica em pátio logístico",
+                         "tema_dominante":  "pátio e carga estrutural",
+                         "ambiente":  "pátio industrial com galpões e contêineres",
+                         "temos_logo_jr":  "sim",
+                         "iluminacao":  "golden hour",
+                         "qualidade_subjetiva":  "alta",
+                         "tags":  [
+                                      "caminhao-jr",
+                                      "estrutura-metalica",
+                                      "patio",
+                                      "galpao",
+                                      "construcao",
+                                      "ia"
+                                  ]
+                     },
+                     {
+                         "n":  8,
+                         "caminho":  "C:\\Users\\hx-co\\OneDrive\\Documentos\\brigth\\JR Company\\video header\\frames\\finais\\2c.png",
+                         "caminho_relativo_jr_company":  "video header/frames/finais/2c.png",
+                         "nome":  "2c.png",
+                         "tamanho_bytes":  2282824,
+                         "sujeito_principal":  "caminhão J.R. com trator/maquinário sobre prancha",
+                         "tema_dominante":  "transporte de maquinário pesado",
+                         "ambiente":  "rodovia",
+                         "temos_logo_jr":  "sim",
+                         "iluminacao":  "golden hour",
+                         "qualidade_subjetiva":  "alta",
+                         "tags":  [
+                                      "caminhao-jr",
+                                      "prancha",
+                                      "maquinario",
+                                      "rodovia",
+                                      "carga-excedente",
+                                      "ia"
+                                  ]
+                     },
+                     {
+                         "n":  9,
+                         "caminho":  "C:\\Users\\hx-co\\OneDrive\\Documentos\\brigth\\JR Company\\video header\\frames\\finais\\2d-01.png",
+                         "caminho_relativo_jr_company":  "video header/frames/finais/2d-01.png",
+                         "nome":  "2d-01.png",
+                         "tamanho_bytes":  2199627,
+                         "sujeito_principal":  "caminhão J.R. com trator/maquinário sobre prancha",
+                         "tema_dominante":  "transporte de maquinário pesado",
+                         "ambiente":  "rodovia",
+                         "temos_logo_jr":  "sim",
+                         "iluminacao":  "golden hour",
+                         "qualidade_subjetiva":  "alta",
+                         "tags":  [
+                                      "caminhao-jr",
+                                      "prancha",
+                                      "maquinario",
+                                      "rodovia",
+                                      "carga-excedente",
+                                      "ia"
+                                  ]
+                     },
+                     {
+                         "n":  10,
+                         "caminho":  "C:\\Users\\hx-co\\OneDrive\\Documentos\\brigth\\JR Company\\video header\\WhatsApp Image 2026-03-05 at 15.11.31 (1).jpeg",
+                         "caminho_relativo_jr_company":  "video header/WhatsApp Image 2026-03-05 at 15.11.31 (1).jpeg",
+                         "nome":  "WhatsApp Image 2026-03-05 at 15.11.31 (1).jpeg",
+                         "tamanho_bytes":  163938,
+                         "sujeito_principal":  "carga cilíndrica industrial longa em carreta J.R.",
+                         "tema_dominante":  "transporte de equipamento industrial",
+                         "ambiente":  "pátio industrial com torres e estruturas",
+                         "temos_logo_jr":  "sim",
+                         "iluminacao":  "dia nublado",
+                         "qualidade_subjetiva":  "alta",
+                         "tags":  [
+                                      "caminhao-jr",
+                                      "vaso-industrial",
+                                      "cilindro",
+                                      "planta-industrial",
+                                      "carga-excedente",
+                                      "foto-real"
+                                  ]
+                     },
+                     {
+                         "n":  11,
+                         "caminho":  "C:\\Users\\hx-co\\OneDrive\\Documentos\\brigth\\JR Company\\video header\\WhatsApp Image 2026-03-05 at 16.01.54.jpeg",
+                         "caminho_relativo_jr_company":  "video header/WhatsApp Image 2026-03-05 at 16.01.54.jpeg",
+                         "nome":  "WhatsApp Image 2026-03-05 at 16.01.54.jpeg",
+                         "tamanho_bytes":  278900,
+                         "sujeito_principal":  "caminhão J.R. em operação com guindaste e carga suspensa",
+                         "tema_dominante":  "içamento industrial",
+                         "ambiente":  "pátio industrial úmido ou portuário",
+                         "temos_logo_jr":  "sim",
+                         "iluminacao":  "dia nublado",
+                         "qualidade_subjetiva":  "média",
+                         "tags":  [
+                                      "caminhao-jr",
+                                      "guindaste",
+                                      "icamento",
+                                      "operacao",
+                                      "porto",
+                                      "foto-real"
+                                  ]
+                     },
+                     {
+                         "n":  12,
+                         "caminho":  "C:\\Users\\hx-co\\OneDrive\\Documentos\\brigth\\JR Company\\video header\\WhatsApp Image 2026-03-05 at 15.02.51.jpeg",
+                         "caminho_relativo_jr_company":  "video header/WhatsApp Image 2026-03-05 at 15.02.51.jpeg",
+                         "nome":  "WhatsApp Image 2026-03-05 at 15.02.51.jpeg",
+                         "tamanho_bytes":  290055,
+                         "sujeito_principal":  "vista aérea de pátio J.R. com caminhões e carretas",
+                         "tema_dominante":  "pátio logístico e frota",
+                         "ambiente":  "pátio externo com galpões",
+                         "temos_logo_jr":  "sim",
+                         "iluminacao":  "dia claro",
+                         "qualidade_subjetiva":  "alta",
+                         "tags":  [
+                                      "drone",
+                                      "patio",
+                                      "frota",
+                                      "galpao",
+                                      "armazenagem",
+                                      "foto-real"
+                                  ]
+                     },
+                     {
+                         "n":  13,
+                         "caminho":  "C:\\Users\\hx-co\\OneDrive\\Documentos\\brigth\\JR Company\\video header\\WhatsApp Image 2026-03-05 at 15.02.52.jpeg",
+                         "caminho_relativo_jr_company":  "video header/WhatsApp Image 2026-03-05 at 15.02.52.jpeg",
+                         "nome":  "WhatsApp Image 2026-03-05 at 15.02.52.jpeg",
+                         "tamanho_bytes":  253007,
+                         "sujeito_principal":  "vista aérea de pátio J.R. com caminhões e implementos",
+                         "tema_dominante":  "pátio logístico e frota",
+                         "ambiente":  "pátio externo com galpões",
+                         "temos_logo_jr":  "sim",
+                         "iluminacao":  "dia claro",
+                         "qualidade_subjetiva":  "alta",
+                         "tags":  [
+                                      "drone",
+                                      "patio",
+                                      "frota",
+                                      "galpao",
+                                      "armazenagem",
+                                      "foto-real"
+                                  ]
+                     },
+                     {
+                         "n":  14,
+                         "caminho":  "C:\\Users\\hx-co\\OneDrive\\Documentos\\brigth\\JR Company\\video header\\WhatsApp Image 2026-03-11 at 13.22.07 (2).jpeg",
+                         "caminho_relativo_jr_company":  "video header/WhatsApp Image 2026-03-11 at 13.22.07 (2).jpeg",
+                         "nome":  "WhatsApp Image 2026-03-11 at 13.22.07 (2).jpeg",
+                         "tamanho_bytes":  160251,
+                         "sujeito_principal":  "caminhão J.R. próximo a guindaste em área industrial",
+                         "tema_dominante":  "içamento e movimentação industrial",
+                         "ambiente":  "pátio industrial",
+                         "temos_logo_jr":  "sim",
+                         "iluminacao":  "dia nublado",
+                         "qualidade_subjetiva":  "média",
+                         "tags":  [
+                                      "caminhao-jr",
+                                      "guindaste",
+                                      "icamento",
+                                      "movimentacao",
+                                      "foto-real"
+                                  ]
+                     },
+                     {
+                         "n":  15,
+                         "caminho":  "C:\\Users\\hx-co\\OneDrive\\Documentos\\brigth\\JR Company\\video header\\WhatsApp Image 2026-03-24 at 15.08.06 (2).jpeg",
+                         "caminho_relativo_jr_company":  "video header/WhatsApp Image 2026-03-24 at 15.08.06 (2).jpeg",
+                         "nome":  "WhatsApp Image 2026-03-24 at 15.08.06 (2).jpeg",
+                         "tamanho_bytes":  138192,
+                         "sujeito_principal":  "caminhão J.R. transportando escavadeira/amarela em prancha",
+                         "tema_dominante":  "transporte de maquinário",
+                         "ambiente":  "pátio ou rodovia sob céu azul",
+                         "temos_logo_jr":  "sim",
+                         "iluminacao":  "dia claro",
+                         "qualidade_subjetiva":  "alta",
+                         "tags":  [
+                                      "caminhao-jr",
+                                      "escavadeira",
+                                      "maquinario",
+                                      "prancha",
+                                      "ceu-azul",
+                                      "foto-real"
+                                  ]
+                     },
+                     {
+                         "n":  16,
+                         "caminho":  "C:\\Users\\hx-co\\OneDrive\\Documentos\\brigth\\JR Company\\video header\\WhatsApp Image 2026-03-24 at 15.08.07 (5).jpeg",
+                         "caminho_relativo_jr_company":  "video header/WhatsApp Image 2026-03-24 at 15.08.07 (5).jpeg",
+                         "nome":  "WhatsApp Image 2026-03-24 at 15.08.07 (5).jpeg",
+                         "tamanho_bytes":  198025,
+                         "sujeito_principal":  "caminhão J.R. com escavadeira em rodovia",
+                         "tema_dominante":  "transporte rodoviário de maquinário",
+                         "ambiente":  "rodovia com vegetação",
+                         "temos_logo_jr":  "sim",
+                         "iluminacao":  "dia claro",
+                         "qualidade_subjetiva":  "alta",
+                         "tags":  [
+                                      "caminhao-jr",
+                                      "escavadeira",
+                                      "maquinario",
+                                      "rodovia",
+                                      "foto-real"
+                                  ]
+                     },
+                     {
+                         "n":  17,
+                         "caminho":  "C:\\Users\\hx-co\\OneDrive\\Documentos\\brigth\\JR Company\\video header\\WhatsApp Image 2026-03-24 at 15.08.06 (10).jpeg",
+                         "caminho_relativo_jr_company":  "video header/WhatsApp Image 2026-03-24 at 15.08.06 (10).jpeg",
+                         "nome":  "WhatsApp Image 2026-03-24 at 15.08.06 (10).jpeg",
+                         "tamanho_bytes":  161021,
+                         "sujeito_principal":  "caminhão J.R. ao lado de escavadeira em operação",
+                         "tema_dominante":  "movimentação de maquinário",
+                         "ambiente":  "área aberta de terra/obra",
+                         "temos_logo_jr":  "sim",
+                         "iluminacao":  "dia claro",
+                         "qualidade_subjetiva":  "alta",
+                         "tags":  [
+                                      "caminhao-jr",
+                                      "escavadeira",
+                                      "obra",
+                                      "movimentacao",
+                                      "foto-real"
+                                  ]
+                     },
+                     {
+                         "n":  18,
+                         "caminho":  "C:\\Users\\hx-co\\OneDrive\\Documentos\\brigth\\JR Company\\video header\\WhatsApp Image 2026-03-24 at 15.08.06 (11).jpeg",
+                         "caminho_relativo_jr_company":  "video header/WhatsApp Image 2026-03-24 at 15.08.06 (11).jpeg",
+                         "nome":  "WhatsApp Image 2026-03-24 at 15.08.06 (11).jpeg",
+                         "tamanho_bytes":  161653,
+                         "sujeito_principal":  "caminhão J.R. com grande carga industrial em carreta",
+                         "tema_dominante":  "transporte de carga industrial",
+                         "ambiente":  "pátio industrial molhado com pórtico",
+                         "temos_logo_jr":  "sim",
+                         "iluminacao":  "dia nublado",
+                         "qualidade_subjetiva":  "alta",
+                         "tags":  [
+                                      "caminhao-jr",
+                                      "carga-industrial",
+                                      "patio",
+                                      "industria",
+                                      "foto-real"
+                                  ]
+                     },
+                     {
+                         "n":  19,
+                         "caminho":  "C:\\Users\\hx-co\\OneDrive\\Documentos\\brigth\\JR Company\\video header\\frames\\finais\\ChatGPT Image 13 may 2026, 01_55_33 a.m.png",
+                         "caminho_relativo_jr_company":  "video header/frames/finais/ChatGPT Image 13 may 2026, 01_55_33 a.m.png",
+                         "nome":  "ChatGPT Image 13 may 2026, 01_55_33 a.m.png",
+                         "tamanho_bytes":  2492271,
+                         "sujeito_principal":  "caminhão J.R. com carga industrial alongada em pátio",
+                         "tema_dominante":  "carga especial industrial",
+                         "ambiente":  "pátio logístico/industrial",
+                         "temos_logo_jr":  "sim",
+                         "iluminacao":  "dia nublado",
+                         "qualidade_subjetiva":  "alta",
+                         "tags":  [
+                                      "caminhao-jr",
+                                      "carga-especial",
+                                      "patio",
+                                      "industria",
+                                      "ia"
+                                  ]
+                     },
+                     {
+                         "n":  20,
+                         "caminho":  "C:\\Users\\hx-co\\OneDrive\\Documentos\\brigth\\JR Company\\video header\\frames\\finais\\ChatGPT Image 13 may 2026, 01_55_40 a.m.png",
+                         "caminho_relativo_jr_company":  "video header/frames/finais/ChatGPT Image 13 may 2026, 01_55_40 a.m.png",
+                         "nome":  "ChatGPT Image 13 may 2026, 01_55_40 a.m.png",
+                         "tamanho_bytes":  2835871,
+                         "sujeito_principal":  "caminhão J.R. diante de planta industrial/refinaria",
+                         "tema_dominante":  "operação em indústria de base",
+                         "ambiente":  "planta industrial/refinaria",
+                         "temos_logo_jr":  "sim",
+                         "iluminacao":  "dia claro",
+                         "qualidade_subjetiva":  "alta",
+                         "tags":  [
+                                      "caminhao-jr",
+                                      "refinaria",
+                                      "planta-industrial",
+                                      "industria-base",
+                                      "ia"
+                                  ]
+                     },
+                     {
+                         "n":  21,
+                         "caminho":  "C:\\Users\\hx-co\\OneDrive\\Documentos\\brigth\\JR Company\\video header\\frames\\finais\\ChatGPT Image 13 may 2026, 01_55_13 a.m.png",
+                         "caminho_relativo_jr_company":  "video header/frames/finais/ChatGPT Image 13 may 2026, 01_55_13 a.m.png",
+                         "nome":  "ChatGPT Image 13 may 2026, 01_55_13 a.m.png",
+                         "tamanho_bytes":  2242913,
+                         "sujeito_principal":  "caminhão J.R. em balsa ou plataforma sobre rio",
+                         "tema_dominante":  "transporte fluvial/intermodal",
+                         "ambiente":  "rio ou travessia sobre água",
+                         "temos_logo_jr":  "sim",
+                         "iluminacao":  "dia claro",
+                         "qualidade_subjetiva":  "alta",
+                         "tags":  [
+                                      "caminhao-jr",
+                                      "balsa",
+                                      "rio",
+                                      "intermodal",
+                                      "transporte-especial",
+                                      "ia"
+                                  ]
+                     },
+                     {
+                         "n":  22,
+                         "caminho":  "C:\\Users\\hx-co\\OneDrive\\Documentos\\brigth\\JR Company\\video header\\frames\\finais\\ChatGPT Image 13 may 2026, 01_55_20 a.m.png",
+                         "caminho_relativo_jr_company":  "video header/frames/finais/ChatGPT Image 13 may 2026, 01_55_20 a.m.png",
+                         "nome":  "ChatGPT Image 13 may 2026, 01_55_20 a.m.png",
+                         "tamanho_bytes":  2657458,
+                         "sujeito_principal":  "caminhão J.R. em corredor de refinaria",
+                         "tema_dominante":  "operação em indústria de base",
+                         "ambiente":  "planta industrial/refinaria",
+                         "temos_logo_jr":  "sim",
+                         "iluminacao":  "dia claro",
+                         "qualidade_subjetiva":  "alta",
+                         "tags":  [
+                                      "caminhao-jr",
+                                      "refinaria",
+                                      "planta-industrial",
+                                      "industria-base",
+                                      "ia"
+                                  ]
+                     },
+                     {
+                         "n":  23,
+                         "caminho":  "C:\\Users\\hx-co\\OneDrive\\Documentos\\brigth\\JR Company\\video header\\frames\\finais\\ChatGPT Image 13 may 2026, 01_55_50 a.m.png",
+                         "caminho_relativo_jr_company":  "video header/frames/finais/ChatGPT Image 13 may 2026, 01_55_50 a.m.png",
+                         "nome":  "ChatGPT Image 13 may 2026, 01_55_50 a.m.png",
+                         "tamanho_bytes":  2609828,
+                         "sujeito_principal":  "caminhão J.R. com estrutura metálica e equipe técnica",
+                         "tema_dominante":  "construção pesada e planejamento de operação",
+                         "ambiente":  "planta industrial ou canteiro",
+                         "temos_logo_jr":  "sim",
+                         "iluminacao":  "dia claro",
+                         "qualidade_subjetiva":  "alta",
+                         "tags":  [
+                                      "caminhao-jr",
+                                      "estrutura-metalica",
+                                      "equipe",
+                                      "construcao-pesada",
+                                      "ia"
+                                  ]
+                     },
+                     {
+                         "n":  24,
+                         "caminho":  "C:\\Users\\hx-co\\OneDrive\\Documentos\\brigth\\JR Company\\Geral Glow 2026\\POST 01 - Capa.png",
+                         "caminho_relativo_jr_company":  "Geral Glow 2026/POST 01 - Capa.png",
+                         "nome":  "POST 01 - Capa.png",
+                         "tamanho_bytes":  435690,
+                         "sujeito_principal":  "arte gráfica institucional J.R. Company",
+                         "tema_dominante":  "comunicação visual institucional",
+                         "ambiente":  "layout gráfico",
+                         "temos_logo_jr":  "sim",
+                         "iluminacao":  "não se aplica",
+                         "qualidade_subjetiva":  "baixa",
+                         "tags":  [
+                                      "grafico",
+                                      "institucional",
+                                      "nao-fotografico",
+                                      "post"
+                                  ]
+                     },
+                     {
+                         "n":  25,
+                         "caminho":  "C:\\Users\\hx-co\\OneDrive\\Documentos\\brigth\\JR Company\\Geral Glow 2026\\POST 01 - Card 26.png",
+                         "caminho_relativo_jr_company":  "Geral Glow 2026/POST 01 - Card 26.png",
+                         "nome":  "POST 01 - Card 26.png",
+                         "tamanho_bytes":  417744,
+                         "sujeito_principal":  "arte gráfica institucional J.R. Company",
+                         "tema_dominante":  "comunicação visual institucional",
+                         "ambiente":  "layout gráfico",
+                         "temos_logo_jr":  "sim",
+                         "iluminacao":  "não se aplica",
+                         "qualidade_subjetiva":  "baixa",
+                         "tags":  [
+                                      "grafico",
+                                      "institucional",
+                                      "nao-fotografico",
+                                      "post"
+                                  ]
+                     },
+                     {
+                         "n":  26,
+                         "caminho":  "C:\\Users\\hx-co\\OneDrive\\Documentos\\brigth\\JR Company\\video header\\frames\\finais\\ChatGPT Image 13 may 2026, 01_55_55 a.m.png",
+                         "caminho_relativo_jr_company":  "video header/frames/finais/ChatGPT Image 13 may 2026, 01_55_55 a.m.png",
+                         "nome":  "ChatGPT Image 13 may 2026, 01_55_55 a.m.png",
+                         "tamanho_bytes":  2128255,
+                         "sujeito_principal":  "caminhão J.R. com estrutura metálica em rodovia",
+                         "tema_dominante":  "transporte de estrutura metálica",
+                         "ambiente":  "rodovia",
+                         "temos_logo_jr":  "sim",
+                         "iluminacao":  "golden hour",
+                         "qualidade_subjetiva":  "alta",
+                         "tags":  [
+                                      "caminhao-jr",
+                                      "estrutura-metalica",
+                                      "rodovia",
+                                      "construcao-pesada",
+                                      "ia"
+                                  ]
+                     },
+                     {
+                         "n":  27,
+                         "caminho":  "C:\\Users\\hx-co\\OneDrive\\Documentos\\brigth\\JR Company\\video header\\frames\\finais\\ChatGPT Image 13 may 2026, 01_56_13 a.m.png",
+                         "caminho_relativo_jr_company":  "video header/frames/finais/ChatGPT Image 13 may 2026, 01_56_13 a.m.png",
+                         "nome":  "ChatGPT Image 13 may 2026, 01_56_13 a.m.png",
+                         "tamanho_bytes":  1999329,
+                         "sujeito_principal":  "caminhão J.R. com maquinário sobre prancha",
+                         "tema_dominante":  "transporte de maquinário pesado",
+                         "ambiente":  "rodovia",
+                         "temos_logo_jr":  "sim",
+                         "iluminacao":  "golden hour",
+                         "qualidade_subjetiva":  "alta",
+                         "tags":  [
+                                      "caminhao-jr",
+                                      "maquinario",
+                                      "prancha",
+                                      "rodovia",
+                                      "ia"
+                                  ]
+                     },
+                     {
+                         "n":  28,
+                         "caminho":  "C:\\Users\\hx-co\\OneDrive\\Documentos\\brigth\\JR Company\\video header\\frames\\finais\\5.png",
+                         "caminho_relativo_jr_company":  "video header/frames/finais/5.png",
+                         "nome":  "5.png",
+                         "tamanho_bytes":  2195830,
+                         "sujeito_principal":  "caminhão J.R. frontal em pátio com contêineres",
+                         "tema_dominante":  "pátio logístico",
+                         "ambiente":  "pátio com contêineres",
+                         "temos_logo_jr":  "sim",
+                         "iluminacao":  "golden hour",
+                         "qualidade_subjetiva":  "média",
+                         "tags":  [
+                                      "caminhao-jr",
+                                      "patio",
+                                      "conteineres",
+                                      "logistica",
+                                      "ia"
+                                  ]
+                     },
+                     {
+                         "n":  29,
+                         "caminho":  "C:\\Users\\hx-co\\OneDrive\\Documentos\\brigth\\JR Company\\video header\\frames\\finais\\5a.png",
+                         "caminho_relativo_jr_company":  "video header/frames/finais/5a.png",
+                         "nome":  "5a.png",
+                         "tamanho_bytes":  1770757,
+                         "sujeito_principal":  "caminhão J.R. frontal em pátio com contêineres",
+                         "tema_dominante":  "pátio logístico",
+                         "ambiente":  "pátio com contêineres",
+                         "temos_logo_jr":  "sim",
+                         "iluminacao":  "golden hour",
+                         "qualidade_subjetiva":  "média",
+                         "tags":  [
+                                      "caminhao-jr",
+                                      "patio",
+                                      "conteineres",
+                                      "logistica",
+                                      "ia"
+                                  ]
+                     },
+                     {
+                         "n":  30,
+                         "caminho":  "C:\\Users\\hx-co\\OneDrive\\Documentos\\brigth\\JR Company\\video header\\frames\\finais\\4.png",
+                         "caminho_relativo_jr_company":  "video header/frames/finais/4.png",
+                         "nome":  "4.png",
+                         "tamanho_bytes":  2305856,
+                         "sujeito_principal":  "caminhão J.R. com estrutura metálica em pátio",
+                         "tema_dominante":  "carga estrutural em pátio",
+                         "ambiente":  "pátio industrial com galpão",
+                         "temos_logo_jr":  "sim",
+                         "iluminacao":  "golden hour",
+                         "qualidade_subjetiva":  "alta",
+                         "tags":  [
+                                      "caminhao-jr",
+                                      "estrutura-metalica",
+                                      "patio",
+                                      "galpao",
+                                      "ia"
+                                  ]
+                     },
+                     {
+                         "n":  31,
+                         "caminho":  "C:\\Users\\hx-co\\OneDrive\\Documentos\\brigth\\JR Company\\video header\\frames\\finais\\4a.png",
+                         "caminho_relativo_jr_company":  "video header/frames/finais/4a.png",
+                         "nome":  "4a.png",
+                         "tamanho_bytes":  2331452,
+                         "sujeito_principal":  "caminhão J.R. com estrutura metálica em pátio",
+                         "tema_dominante":  "carga estrutural em pátio",
+                         "ambiente":  "pátio industrial com galpão",
+                         "temos_logo_jr":  "sim",
+                         "iluminacao":  "golden hour",
+                         "qualidade_subjetiva":  "alta",
+                         "tags":  [
+                                      "caminhao-jr",
+                                      "estrutura-metalica",
+                                      "patio",
+                                      "galpao",
+                                      "ia"
+                                  ]
+                     },
+                     {
+                         "n":  32,
+                         "caminho":  "C:\\Users\\hx-co\\OneDrive\\Documentos\\brigth\\JR Company\\video header\\frames\\finais\\ChatGPT Image 12 may 2026, 12_34_43 a.m.png",
+                         "caminho_relativo_jr_company":  "video header/frames/finais/ChatGPT Image 12 may 2026, 12_34_43 a.m.png",
+                         "nome":  "ChatGPT Image 12 may 2026, 12_34_43 a.m.png",
+                         "tamanho_bytes":  2996318,
+                         "sujeito_principal":  "caminhão J.R. transportando transformador grande",
+                         "tema_dominante":  "transporte de equipamento de energia",
+                         "ambiente":  "rodovia ou área urbana arborizada",
+                         "temos_logo_jr":  "sim",
+                         "iluminacao":  "dia claro",
+                         "qualidade_subjetiva":  "alta",
+                         "tags":  [
+                                      "caminhao-jr",
+                                      "transformador",
+                                      "energia",
+                                      "carga-excedente",
+                                      "ia"
+                                  ]
+                     },
+                     {
+                         "n":  33,
+                         "caminho":  "C:\\Users\\hx-co\\OneDrive\\Documentos\\brigth\\JR Company\\video header\\frames\\finais\\ChatGPT Image 12 may 2026, 12_38_56 a.m.png",
+                         "caminho_relativo_jr_company":  "video header/frames/finais/ChatGPT Image 12 may 2026, 12_38_56 a.m.png",
+                         "nome":  "ChatGPT Image 12 may 2026, 12_38_56 a.m.png",
+                         "tamanho_bytes":  2412814,
+                         "sujeito_principal":  "caminhão J.R. com contêiner Hapag-Lloyd",
+                         "tema_dominante":  "logística internacional/conteinerizada",
+                         "ambiente":  "pátio externo ou rodovia",
+                         "temos_logo_jr":  "sim",
+                         "iluminacao":  "dia claro",
+                         "qualidade_subjetiva":  "alta",
+                         "tags":  [
+                                      "caminhao-jr",
+                                      "conteiner",
+                                      "internacional",
+                                      "comex",
+                                      "ia"
+                                  ]
+                     },
+                     {
+                         "n":  34,
+                         "caminho":  "C:\\Users\\hx-co\\OneDrive\\Documentos\\brigth\\JR Company\\video header\\frames\\finais\\ChatGPT Image 12 may 2026, 12_57_14 p.m.png",
+                         "caminho_relativo_jr_company":  "video header/frames/finais/ChatGPT Image 12 may 2026, 12_57_14 p.m.png",
+                         "nome":  "ChatGPT Image 12 may 2026, 12_57_14 p.m.png",
+                         "tamanho_bytes":  2128255,
+                         "sujeito_principal":  "caminhão J.R. com estrutura metálica em rodovia",
+                         "tema_dominante":  "transporte de estrutura metálica",
+                         "ambiente":  "rodovia",
+                         "temos_logo_jr":  "sim",
+                         "iluminacao":  "golden hour",
+                         "qualidade_subjetiva":  "alta",
+                         "tags":  [
+                                      "caminhao-jr",
+                                      "estrutura-metalica",
+                                      "rodovia",
+                                      "construcao-pesada",
+                                      "ia"
+                                  ]
+                     },
+                     {
+                         "n":  35,
+                         "caminho":  "C:\\Users\\hx-co\\OneDrive\\Documentos\\brigth\\JR Company\\video header\\frames\\finais\\ChatGPT Image 12 may 2026, 12_35_04 a.m.png",
+                         "caminho_relativo_jr_company":  "video header/frames/finais/ChatGPT Image 12 may 2026, 12_35_04 a.m.png",
+                         "nome":  "ChatGPT Image 12 may 2026, 12_35_04 a.m.png",
+                         "tamanho_bytes":  2655782,
+                         "sujeito_principal":  "caminhão J.R. transportando tanque industrial vermelho",
+                         "tema_dominante":  "transporte de vaso/tanque industrial",
+                         "ambiente":  "pátio externo",
+                         "temos_logo_jr":  "sim",
+                         "iluminacao":  "dia claro",
+                         "qualidade_subjetiva":  "alta",
+                         "tags":  [
+                                      "caminhao-jr",
+                                      "tanque-industrial",
+                                      "vaso",
+                                      "carga-excedente",
+                                      "ia"
+                                  ]
+                     },
+                     {
+                         "n":  36,
+                         "caminho":  "C:\\Users\\hx-co\\OneDrive\\Documentos\\brigth\\JR Company\\video header\\frames\\finais\\ChatGPT Image 12 may 2026, 12_35_21 a.m.png",
+                         "caminho_relativo_jr_company":  "video header/frames/finais/ChatGPT Image 12 may 2026, 12_35_21 a.m.png",
+                         "nome":  "ChatGPT Image 12 may 2026, 12_35_21 a.m.png",
+                         "tamanho_bytes":  2260826,
+                         "sujeito_principal":  "caminhão J.R. com escavadeira em prancha",
+                         "tema_dominante":  "transporte de maquinário",
+                         "ambiente":  "pátio sob céu azul",
+                         "temos_logo_jr":  "sim",
+                         "iluminacao":  "dia claro",
+                         "qualidade_subjetiva":  "média",
+                         "tags":  [
+                                      "caminhao-jr",
+                                      "escavadeira",
+                                      "maquinario",
+                                      "prancha",
+                                      "ia",
+                                      "texto-espelhado"
+                                  ]
+                     },
+                     {
+                         "n":  37,
+                         "caminho":  "C:\\Users\\hx-co\\OneDrive\\Documentos\\brigth\\JR Company\\video header\\chamine-tequali3.jpeg",
+                         "caminho_relativo_jr_company":  "video header/chamine-tequali3.jpeg",
+                         "nome":  "chamine-tequali3.jpeg",
+                         "tamanho_bytes":  133741,
+                         "sujeito_principal":  "caminhão J.R. com seção cilíndrica/chaminé industrial",
+                         "tema_dominante":  "transporte de peça cilíndrica industrial",
+                         "ambiente":  "pátio industrial",
+                         "temos_logo_jr":  "sim",
+                         "iluminacao":  "dia claro",
+                         "qualidade_subjetiva":  "alta",
+                         "tags":  [
+                                      "caminhao-jr",
+                                      "chamine",
+                                      "cilindro",
+                                      "industria",
+                                      "foto-real"
+                                  ]
+                     },
+                     {
+                         "n":  38,
+                         "caminho":  "C:\\Users\\hx-co\\OneDrive\\Documentos\\brigth\\JR Company\\video header\\DSCN1121.JPG",
+                         "caminho_relativo_jr_company":  "video header/DSCN1121.JPG",
+                         "nome":  "DSCN1121.JPG",
+                         "tamanho_bytes":  3554038,
+                         "sujeito_principal":  "caminhão J.R. com carga coberta por lona",
+                         "tema_dominante":  "transporte de carga coberta",
+                         "ambiente":  "pátio externo",
+                         "temos_logo_jr":  "sim",
+                         "iluminacao":  "dia claro",
+                         "qualidade_subjetiva":  "média",
+                         "tags":  [
+                                      "caminhao-jr",
+                                      "carga-coberta",
+                                      "patio",
+                                      "foto-real"
+                                  ]
+                     },
+                     {
+                         "n":  39,
+                         "caminho":  "C:\\Users\\hx-co\\OneDrive\\Documentos\\brigth\\JR Company\\video header\\B7610dGH757F0HsoPXtg.jpeg",
+                         "caminho_relativo_jr_company":  "video header/B7610dGH757F0HsoPXtg.jpeg",
+                         "nome":  "B7610dGH757F0HsoPXtg.jpeg",
+                         "tamanho_bytes":  268181,
+                         "sujeito_principal":  "caminhão J.R. transportando transformador em rodovia",
+                         "tema_dominante":  "transporte de equipamento de energia",
+                         "ambiente":  "rodovia",
+                         "temos_logo_jr":  "sim",
+                         "iluminacao":  "dia claro",
+                         "qualidade_subjetiva":  "alta",
+                         "tags":  [
+                                      "caminhao-jr",
+                                      "transformador",
+                                      "energia",
+                                      "rodovia",
+                                      "foto-real"
+                                  ]
+                     },
+                     {
+                         "n":  40,
+                         "caminho":  "C:\\Users\\hx-co\\OneDrive\\Documentos\\brigth\\JR Company\\video header\\Case.Over Projects.TCP.jpg",
+                         "caminho_relativo_jr_company":  "video header/Case.Over Projects.TCP.jpg",
+                         "nome":  "Case.Over Projects.TCP.jpg",
+                         "tamanho_bytes":  201595,
+                         "sujeito_principal":  "caminhão J.R. com vaso cilíndrico industrial",
+                         "tema_dominante":  "transporte de equipamento industrial",
+                         "ambiente":  "pátio industrial",
+                         "temos_logo_jr":  "sim",
+                         "iluminacao":  "dia claro",
+                         "qualidade_subjetiva":  "alta",
+                         "tags":  [
+                                      "caminhao-jr",
+                                      "vaso-industrial",
+                                      "cilindro",
+                                      "industria",
+                                      "foto-real"
+                                  ]
+                     },
+                     {
+                         "n":  41,
+                         "caminho":  "C:\\Users\\hx-co\\OneDrive\\Documentos\\brigth\\JR Company\\video header\\Foto (1).jpg",
+                         "caminho_relativo_jr_company":  "video header/Foto (1).jpg",
+                         "nome":  "Foto (1).jpg",
+                         "tamanho_bytes":  1090559,
+                         "sujeito_principal":  "caminhão J.R. com transformador/subestação",
+                         "tema_dominante":  "transporte de equipamento de energia",
+                         "ambiente":  "rodovia ou margem de canal",
+                         "temos_logo_jr":  "sim",
+                         "iluminacao":  "dia claro",
+                         "qualidade_subjetiva":  "média",
+                         "tags":  [
+                                      "caminhao-jr",
+                                      "transformador",
+                                      "subestacao",
+                                      "energia",
+                                      "foto-real"
+                                  ]
+                     },
+                     {
+                         "n":  42,
+                         "caminho":  "C:\\Users\\hx-co\\OneDrive\\Documentos\\brigth\\JR Company\\video header\\IMG-20250217-WA0159.jpg",
+                         "caminho_relativo_jr_company":  "video header/IMG-20250217-WA0159.jpg",
+                         "nome":  "IMG-20250217-WA0159.jpg",
+                         "tamanho_bytes":  87354,
+                         "sujeito_principal":  "caminhão J.R. com vaso cilíndrico em rodovia",
+                         "tema_dominante":  "carga excedente industrial",
+                         "ambiente":  "rodovia",
+                         "temos_logo_jr":  "sim",
+                         "iluminacao":  "golden hour",
+                         "qualidade_subjetiva":  "alta",
+                         "tags":  [
+                                      "caminhao-jr",
+                                      "vaso-industrial",
+                                      "cilindro",
+                                      "rodovia",
+                                      "foto-real"
+                                  ]
+                     },
+                     {
+                         "n":  43,
+                         "caminho":  "C:\\Users\\hx-co\\OneDrive\\Documentos\\brigth\\JR Company\\video header\\IMG-20250217-WA0170.jpg",
+                         "caminho_relativo_jr_company":  "video header/IMG-20250217-WA0170.jpg",
+                         "nome":  "IMG-20250217-WA0170.jpg",
+                         "tamanho_bytes":  231766,
+                         "sujeito_principal":  "transformador grande sobre carreta modular",
+                         "tema_dominante":  "energia e carga excedente",
+                         "ambiente":  "pátio gramado/externo",
+                         "temos_logo_jr":  "não",
+                         "iluminacao":  "dia claro",
+                         "qualidade_subjetiva":  "média",
+                         "tags":  [
+                                      "transformador",
+                                      "energia",
+                                      "carreta-modular",
+                                      "foto-real"
+                                  ]
+                     },
+                     {
+                         "n":  44,
+                         "caminho":  "C:\\Users\\hx-co\\OneDrive\\Documentos\\brigth\\JR Company\\video header\\Foto (3).jpg",
+                         "caminho_relativo_jr_company":  "video header/Foto (3).jpg",
+                         "nome":  "Foto (3).jpg",
+                         "tamanho_bytes":  1249407,
+                         "sujeito_principal":  "caminhão J.R. transportando transformador em área industrial",
+                         "tema_dominante":  "transporte de equipamento de energia",
+                         "ambiente":  "via interna industrial",
+                         "temos_logo_jr":  "sim",
+                         "iluminacao":  "dia claro",
+                         "qualidade_subjetiva":  "alta",
+                         "tags":  [
+                                      "caminhao-jr",
+                                      "transformador",
+                                      "energia",
+                                      "industria",
+                                      "foto-real"
+                                  ]
+                     },
+                     {
+                         "n":  45,
+                         "caminho":  "C:\\Users\\hx-co\\OneDrive\\Documentos\\brigth\\JR Company\\video header\\IMG-20241220-WA0071.jpg",
+                         "caminho_relativo_jr_company":  "video header/IMG-20241220-WA0071.jpg",
+                         "nome":  "IMG-20241220-WA0071.jpg",
+                         "tamanho_bytes":  163417,
+                         "sujeito_principal":  "caminhão J.R. com transformador sob estrutura de içamento",
+                         "tema_dominante":  "movimentação de equipamento de energia",
+                         "ambiente":  "pátio industrial coberto",
+                         "temos_logo_jr":  "sim",
+                         "iluminacao":  "dia claro",
+                         "qualidade_subjetiva":  "alta",
+                         "tags":  [
+                                      "caminhao-jr",
+                                      "transformador",
+                                      "energia",
+                                      "icamento",
+                                      "foto-real"
+                                  ]
+                     },
+                     {
+                         "n":  46,
+                         "caminho":  "C:\\Users\\hx-co\\OneDrive\\Documentos\\brigth\\JR Company\\3.png",
+                         "caminho_relativo_jr_company":  "3.png",
+                         "nome":  "3.png",
+                         "tamanho_bytes":  1568082,
+                         "sujeito_principal":  "peça gráfica escura com fluxos/ícones",
+                         "tema_dominante":  "material gráfico técnico",
+                         "ambiente":  "layout gráfico",
+                         "temos_logo_jr":  "não",
+                         "iluminacao":  "não se aplica",
+                         "qualidade_subjetiva":  "baixa",
+                         "tags":  [
+                                      "grafico",
+                                      "blueprint",
+                                      "nao-fotografico"
+                                  ]
+                     },
+                     {
+                         "n":  47,
+                         "caminho":  "C:\\Users\\hx-co\\OneDrive\\Documentos\\brigth\\JR Company\\reymaster ads maio 2.png",
+                         "caminho_relativo_jr_company":  "reymaster ads maio 2.png",
+                         "nome":  "reymaster ads maio 2.png",
+                         "tamanho_bytes":  2016442,
+                         "sujeito_principal":  "carrossel de anúncio Corfio",
+                         "tema_dominante":  "anúncio de produto não relacionado",
+                         "ambiente":  "layout gráfico",
+                         "temos_logo_jr":  "não",
+                         "iluminacao":  "não se aplica",
+                         "qualidade_subjetiva":  "baixa",
+                         "tags":  [
+                                      "grafico",
+                                      "anuncio",
+                                      "corfio",
+                                      "nao-relacionado"
+                                  ]
+                     },
+                     {
+                         "n":  48,
+                         "caminho":  "C:\\Users\\hx-co\\OneDrive\\Documentos\\brigth\\JR Company\\1.png",
+                         "caminho_relativo_jr_company":  "1.png",
+                         "nome":  "1.png",
+                         "tamanho_bytes":  1074514,
+                         "sujeito_principal":  "peça gráfica escura com fluxos/ícones",
+                         "tema_dominante":  "material gráfico técnico",
+                         "ambiente":  "layout gráfico",
+                         "temos_logo_jr":  "não",
+                         "iluminacao":  "não se aplica",
+                         "qualidade_subjetiva":  "baixa",
+                         "tags":  [
+                                      "grafico",
+                                      "blueprint",
+                                      "nao-fotografico"
+                                  ]
+                     },
+                     {
+                         "n":  49,
+                         "caminho":  "C:\\Users\\hx-co\\OneDrive\\Documentos\\brigth\\JR Company\\2.png",
+                         "caminho_relativo_jr_company":  "2.png",
+                         "nome":  "2.png",
+                         "tamanho_bytes":  1430676,
+                         "sujeito_principal":  "peça gráfica escura com fluxos/ícones",
+                         "tema_dominante":  "material gráfico técnico",
+                         "ambiente":  "layout gráfico",
+                         "temos_logo_jr":  "não",
+                         "iluminacao":  "não se aplica",
+                         "qualidade_subjetiva":  "baixa",
+                         "tags":  [
+                                      "grafico",
+                                      "blueprint",
+                                      "nao-fotografico"
+                                  ]
+                     },
+                     {
+                         "n":  50,
+                         "caminho":  "C:\\Users\\hx-co\\OneDrive\\Documentos\\brigth\\JR Company\\reymaster ads maio.png",
+                         "caminho_relativo_jr_company":  "reymaster ads maio.png",
+                         "nome":  "reymaster ads maio.png",
+                         "tamanho_bytes":  2128878,
+                         "sujeito_principal":  "carrossel de anúncio Corfio",
+                         "tema_dominante":  "anúncio de produto não relacionado",
+                         "ambiente":  "layout gráfico",
+                         "temos_logo_jr":  "não",
+                         "iluminacao":  "não se aplica",
+                         "qualidade_subjetiva":  "baixa",
+                         "tags":  [
+                                      "grafico",
+                                      "anuncio",
+                                      "corfio",
+                                      "nao-relacionado"
+                                  ]
+                     },
+                     {
+                         "n":  51,
+                         "caminho":  "C:\\Users\\hx-co\\OneDrive\\Documentos\\brigth\\JR Company\\video header\\61.jpg",
+                         "caminho_relativo_jr_company":  "video header/61.jpg",
+                         "nome":  "61.jpg",
+                         "tamanho_bytes":  244408,
+                         "sujeito_principal":  "caminhão J.R. com vaso cilíndrico e guindaste ao fundo",
+                         "tema_dominante":  "transporte industrial com apoio de içamento",
+                         "ambiente":  "pátio industrial/portuário",
+                         "temos_logo_jr":  "sim",
+                         "iluminacao":  "dia nublado",
+                         "qualidade_subjetiva":  "alta",
+                         "tags":  [
+                                      "caminhao-jr",
+                                      "vaso-industrial",
+                                      "guindaste",
+                                      "icamento",
+                                      "foto-real"
+                                  ]
+                     },
+                     {
+                         "n":  52,
+                         "caminho":  "C:\\Users\\hx-co\\OneDrive\\Documentos\\brigth\\JR Company\\video header\\Andritz_Filtro de Licor_2.jpg",
+                         "caminho_relativo_jr_company":  "video header/Andritz_Filtro de Licor_2.jpg",
+                         "nome":  "Andritz_Filtro de Licor_2.jpg",
+                         "tamanho_bytes":  63925,
+                         "sujeito_principal":  "caminhão J.R. com filtro/vaso industrial sob pórtico",
+                         "tema_dominante":  "transporte de equipamento industrial",
+                         "ambiente":  "pátio industrial com pórtico",
+                         "temos_logo_jr":  "sim",
+                         "iluminacao":  "dia nublado",
+                         "qualidade_subjetiva":  "alta",
+                         "tags":  [
+                                      "caminhao-jr",
+                                      "filtro",
+                                      "vaso-industrial",
+                                      "industria",
+                                      "foto-real"
+                                  ]
+                     },
+                     {
+                         "n":  53,
+                         "caminho":  "C:\\Users\\hx-co\\OneDrive\\Documentos\\brigth\\JR Company\\video header\\20260129_094839.jpg",
+                         "caminho_relativo_jr_company":  "video header/20260129_094839.jpg",
+                         "nome":  "20260129_094839.jpg",
+                         "tamanho_bytes":  4186694,
+                         "sujeito_principal":  "caminhão J.R. com maquinário em foto inclinada",
+                         "tema_dominante":  "transporte de maquinário",
+                         "ambiente":  "pátio externo",
+                         "temos_logo_jr":  "sim",
+                         "iluminacao":  "dia nublado",
+                         "qualidade_subjetiva":  "baixa",
+                         "tags":  [
+                                      "caminhao-jr",
+                                      "maquinario",
+                                      "foto-inclinada",
+                                      "foto-real"
+                                  ]
+                     },
+                     {
+                         "n":  54,
+                         "caminho":  "C:\\Users\\hx-co\\OneDrive\\Documentos\\brigth\\JR Company\\video header\\57.jpg",
+                         "caminho_relativo_jr_company":  "video header/57.jpg",
+                         "nome":  "57.jpg",
+                         "tamanho_bytes":  170026,
+                         "sujeito_principal":  "caminhão J.R. transportando estrutura metálica com equipe",
+                         "tema_dominante":  "construção pesada e operação técnica",
+                         "ambiente":  "planta industrial/canteiro",
+                         "temos_logo_jr":  "sim",
+                         "iluminacao":  "dia claro",
+                         "qualidade_subjetiva":  "alta",
+                         "tags":  [
+                                      "caminhao-jr",
+                                      "estrutura-metalica",
+                                      "equipe",
+                                      "construcao-pesada",
+                                      "foto-real"
+                                  ]
+                     },
+                     {
+                         "n":  55,
+                         "caminho":  "C:\\Users\\hx-co\\OneDrive\\Documentos\\brigth\\JR Company\\video header\\transformador8.jpeg",
+                         "caminho_relativo_jr_company":  "video header/transformador8.jpeg",
+                         "nome":  "transformador8.jpeg",
+                         "tamanho_bytes":  256247,
+                         "sujeito_principal":  "caminhão J.R. transportando transformador em pátio",
+                         "tema_dominante":  "transporte de equipamento de energia",
+                         "ambiente":  "pátio externo pavimentado",
+                         "temos_logo_jr":  "sim",
+                         "iluminacao":  "dia claro",
+                         "qualidade_subjetiva":  "alta",
+                         "tags":  [
+                                      "caminhao-jr",
+                                      "transformador",
+                                      "energia",
+                                      "patio",
+                                      "foto-real"
+                                  ]
+                     },
+                     {
+                         "n":  56,
+                         "caminho":  "C:\\Users\\hx-co\\OneDrive\\Documentos\\brigth\\JR Company\\video header\\transformador9.jpeg",
+                         "caminho_relativo_jr_company":  "video header/transformador9.jpeg",
+                         "nome":  "transformador9.jpeg",
+                         "tamanho_bytes":  253401,
+                         "sujeito_principal":  "caminhão J.R. transportando transformador em foto vertical",
+                         "tema_dominante":  "transporte de equipamento de energia",
+                         "ambiente":  "via externa",
+                         "temos_logo_jr":  "sim",
+                         "iluminacao":  "dia claro",
+                         "qualidade_subjetiva":  "média",
+                         "tags":  [
+                                      "caminhao-jr",
+                                      "transformador",
+                                      "energia",
+                                      "vertical",
+                                      "foto-real"
+                                  ]
+                     },
+                     {
+                         "n":  57,
+                         "caminho":  "C:\\Users\\hx-co\\OneDrive\\Documentos\\brigth\\JR Company\\video header\\transformador6.jpeg",
+                         "caminho_relativo_jr_company":  "video header/transformador6.jpeg",
+                         "nome":  "transformador6.jpeg",
+                         "tamanho_bytes":  175856,
+                         "sujeito_principal":  "caminhão J.R. transportando transformador em rodovia sinalizada",
+                         "tema_dominante":  "transporte de equipamento de energia",
+                         "ambiente":  "rodovia com cones",
+                         "temos_logo_jr":  "sim",
+                         "iluminacao":  "golden hour",
+                         "qualidade_subjetiva":  "alta",
+                         "tags":  [
+                                      "caminhao-jr",
+                                      "transformador",
+                                      "energia",
+                                      "rodovia",
+                                      "cones",
+                                      "marca-dagua",
+                                      "foto-real"
+                                  ]
+                     },
+                     {
+                         "n":  58,
+                         "caminho":  "C:\\Users\\hx-co\\OneDrive\\Documentos\\brigth\\JR Company\\video header\\transformador7.jpeg",
+                         "caminho_relativo_jr_company":  "video header/transformador7.jpeg",
+                         "nome":  "transformador7.jpeg",
+                         "tamanho_bytes":  229891,
+                         "sujeito_principal":  "close de caminhão J.R. com transformador em rodovia sinalizada",
+                         "tema_dominante":  "transporte de equipamento de energia",
+                         "ambiente":  "rodovia com cones",
+                         "temos_logo_jr":  "sim",
+                         "iluminacao":  "golden hour",
+                         "qualidade_subjetiva":  "alta",
+                         "tags":  [
+                                      "caminhao-jr",
+                                      "transformador",
+                                      "energia",
+                                      "rodovia",
+                                      "cones",
+                                      "marca-dagua",
+                                      "foto-real"
+                                  ]
+                     },
+                     {
+                         "n":  59,
+                         "caminho":  "C:\\Users\\hx-co\\OneDrive\\Documentos\\brigth\\JR Company\\video header\\WhatsApp Image 2025-09-30 at 15.38.14.jpeg",
+                         "caminho_relativo_jr_company":  "video header/WhatsApp Image 2025-09-30 at 15.38.14.jpeg",
+                         "nome":  "WhatsApp Image 2025-09-30 at 15.38.14.jpeg",
+                         "tamanho_bytes":  239734,
+                         "sujeito_principal":  "vista aérea de carreta modular com carga Voith coberta",
+                         "tema_dominante":  "carga excedente industrial",
+                         "ambiente":  "rodovia ou área rural",
+                         "temos_logo_jr":  "sim",
+                         "iluminacao":  "dia claro",
+                         "qualidade_subjetiva":  "alta",
+                         "tags":  [
+                                      "drone",
+                                      "carga-coberta",
+                                      "voith",
+                                      "carga-excedente",
+                                      "rodovia",
+                                      "foto-real"
+                                  ]
+                     },
+                     {
+                         "n":  60,
+                         "caminho":  "C:\\Users\\hx-co\\OneDrive\\Documentos\\brigth\\JR Company\\video header\\WhatsApp Image 2026-02-25 at 08.31.56.jpeg",
+                         "caminho_relativo_jr_company":  "video header/WhatsApp Image 2026-02-25 at 08.31.56.jpeg",
+                         "nome":  "WhatsApp Image 2026-02-25 at 08.31.56.jpeg",
+                         "tamanho_bytes":  150038,
+                         "sujeito_principal":  "caminhão J.R. com carga coberta próximo a galpão",
+                         "tema_dominante":  "transporte de carga industrial coberta",
+                         "ambiente":  "pátio de galpão",
+                         "temos_logo_jr":  "sim",
+                         "iluminacao":  "dia claro",
+                         "qualidade_subjetiva":  "média",
+                         "tags":  [
+                                      "caminhao-jr",
+                                      "carga-coberta",
+                                      "galpao",
+                                      "patio",
+                                      "foto-real"
+                                  ]
+                     },
+                     {
+                         "n":  61,
+                         "caminho":  "C:\\Users\\hx-co\\OneDrive\\Documentos\\brigth\\JR Company\\video header\\WhatsApp Image 2026-03-05 at 15.02.51 (1).jpeg",
+                         "caminho_relativo_jr_company":  "video header/WhatsApp Image 2026-03-05 at 15.02.51 (1).jpeg",
+                         "nome":  "WhatsApp Image 2026-03-05 at 15.02.51 (1).jpeg",
+                         "tamanho_bytes":  280251,
+                         "sujeito_principal":  "vista aérea de pátio J.R. com frota e galpão",
+                         "tema_dominante":  "pátio logístico e frota",
+                         "ambiente":  "pátio externo com galpões",
+                         "temos_logo_jr":  "sim",
+                         "iluminacao":  "dia claro",
+                         "qualidade_subjetiva":  "alta",
+                         "tags":  [
+                                      "drone",
+                                      "patio",
+                                      "frota",
+                                      "galpao",
+                                      "armazenagem",
+                                      "foto-real"
+                                  ]
+                     },
+                     {
+                         "n":  62,
+                         "caminho":  "C:\\Users\\hx-co\\OneDrive\\Documentos\\brigth\\JR Company\\video header\\WhatsApp Image 2026-01-16 at 09.23.05.jpeg",
+                         "caminho_relativo_jr_company":  "video header/WhatsApp Image 2026-01-16 at 09.23.05.jpeg",
+                         "nome":  "WhatsApp Image 2026-01-16 at 09.23.05.jpeg",
+                         "tamanho_bytes":  298168,
+                         "sujeito_principal":  "vista aérea de carreta modular com carga coberta azul em rodovia",
+                         "tema_dominante":  "carga excedente em trânsito",
+                         "ambiente":  "rodovia",
+                         "temos_logo_jr":  "sim",
+                         "iluminacao":  "dia claro",
+                         "qualidade_subjetiva":  "alta",
+                         "tags":  [
+                                      "drone",
+                                      "carga-coberta",
+                                      "rodovia",
+                                      "carga-excedente",
+                                      "foto-real"
+                                  ]
+                     },
+                     {
+                         "n":  63,
+                         "caminho":  "C:\\Users\\hx-co\\OneDrive\\Documentos\\brigth\\JR Company\\video header\\WhatsApp Image 2026-02-25 at 08.01.10.jpeg",
+                         "caminho_relativo_jr_company":  "video header/WhatsApp Image 2026-02-25 at 08.01.10.jpeg",
+                         "nome":  "WhatsApp Image 2026-02-25 at 08.01.10.jpeg",
+                         "tamanho_bytes":  150038,
+                         "sujeito_principal":  "caminhão J.R. com carga coberta próximo a galpão",
+                         "tema_dominante":  "transporte de carga industrial coberta",
+                         "ambiente":  "pátio de galpão",
+                         "temos_logo_jr":  "sim",
+                         "iluminacao":  "dia claro",
+                         "qualidade_subjetiva":  "média",
+                         "tags":  [
+                                      "caminhao-jr",
+                                      "carga-coberta",
+                                      "galpao",
+                                      "patio",
+                                      "foto-real"
+                                  ]
+                     },
+                     {
+                         "n":  64,
+                         "caminho":  "C:\\Users\\hx-co\\OneDrive\\Documentos\\brigth\\JR Company\\video header\\IMG_20260326_082101.jpg",
+                         "caminho_relativo_jr_company":  "video header/IMG_20260326_082101.jpg",
+                         "nome":  "IMG_20260326_082101.jpg",
+                         "tamanho_bytes":  8208384,
+                         "sujeito_principal":  "caminhão J.R. com contêiner Hapag-Lloyd em foto vertical",
+                         "tema_dominante":  "logística internacional/conteinerizada",
+                         "ambiente":  "pátio externo",
+                         "temos_logo_jr":  "sim",
+                         "iluminacao":  "dia claro",
+                         "qualidade_subjetiva":  "média",
+                         "tags":  [
+                                      "caminhao-jr",
+                                      "conteiner",
+                                      "hapag-lloyd",
+                                      "internacional",
+                                      "vertical",
+                                      "foto-real"
+                                  ]
+                     },
+                     {
+                         "n":  65,
+                         "caminho":  "C:\\Users\\hx-co\\OneDrive\\Documentos\\brigth\\JR Company\\video header\\IMG_20260326_082128.jpg",
+                         "caminho_relativo_jr_company":  "video header/IMG_20260326_082128.jpg",
+                         "nome":  "IMG_20260326_082128.jpg",
+                         "tamanho_bytes":  8396800,
+                         "sujeito_principal":  "caminhão J.R. com contêiner em foto vertical",
+                         "tema_dominante":  "logística internacional/conteinerizada",
+                         "ambiente":  "pátio externo",
+                         "temos_logo_jr":  "sim",
+                         "iluminacao":  "dia claro",
+                         "qualidade_subjetiva":  "média",
+                         "tags":  [
+                                      "caminhao-jr",
+                                      "conteiner",
+                                      "internacional",
+                                      "vertical",
+                                      "foto-real"
+                                  ]
+                     },
+                     {
+                         "n":  66,
+                         "caminho":  "C:\\Users\\hx-co\\OneDrive\\Documentos\\brigth\\JR Company\\video header\\IMG-20250217-WA0179.jpg",
+                         "caminho_relativo_jr_company":  "video header/IMG-20250217-WA0179.jpg",
+                         "nome":  "IMG-20250217-WA0179.jpg",
+                         "tamanho_bytes":  209856,
+                         "sujeito_principal":  "tanque industrial vermelho sobre carreta",
+                         "tema_dominante":  "transporte de tanque industrial",
+                         "ambiente":  "pátio externo arborizado",
+                         "temos_logo_jr":  "não",
+                         "iluminacao":  "dia claro",
+                         "qualidade_subjetiva":  "média",
+                         "tags":  [
+                                      "tanque-industrial",
+                                      "vaso",
+                                      "carga-excedente",
+                                      "patio",
+                                      "foto-real"
+                                  ]
+                     },
+                     {
+                         "n":  67,
+                         "caminho":  "C:\\Users\\hx-co\\OneDrive\\Documentos\\brigth\\JR Company\\video header\\IMG-20250217-WA0182.jpg",
+                         "caminho_relativo_jr_company":  "video header/IMG-20250217-WA0182.jpg",
+                         "nome":  "IMG-20250217-WA0182.jpg",
+                         "tamanho_bytes":  191878,
+                         "sujeito_principal":  "caminhão J.R. transportando tanque industrial vermelho",
+                         "tema_dominante":  "transporte de tanque industrial",
+                         "ambiente":  "pátio externo arborizado",
+                         "temos_logo_jr":  "sim",
+                         "iluminacao":  "dia claro",
+                         "qualidade_subjetiva":  "alta",
+                         "tags":  [
+                                      "caminhao-jr",
+                                      "tanque-industrial",
+                                      "vaso",
+                                      "carga-excedente",
+                                      "foto-real"
+                                  ]
+                     },
+                     {
+                         "n":  68,
+                         "caminho":  "C:\\Users\\hx-co\\OneDrive\\Documentos\\brigth\\JR Company\\video header\\JRC_Foto_02.jpg",
+                         "caminho_relativo_jr_company":  "video header/JRC_Foto_02.jpg",
+                         "nome":  "JRC_Foto_02.jpg",
+                         "tamanho_bytes":  104774,
+                         "sujeito_principal":  "caminhão J.R. com módulo/transformador branco junto a galpão",
+                         "tema_dominante":  "transporte de equipamento industrial",
+                         "ambiente":  "pátio industrial com galpão",
+                         "temos_logo_jr":  "sim",
+                         "iluminacao":  "dia claro",
+                         "qualidade_subjetiva":  "alta",
+                         "tags":  [
+                                      "caminhao-jr",
+                                      "modulo-industrial",
+                                      "transformador",
+                                      "galpao",
+                                      "foto-real"
+                                  ]
+                     },
+                     {
+                         "n":  69,
+                         "caminho":  "C:\\Users\\hx-co\\OneDrive\\Documentos\\brigth\\JR Company\\video header\\linha-de-eixo2.jpg",
+                         "caminho_relativo_jr_company":  "video header/linha-de-eixo2.jpg",
+                         "nome":  "linha-de-eixo2.jpg",
+                         "tamanho_bytes":  4140012,
+                         "sujeito_principal":  "carreta modular/caminhão J.R. em foto rotacionada",
+                         "tema_dominante":  "transporte de carga especial",
+                         "ambiente":  "pátio externo sob céu azul",
+                         "temos_logo_jr":  "sim",
+                         "iluminacao":  "dia claro",
+                         "qualidade_subjetiva":  "baixa",
+                         "tags":  [
+                                      "caminhao-jr",
+                                      "carreta-modular",
+                                      "foto-rotacionada",
+                                      "foto-real"
+                                  ]
+                     },
+                     {
+                         "n":  70,
+                         "caminho":  "C:\\Users\\hx-co\\OneDrive\\Documentos\\brigth\\JR Company\\video header\\transformador4.jpeg",
+                         "caminho_relativo_jr_company":  "video header/transformador4.jpeg",
+                         "nome":  "transformador4.jpeg",
+                         "tamanho_bytes":  217796,
+                         "sujeito_principal":  "caminhão J.R. transportando transformador em rodovia rural",
+                         "tema_dominante":  "transporte de equipamento de energia",
+                         "ambiente":  "rodovia rural",
+                         "temos_logo_jr":  "sim",
+                         "iluminacao":  "dia claro",
+                         "qualidade_subjetiva":  "alta",
+                         "tags":  [
+                                      "caminhao-jr",
+                                      "transformador",
+                                      "energia",
+                                      "rodovia",
+                                      "foto-real"
+                                  ]
+                     },
+                     {
+                         "n":  71,
+                         "caminho":  "C:\\Users\\hx-co\\OneDrive\\Documentos\\brigth\\JR Company\\video header\\JRC_Foto_06.jpg",
+                         "caminho_relativo_jr_company":  "video header/JRC_Foto_06.jpg",
+                         "nome":  "JRC_Foto_06.jpg",
+                         "tamanho_bytes":  111178,
+                         "sujeito_principal":  "caminhão J.R. com vaso cilíndrico industrial em pátio",
+                         "tema_dominante":  "transporte de equipamento industrial",
+                         "ambiente":  "pátio industrial",
+                         "temos_logo_jr":  "sim",
+                         "iluminacao":  "dia claro",
+                         "qualidade_subjetiva":  "alta",
+                         "tags":  [
+                                      "caminhao-jr",
+                                      "vaso-industrial",
+                                      "cilindro",
+                                      "industria",
+                                      "foto-real"
+                                  ]
+                     },
+                     {
+                         "n":  72,
+                         "caminho":  "C:\\Users\\hx-co\\OneDrive\\Documentos\\brigth\\JR Company\\video header\\JRC_Foto_14.jpg",
+                         "caminho_relativo_jr_company":  "video header/JRC_Foto_14.jpg",
+                         "nome":  "JRC_Foto_14.jpg",
+                         "tamanho_bytes":  140789,
+                         "sujeito_principal":  "caminhão J.R. transportando estrutura metálica perto de galpão",
+                         "tema_dominante":  "transporte de estrutura metálica",
+                         "ambiente":  "via interna de galpão/indústria",
+                         "temos_logo_jr":  "sim",
+                         "iluminacao":  "dia claro",
+                         "qualidade_subjetiva":  "alta",
+                         "tags":  [
+                                      "caminhao-jr",
+                                      "estrutura-metalica",
+                                      "galpao",
+                                      "construcao-pesada",
+                                      "foto-real"
+                                  ]
+                     }
+                 ]
+}

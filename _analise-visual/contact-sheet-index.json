@@ -1,0 +1,511 @@
+﻿{
+    "generated_at":  "2026-05-13T03:43:46",
+    "total":  72,
+    "sheets":  6,
+    "index":  [
+                  {
+                      "numero":  1,
+                      "sheet":  1,
+                      "caminho":  "C:\\Users\\hx-co\\OneDrive\\Documentos\\brigth\\JR Company\\video header\\frames\\finais\\2.png",
+                      "relativo":  "video header/frames/finais/2.png",
+                      "nome":  "2.png"
+                  },
+                  {
+                      "numero":  2,
+                      "sheet":  1,
+                      "caminho":  "C:\\Users\\hx-co\\OneDrive\\Documentos\\brigth\\JR Company\\video header\\frames\\finais\\2a.png",
+                      "relativo":  "video header/frames/finais/2a.png",
+                      "nome":  "2a.png"
+                  },
+                  {
+                      "numero":  3,
+                      "sheet":  1,
+                      "caminho":  "C:\\Users\\hx-co\\OneDrive\\Documentos\\brigth\\JR Company\\video header\\frames\\finais\\1.png",
+                      "relativo":  "video header/frames/finais/1.png",
+                      "nome":  "1.png"
+                  },
+                  {
+                      "numero":  4,
+                      "sheet":  1,
+                      "caminho":  "C:\\Users\\hx-co\\OneDrive\\Documentos\\brigth\\JR Company\\video header\\frames\\finais\\1A.png",
+                      "relativo":  "video header/frames/finais/1A.png",
+                      "nome":  "1A.png"
+                  },
+                  {
+                      "numero":  5,
+                      "sheet":  1,
+                      "caminho":  "C:\\Users\\hx-co\\OneDrive\\Documentos\\brigth\\JR Company\\video header\\frames\\finais\\2b-01.png",
+                      "relativo":  "video header/frames/finais/2b-01.png",
+                      "nome":  "2b-01.png"
+                  },
+                  {
+                      "numero":  6,
+                      "sheet":  1,
+                      "caminho":  "C:\\Users\\hx-co\\OneDrive\\Documentos\\brigth\\JR Company\\video header\\frames\\finais\\3.png",
+                      "relativo":  "video header/frames/finais/3.png",
+                      "nome":  "3.png"
+                  },
+                  {
+                      "numero":  7,
+                      "sheet":  1,
+                      "caminho":  "C:\\Users\\hx-co\\OneDrive\\Documentos\\brigth\\JR Company\\video header\\frames\\finais\\3a.png",
+                      "relativo":  "video header/frames/finais/3a.png",
+                      "nome":  "3a.png"
+                  },
+                  {
+                      "numero":  8,
+                      "sheet":  1,
+                      "caminho":  "C:\\Users\\hx-co\\OneDrive\\Documentos\\brigth\\JR Company\\video header\\frames\\finais\\2c.png",
+                      "relativo":  "video header/frames/finais/2c.png",
+                      "nome":  "2c.png"
+                  },
+                  {
+                      "numero":  9,
+                      "sheet":  1,
+                      "caminho":  "C:\\Users\\hx-co\\OneDrive\\Documentos\\brigth\\JR Company\\video header\\frames\\finais\\2d-01.png",
+                      "relativo":  "video header/frames/finais/2d-01.png",
+                      "nome":  "2d-01.png"
+                  },
+                  {
+                      "numero":  10,
+                      "sheet":  1,
+                      "caminho":  "C:\\Users\\hx-co\\OneDrive\\Documentos\\brigth\\JR Company\\video header\\WhatsApp Image 2026-03-05 at 15.11.31 (1).jpeg",
+                      "relativo":  "video header/WhatsApp Image 2026-03-05 at 15.11.31 (1).jpeg",
+                      "nome":  "WhatsApp Image 2026-03-05 at 15.11.31 (1).jpeg"
+                  },
+                  {
+                      "numero":  11,
+                      "sheet":  1,
+                      "caminho":  "C:\\Users\\hx-co\\OneDrive\\Documentos\\brigth\\JR Company\\video header\\WhatsApp Image 2026-03-05 at 16.01.54.jpeg",
+                      "relativo":  "video header/WhatsApp Image 2026-03-05 at 16.01.54.jpeg",
+                      "nome":  "WhatsApp Image 2026-03-05 at 16.01.54.jpeg"
+                  },
+                  {
+                      "numero":  12,
+                      "sheet":  1,
+                      "caminho":  "C:\\Users\\hx-co\\OneDrive\\Documentos\\brigth\\JR Company\\video header\\WhatsApp Image 2026-03-05 at 15.02.51.jpeg",
+                      "relativo":  "video header/WhatsApp Image 2026-03-05 at 15.02.51.jpeg",
+                      "nome":  "WhatsApp Image 2026-03-05 at 15.02.51.jpeg"
+                  },
+                  {
+                      "numero":  13,
+                      "sheet":  2,
+                      "caminho":  "C:\\Users\\hx-co\\OneDrive\\Documentos\\brigth\\JR Company\\video header\\WhatsApp Image 2026-03-05 at 15.02.52.jpeg",
+                      "relativo":  "video header/WhatsApp Image 2026-03-05 at 15.02.52.jpeg",
+                      "nome":  "WhatsApp Image 2026-03-05 at 15.02.52.jpeg"
+                  },
+                  {
+                      "numero":  14,
+                      "sheet":  2,
+                      "caminho":  "C:\\Users\\hx-co\\OneDrive\\Documentos\\brigth\\JR Company\\video header\\WhatsApp Image 2026-03-11 at 13.22.07 (2).jpeg",
+                      "relativo":  "video header/WhatsApp Image 2026-03-11 at 13.22.07 (2).jpeg",
+                      "nome":  "WhatsApp Image 2026-03-11 at 13.22.07 (2).jpeg"
+                  },
+                  {
+                      "numero":  15,
+                      "sheet":  2,
+                      "caminho":  "C:\\Users\\hx-co\\OneDrive\\Documentos\\brigth\\JR Company\\video header\\WhatsApp Image 2026-03-24 at 15.08.06 (2).jpeg",
+                      "relativo":  "video header/WhatsApp Image 2026-03-24 at 15.08.06 (2).jpeg",
+                      "nome":  "WhatsApp Image 2026-03-24 at 15.08.06 (2).jpeg"
+                  },
+                  {
+                      "numero":  16,
+                      "sheet":  2,
+                      "caminho":  "C:\\Users\\hx-co\\OneDrive\\Documentos\\brigth\\JR Company\\video header\\WhatsApp Image 2026-03-24 at 15.08.07 (5).jpeg",
+                      "relativo":  "video header/WhatsApp Image 2026-03-24 at 15.08.07 (5).jpeg",
+                      "nome":  "WhatsApp Image 2026-03-24 at 15.08.07 (5).jpeg"
+                  },
+                  {
+                      "numero":  17,
+                      "sheet":  2,
+                      "caminho":  "C:\\Users\\hx-co\\OneDrive\\Documentos\\brigth\\JR Company\\video header\\WhatsApp Image 2026-03-24 at 15.08.06 (10).jpeg",
+                      "relativo":  "video header/WhatsApp Image 2026-03-24 at 15.08.06 (10).jpeg",
+                      "nome":  "WhatsApp Image 2026-03-24 at 15.08.06 (10).jpeg"
+                  },
+                  {
+                      "numero":  18,
+                      "sheet":  2,
+                      "caminho":  "C:\\Users\\hx-co\\OneDrive\\Documentos\\brigth\\JR Company\\video header\\WhatsApp Image 2026-03-24 at 15.08.06 (11).jpeg",
+                      "relativo":  "video header/WhatsApp Image 2026-03-24 at 15.08.06 (11).jpeg",
+                      "nome":  "WhatsApp Image 2026-03-24 at 15.08.06 (11).jpeg"
+                  },
+                  {
+                      "numero":  19,
+                      "sheet":  2,
+                      "caminho":  "C:\\Users\\hx-co\\OneDrive\\Documentos\\brigth\\JR Company\\video header\\frames\\finais\\ChatGPT Image 13 may 2026, 01_55_33 a.m.png",
+                      "relativo":  "video header/frames/finais/ChatGPT Image 13 may 2026, 01_55_33 a.m.png",
+                      "nome":  "ChatGPT Image 13 may 2026, 01_55_33 a.m.png"
+                  },
+                  {
+                      "numero":  20,
+                      "sheet":  2,
+                      "caminho":  "C:\\Users\\hx-co\\OneDrive\\Documentos\\brigth\\JR Company\\video header\\frames\\finais\\ChatGPT Image 13 may 2026, 01_55_40 a.m.png",
+                      "relativo":  "video header/frames/finais/ChatGPT Image 13 may 2026, 01_55_40 a.m.png",
+                      "nome":  "ChatGPT Image 13 may 2026, 01_55_40 a.m.png"
+                  },
+                  {
+                      "numero":  21,
+                      "sheet":  2,
+                      "caminho":  "C:\\Users\\hx-co\\OneDrive\\Documentos\\brigth\\JR Company\\video header\\frames\\finais\\ChatGPT Image 13 may 2026, 01_55_13 a.m.png",
+                      "relativo":  "video header/frames/finais/ChatGPT Image 13 may 2026, 01_55_13 a.m.png",
+                      "nome":  "ChatGPT Image 13 may 2026, 01_55_13 a.m.png"
+                  },
+                  {
+                      "numero":  22,
+                      "sheet":  2,
+                      "caminho":  "C:\\Users\\hx-co\\OneDrive\\Documentos\\brigth\\JR Company\\video header\\frames\\finais\\ChatGPT Image 13 may 2026, 01_55_20 a.m.png",
+                      "relativo":  "video header/frames/finais/ChatGPT Image 13 may 2026, 01_55_20 a.m.png",
+                      "nome":  "ChatGPT Image 13 may 2026, 01_55_20 a.m.png"
+                  },
+                  {
+                      "numero":  23,
+                      "sheet":  2,
+                      "caminho":  "C:\\Users\\hx-co\\OneDrive\\Documentos\\brigth\\JR Company\\video header\\frames\\finais\\ChatGPT Image 13 may 2026, 01_55_50 a.m.png",
+                      "relativo":  "video header/frames/finais/ChatGPT Image 13 may 2026, 01_55_50 a.m.png",
+                      "nome":  "ChatGPT Image 13 may 2026, 01_55_50 a.m.png"
+                  },
+                  {
+                      "numero":  24,
+                      "sheet":  2,
+                      "caminho":  "C:\\Users\\hx-co\\OneDrive\\Documentos\\brigth\\JR Company\\Geral Glow 2026\\POST 01 - Capa.png",
+                      "relativo":  "Geral Glow 2026/POST 01 - Capa.png",
+                      "nome":  "POST 01 - Capa.png"
+                  },
+                  {
+                      "numero":  25,
+                      "sheet":  3,
+                      "caminho":  "C:\\Users\\hx-co\\OneDrive\\Documentos\\brigth\\JR Company\\Geral Glow 2026\\POST 01 - Card 26.png",
+                      "relativo":  "Geral Glow 2026/POST 01 - Card 26.png",
+                      "nome":  "POST 01 - Card 26.png"
+                  },
+                  {
+                      "numero":  26,
+                      "sheet":  3,
+                      "caminho":  "C:\\Users\\hx-co\\OneDrive\\Documentos\\brigth\\JR Company\\video header\\frames\\finais\\ChatGPT Image 13 may 2026, 01_55_55 a.m.png",
+                      "relativo":  "video header/frames/finais/ChatGPT Image 13 may 2026, 01_55_55 a.m.png",
+                      "nome":  "ChatGPT Image 13 may 2026, 01_55_55 a.m.png"
+                  },
+                  {
+                      "numero":  27,
+                      "sheet":  3,
+                      "caminho":  "C:\\Users\\hx-co\\OneDrive\\Documentos\\brigth\\JR Company\\video header\\frames\\finais\\ChatGPT Image 13 may 2026, 01_56_13 a.m.png",
+                      "relativo":  "video header/frames/finais/ChatGPT Image 13 may 2026, 01_56_13 a.m.png",
+                      "nome":  "ChatGPT Image 13 may 2026, 01_56_13 a.m.png"
+                  },
+                  {
+                      "numero":  28,
+                      "sheet":  3,
+                      "caminho":  "C:\\Users\\hx-co\\OneDrive\\Documentos\\brigth\\JR Company\\video header\\frames\\finais\\5.png",
+                      "relativo":  "video header/frames/finais/5.png",
+                      "nome":  "5.png"
+                  },
+                  {
+                      "numero":  29,
+                      "sheet":  3,
+                      "caminho":  "C:\\Users\\hx-co\\OneDrive\\Documentos\\brigth\\JR Company\\video header\\frames\\finais\\5a.png",
+                      "relativo":  "video header/frames/finais/5a.png",
+                      "nome":  "5a.png"
+                  },
+                  {
+                      "numero":  30,
+                      "sheet":  3,
+                      "caminho":  "C:\\Users\\hx-co\\OneDrive\\Documentos\\brigth\\JR Company\\video header\\frames\\finais\\4.png",
+                      "relativo":  "video header/frames/finais/4.png",
+                      "nome":  "4.png"
+                  },
+                  {
+                      "numero":  31,
+                      "sheet":  3,
+                      "caminho":  "C:\\Users\\hx-co\\OneDrive\\Documentos\\brigth\\JR Company\\video header\\frames\\finais\\4a.png",
+                      "relativo":  "video header/frames/finais/4a.png",
+                      "nome":  "4a.png"
+                  },
+                  {
+                      "numero":  32,
+                      "sheet":  3,
+                      "caminho":  "C:\\Users\\hx-co\\OneDrive\\Documentos\\brigth\\JR Company\\video header\\frames\\finais\\ChatGPT Image 12 may 2026, 12_34_43 a.m.png",
+                      "relativo":  "video header/frames/finais/ChatGPT Image 12 may 2026, 12_34_43 a.m.png",
+                      "nome":  "ChatGPT Image 12 may 2026, 12_34_43 a.m.png"
+                  },
+                  {
+                      "numero":  33,
+                      "sheet":  3,
+                      "caminho":  "C:\\Users\\hx-co\\OneDrive\\Documentos\\brigth\\JR Company\\video header\\frames\\finais\\ChatGPT Image 12 may 2026, 12_38_56 a.m.png",
+                      "relativo":  "video header/frames/finais/ChatGPT Image 12 may 2026, 12_38_56 a.m.png",
+                      "nome":  "ChatGPT Image 12 may 2026, 12_38_56 a.m.png"
+                  },
+                  {
+                      "numero":  34,
+                      "sheet":  3,
+                      "caminho":  "C:\\Users\\hx-co\\OneDrive\\Documentos\\brigth\\JR Company\\video header\\frames\\finais\\ChatGPT Image 12 may 2026, 12_57_14 p.m.png",
+                      "relativo":  "video header/frames/finais/ChatGPT Image 12 may 2026, 12_57_14 p.m.png",
+                      "nome":  "ChatGPT Image 12 may 2026, 12_57_14 p.m.png"
+                  },
+                  {
+                      "numero":  35,
+                      "sheet":  3,
+                      "caminho":  "C:\\Users\\hx-co\\OneDrive\\Documentos\\brigth\\JR Company\\video header\\frames\\finais\\ChatGPT Image 12 may 2026, 12_35_04 a.m.png",
+                      "relativo":  "video header/frames/finais/ChatGPT Image 12 may 2026, 12_35_04 a.m.png",
+                      "nome":  "ChatGPT Image 12 may 2026, 12_35_04 a.m.png"
+                  },
+                  {
+                      "numero":  36,
+                      "sheet":  3,
+                      "caminho":  "C:\\Users\\hx-co\\OneDrive\\Documentos\\brigth\\JR Company\\video header\\frames\\finais\\ChatGPT Image 12 may 2026, 12_35_21 a.m.png",
+                      "relativo":  "video header/frames/finais/ChatGPT Image 12 may 2026, 12_35_21 a.m.png",
+                      "nome":  "ChatGPT Image 12 may 2026, 12_35_21 a.m.png"
+                  },
+                  {
+                      "numero":  37,
+                      "sheet":  4,
+                      "caminho":  "C:\\Users\\hx-co\\OneDrive\\Documentos\\brigth\\JR Company\\video header\\chamine-tequali3.jpeg",
+                      "relativo":  "video header/chamine-tequali3.jpeg",
+                      "nome":  "chamine-tequali3.jpeg"
+                  },
+                  {
+                      "numero":  38,
+                      "sheet":  4,
+                      "caminho":  "C:\\Users\\hx-co\\OneDrive\\Documentos\\brigth\\JR Company\\video header\\DSCN1121.JPG",
+                      "relativo":  "video header/DSCN1121.JPG",
+                      "nome":  "DSCN1121.JPG"
+                  },
+                  {
+                      "numero":  39,
+                      "sheet":  4,
+                      "caminho":  "C:\\Users\\hx-co\\OneDrive\\Documentos\\brigth\\JR Company\\video header\\B7610dGH757F0HsoPXtg.jpeg",
+                      "relativo":  "video header/B7610dGH757F0HsoPXtg.jpeg",
+                      "nome":  "B7610dGH757F0HsoPXtg.jpeg"
+                  },
+                  {
+                      "numero":  40,
+                      "sheet":  4,
+                      "caminho":  "C:\\Users\\hx-co\\OneDrive\\Documentos\\brigth\\JR Company\\video header\\Case.Over Projects.TCP.jpg",
+                      "relativo":  "video header/Case.Over Projects.TCP.jpg",
+                      "nome":  "Case.Over Projects.TCP.jpg"
+                  },
+                  {
+                      "numero":  41,
+                      "sheet":  4,
+                      "caminho":  "C:\\Users\\hx-co\\OneDrive\\Documentos\\brigth\\JR Company\\video header\\Foto (1).jpg",
+                      "relativo":  "video header/Foto (1).jpg",
+                      "nome":  "Foto (1).jpg"
+                  },
+                  {
+                      "numero":  42,
+                      "sheet":  4,
+                      "caminho":  "C:\\Users\\hx-co\\OneDrive\\Documentos\\brigth\\JR Company\\video header\\IMG-20250217-WA0159.jpg",
+                      "relativo":  "video header/IMG-20250217-WA0159.jpg",
+                      "nome":  "IMG-20250217-WA0159.jpg"
+                  },
+                  {
+                      "numero":  43,
+                      "sheet":  4,
+                      "caminho":  "C:\\Users\\hx-co\\OneDrive\\Documentos\\brigth\\JR Company\\video header\\IMG-20250217-WA0170.jpg",
+                      "relativo":  "video header/IMG-20250217-WA0170.jpg",
+                      "nome":  "IMG-20250217-WA0170.jpg"
+                  },
+                  {
+                      "numero":  44,
+                      "sheet":  4,
+                      "caminho":  "C:\\Users\\hx-co\\OneDrive\\Documentos\\brigth\\JR Company\\video header\\Foto (3).jpg",
+                      "relativo":  "video header/Foto (3).jpg",
+                      "nome":  "Foto (3).jpg"
+                  },
+                  {
+                      "numero":  45,
+                      "sheet":  4,
+                      "caminho":  "C:\\Users\\hx-co\\OneDrive\\Documentos\\brigth\\JR Company\\video header\\IMG-20241220-WA0071.jpg",
+                      "relativo":  "video header/IMG-20241220-WA0071.jpg",
+                      "nome":  "IMG-20241220-WA0071.jpg"
+                  },
+                  {
+                      "numero":  46,
+                      "sheet":  4,
+                      "caminho":  "C:\\Users\\hx-co\\OneDrive\\Documentos\\brigth\\JR Company\\3.png",
+                      "relativo":  "3.png",
+                      "nome":  "3.png"
+                  },
+                  {
+                      "numero":  47,
+                      "sheet":  4,
+                      "caminho":  "C:\\Users\\hx-co\\OneDrive\\Documentos\\brigth\\JR Company\\reymaster ads maio 2.png",
+                      "relativo":  "reymaster ads maio 2.png",
+                      "nome":  "reymaster ads maio 2.png"
+                  },
+                  {
+                      "numero":  48,
+                      "sheet":  4,
+                      "caminho":  "C:\\Users\\hx-co\\OneDrive\\Documentos\\brigth\\JR Company\\1.png",
+                      "relativo":  "1.png",
+                      "nome":  "1.png"
+                  },
+                  {
+                      "numero":  49,
+                      "sheet":  5,
+                      "caminho":  "C:\\Users\\hx-co\\OneDrive\\Documentos\\brigth\\JR Company\\2.png",
+                      "relativo":  "2.png",
+                      "nome":  "2.png"
+                  },
+                  {
+                      "numero":  50,
+                      "sheet":  5,
+                      "caminho":  "C:\\Users\\hx-co\\OneDrive\\Documentos\\brigth\\JR Company\\reymaster ads maio.png",
+                      "relativo":  "reymaster ads maio.png",
+                      "nome":  "reymaster ads maio.png"
+                  },
+                  {
+                      "numero":  51,
+                      "sheet":  5,
+                      "caminho":  "C:\\Users\\hx-co\\OneDrive\\Documentos\\brigth\\JR Company\\video header\\61.jpg",
+                      "relativo":  "video header/61.jpg",
+                      "nome":  "61.jpg"
+                  },
+                  {
+                      "numero":  52,
+                      "sheet":  5,
+                      "caminho":  "C:\\Users\\hx-co\\OneDrive\\Documentos\\brigth\\JR Company\\video header\\Andritz_Filtro de Licor_2.jpg",
+                      "relativo":  "video header/Andritz_Filtro de Licor_2.jpg",
+                      "nome":  "Andritz_Filtro de Licor_2.jpg"
+                  },
+                  {
+                      "numero":  53,
+                      "sheet":  5,
+                      "caminho":  "C:\\Users\\hx-co\\OneDrive\\Documentos\\brigth\\JR Company\\video header\\20260129_094839.jpg",
+                      "relativo":  "video header/20260129_094839.jpg",
+                      "nome":  "20260129_094839.jpg"
+                  },
+                  {
+                      "numero":  54,
+                      "sheet":  5,
+                      "caminho":  "C:\\Users\\hx-co\\OneDrive\\Documentos\\brigth\\JR Company\\video header\\57.jpg",
+                      "relativo":  "video header/57.jpg",
+                      "nome":  "57.jpg"
+                  },
+                  {
+                      "numero":  55,
+                      "sheet":  5,
+                      "caminho":  "C:\\Users\\hx-co\\OneDrive\\Documentos\\brigth\\JR Company\\video header\\transformador8.jpeg",
+                      "relativo":  "video header/transformador8.jpeg",
+                      "nome":  "transformador8.jpeg"
+                  },
+                  {
+                      "numero":  56,
+                      "sheet":  5,
+                      "caminho":  "C:\\Users\\hx-co\\OneDrive\\Documentos\\brigth\\JR Company\\video header\\transformador9.jpeg",
+                      "relativo":  "video header/transformador9.jpeg",
+                      "nome":  "transformador9.jpeg"
+                  },
+                  {
+                      "numero":  57,
+                      "sheet":  5,
+                      "caminho":  "C:\\Users\\hx-co\\OneDrive\\Documentos\\brigth\\JR Company\\video header\\transformador6.jpeg",
+                      "relativo":  "video header/transformador6.jpeg",
+                      "nome":  "transformador6.jpeg"
+                  },
+                  {
+                      "numero":  58,
+                      "sheet":  5,
+                      "caminho":  "C:\\Users\\hx-co\\OneDrive\\Documentos\\brigth\\JR Company\\video header\\transformador7.jpeg",
+                      "relativo":  "video header/transformador7.jpeg",
+                      "nome":  "transformador7.jpeg"
+                  },
+                  {
+                      "numero":  59,
+                      "sheet":  5,
+                      "caminho":  "C:\\Users\\hx-co\\OneDrive\\Documentos\\brigth\\JR Company\\video header\\WhatsApp Image 2025-09-30 at 15.38.14.jpeg",
+                      "relativo":  "video header/WhatsApp Image 2025-09-30 at 15.38.14.jpeg",
+                      "nome":  "WhatsApp Image 2025-09-30 at 15.38.14.jpeg"
+                  },
+                  {
+                      "numero":  60,
+                      "sheet":  5,
+                      "caminho":  "C:\\Users\\hx-co\\OneDrive\\Documentos\\brigth\\JR Company\\video header\\WhatsApp Image 2026-02-25 at 08.31.56.jpeg",
+                      "relativo":  "video header/WhatsApp Image 2026-02-25 at 08.31.56.jpeg",
+                      "nome":  "WhatsApp Image 2026-02-25 at 08.31.56.jpeg"
+                  },
+                  {
+                      "numero":  61,
+                      "sheet":  6,
+                      "caminho":  "C:\\Users\\hx-co\\OneDrive\\Documentos\\brigth\\JR Company\\video header\\WhatsApp Image 2026-03-05 at 15.02.51 (1).jpeg",
+                      "relativo":  "video header/WhatsApp Image 2026-03-05 at 15.02.51 (1).jpeg",
+                      "nome":  "WhatsApp Image 2026-03-05 at 15.02.51 (1).jpeg"
+                  },
+                  {
+                      "numero":  62,
+                      "sheet":  6,
+                      "caminho":  "C:\\Users\\hx-co\\OneDrive\\Documentos\\brigth\\JR Company\\video header\\WhatsApp Image 2026-01-16 at 09.23.05.jpeg",
+                      "relativo":  "video header/WhatsApp Image 2026-01-16 at 09.23.05.jpeg",
+                      "nome":  "WhatsApp Image 2026-01-16 at 09.23.05.jpeg"
+                  },
+                  {
+                      "numero":  63,
+                      "sheet":  6,
+                      "caminho":  "C:\\Users\\hx-co\\OneDrive\\Documentos\\brigth\\JR Company\\video header\\WhatsApp Image 2026-02-25 at 08.01.10.jpeg",
+                      "relativo":  "video header/WhatsApp Image 2026-02-25 at 08.01.10.jpeg",
+                      "nome":  "WhatsApp Image 2026-02-25 at 08.01.10.jpeg"
+                  },
+                  {
+                      "numero":  64,
+                      "sheet":  6,
+                      "caminho":  "C:\\Users\\hx-co\\OneDrive\\Documentos\\brigth\\JR Company\\video header\\IMG_20260326_082101.jpg",
+                      "relativo":  "video header/IMG_20260326_082101.jpg",
+                      "nome":  "IMG_20260326_082101.jpg"
+                  },
+                  {
+                      "numero":  65,
+                      "sheet":  6,
+                      "caminho":  "C:\\Users\\hx-co\\OneDrive\\Documentos\\brigth\\JR Company\\video header\\IMG_20260326_082128.jpg",
+                      "relativo":  "video header/IMG_20260326_082128.jpg",
+                      "nome":  "IMG_20260326_082128.jpg"
+                  },
+                  {
+                      "numero":  66,
+                      "sheet":  6,
+                      "caminho":  "C:\\Users\\hx-co\\OneDrive\\Documentos\\brigth\\JR Company\\video header\\IMG-20250217-WA0179.jpg",
+                      "relativo":  "video header/IMG-20250217-WA0179.jpg",
+                      "nome":  "IMG-20250217-WA0179.jpg"
+                  },
+                  {
+                      "numero":  67,
+                      "sheet":  6,
+                      "caminho":  "C:\\Users\\hx-co\\OneDrive\\Documentos\\brigth\\JR Company\\video header\\IMG-20250217-WA0182.jpg",
+                      "relativo":  "video header/IMG-20250217-WA0182.jpg",
+                      "nome":  "IMG-20250217-WA0182.jpg"
+                  },
+                  {
+                      "numero":  68,
+                      "sheet":  6,
+                      "caminho":  "C:\\Users\\hx-co\\OneDrive\\Documentos\\brigth\\JR Company\\video header\\JRC_Foto_02.jpg",
+                      "relativo":  "video header/JRC_Foto_02.jpg",
+                      "nome":  "JRC_Foto_02.jpg"
+                  },
+                  {
+                      "numero":  69,
+                      "sheet":  6,
+                      "caminho":  "C:\\Users\\hx-co\\OneDrive\\Documentos\\brigth\\JR Company\\video header\\linha-de-eixo2.jpg",
+                      "relativo":  "video header/linha-de-eixo2.jpg",
+                      "nome":  "linha-de-eixo2.jpg"
+                  },
+                  {
+                      "numero":  70,
+                      "sheet":  6,
+                      "caminho":  "C:\\Users\\hx-co\\OneDrive\\Documentos\\brigth\\JR Company\\video header\\transformador4.jpeg",
+                      "relativo":  "video header/transformador4.jpeg",
+                      "nome":  "transformador4.jpeg"
+                  },
+                  {
+                      "numero":  71,
+                      "sheet":  6,
+                      "caminho":  "C:\\Users\\hx-co\\OneDrive\\Documentos\\brigth\\JR Company\\video header\\JRC_Foto_06.jpg",
+                      "relativo":  "video header/JRC_Foto_06.jpg",
+                      "nome":  "JRC_Foto_06.jpg"
+                  },
+                  {
+                      "numero":  72,
+                      "sheet":  6,
+                      "caminho":  "C:\\Users\\hx-co\\OneDrive\\Documentos\\brigth\\JR Company\\video header\\JRC_Foto_14.jpg",
+                      "relativo":  "video header/JRC_Foto_14.jpg",
+                      "nome":  "JRC_Foto_14.jpg"
+                  }
+              ]
+}

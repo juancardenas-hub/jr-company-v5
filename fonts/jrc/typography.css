@@ -1,0 +1,245 @@
+/* =====================================================================
+   JRC TYPOGRAPHY SYSTEM
+   J.R. Company — premium industrial / logistics brand
+   ---------------------------------------------------------------------
+   This file is the single source of truth for typography across the
+   site. Drop your font files into the same folder (fonts/jrc/) using
+   the names declared below, or update the file names here.
+
+   Roles:
+     --font-display    : industrial/condensed bold — titles, hero, cards
+     --font-body       : clean light/regular — paragraphs, nav, buttons
+     --font-technical  : uppercase, wide-tracked — eyebrows & badges
+   ===================================================================== */
+
+/* ---------- 1. @font-face DECLARATIONS ---------- */
+
+/* --- DISPLAY (headings, hero, section titles, card titles) --- */
+@font-face {
+        font-family: "JRC Display";
+        src: url("./jrc-display.woff2") format("woff2"),
+                 url("./jrc-display.woff")  format("woff"),
+                 url("./jrc-display.ttf")   format("truetype"),
+                 url("./jrc-display.otf")   format("opentype");
+        font-weight: 700 900;
+        font-style: normal;
+        font-display: swap;
+}
+
+/* --- BODY (paragraphs, cards, descriptions, nav, buttons) --- */
+@font-face {
+        font-family: "JRC Body";
+        src: url("./jrc-body.woff2") format("woff2"),
+                 url("./jrc-body.woff")  format("woff"),
+                 url("./jrc-body.ttf")   format("truetype"),
+                 url("./jrc-body.otf")   format("opentype");
+        font-weight: 300 500;
+        font-style: normal;
+        font-display: swap;
+}
+
+/* --- TECHNICAL (eyebrows, badges, small uppercase labels) --- */
+@font-face {
+        font-family: "JRC Technical";
+        src: url("./jrc-technical.woff2") format("woff2"),
+                 url("./jrc-technical.woff")  format("woff"),
+                 url("./jrc-technical.ttf")   format("truetype"),
+                 url("./jrc-technical.otf")   format("opentype");
+        font-weight: 500 700;
+        font-style: normal;
+        font-display: swap;
+}
+
+/* ---------- 2. LEGACY ALIAS (PHASE 2 — UNCOMMENT AFTER FONTS DROPPED IN) ----------
+   The current site uses 'Vazirmatn' in many inline styles, including a
+   few inline `style="... !important"` rules that external CSS cannot
+   override. Re-declaring Vazirmatn as a local @font-face is the cleanest
+   way to upgrade those styles without rewriting every component.
+
+   Phase 1 (now, BEFORE you copy fonts into this folder):
+     Keep this block COMMENTED OUT. The site keeps using Google's
+     Vazirmatn and looks unchanged. The new local roles (JRC Display /
+     Body / Technical) silently 404 and fall back through the CSS
+     variable stack to Vazirmatn, which is still loaded from Google.
+
+   Phase 2 (after you copy fonts):
+     Uncomment the two @font-face blocks below. The legacy Vazirmatn
+     calls in the HTML will now resolve to your local industrial
+     display / body files automatically.
+   ------------------------------------------------------------------ */
+/*
+@font-face {
+        font-family: "Vazirmatn";
+        src: url("./jrc-display.woff2") format("woff2"),
+                 url("./jrc-display.woff")  format("woff"),
+                 url("./jrc-display.ttf")   format("truetype"),
+                 url("./jrc-display.otf")   format("opentype");
+        font-weight: 700 900;
+        font-style: normal;
+        font-display: swap;
+}
+@font-face {
+        font-family: "Vazirmatn";
+        src: url("./jrc-body.woff2") format("woff2"),
+                 url("./jrc-body.woff")  format("woff"),
+                 url("./jrc-body.ttf")   format("truetype"),
+                 url("./jrc-body.otf")   format("opentype");
+        font-weight: 100 600;
+        font-style: normal;
+        font-display: swap;
+}
+*/
+
+/* ---------- 3. DESIGN TOKENS ---------- */
+:root {
+        --font-display:   "JRC Display", "Vazirmatn", "Inter", system-ui,
+                                          -apple-system, "Segoe UI", Roboto, sans-serif;
+        --font-body:      "JRC Body", "Vazirmatn", "Inter", system-ui,
+                                          -apple-system, "Segoe UI", Roboto, sans-serif;
+        --font-technical: "JRC Technical", "JetBrains Mono", "JRC Display",
+                                          "Vazirmatn", ui-monospace, "SF Mono", Menlo,
+                                          Consolas, monospace;
+}
+
+/* ---------- 4. GLOBAL DEFAULTS ---------- */
+html,
+body {
+        font-family: var(--font-body);
+        font-weight: 400;
+        line-height: 1.6;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        text-rendering: optimizeLegibility;
+}
+
+/* ---------- 5. HEADINGS — DISPLAY FONT ---------- */
+h1, h2, h3, h4, h5, h6,
+.display-title, .hero-title, .section-title, .card-title,
+.solution-title, .feature-title {
+        font-family: var(--font-display);
+        font-weight: 800;
+        line-height: 1.05;
+        letter-spacing: -0.005em;
+}
+
+h1, .hero-title, .display-title {
+        font-weight: 900;
+        line-height: 0.95;
+}
+
+h2, .section-title {
+        font-weight: 800;
+        line-height: 1.0;
+}
+
+h3, .card-title, .solution-title {
+        font-weight: 700;
+        line-height: 1.1;
+}
+
+/* Uppercase titles get a slight tracking boost for premium feel */
+.upper, [class*="uppercase"],
+[style*="text-transform: uppercase"],
+[style*="text-transform:uppercase"] {
+        letter-spacing: 0.02em;
+}
+
+/* ---------- 6. EYEBROW / TECHNICAL LABELS ---------- */
+.eyebrow, .badge, .technical-label, .label-small,
+.kicker, .section-eyebrow, .pill-label {
+        font-family: var(--font-technical);
+        text-transform: uppercase;
+        font-weight: 600;
+        letter-spacing: 0.22em;
+        line-height: 1.2;
+}
+
+/* ---------- 7. NAVIGATION ---------- */
+header nav a,
+.nav-link,
+.site-nav a,
+.main-nav a {
+        font-family: var(--font-body);
+        font-weight: 500;
+        letter-spacing: 0.04em;
+}
+
+/* ---------- 8. BUTTONS / CTAs ---------- */
+button,
+.btn, .cta,
+[role="button"],
+input[type="button"],
+input[type="submit"] {
+        font-family: var(--font-body);
+        font-weight: 500;
+        letter-spacing: 0.02em;
+}
+
+/* ---------- 9. STATS (the 24+, 67M+, 83+, 3457 row) ---------- */
+.stat, .stat-number,
+[class*="stat-num"],
+[class*="-stat"] .number,
+.metric-number {
+        font-family: var(--font-display);
+        font-weight: 900;
+        letter-spacing: -0.01em;
+        line-height: 1;
+}
+
+/* ---------- 10. BODY TEXT ---------- */
+p, li, dd,
+.body-text, .description, .card-description,
+.feature-text, .footer-text, .blog-summary {
+        font-family: var(--font-body);
+        font-weight: 400;
+        line-height: 1.6;
+}
+
+/* ---------- 11. STEP NUMBERS (e.g. "01.") ---------- */
+.step-number, .step-num,
+[class*="step-"] .number,
+[class*="step-"] .num {
+        font-family: var(--font-display);
+        font-weight: 900;
+        letter-spacing: -0.02em;
+        line-height: 1;
+}
+
+/* ---------- 12. PRESERVE ICON FONT ---------- */
+.material-symbols-outlined,
+[class*="material-symbols"] {
+        font-family: 'Material Symbols Outlined' !important;
+        font-weight: normal !important;
+        letter-spacing: normal !important;
+        text-transform: none !important;
+}
+
+/* ---------- 13. RESPONSIVE TYPOGRAPHY ---------- */
+@media (max-width: 1024px) {
+        h1, .hero-title, .display-title { line-height: 0.98; }
+}
+
+@media (max-width: 768px) {
+        h1, .hero-title, .display-title {
+                letter-spacing: 0;
+                line-height: 1.0;
+        }
+        .eyebrow, .badge, .technical-label,
+        .kicker, .section-eyebrow {
+                letter-spacing: 0.18em;
+        }
+}
+
+@media (max-width: 480px) {
+        h1, .hero-title, .display-title {
+                letter-spacing: 0.005em;
+                line-height: 1.05;
+                word-break: keep-all;
+                overflow-wrap: break-word;
+        }
+        .eyebrow, .badge, .technical-label,
+        .kicker, .section-eyebrow {
+                letter-spacing: 0.12em;
+        }
+        body { font-size: 16px; }
+}
