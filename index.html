@@ -2007,56 +2007,146 @@
                                 <!-- Vinheta sutil para legibilidade -->
                                 <div class="hero-vignette pointer-events-none absolute inset-0 z-[1]"></div>
 
+                                <!-- =====================================================================
+                                     HERO BEATS — Banner navy fixo no rodapé do hero.
+                                     Mantém data-beat="a/b/c" + classes opacity-0/translate-y-5
+                                     porque a lógica de animação no script abaixo depende delas.
+                                     Apenas títulos: faixa limpa, cantos inferiores e sombra sutil.
+                                     ===================================================================== -->
+                                <style id="hero-scroll-banner-styles">
+                                        #scroll-hero [data-beat] {
+                                                pointer-events: none;
+                                                isolation: isolate;
+                                                will-change: opacity, transform, filter;
+                                        }
+                                        #scroll-hero [data-beat]::after {
+                                                content: "";
+                                                position: absolute;
+                                                left: 0;
+                                                right: 0;
+                                                bottom: -1px;
+                                                height: clamp(48px, 6vw, 86px);
+                                                background: #f8fafc;
+                                                z-index: -1;
+                                                pointer-events: none;
+                                        }
+                                        .hero-scroll-banner {
+                                                position: relative;
+                                                width: 100%;
+                                                display: flex;
+                                                align-items: center;
+                                                min-height: clamp(180px, 31vh, 244px);
+                                                overflow: hidden;
+                                                isolation: isolate;
+                                                background:
+                                                        radial-gradient(ellipse at 50% 0%, rgba(46, 61, 107, 0.24) 0%, rgba(46, 61, 107, 0) 58%),
+                                                        linear-gradient(180deg, rgba(5, 12, 32, 0.66) 0%, rgba(3, 7, 23, 0.84) 48%, rgba(2, 5, 17, 0.93) 100%);
+                                                -webkit-backdrop-filter: blur(7px) saturate(112%);
+                                                backdrop-filter: blur(7px) saturate(112%);
+                                                border-radius: 0 0 clamp(40px, 5vw, 72px) clamp(40px, 5vw, 72px);
+                                                box-shadow:
+                                                        inset 0 1px 0 rgba(255, 255, 255, 0.055),
+                                                        0 -18px 44px -36px rgba(46, 61, 107, 0.54),
+                                                        0 22px 58px -52px rgba(2, 6, 23, 0.72);
+                                        }
+                                        .hero-scroll-banner::before {
+                                                content: "";
+                                                position: absolute;
+                                                inset: 0 0 auto 0;
+                                                height: 1px;
+                                                background: linear-gradient(90deg, transparent 6%, rgba(92, 122, 232, 0.22) 44%, rgba(255, 255, 255, 0.12) 50%, rgba(92, 122, 232, 0.18) 56%, transparent 94%);
+                                                opacity: 0.64;
+                                                z-index: 1;
+                                        }
+                                        .hero-scroll-banner::after {
+                                                content: "";
+                                                position: absolute;
+                                                inset: auto 0 0 0;
+                                                height: 62%;
+                                                background: linear-gradient(180deg, rgba(2, 5, 17, 0) 0%, rgba(2, 5, 17, 0.46) 100%);
+                                                z-index: 0;
+                                                pointer-events: none;
+                                        }
+                                        .hero-scroll-banner__inner {
+                                                position: relative;
+                                                z-index: 2;
+                                                width: 100%;
+                                                max-width: 1600px;
+                                                margin: 0 auto;
+                                                padding: clamp(2rem, 4vw, 3.5rem) clamp(1.25rem, 5.2vw, 6.5rem) clamp(2.2rem, 4.6vw, 3.9rem);
+                                        }
+                                        .hero-scroll-banner__title {
+                                                font-family: var(--font-display), 'Vazirmatn', 'Purista', sans-serif;
+                                                font-weight: 900;
+                                                text-transform: uppercase;
+                                                color: #FFFFFF;
+                                                text-align: center;
+                                                line-height: 0.98;
+                                                letter-spacing: 0;
+                                                font-size: clamp(30px, 4.55vw, 76px);
+                                                max-width: min(1540px, 92vw);
+                                                margin: 0;
+                                                text-wrap: balance;
+                                                text-shadow:
+                                                        0 3px 11px rgba(0, 0, 0, 0.58),
+                                                        0 1px 2px rgba(0, 0, 0, 0.36);
+                                        }
+                                        @media (max-width: 767px) {
+                                                #scroll-hero [data-beat]::after {
+                                                        height: 54px;
+                                                }
+                                                .hero-scroll-banner {
+                                                        min-height: clamp(132px, 25vh, 176px);
+                                                        background:
+                                                                radial-gradient(ellipse at 50% 0%, rgba(46, 61, 107, 0.2) 0%, rgba(46, 61, 107, 0) 60%),
+                                                                linear-gradient(180deg, rgba(5, 12, 32, 0.78) 0%, rgba(3, 7, 23, 0.9) 52%, rgba(2, 5, 17, 0.96) 100%);
+                                                        -webkit-backdrop-filter: blur(5px) saturate(108%);
+                                                        backdrop-filter: blur(5px) saturate(108%);
+                                                        border-radius: 0 0 30px 30px;
+                                                }
+                                                .hero-scroll-banner__inner {
+                                                        padding: 2rem 1.25rem 2.2rem;
+                                                }
+                                                .hero-scroll-banner__title {
+                                                        font-size: clamp(27px, 8.4vw, 42px);
+                                                        line-height: 1;
+                                                }
+                                        }
+                                </style>
+
                                 <!-- Beat A -->
-                                <div data-beat="a" class="home-container absolute inset-x-0 bottom-0 pb-14 md:pb-20 z-10 flex justify-start opacity-0 translate-y-5 transition-all duration-300">
-                                        <div class="max-w-4xl flex flex-col gap-4">
-                                                <span class="hero-text-shadow-soft font-['Vazirmatn'] font-semibold text-white/90 uppercase tracking-widest text-[11px] md:text-xs">
-                                                        Divisão de Engenharia Logística
-                                                </span>
-                                                <h1 class="hero-title-shadow font-['Vazirmatn'] font-bold text-5xl md:text-7xl xl:text-8xl tracking-[-0.03em] leading-[0.95] text-white">
-                                                        Estrutura real para <span class="hero-title-accent">operações críticas.</span>
-                                                </h1>
-                                                <p class="hero-text-shadow-soft font-['Space_Grotesk'] text-slate-200 text-base md:text-lg max-w-2xl">
-                                                        Planejamento técnico, execução segura e controle total em cada etapa.
-                                                </p>
+                                <div data-beat="a" class="absolute inset-x-0 bottom-0 z-10 opacity-0 translate-y-5 transition-all duration-300">
+                                        <div class="hero-scroll-banner">
+                                                <div class="hero-scroll-banner__inner">
+                                                        <h1 class="hero-scroll-banner__title">
+                                                                Estrutura real para operações críticas
+                                                        </h1>
+                                                </div>
                                         </div>
                                 </div>
 
                                 <!-- Beat B -->
-                                <div data-beat="b" class="home-container absolute inset-x-0 bottom-0 pb-14 md:pb-20 z-10 flex justify-start opacity-0 translate-y-5 transition-all duration-300">
-                                        <div class="max-w-4xl flex flex-col gap-4">
-                                                <span class="hero-text-shadow-soft font-['Vazirmatn'] font-semibold text-white/80 uppercase tracking-widest text-[11px] md:text-xs">
-                                                        01 &mdash; Planejamento
-                                                </span>
-                                                <h2 class="hero-title-shadow font-['Vazirmatn'] font-bold text-5xl md:text-7xl xl:text-8xl tracking-[-0.03em] leading-[0.95] text-white">
-                                                        Cada operação começa <span class="hero-title-accent">antes do içamento.</span>
-                                                </h2>
-                                                <p class="hero-text-shadow-soft font-['Space_Grotesk'] text-slate-200 text-base md:text-lg max-w-2xl">
-                                                        Cálculo de carga, análise de solo, plano de rigging e estudo de rota — projetados pela nossa equipe de engenharia.
-                                                </p>
+                                <div data-beat="b" class="absolute inset-x-0 bottom-0 z-10 opacity-0 translate-y-5 transition-all duration-300">
+                                        <div class="hero-scroll-banner">
+                                                <div class="hero-scroll-banner__inner">
+                                                        <h2 class="hero-scroll-banner__title">
+                                                                Cada operação começa antes do içamento
+                                                        </h2>
+                                                </div>
                                         </div>
                                 </div>
 
                                 <!-- Beat C -->
-                                <div data-beat="c" class="home-container absolute inset-x-0 bottom-0 pb-14 md:pb-20 z-10 flex justify-start text-left opacity-0 translate-y-5 transition-all duration-300">
-                                        <div class="max-w-4xl flex flex-col gap-4 items-start">
-                                                <span class="hero-text-shadow-soft font-['Vazirmatn'] font-semibold text-white/80 uppercase tracking-widest text-[11px] md:text-xs">
-                                                        02 &mdash; Execução
-                                                </span>
-                                                <h2 class="hero-title-shadow font-['Vazirmatn'] font-bold text-5xl md:text-7xl xl:text-8xl tracking-[-0.03em] leading-[0.95] text-white">
-                                                        Equipes certificadas. <span class="hero-title-accent">Manobras milimétricas.</span>
-                                                </h2>
-                                                <p class="hero-text-shadow-soft font-['Space_Grotesk'] text-slate-200 text-base md:text-lg max-w-2xl">
-                                                        Equipamentos calibrados, protocolos NR-11 e NR-12, e supervisão técnica em cada manobra crítica.
-                                                </p>
+                                <div data-beat="c" class="absolute inset-x-0 bottom-0 z-10 opacity-0 translate-y-5 transition-all duration-300">
+                                        <div class="hero-scroll-banner">
+                                                <div class="hero-scroll-banner__inner">
+                                                        <h2 class="hero-scroll-banner__title">
+                                                                Equipes certificadas. Manobras milimétricas
+                                                        </h2>
+                                                </div>
                                         </div>
                                 </div>
 
-                                <!-- Scroll hint -->
-                                <div id="hero-scroll-hint" class="absolute bottom-4 left-1/2 -translate-x-1/2 z-10 flex flex-col items-center text-slate-400 transition-opacity duration-300">
-                                        <span class="font-['Space_Grotesk'] uppercase tracking-widest text-[10px] mb-1">Role para explorar</span>
-                                        <span class="material-symbols-outlined text-[#2E3D6B] text-[20px] animate-bounce">expand_more</span>
-                                </div>
                         </div>
                 </section>
 
@@ -2068,7 +2158,6 @@
                         const loader = document.getElementById('hero-loader');
                         const loaderBar = document.getElementById('hero-loader-bar');
                         const loaderPct = document.getElementById('hero-loader-pct');
-                        const scrollHint = document.getElementById('hero-scroll-hint');
                         const beats = {
                                 a: document.querySelector('[data-beat="a"]'),
                                 b: document.querySelector('[data-beat="b"]'),
@@ -2132,8 +2221,10 @@
 
                         function setBeat(el, vis) {
                                 if (!el) return;
-                                el.style.opacity = vis;
-                                el.style.transform = 'translateY(' + ((1 - vis) * 20) + 'px)';
+                                const eased = vis <= 0 ? 0 : 1 - Math.pow(1 - vis, 3);
+                                el.style.opacity = eased;
+                                el.style.transform = 'translate3d(0,' + ((1 - eased) * 18) + 'px,0) scale(' + (0.985 + eased * 0.015) + ')';
+                                el.style.filter = 'blur(' + ((1 - eased) * 0.9) + 'px)';
                         }
 
                         function render() {
@@ -2161,8 +2252,6 @@
                                 setBeat(beats.a, inRange(smoothProgress, 0.02, 0.20));
                                 setBeat(beats.b, inRange(smoothProgress, 0.27, 0.45));
                                 setBeat(beats.c, inRange(smoothProgress, 0.52, 0.70));
-                                if (scrollHint) scrollHint.style.opacity = Math.max(0, 1 - smoothProgress * 10);
-
                                 requestAnimationFrame(render);
                         }
                         render();
@@ -3098,7 +3187,7 @@
                                                                 </div>
 
                                                                 <div class="cf-visual" data-step="3">
-                                                                        <img src="./images-site/como-funciona/diagnostico-da-operacao.png" alt="" loading="lazy" decoding="async">
+                                                                        <img src="./images-site/como-funciona/execucao-coordenada-69.jpg" alt="" loading="lazy" decoding="async">
                                                                 </div>
 
                                                                 <div class="cf-visual" data-step="4">
