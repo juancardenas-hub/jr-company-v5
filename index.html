@@ -2040,10 +2040,12 @@
                                                 isolation: isolate;
                                                 background:
                                                         radial-gradient(ellipse at 50% 0%, rgba(46, 61, 107, 0.24) 0%, rgba(46, 61, 107, 0) 58%),
-                                                        linear-gradient(180deg, rgba(5, 12, 32, 0.66) 0%, rgba(3, 7, 23, 0.84) 48%, rgba(2, 5, 17, 0.93) 100%);
+                                                        linear-gradient(180deg, rgba(5, 12, 32, 0) 0%, rgba(3, 7, 23, 0.75) 45%, rgba(2, 5, 17, 0.95) 100%);
                                                 -webkit-backdrop-filter: blur(7px) saturate(112%);
                                                 backdrop-filter: blur(7px) saturate(112%);
-                                                border-radius: 0 0 clamp(40px, 5vw, 72px) clamp(40px, 5vw, 72px);
+                                                -webkit-mask-image: linear-gradient(180deg, transparent 0%, black 25%, black 100%);
+                                                mask-image: linear-gradient(180deg, transparent 0%, black 25%, black 100%);
+                                                border-radius: 0;
                                                 box-shadow:
                                                         inset 0 1px 0 rgba(255, 255, 255, 0.055),
                                                         0 -18px 44px -36px rgba(46, 61, 107, 0.54),
@@ -2073,20 +2075,23 @@
                                                 width: 100%;
                                                 max-width: 1600px;
                                                 margin: 0 auto;
-                                                padding: clamp(2rem, 4vw, 3.5rem) clamp(1.25rem, 5.2vw, 6.5rem) clamp(2.2rem, 4.6vw, 3.9rem);
+                                                padding: clamp(2.2rem, 4.5vw, 3.5rem) clamp(1.25rem, 5.2vw, 6.5rem);
+                                                display: flex;
+                                                align-items: center;
+                                                justify-content: center;
                                         }
                                         .hero-scroll-banner__title {
                                                 font-family: var(--font-display), 'Vazirmatn', 'Purista', sans-serif;
-                                                font-weight: 900;
+                                                font-weight: 700;
                                                 text-transform: uppercase;
                                                 color: #FFFFFF;
                                                 text-align: center;
-                                                line-height: 0.98;
-                                                letter-spacing: 0;
-                                                font-size: clamp(30px, 4.55vw, 76px);
-                                                max-width: min(1540px, 92vw);
+                                                line-height: 1;
+                                                letter-spacing: 0.02em;
+                                                font-size: clamp(14px, 2.5vw, 38px);
+                                                max-width: 100%;
+                                                white-space: nowrap;
                                                 margin: 0;
-                                                text-wrap: balance;
                                                 text-shadow:
                                                         0 3px 11px rgba(0, 0, 0, 0.58),
                                                         0 1px 2px rgba(0, 0, 0, 0.36);
@@ -2099,17 +2104,20 @@
                                                         min-height: clamp(132px, 25vh, 176px);
                                                         background:
                                                                 radial-gradient(ellipse at 50% 0%, rgba(46, 61, 107, 0.2) 0%, rgba(46, 61, 107, 0) 60%),
-                                                                linear-gradient(180deg, rgba(5, 12, 32, 0.78) 0%, rgba(3, 7, 23, 0.9) 52%, rgba(2, 5, 17, 0.96) 100%);
+                                                                linear-gradient(180deg, rgba(5, 12, 32, 0) 0%, rgba(3, 7, 23, 0.8) 45%, rgba(2, 5, 17, 0.96) 100%);
                                                         -webkit-backdrop-filter: blur(5px) saturate(108%);
                                                         backdrop-filter: blur(5px) saturate(108%);
-                                                        border-radius: 0 0 30px 30px;
+                                                        -webkit-mask-image: linear-gradient(180deg, transparent 0%, black 25%, black 100%);
+                                                        mask-image: linear-gradient(180deg, transparent 0%, black 25%, black 100%);
+                                                        border-radius: 0;
                                                 }
                                                 .hero-scroll-banner__inner {
-                                                        padding: 2rem 1.25rem 2.2rem;
+                                                        padding: 2.2rem 1.25rem;
                                                 }
                                                 .hero-scroll-banner__title {
-                                                        font-size: clamp(27px, 8.4vw, 42px);
+                                                        font-size: clamp(12px, 3.5vw, 24px);
                                                         line-height: 1;
+                                                        white-space: nowrap;
                                                 }
                                         }
                                 </style>
@@ -3136,12 +3144,6 @@
                 }
                 </style>
                 <section class="cf-section w-full bg-white relative sticky-stack z-[50]">
-                        <div class="absolute bottom-full left-0 w-full h-[16px] md:h-[24px] pointer-events-none z-20 flex justify-between">
-                                <svg class="w-[16px] h-[16px] md:w-[24px] md:h-[24px] text-slate-950" fill="currentColor" viewBox="0 0 24 24"><path d="M0 24V0c0 13.255 10.745 24 24 24H0z" /></svg>
-                                <svg class="w-[16px] h-[16px] md:w-[24px] md:h-[24px] text-slate-950" fill="currentColor" viewBox="0 0 24 24"><path d="M24 24V0c0 13.255-10.745 24-24 24h24z" /></svg>
-
-<div class="animated-border-line absolute bottom-0 left-[16px] md:left-[24px] right-[16px] md:right-[24px] h-[1px] md:h-[2px] bg-gradient-to-r from-transparent via-[#2E3D6B] to-transparent transform scale-x-0 opacity-0 transition-all duration-1000 ease-out origin-center z-30"></div>
-</div>
                         <div class="cf-track" id="cf-track">
                                 <div class="cf-pin">
                                         <div class="cf-inner home-container relative z-30">
@@ -3187,11 +3189,11 @@
                                                                 </div>
 
                                                                 <div class="cf-visual" data-step="3">
-                                                                        <img src="./images-site/como-funciona/diagnostico-da-operacao.png" alt="" loading="lazy" decoding="async">
+                                                                        <img src="./images-site/como-funciona/execucao-coordenada-58.png" alt="" loading="lazy" decoding="async">
                                                                 </div>
 
                                                                 <div class="cf-visual" data-step="4">
-                                                                        <img src="./images-site/como-funciona/diagnostico-da-operacao.png" alt="" loading="lazy" decoding="async">
+                                                                        <img src="./images-site/como-funciona/monitoramento-entrega-3223.png" alt="" loading="lazy" decoding="async">
                                                                 </div>
                                                         </div>
                                                 </div>
@@ -3547,7 +3549,7 @@
 </div>
                         <div class="final-cta-video-bg" aria-hidden="true">
                                 <video autoplay muted loop playsinline preload="metadata">
-                                        <source src="https://despertare.store/wp-content/uploads/2026/05/abc.mp4" type="video/mp4">
+                                        <source src="https://despertare.store/wp-content/uploads/2026/05/65_1baixopeso-1.mp4" type="video/mp4">
                                 </video>
                         </div>
                         <div class="final-cta-content home-container relative z-30">
